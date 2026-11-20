@@ -17,7 +17,7 @@ The long-term goal is a laning-phase overlay that warns when an enemy can kill y
 ## Non-goals (v1)
 
 - No Live Client API connection, no real-time updates, no overlay window.
-- No enemy cooldown tracking and no screen reading. Enemy damage is always the full-combo worst case.
+- No enemy cooldown tracking and no screen reading. Each side's combo (ability hits and auto-attacks) is defined by the user.
 - No "go in / don't go in" verdict. The app shows numbers and a status only.
 - No hand-modelling of special abilities. Missing-health scaling, recasts, stacking effects, conditional passives and similar are listed as **not modelled** and excluded from totals.
 - No summoner spell damage beyond the basics (Ignite, Smite) unless data makes it trivial. Flash and similar are out of scope until the live phase.
@@ -54,7 +54,7 @@ The long-term goal is a laning-phase overlay that warns when an enemy can kill y
 ### Results shown
 
 - Your combo damage and the % of the enemy's estimated HP it removes.
-- The enemy's worst-case combo damage and the % of your HP it removes.
+- The enemy's combo damage and the % of your HP it removes.
 - A status colour comparing the two directions.
 - A list of not-modelled abilities and effects, per champion.
 

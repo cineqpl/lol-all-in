@@ -1,6 +1,7 @@
 import { lookupChampion, sumItemStats, type GameData } from '../data/load';
 import type { Side } from '../model/matchup';
 import type { AbilityKey } from '../model/types';
+import { count } from '../model/combo';
 import { summarizeStats } from '../model/summary';
 import { validateRanks } from '../model/validation';
 import { championIconPath, itemIconPath, spellIconPath } from '../data/images';
@@ -68,6 +69,29 @@ export function createPanel(
     armor: statCell('armor'),
     mr: statCell('mr'),
   };
+  const hitInputs = Object.fromEntries(
+    KEYS.map((k) => [k, numberInput(`hits-${k}`, 0, 99, 1)]),
+  ) as Record<AbilityKey, HTMLInputElement>;
+  const autosInput = numberInput('autos', 0, 99, 2);
+  const comboIcons = Object.fromEntries(
+    KEYS.map((k) => [k, icon(`combo-icon-${k}`, 'ability-icon')]),
+  ) as Record<AbilityKey, HTMLImageElement>;
+  const comboNames = Object.fromEntries(KEYS.map((k) => [k, h('span', { class: 'combo-name' })])) as Record<AbilityKey, HTMLElement>;
+  const comboNotes = Object.fromEntries(KEYS.map((k) => [k, h('span', { class: 'note' })])) as Record<AbilityKey, HTMLElement>;
+  const comboBox = h(
+    'div',
+    { class: 'combo', 'data-role': 'combo' },
+    h('h3', {}, side === 'you' ? 'Your combo' : 'Enemy combo'),
+    h('p', { class: 'note' }, 'How many times each ability hits, and how many auto-attacks land.'),
+    ...KEYS.map((k) =>
+      h(
+        'div',
+        { class: 'combo-row', 'data-role': `combo-row-${k}` },
+        comboIcons[k], comboNames[k], ' hits ', hitInputs[k], comboNotes[k],
+      ),
+    ),
+    h('label', {}, 'Auto-attacks ', autosInput),
+  );
   const adNote = h('p', { class: 'warning', 'data-role': 'ad-growth-note', hidden: '' }, 'AD growth data is unavailable for this champion, so its AD is understated at higher levels.');
   const summary = h(
     'div',
@@ -124,6 +148,7 @@ export function createPanel(
     ),
     h('label', {}, 'Rune ', runes),
     summary,
+    comboBox,
     h('p', { class: 'note' }, 'Rune and item effects beyond flat stats are not modelled yet.'),
   );
   const maxLevel = () => (quest.checked ? QUEST_MAX_LEVEL : BASE_MAX_LEVEL);
@@ -151,6 +176,12 @@ export function createPanel(
         runeIds: runes.value ? [runes.value] : [],
       },
       itemStats: sumItemStats(data, itemIds),
+      combo: {
+        hits: Object.fromEntries(
+          KEYS.map((k) => [k, count(Number(hitInputs[k].value))]),
+        ) as Record<AbilityKey, number>,
+        autos: count(Number(autosInput.value)),
+      },
       unmodelledEffects: [
         ...itemIds.filter((id) => data.items[id].hasEffects).map((id) => `${data.items[id].name} (item)`),
         ...(runes.value ? [`${data.runes[runes.value].name} (rune)`] : []),
@@ -168,6 +199,17 @@ export function createPanel(
     stats.resource.hidden = !s.resource;
     stats.resource.textContent = s.resource ? `${s.resource.label} ${Math.round(s.resource.value)}` : '';
   };
+  const refreshCombo = () => {
+    const abilities = data.abilities[champion.value] ?? [];
+    const files = data.champions[champion.value]?.abilityIcons;
+    KEYS.forEach((k, i) => {
+      const ability = abilities.find((a) => a.key === k);
+      comboNames[k].textContent = ability ? `${k} ${ability.name} (${ability.damageType})` : k;
+      comboNotes[k].textContent = ability?.status === 'not-modelled' ? ' not modelled' : '';
+      hitInputs[k].disabled = (Number(ranks[k].value) || 0) < 1;
+      setIcon(comboIcons[k], files?.[i] ? spellIconPath(files[i]) : '');
+    });
+  };
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
     items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
@@ -177,11 +219,13 @@ export function createPanel(
   section.addEventListener('change', () => {
     refreshLevelAndWarnings();
     refreshStats();
+    refreshCombo();
     refreshIcons();
     onChange();
   });
   refreshLevelAndWarnings();
   refreshStats();
+  refreshCombo();
   refreshIcons();
   const el = h(
     'div',

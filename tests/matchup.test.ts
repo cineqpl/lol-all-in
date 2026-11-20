@@ -57,3 +57,26 @@ describe('unmodelled effects', () => {
     expect(r.enemyUnmodelledEffects).toEqual([]);
   });
 });
+
+describe('user-defined combo', () => {
+  const withCombo = (s: Side, combo: Side['combo']): Side => ({ ...s, combo });
+  const strong = (): Side => {
+    const s = side(100);
+    s.champion = { ...s.champion, base: { ...s.champion.base, ad: 50 } };
+    return s;
+  };
+  test('without a combo, each ability hits once and two autos are thrown', () => {
+    expect(computeMatchup(strong(), side(0)).yourDamage).toBe(100 + 2 * 50);
+  });
+  test('hit counts and auto count come from the combo', () => {
+    const you = withCombo(strong(), { hits: { Q: 3, W: 0, E: 0, R: 0 }, autos: 5 });
+    expect(computeMatchup(you, side(0)).yourDamage).toBe(3 * 100 + 5 * 50);
+  });
+  test('each side uses its own combo', () => {
+    const you = withCombo(side(100), { hits: { Q: 2, W: 0, E: 0, R: 0 }, autos: 0 });
+    const enemy = withCombo(side(100), { hits: { Q: 1, W: 0, E: 0, R: 0 }, autos: 0 });
+    const r = computeMatchup(you, enemy);
+    expect(r.yourDamage).toBe(200);
+    expect(r.enemyDamage).toBe(100);
+  });
+});

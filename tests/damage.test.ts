@@ -48,6 +48,29 @@ describe('abilityDamage', () => {
   });
 });
 
+describe('comboDamage hit counts', () => {
+  const ranks = { Q: 1, W: 0, E: 0, R: 0 };
+  const run = (hits: Record<'Q' | 'W' | 'E' | 'R', number> | undefined, autos = 0) =>
+    comboDamage([magicQ], ranks, attacker, target, autos, hits).total;
+  const hitsQ = (Q: number) => ({ Q, W: 0, E: 0, R: 0 });
+
+  test('an ability that hits three times deals three times the damage', () => {
+    expect(run(hitsQ(3))).toBe(450);
+  });
+  test('zero hits deals nothing', () => expect(run(hitsQ(0))).toBe(0));
+  test('omitting hits means one hit per ability', () => expect(run(undefined)).toBe(150));
+  test('negative, fractional and non-numeric hit counts are sanitised', () => {
+    expect(run(hitsQ(-2))).toBe(0);
+    expect(run(hitsQ(2.9))).toBe(300);
+    expect(run(hitsQ(NaN))).toBe(0);
+  });
+  test('autos scale with the count and are cut by armor', () => {
+    expect(run(hitsQ(0), 3)).toBe(240);
+    expect(comboDamage([], { Q: 0, W: 0, E: 0, R: 0 }, attacker, { ...target, armor: 100 }, 4).total).toBe(160);
+  });
+  test('negative auto counts deal nothing', () => expect(run(hitsQ(0), -1)).toBe(0));
+});
+
 describe('comboDamage', () => {
   test('not-modelled abilities are listed, not summed', () => {
     const r = comboDamage([magicQ, specialW], { Q: 1, W: 1, E: 0, R: 0 }, attacker, target, 0);

@@ -1,9 +1,7 @@
+import { DEFAULT_COMBO, type Combo } from './combo';
 import { comboDamage } from './damage';
 import { statsAtLevel } from './stats';
 import type { Ability, Build, ChampionBase, StatBlock } from './types';
-
-/** Basic attacks included in every combo. */
-export const AUTOS_IN_COMBO = 2;
 
 export type Side = {
   champion: ChampionBase;
@@ -12,6 +10,8 @@ export type Side = {
   itemStats: StatBlock;
   /** Selected items/runes whose effects the model ignores (shown to the user). */
   unmodelledEffects?: string[];
+  /** What this side does in the skirmish; defaults to DEFAULT_COMBO. */
+  combo?: Combo;
 };
 
 export type MatchupResult = {
@@ -39,7 +39,8 @@ function attack(from: Side, fromStats: StatBlock, targetStats: StatBlock) {
     from.build.ranks,
     { total: fromStats, bonusAd: from.itemStats.ad },
     targetStats,
-    AUTOS_IN_COMBO,
+    (from.combo ?? DEFAULT_COMBO).autos,
+    (from.combo ?? DEFAULT_COMBO).hits,
   );
 }
 

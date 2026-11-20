@@ -9,7 +9,7 @@ const dmg = (v: number) => String(Math.round(v));
 const STATUS_TEXT: Record<MatchupResult['status'], string> = {
   safe: 'Safe: you can kill them and they cannot kill you',
   even: 'Even: neither combo kills',
-  danger: 'Danger: their worst-case combo can kill you',
+  danger: 'Danger: their combo can kill you',
 };
 
 function notModelledList(
@@ -35,12 +35,12 @@ export function renderResults(el: HTMLElement, r: MatchupResult, data: GameData)
     h(
       'p',
       { 'data-testid': 'your-damage' },
-      `Your full combo: ${dmg(r.yourDamage)} damage (${pct(r.yourPctOfEnemyHp)} of their estimated HP)`,
+      `Your combo: ${dmg(r.yourDamage)} damage (${pct(r.yourPctOfEnemyHp)} of their estimated HP)`,
     ),
     h(
       'p',
       { 'data-testid': 'enemy-damage' },
-      `Their worst-case combo: ${dmg(r.enemyDamage)} damage (${pct(r.enemyPctOfYourHp)} of your HP)`,
+      `Their combo: ${dmg(r.enemyDamage)} damage (${pct(r.enemyPctOfYourHp)} of your HP)`,
     ),
     notModelledList('not-modelled-you', 'Your abilities and effects not modelled', r.yourNotModelled, r.yourUnmodelledEffects),
     notModelledList('not-modelled-enemy', 'Their abilities and effects not modelled', r.enemyNotModelled, r.enemyUnmodelledEffects),

@@ -1,3 +1,4 @@
+import { count } from './combo';
 import type { Ability, AbilityKey, StatBlock } from './types';
 
 export type Attacker = { total: StatBlock; bonusAd: number };
@@ -37,6 +38,7 @@ export function comboDamage(
   attacker: Attacker,
   target: StatBlock,
   autoCount: number,
+  hits?: Record<AbilityKey, number>,
 ): { total: number; notModelled: Ability[] } {
   let total = 0;
   const notModelled: Ability[] = [];
@@ -45,8 +47,8 @@ export function comboDamage(
       notModelled.push(a);
       continue;
     }
-    total += abilityDamage(a, ranks[a.key], attacker, target);
+    total += count(hits?.[a.key] ?? 1) * abilityDamage(a, ranks[a.key], attacker, target);
   }
-  total += autoCount * mitigate(attacker.total.ad, target.armor);
+  total += count(autoCount) * mitigate(attacker.total.ad, target.armor);
   return { total, notModelled };
 }

@@ -243,6 +243,48 @@ describe('stat summary', () => {
   });
 });
 
+describe('combo editor', () => {
+  const row = (side: string, key: string) => q(`.side[data-side=${side}] [data-role=combo-row-${key}]`);
+  test('has hit inputs per ability and an auto-attack input with sensible defaults', () => {
+    expect(field('you', 'hits-Q').value).toBe('1');
+    expect(field('you', 'autos').value).toBe('2');
+    expect(field('enemy', 'hits-R')).toBeTruthy();
+  });
+  test('more hits means more damage in the results', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Gamma');
+    set(field('you', 'hits-Q'), '3');
+    expect(q('[data-testid=your-damage]').textContent).toContain('300 damage');
+  });
+  test('auto-attacks add damage at the champion AD', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Gamma');
+    set(field('you', 'item-0'), '1'); // Sword: +10 AD
+    set(field('you', 'hits-Q'), '0');
+    set(field('you', 'autos'), '4');
+    expect(q('[data-testid=your-damage]').textContent).toContain('40 damage');
+  });
+  test('the two sides keep separate combos', () => {
+    set(field('you', 'hits-Q'), '5');
+    expect(field('enemy', 'hits-Q').value).toBe('1');
+  });
+  test('rows name the ability and its damage type', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(row('you', 'Q').textContent).toMatch(/Zap \(true\)/);
+    expect(row('you', 'W').textContent).toMatch(/Weird \(magic\)/);
+  });
+  test('not-modelled abilities are marked', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(row('you', 'W').textContent).toMatch(/not modelled/);
+    expect(row('you', 'Q').textContent).not.toMatch(/not modelled/);
+  });
+  test('hits are disabled for an ability that is not learned', () => {
+    expect(field('you', 'hits-W').disabled).toBe(true);
+    set(field('you', 'rank-W'), '1');
+    expect(field('you', 'hits-W').disabled).toBe(false);
+  });
+});
+
 describe('bootstrap errors', () => {
   test('a load failure shows the message with the missing id instead of a blank page', async () => {
     const el = document.createElement('div');
