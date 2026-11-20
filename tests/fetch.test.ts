@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
-import { normaliseChampions, normaliseItems, normaliseRunes } from '../src/data/normalise';
+import { abilityIconFiles, normaliseChampions, normaliseItems, normaliseRunes } from '../src/data/normalise';
 
 const fx = (f: string) => JSON.parse(readFileSync(`tests/fixtures/${f}`, 'utf8'));
 
@@ -52,5 +52,16 @@ describe('normaliseItems filtering', () => {
   };
   test('keeps only purchasable Summoners Rift items', () => {
     expect(Object.keys(normaliseItems(raw))).toEqual(['1']);
+  });
+});
+
+describe('abilityIconFiles', () => {
+  test('returns the Q/W/E/R icon file names in order', () => {
+    expect(abilityIconFiles(fx('dd-champion-detail.json'), 'Annie')).toEqual([
+      'AnnieQ.png', 'AnnieW.png', 'AnnieE.png', 'AnnieR.png',
+    ]);
+  });
+  test('unknown champion id throws naming the id', () => {
+    expect(() => abilityIconFiles(fx('dd-champion-detail.json'), 'Nobody')).toThrow(/Nobody/);
   });
 });

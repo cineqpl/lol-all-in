@@ -70,3 +70,11 @@ export function normaliseSummoners(raw: unknown): Record<string, SummonerData> {
   }
   return out;
 }
+
+/** Q/W/E/R icon file names from one Data Dragon per-champion file ({ data: { <id>: { spells } } }). */
+export function abilityIconFiles(raw: unknown, id: string): string[] {
+  const champ = ((raw as Raw).data as Raw)?.[id];
+  const spells: Raw[] | undefined = champ?.spells;
+  if (!spells || spells.length < 4) throw new Error(`Champion ${id} has no spell icon data`);
+  return spells.slice(0, 4).map((s) => s.image.full as string);
+}

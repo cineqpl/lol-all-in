@@ -13,6 +13,8 @@ export type ChampionBase = {
   name: string;
   base: StatBlock;
   growth: StatBlock;
+  /** Q/W/E/R icon file names from Data Dragon (served from /img/spell/). */
+  abilityIcons?: string[];
 };
 
 export type Scaling = {

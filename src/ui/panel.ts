@@ -2,7 +2,7 @@ import { lookupChampion, sumItemStats, type GameData } from '../data/load';
 import type { Side } from '../model/matchup';
 import type { AbilityKey } from '../model/types';
 import { validateRanks } from '../model/validation';
-import { championIconPath, itemIconPath } from '../data/images';
+import { championIconPath, itemIconPath, spellIconPath } from '../data/images';
 import { h } from './dom';
 
 export type Panel = { el: HTMLElement; getSide(): Side };
@@ -78,6 +78,9 @@ export function createPanel(
   );
   const itemIcons = items.map((_, i) => icon(`item-icon-${i}`, 'item-icon'));
   const portrait = icon('champion-icon', 'champion-icon');
+  const abilityIcons = Object.fromEntries(
+    KEYS.map((k) => [k, icon(`ability-icon-${k}`, 'ability-icon')]),
+  ) as Record<AbilityKey, HTMLImageElement>;
 
   const runeOptions = Object.entries(data.runes).map(
     ([id, r]): [string, string] => [id, `${r.name} (${r.tree})`],
@@ -95,7 +98,7 @@ export function createPanel(
       h('label', {}, 'Level ', level),
       h('label', { class: 'quest' }, quest, ' Top lane role quest (level cap 20)'),
     ),
-    h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, ranks[k]))),
+    h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, abilityIcons[k], ranks[k]))),
     warning,
     h(
       'div',
@@ -119,6 +122,8 @@ export function createPanel(
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
     items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
+    const files = data.champions[champion.value]?.abilityIcons;
+    KEYS.forEach((k, i) => setIcon(abilityIcons[k], files?.[i] ? spellIconPath(files[i]) : ''));
   };
   section.addEventListener('change', () => {
     refreshLevelAndWarnings();

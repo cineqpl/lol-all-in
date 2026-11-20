@@ -17,7 +17,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AatroxQ.png",
+   "AatroxW.png",
+   "AatroxE.png",
+   "AatroxR.png"
+  ]
  },
  {
   "id": "Ahri",
@@ -37,7 +43,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AhriQ.png",
+   "AhriW.png",
+   "AhriE.png",
+   "AhriR.png"
+  ]
  },
  {
   "id": "Akali",
@@ -57,7 +69,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AkaliQ.png",
+   "AkaliW.png",
+   "AkaliE.png",
+   "AkaliR.png"
+  ]
  },
  {
   "id": "Akshan",
@@ -77,7 +95,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AkshanQ.png",
+   "AkshanW.png",
+   "AkshanE.png",
+   "AkshanR.png"
+  ]
  },
  {
   "id": "Alistar",
@@ -97,7 +121,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "Pulverize.png",
+   "Headbutt.png",
+   "AlistarE.png",
+   "FerociousHowl.png"
+  ]
  },
  {
   "id": "Ambessa",
@@ -117,7 +147,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AmbessaQ.png",
+   "AmbessaW.png",
+   "AmbessaE.png",
+   "AmbessaR.png"
+  ]
  },
  {
   "id": "Amumu",
@@ -137,7 +173,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BandageToss.png",
+   "AuraofDespair.png",
+   "Tantrum.png",
+   "CurseoftheSadMummy.png"
+  ]
  },
  {
   "id": "Anivia",
@@ -157,7 +199,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "FlashFrost.png",
+   "Crystallize.png",
+   "Frostbite.png",
+   "GlacialStorm.png"
+  ]
  },
  {
   "id": "Annie",
@@ -177,7 +225,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AnnieQ.png",
+   "AnnieW.png",
+   "AnnieE.png",
+   "AnnieR.png"
+  ]
  },
  {
   "id": "Aphelios",
@@ -197,7 +251,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ApheliosQ_ClientTooltipWrapper.png",
+   "ApheliosW.png",
+   "ApheliosE_ClientTooltipWrapper.png",
+   "ApheliosR.png"
+  ]
  },
  {
   "id": "Ashe",
@@ -217,7 +277,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AsheQ.png",
+   "Volley.png",
+   "AsheSpiritOfTheHawk.png",
+   "EnchantedCrystalArrow.png"
+  ]
  },
  {
   "id": "AurelionSol",
@@ -237,7 +303,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AurelionSolQ.png",
+   "AurelionSolW.png",
+   "AurelionSolE.png",
+   "AurelionSolR.png"
+  ]
  },
  {
   "id": "Aurora",
@@ -257,7 +329,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AuroraQ.png",
+   "AuroraW.png",
+   "AuroraE.png",
+   "AuroraR.png"
+  ]
  },
  {
   "id": "Azir",
@@ -277,7 +355,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AzirQWrapper.png",
+   "AzirW.png",
+   "AzirEWrapper.png",
+   "AzirR.png"
+  ]
  },
  {
   "id": "Bard",
@@ -297,7 +381,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BardQ.png",
+   "BardW.png",
+   "BardE.png",
+   "BardR.png"
+  ]
  },
  {
   "id": "Belveth",
@@ -317,7 +407,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BelvethQ.png",
+   "BelvethW.png",
+   "BelvethE.png",
+   "BelvethR.png"
+  ]
  },
  {
   "id": "Blitzcrank",
@@ -337,7 +433,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RocketGrab.png",
+   "Overdrive.png",
+   "PowerFist.png",
+   "StaticField.png"
+  ]
  },
  {
   "id": "Brand",
@@ -357,7 +459,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BrandQ.png",
+   "BrandW.png",
+   "BrandE.png",
+   "BrandR.png"
+  ]
  },
  {
   "id": "Braum",
@@ -377,7 +485,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BraumQ.png",
+   "BraumW.png",
+   "BraumE.png",
+   "BraumRWrapper.png"
+  ]
  },
  {
   "id": "Briar",
@@ -397,7 +511,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "BriarQ.png",
+   "BriarW.png",
+   "BriarE.png",
+   "BriarR.png"
+  ]
  },
  {
   "id": "Caitlyn",
@@ -417,7 +537,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "CaitlynQ.png",
+   "CaitlynW.png",
+   "CaitlynE.png",
+   "CaitlynR.png"
+  ]
  },
  {
   "id": "Camille",
@@ -437,7 +563,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "CamilleQ.png",
+   "CamilleW.png",
+   "CamilleE.png",
+   "CamilleR.png"
+  ]
  },
  {
   "id": "Cassiopeia",
@@ -457,7 +589,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "CassiopeiaQ.png",
+   "CassiopeiaW.png",
+   "CassiopeiaE.png",
+   "CassiopeiaR.png"
+  ]
  },
  {
   "id": "Chogath",
@@ -477,7 +615,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "Rupture.png",
+   "FeralScream.png",
+   "VorpalSpikes.png",
+   "Feast.png"
+  ]
  },
  {
   "id": "Corki",
@@ -497,7 +641,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PhosphorusBomb.png",
+   "CarpetBomb.png",
+   "GGun.png",
+   "MissileBarrage.png"
+  ]
  },
  {
   "id": "Darius",
@@ -517,7 +667,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "DariusCleave.png",
+   "DariusNoxianTacticsONH.png",
+   "DariusAxeGrabCone.png",
+   "DariusExecute.png"
+  ]
  },
  {
   "id": "Diana",
@@ -537,7 +693,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "DianaQ.png",
+   "DianaOrbs.png",
+   "DianaTeleport.png",
+   "DianaR.png"
+  ]
  },
  {
   "id": "Draven",
@@ -557,7 +719,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "DravenSpinning.png",
+   "DravenFury.png",
+   "DravenDoubleShot.png",
+   "DravenRCast.png"
+  ]
  },
  {
   "id": "DrMundo",
@@ -577,7 +745,13 @@
    "mr": 2.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "DrMundoQ.png",
+   "DrMundoW.png",
+   "DrMundoE.png",
+   "DrMundoR.png"
+  ]
  },
  {
   "id": "Ekko",
@@ -597,7 +771,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "EkkoQ.png",
+   "EkkoW.png",
+   "EkkoE.png",
+   "EkkoR.png"
+  ]
  },
  {
   "id": "Elise",
@@ -617,7 +797,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "EliseHumanQ.png",
+   "EliseHumanW.png",
+   "EliseHumanE.png",
+   "EliseR.png"
+  ]
  },
  {
   "id": "Evelynn",
@@ -637,7 +823,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "EvelynnQ.png",
+   "EvelynnW.png",
+   "EvelynnE.png",
+   "EvelynnR.png"
+  ]
  },
  {
   "id": "Ezreal",
@@ -657,7 +849,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "EzrealQ.png",
+   "EzrealW.png",
+   "EzrealE.png",
+   "EzrealR.png"
+  ]
  },
  {
   "id": "Fiddlesticks",
@@ -677,7 +875,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "FiddleSticksQ.png",
+   "FiddleSticksW.png",
+   "FiddleSticksE.png",
+   "FiddleSticksR.png"
+  ]
  },
  {
   "id": "Fiora",
@@ -697,7 +901,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "FioraQ.png",
+   "FioraW.png",
+   "FioraE.png",
+   "FioraR.png"
+  ]
  },
  {
   "id": "Fizz",
@@ -717,7 +927,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "FizzQ.png",
+   "FizzW.png",
+   "FizzE.png",
+   "FizzR.png"
+  ]
  },
  {
   "id": "Galio",
@@ -737,7 +953,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GalioQ.png",
+   "GalioW.png",
+   "GalioE.png",
+   "GalioR.png"
+  ]
  },
  {
   "id": "Gangplank",
@@ -757,7 +979,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GangplankQWrapper.png",
+   "GangplankW.png",
+   "GangplankE.png",
+   "GangplankR.png"
+  ]
  },
  {
   "id": "Garen",
@@ -777,7 +1005,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GarenQ.png",
+   "GarenW.png",
+   "GarenE.png",
+   "GarenR.png"
+  ]
  },
  {
   "id": "Gnar",
@@ -797,7 +1031,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GnarQ.png",
+   "GnarW.png",
+   "GnarE.png",
+   "GnarR.png"
+  ]
  },
  {
   "id": "Gragas",
@@ -817,7 +1057,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GragasQ.png",
+   "GragasW.png",
+   "GragasE.png",
+   "GragasR.png"
+  ]
  },
  {
   "id": "Graves",
@@ -837,7 +1083,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GravesQLineSpell.png",
+   "GravesSmokeGrenade.png",
+   "GravesMove.png",
+   "GravesChargeShot.png"
+  ]
  },
  {
   "id": "Gwen",
@@ -857,7 +1109,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "GwenQ.png",
+   "GwenW.png",
+   "GwenE.png",
+   "GwenR.png"
+  ]
  },
  {
   "id": "Hecarim",
@@ -877,7 +1135,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "HecarimRapidSlash.png",
+   "HecarimW.png",
+   "HecarimRamp.png",
+   "HecarimUlt.png"
+  ]
  },
  {
   "id": "Heimerdinger",
@@ -897,7 +1161,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "HeimerdingerQ.png",
+   "HeimerdingerW.png",
+   "HeimerdingerE.png",
+   "HeimerdingerR.png"
+  ]
  },
  {
   "id": "Hwei",
@@ -917,7 +1187,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "HweiQ.png",
+   "HweiW.png",
+   "HweiE.png",
+   "HweiR.png"
+  ]
  },
  {
   "id": "Illaoi",
@@ -937,7 +1213,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "IllaoiQ.png",
+   "IllaoiW.png",
+   "IllaoiE.png",
+   "IllaoiR.png"
+  ]
  },
  {
   "id": "Irelia",
@@ -957,7 +1239,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "IreliaQ.png",
+   "IreliaW.png",
+   "IreliaE.png",
+   "IreliaR.png"
+  ]
  },
  {
   "id": "Ivern",
@@ -977,7 +1265,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "IvernQ.png",
+   "IvernW.png",
+   "IvernE.png",
+   "IvernR.png"
+  ]
  },
  {
   "id": "Janna",
@@ -997,7 +1291,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "HowlingGale.png",
+   "SowTheWind.png",
+   "EyeOfTheStorm.png",
+   "ReapTheWhirlwind.png"
+  ]
  },
  {
   "id": "JarvanIV",
@@ -1017,7 +1317,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JarvanIVDragonStrike.png",
+   "JarvanIVGoldenAegis.png",
+   "JarvanIVDemacianStandard.png",
+   "JarvanIVCataclysm.png"
+  ]
  },
  {
   "id": "Jax",
@@ -1037,7 +1343,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JaxQ.png",
+   "JaxW.png",
+   "JaxE.png",
+   "JaxR.png"
+  ]
  },
  {
   "id": "Jayce",
@@ -1057,7 +1369,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JayceToTheSkies.png",
+   "JayceStaticField.png",
+   "JayceThunderingBlow.png",
+   "JayceStanceHtG.png"
+  ]
  },
  {
   "id": "Jhin",
@@ -1077,7 +1395,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JhinQ.png",
+   "JhinW.png",
+   "JhinE.png",
+   "JhinR.png"
+  ]
  },
  {
   "id": "Jinx",
@@ -1097,7 +1421,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JinxQ.png",
+   "JinxW.png",
+   "JinxE.png",
+   "JinxR.png"
+  ]
  },
  {
   "id": "Kaisa",
@@ -1117,7 +1447,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KaisaQ.png",
+   "KaisaW.png",
+   "KaisaE.png",
+   "KaisaR.png"
+  ]
  },
  {
   "id": "Kalista",
@@ -1137,7 +1473,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KalistaMysticShot.png",
+   "KalistaW.png",
+   "KalistaExpungeWrapper.png",
+   "KalistaRx.png"
+  ]
  },
  {
   "id": "Karma",
@@ -1157,7 +1499,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KarmaQ.png",
+   "KarmaSpiritBind.png",
+   "KarmaSolKimShield.png",
+   "KarmaMantra.png"
+  ]
  },
  {
   "id": "Karthus",
@@ -1177,7 +1525,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KarthusLayWasteA1.png",
+   "KarthusWallOfPain.png",
+   "KarthusDefile.png",
+   "KarthusFallenOne.png"
+  ]
  },
  {
   "id": "Kassadin",
@@ -1197,7 +1551,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NullLance.png",
+   "NetherBlade.png",
+   "ForcePulse.png",
+   "RiftWalk.png"
+  ]
  },
  {
   "id": "Katarina",
@@ -1217,7 +1577,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KatarinaQ.png",
+   "KatarinaW.png",
+   "KatarinaEWrapper.png",
+   "KatarinaR.png"
+  ]
  },
  {
   "id": "Kayle",
@@ -1237,7 +1603,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KayleQ.png",
+   "KayleW.png",
+   "KayleE.png",
+   "KayleR.png"
+  ]
  },
  {
   "id": "Kayn",
@@ -1257,7 +1629,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KaynQ.png",
+   "KaynW.png",
+   "KaynE.png",
+   "KaynR.png"
+  ]
  },
  {
   "id": "Kennen",
@@ -1277,7 +1655,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KennenShurikenHurlMissile1.png",
+   "KennenBringTheLight.png",
+   "KennenLightningRush.png",
+   "KennenShurikenStorm.png"
+  ]
  },
  {
   "id": "Khazix",
@@ -1297,7 +1681,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KhazixQ.png",
+   "KhazixW.png",
+   "KhazixE.png",
+   "KhazixR.png"
+  ]
  },
  {
   "id": "Kindred",
@@ -1317,7 +1707,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KindredQ.png",
+   "KindredW.png",
+   "KindredEWrapper.png",
+   "KindredR.png"
+  ]
  },
  {
   "id": "Kled",
@@ -1337,7 +1733,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KledQ.png",
+   "KledW.png",
+   "KledE.png",
+   "KledR.png"
+  ]
  },
  {
   "id": "KogMaw",
@@ -1357,7 +1759,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KogMawQ.png",
+   "KogMawBioArcaneBarrage.png",
+   "KogMawVoidOoze.png",
+   "KogMawLivingArtillery.png"
+  ]
  },
  {
   "id": "KSante",
@@ -1377,7 +1785,13 @@
    "mr": 2.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "KSanteQ.png",
+   "KSanteW.png",
+   "KSanteE.png",
+   "KSanteR.png"
+  ]
  },
  {
   "id": "Leblanc",
@@ -1397,7 +1811,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LeblancQ.png",
+   "LeblancW.png",
+   "LeblancE.png",
+   "LeblancR.png"
+  ]
  },
  {
   "id": "LeeSin",
@@ -1417,7 +1837,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LeeSinQOne.png",
+   "LeeSinWOne.png",
+   "LeeSinEOne.png",
+   "LeeSinR.png"
+  ]
  },
  {
   "id": "Leona",
@@ -1437,7 +1863,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LeonaShieldOfDaybreak.png",
+   "LeonaSolarBarrier.png",
+   "LeonaZenithBlade.png",
+   "LeonaSolarFlare.png"
+  ]
  },
  {
   "id": "Lillia",
@@ -1457,7 +1889,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LilliaQ.png",
+   "LilliaW.png",
+   "LilliaE.png",
+   "LilliaR.png"
+  ]
  },
  {
   "id": "Lissandra",
@@ -1477,7 +1915,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LissandraQ.png",
+   "LissandraW.png",
+   "LissandraE.png",
+   "LissandraR.png"
+  ]
  },
  {
   "id": "Locke",
@@ -1497,7 +1941,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LockeQ.png",
+   "LockeW.png",
+   "LockeE.png",
+   "LockeR.png"
+  ]
  },
  {
   "id": "Lucian",
@@ -1517,7 +1967,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LucianQ.png",
+   "LucianW.png",
+   "LucianE.png",
+   "LucianR.png"
+  ]
  },
  {
   "id": "Lulu",
@@ -1537,7 +1993,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LuluQ.png",
+   "LuluW.png",
+   "LuluE.png",
+   "LuluR.png"
+  ]
  },
  {
   "id": "Lux",
@@ -1557,7 +2019,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "LuxLightBinding.png",
+   "LuxPrismaticWave.png",
+   "LuxLightStrikeKugel.png",
+   "LuxR.png"
+  ]
  },
  {
   "id": "Malphite",
@@ -1577,7 +2045,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SeismicShard.png",
+   "Obduracy.png",
+   "Landslide.png",
+   "UFSlash.png"
+  ]
  },
  {
   "id": "Malzahar",
@@ -1597,7 +2071,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MalzaharQ.png",
+   "MalzaharW.png",
+   "MalzaharE.png",
+   "MalzaharR.png"
+  ]
  },
  {
   "id": "Maokai",
@@ -1617,7 +2097,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MaokaiQ.png",
+   "MaokaiW.png",
+   "MaokaiE.png",
+   "MaokaiR.png"
+  ]
  },
  {
   "id": "MasterYi",
@@ -1637,7 +2123,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "AlphaStrike.png",
+   "Meditate.png",
+   "WujuStyle.png",
+   "Highlander.png"
+  ]
  },
  {
   "id": "Mel",
@@ -1657,7 +2149,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MelQ.png",
+   "MelW.png",
+   "MelE.png",
+   "MelR.png"
+  ]
  },
  {
   "id": "Milio",
@@ -1677,7 +2175,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MilioQ.png",
+   "MilioW.png",
+   "MilioE.png",
+   "MilioR.png"
+  ]
  },
  {
   "id": "MissFortune",
@@ -1697,7 +2201,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MissFortuneRicochetShot.png",
+   "MissFortuneViciousStrikes.png",
+   "MissFortuneScattershot.png",
+   "MissFortuneBulletTime.png"
+  ]
  },
  {
   "id": "MonkeyKing",
@@ -1717,7 +2227,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MonkeyKingDoubleAttack.png",
+   "MonkeyKingDecoy.png",
+   "MonkeyKingNimbus.png",
+   "MonkeyKingSpinToWin.png"
+  ]
  },
  {
   "id": "Mordekaiser",
@@ -1737,7 +2253,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MordekaiserQ.png",
+   "MordekaiserW.png",
+   "MordekaiserE.png",
+   "MordekaiserR.png"
+  ]
  },
  {
   "id": "Morgana",
@@ -1757,7 +2279,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "MorganaQ.png",
+   "MorganaW.png",
+   "MorganaE.png",
+   "MorganaR.png"
+  ]
  },
  {
   "id": "Naafiri",
@@ -1777,7 +2305,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NaafiriQ.png",
+   "NaafiriR.png",
+   "NaafiriE.png",
+   "NaafiriW.png"
+  ]
  },
  {
   "id": "Nami",
@@ -1797,7 +2331,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NamiQ.png",
+   "NamiW.png",
+   "NamiE.png",
+   "NamiR.png"
+  ]
  },
  {
   "id": "Nasus",
@@ -1817,7 +2357,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NasusQ.png",
+   "NasusW.png",
+   "NasusE.png",
+   "NasusR.png"
+  ]
  },
  {
   "id": "Nautilus",
@@ -1837,7 +2383,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NautilusAnchorDrag.png",
+   "NautilusPiercingGaze.png",
+   "NautilusSplashZone.png",
+   "NautilusGrandLine.png"
+  ]
  },
  {
   "id": "Neeko",
@@ -1857,7 +2409,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NeekoQ.png",
+   "NeekoW.png",
+   "NeekoE.png",
+   "NeekoR.png"
+  ]
  },
  {
   "id": "Nidalee",
@@ -1877,7 +2435,13 @@
    "mr": 1.45,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "JavelinToss.png",
+   "Bushwhack.png",
+   "PrimalSurge.png",
+   "AspectOfTheCougar.png"
+  ]
  },
  {
   "id": "Nilah",
@@ -1897,7 +2461,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NilahQ.png",
+   "NilahW.png",
+   "NilahE.png",
+   "NilahR.png"
+  ]
  },
  {
   "id": "Nocturne",
@@ -1917,7 +2487,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NocturneDuskbringer.png",
+   "NocturneShroudofDarkness.png",
+   "NocturneUnspeakableHorror.png",
+   "NocturneParanoia.png"
+  ]
  },
  {
   "id": "Nunu",
@@ -1937,7 +2513,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "NunuQ.png",
+   "NunuW.png",
+   "NunuE.png",
+   "NunuR.png"
+  ]
  },
  {
   "id": "Olaf",
@@ -1957,7 +2539,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "OlafAxeThrowCast.png",
+   "OlafFrenziedStrikes.png",
+   "OlafRecklessStrike.png",
+   "OlafRagnarok.png"
+  ]
  },
  {
   "id": "Orianna",
@@ -1977,7 +2565,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "OrianaIzunaCommand.png",
+   "OrianaDissonanceCommand.png",
+   "OrianaRedactCommand.png",
+   "OrianaDetonateCommand.png"
+  ]
  },
  {
   "id": "Ornn",
@@ -1997,7 +2591,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "OrnnQ.png",
+   "OrnnW.png",
+   "OrnnE.png",
+   "OrnnR.png"
+  ]
  },
  {
   "id": "Pantheon",
@@ -2017,7 +2617,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PantheonQ.png",
+   "PantheonW.png",
+   "PantheonE.png",
+   "PantheonR.png"
+  ]
  },
  {
   "id": "Poppy",
@@ -2037,7 +2643,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PoppyQ.png",
+   "PoppyW.png",
+   "PoppyE.png",
+   "PoppyR.png"
+  ]
  },
  {
   "id": "Pyke",
@@ -2057,7 +2669,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PykeQ.png",
+   "PykeW.png",
+   "PykeE.png",
+   "PykeR.png"
+  ]
  },
  {
   "id": "Qiyana",
@@ -2077,7 +2695,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "QiyanaQ.png",
+   "QiyanaW.png",
+   "QiyanaE.png",
+   "QiyanaR.png"
+  ]
  },
  {
   "id": "Quinn",
@@ -2097,7 +2721,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "QuinnQ.png",
+   "QuinnW.png",
+   "QuinnE.png",
+   "QuinnR.png"
+  ]
  },
  {
   "id": "Rakan",
@@ -2117,7 +2747,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RakanQ.png",
+   "RakanW.png",
+   "RakanE.png",
+   "RakanR.png"
+  ]
  },
  {
   "id": "Rammus",
@@ -2137,7 +2773,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PowerBall.png",
+   "DefensiveBallCurl.png",
+   "PuncturingTaunt.png",
+   "Tremors2.png"
+  ]
  },
  {
   "id": "RekSai",
@@ -2157,7 +2799,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RekSaiQ.png",
+   "RekSaiW.png",
+   "RekSaiE.png",
+   "RekSaiR.png"
+  ]
  },
  {
   "id": "Rell",
@@ -2177,7 +2825,13 @@
    "mr": 1.8,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RellQ.png",
+   "RellW_Dismount.png",
+   "RellE.png",
+   "RellR.png"
+  ]
  },
  {
   "id": "Renata",
@@ -2197,7 +2851,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RenataQ.png",
+   "RenataW.png",
+   "RenataE.png",
+   "RenataR.png"
+  ]
  },
  {
   "id": "Renekton",
@@ -2217,7 +2877,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RenektonCleave.png",
+   "RenektonPreExecute.png",
+   "RenektonSliceAndDice.png",
+   "RenektonReignOfTheTyrant.png"
+  ]
  },
  {
   "id": "Rengar",
@@ -2237,7 +2903,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RengarQ.png",
+   "RengarW.png",
+   "RengarE.png",
+   "RengarR.png"
+  ]
  },
  {
   "id": "Riven",
@@ -2257,7 +2929,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RivenTriCleave.png",
+   "RivenMartyr.png",
+   "RivenFeint.png",
+   "RivenFengShuiEngine.png"
+  ]
  },
  {
   "id": "Rumble",
@@ -2277,7 +2955,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RumbleFlameThrower.png",
+   "RumbleShield.png",
+   "RumbleGrenade.png",
+   "RumbleCarpetBomb.png"
+  ]
  },
  {
   "id": "Ryze",
@@ -2297,7 +2981,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "RyzeQWrapper.png",
+   "RyzeW.png",
+   "RyzeE.png",
+   "RyzeR.png"
+  ]
  },
  {
   "id": "Samira",
@@ -2317,7 +3007,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SamiraQ.png",
+   "SamiraW.png",
+   "SamiraE.png",
+   "SamiraR.png"
+  ]
  },
  {
   "id": "Sejuani",
@@ -2337,7 +3033,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SejuaniQ.png",
+   "SejuaniW.png",
+   "SejuaniE.png",
+   "SejuaniR.png"
+  ]
  },
  {
   "id": "Senna",
@@ -2357,7 +3059,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SennaQ.png",
+   "SennaW.png",
+   "SennaE.png",
+   "SennaR.png"
+  ]
  },
  {
   "id": "Seraphine",
@@ -2377,7 +3085,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SeraphineQ.png",
+   "SeraphineW.png",
+   "SeraphineE.png",
+   "SeraphineR.png"
+  ]
  },
  {
   "id": "Sett",
@@ -2397,7 +3111,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SettQ.png",
+   "SettW.png",
+   "SettE.png",
+   "SettR.png"
+  ]
  },
  {
   "id": "Shaco",
@@ -2417,7 +3137,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "Deceive.png",
+   "JackInTheBox.png",
+   "TwoShivPoison.png",
+   "HallucinateFull.png"
+  ]
  },
  {
   "id": "Shen",
@@ -2437,7 +3163,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ShenQ.png",
+   "ShenW.png",
+   "ShenE.png",
+   "ShenR.png"
+  ]
  },
  {
   "id": "Shyvana",
@@ -2457,7 +3189,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ShyvanaQ.png",
+   "ShyvanaW.png",
+   "ShyvanaE.png",
+   "ShyvanaR.png"
+  ]
  },
  {
   "id": "Singed",
@@ -2477,7 +3215,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "PoisonTrail.png",
+   "MegaAdhesive.png",
+   "Fling.png",
+   "InsanityPotion.png"
+  ]
  },
  {
   "id": "Sion",
@@ -2497,7 +3241,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SionQ.png",
+   "SionW.png",
+   "SionE.png",
+   "SionR.png"
+  ]
  },
  {
   "id": "Sivir",
@@ -2517,7 +3267,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SivirQ.png",
+   "SivirW.png",
+   "SivirE.png",
+   "SivirR.png"
+  ]
  },
  {
   "id": "Skarner",
@@ -2537,7 +3293,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SkarnerQ.png",
+   "SkarnerW.png",
+   "SkarnerE.png",
+   "SkarnerR.png"
+  ]
  },
  {
   "id": "Smolder",
@@ -2557,7 +3319,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SmolderQ.png",
+   "SmolderW.png",
+   "SmolderE.png",
+   "SmolderR.png"
+  ]
  },
  {
   "id": "Sona",
@@ -2577,7 +3345,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SonaQ.png",
+   "SonaW.png",
+   "SonaE.png",
+   "SonaR.png"
+  ]
  },
  {
   "id": "Soraka",
@@ -2597,7 +3371,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SorakaQ.png",
+   "SorakaW.png",
+   "SorakaE.png",
+   "SorakaR.png"
+  ]
  },
  {
   "id": "Swain",
@@ -2617,7 +3397,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SwainQ.png",
+   "SwainW.png",
+   "SwainE.png",
+   "SwainR.png"
+  ]
  },
  {
   "id": "Sylas",
@@ -2637,7 +3423,13 @@
    "mr": 2.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SylasQ.png",
+   "SylasW.png",
+   "SylasE.png",
+   "SylasR.png"
+  ]
  },
  {
   "id": "Syndra",
@@ -2657,7 +3449,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "SyndraQ.png",
+   "SyndraW.png",
+   "SyndraE.png",
+   "SyndraR.png"
+  ]
  },
  {
   "id": "TahmKench",
@@ -2677,7 +3475,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TahmKenchQ.png",
+   "TahmKenchW.png",
+   "TahmKenchE.png",
+   "TahmKenchRWrapper.png"
+  ]
  },
  {
   "id": "Taliyah",
@@ -2697,7 +3501,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TaliyahQ.png",
+   "TaliyahWVC.png",
+   "TaliyahE.png",
+   "TaliyahR.png"
+  ]
  },
  {
   "id": "Talon",
@@ -2717,7 +3527,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TalonQ.png",
+   "TalonW.png",
+   "TalonE.png",
+   "TalonR.png"
+  ]
  },
  {
   "id": "Taric",
@@ -2737,7 +3553,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TaricQ.png",
+   "TaricW.png",
+   "TaricE.png",
+   "TaricR.png"
+  ]
  },
  {
   "id": "Teemo",
@@ -2757,7 +3579,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TeemoQ.png",
+   "TeemoW.png",
+   "TeemoE.png",
+   "TeemoR.png"
+  ]
  },
  {
   "id": "Thresh",
@@ -2777,7 +3605,13 @@
    "mr": 1.55,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ThreshQ.png",
+   "ThreshW.png",
+   "ThreshE.png",
+   "ThreshRPenta.png"
+  ]
  },
  {
   "id": "Tristana",
@@ -2797,7 +3631,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TristanaQ.png",
+   "TristanaW.png",
+   "TristanaE.png",
+   "TristanaR.png"
+  ]
  },
  {
   "id": "Trundle",
@@ -2817,7 +3657,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TrundleTrollSmash.png",
+   "trundledesecrate.png",
+   "TrundleCircle.png",
+   "TrundlePain.png"
+  ]
  },
  {
   "id": "Tryndamere",
@@ -2837,7 +3683,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TryndamereQ.png",
+   "TryndamereW.png",
+   "TryndamereE.png",
+   "UndyingRage.png"
+  ]
  },
  {
   "id": "TwistedFate",
@@ -2857,7 +3709,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "WildCards.png",
+   "PickACard.png",
+   "CardmasterStack.png",
+   "Destiny.png"
+  ]
  },
  {
   "id": "Twitch",
@@ -2877,7 +3735,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "TwitchHideInShadows.png",
+   "TwitchVenomCask.png",
+   "TwitchExpunge.png",
+   "TwitchFullAutomatic.png"
+  ]
  },
  {
   "id": "Udyr",
@@ -2897,7 +3761,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "UdyrQ.png",
+   "UdyrW.png",
+   "UdyrE.png",
+   "UdyrR.png"
+  ]
  },
  {
   "id": "Urgot",
@@ -2917,7 +3787,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "UrgotQ.png",
+   "UrgotW.png",
+   "UrgotE.png",
+   "UrgotR.png"
+  ]
  },
  {
   "id": "Varus",
@@ -2937,7 +3813,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VarusQ.png",
+   "VarusW.png",
+   "VarusE.png",
+   "VarusR.png"
+  ]
  },
  {
   "id": "Vayne",
@@ -2957,7 +3839,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VayneTumble.png",
+   "VayneSilveredBolts.png",
+   "VayneCondemn.png",
+   "VayneInquisition.png"
+  ]
  },
  {
   "id": "Veigar",
@@ -2977,7 +3865,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VeigarBalefulStrike.png",
+   "VeigarDarkMatter.png",
+   "VeigarEventHorizon.png",
+   "VeigarR.png"
+  ]
  },
  {
   "id": "Velkoz",
@@ -2997,7 +3891,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VelkozQ.png",
+   "VelkozW.png",
+   "VelkozE.png",
+   "VelkozR.png"
+  ]
  },
  {
   "id": "Vex",
@@ -3017,7 +3917,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VexQ.png",
+   "VexW.png",
+   "VexE.png",
+   "VexR.png"
+  ]
  },
  {
   "id": "Vi",
@@ -3037,7 +3943,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ViQ.png",
+   "ViW.png",
+   "ViE.png",
+   "ViR.png"
+  ]
  },
  {
   "id": "Viego",
@@ -3057,7 +3969,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ViegoQ.png",
+   "ViegoW.png",
+   "ViegoE.png",
+   "ViegoR.png"
+  ]
  },
  {
   "id": "Viktor",
@@ -3077,7 +3995,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ViktorQ.png",
+   "ViktorW.png",
+   "ViktorE.png",
+   "ViktorR.png"
+  ]
  },
  {
   "id": "Vladimir",
@@ -3097,7 +4021,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VladimirQ.png",
+   "VladimirSanguinePool.png",
+   "VladimirE.png",
+   "VladimirHemoplague.png"
+  ]
  },
  {
   "id": "Volibear",
@@ -3117,7 +4047,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "VolibearQ.png",
+   "VolibearW.png",
+   "VolibearE.png",
+   "VolibearR.png"
+  ]
  },
  {
   "id": "Warwick",
@@ -3137,7 +4073,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "WarwickQ.png",
+   "WarwickW.png",
+   "WarwickE.png",
+   "WarwickR.png"
+  ]
  },
  {
   "id": "Xayah",
@@ -3157,7 +4099,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "XayahQ.png",
+   "XayahW.png",
+   "XayahE.png",
+   "XayahR.png"
+  ]
  },
  {
   "id": "Xerath",
@@ -3177,7 +4125,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "XerathArcanopulseChargeUp.png",
+   "XerathArcaneBarrage2.png",
+   "XerathMageSpear.png",
+   "XerathLocusOfPower2.png"
+  ]
  },
  {
   "id": "XinZhao",
@@ -3197,7 +4151,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "XinZhaoQ.png",
+   "XinZhaoW.png",
+   "XinZhaoE.png",
+   "XinZhaoR.png"
+  ]
  },
  {
   "id": "Yasuo",
@@ -3217,7 +4177,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "YasuoQ1Wrapper.png",
+   "YasuoW.png",
+   "YasuoE.png",
+   "YasuoR.png"
+  ]
  },
  {
   "id": "Yone",
@@ -3237,7 +4203,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "YoneQ.png",
+   "YoneW.png",
+   "YoneE.png",
+   "YoneR.png"
+  ]
  },
  {
   "id": "Yorick",
@@ -3257,7 +4229,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "YorickQ.png",
+   "YorickW.png",
+   "YorickE.png",
+   "YorickR.png"
+  ]
  },
  {
   "id": "Yunara",
@@ -3277,7 +4255,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "YunaraQ.png",
+   "YunaraW.png",
+   "YunaraE.png",
+   "YunaraR.png"
+  ]
  },
  {
   "id": "Yuumi",
@@ -3297,7 +4281,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "YuumiQ.png",
+   "YuumiW.png",
+   "YuumiE.png",
+   "YuumiR.png"
+  ]
  },
  {
   "id": "Zaahen",
@@ -3317,7 +4307,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZaahenQ.png",
+   "ZaahenW.png",
+   "ZaahenE.png",
+   "ZaahenR.png"
+  ]
  },
  {
   "id": "Zac",
@@ -3337,7 +4333,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZacQ.png",
+   "ZacW.png",
+   "ZacE.png",
+   "ZacR.png"
+  ]
  },
  {
   "id": "Zed",
@@ -3357,7 +4359,13 @@
    "mr": 2.05,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZedQ.png",
+   "ZedW.png",
+   "ZedE.png",
+   "ZedR.png"
+  ]
  },
  {
   "id": "Zeri",
@@ -3377,7 +4385,13 @@
    "mr": 1.1,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZeriQ.png",
+   "ZeriW.png",
+   "ZeriE.png",
+   "ZeriR.png"
+  ]
  },
  {
   "id": "Ziggs",
@@ -3397,7 +4411,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZiggsQ.png",
+   "ZiggsW.png",
+   "ZiggsE.png",
+   "ZiggsR.png"
+  ]
  },
  {
   "id": "Zilean",
@@ -3417,7 +4437,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZileanQ.png",
+   "ZileanW.png",
+   "TimeWarp.png",
+   "ChronoShift.png"
+  ]
  },
  {
   "id": "Zoe",
@@ -3437,7 +4463,13 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZoeQ.png",
+   "ZoeW.png",
+   "ZoeE.png",
+   "ZoeR.png"
+  ]
  },
  {
   "id": "Zyra",
@@ -3457,6 +4489,12 @@
    "mr": 1.3,
    "ad": 0,
    "ap": 0
-  }
+  },
+  "abilityIcons": [
+   "ZyraQ.png",
+   "ZyraW.png",
+   "ZyraE.png",
+   "ZyraR.png"
+  ]
  }
 ]

@@ -6,6 +6,7 @@ import { bootstrap, mount } from '../src/ui/main';
 const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
 const champ = (id: string, hp: number) => ({
   id, name: id, base: { ...zero, hp }, growth: zero,
+  abilityIcons: [`${id}Q.png`, `${id}W.png`, `${id}E.png`, `${id}R.png`],
 });
 const trueQ = (dmg: number) => ({
   key: 'Q' as const, name: 'Zap', damageType: 'true' as const, baseByRank: [dmg, dmg, dmg, dmg, dmg],
@@ -161,6 +162,28 @@ describe('level and rank validation', () => {
     expect(warning('you').textContent).toMatch(/R.*6/);
     set(field('you', 'level'), '6');
     expect(warning('you').hidden).toBe(true);
+  });
+});
+
+describe('ability icons', () => {
+  const abilityIcon = (side: string, key: string) =>
+    q(`.side[data-side=${side}] img[data-role=ability-icon-${key}]`) as HTMLImageElement;
+  test('each rank selector shows the champion ability icon and follows the selection', () => {
+    set(field('you', 'champion'), 'Beta');
+    expect(abilityIcon('you', 'Q').getAttribute('src')).toBe('/img/spell/BetaQ.png');
+    expect(abilityIcon('you', 'R').getAttribute('src')).toBe('/img/spell/BetaR.png');
+    set(field('you', 'champion'), 'Alpha');
+    expect(abilityIcon('you', 'W').getAttribute('src')).toBe('/img/spell/AlphaW.png');
+  });
+  test('the key letter stays next to the icon', () => {
+    expect(q('.side[data-side=you] .ranks').textContent).toMatch(/Q.*W.*E.*R/);
+  });
+  test('icons are hidden for a champion without icon data', () => {
+    document.body.innerHTML = '<div id="app"></div>';
+    root = document.getElementById('app')!;
+    const bare = { ...data, champions: { Solo: { id: 'Solo', name: 'Solo', base: { ...zero, hp: 1 }, growth: zero } }, abilities: { Solo: [] } };
+    mount(root, bare);
+    expect(abilityIcon('you', 'Q').hidden).toBe(true);
   });
 });
 

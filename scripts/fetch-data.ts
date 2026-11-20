@@ -12,6 +12,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { imageJobs, type ImageJob } from '../src/data/images';
 import {
+  abilityIconFiles,
   normaliseChampions,
   normaliseItems,
   normaliseRunes,
@@ -48,6 +49,17 @@ async function downloadImages(jobs: ImageJob[], concurrency = 8): Promise<void> 
   await Promise.all(Array.from({ length: concurrency }, worker));
 }
 
+/** Runs fn over items with a small concurrency limit. */
+async function mapPool<T, R>(items: T[], fn: (item: T) => Promise<R>, concurrency = 8): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let next = 0;
+  const worker = async () => {
+    for (let i = next++; i < items.length; i = next++) results[i] = await fn(items[i]);
+  };
+  await Promise.all(Array.from({ length: concurrency }, worker));
+  return results;
+}
+
 async function main() {
   const versions = (await getJson(`${DD}/api/versions.json`)) as string[];
   const patch = versions[0];
@@ -60,7 +72,12 @@ async function main() {
   ]);
 
   const meraki = await fetchMeraki();
-  const champList = normaliseChampions(champions);
+  const baseChamps = normaliseChampions(champions);
+  // Spell icon file names are only in the per-champion files, so fetch one per champion.
+  const iconFiles = await mapPool(baseChamps, async (c) =>
+    abilityIconFiles(await getJson(`${base}/champion/${c.id}.json`), c.id),
+  );
+  const champList = baseChamps.map((c, i) => ({ ...c, abilityIcons: iconFiles[i] }));
   const abilities = Object.fromEntries(
     champList.map((c) => [c.id, meraki.champions[c.id] ? normaliseAbilities(meraki.champions[c.id]) : missingAbilities()]),
   );
@@ -90,7 +107,7 @@ async function main() {
   const selectableItemIds = Object.entries(itemData)
     .filter(([, item]) => Object.keys(item.stats).length > 0)
     .map(([id]) => id);
-  const jobs = imageJobs(patch, champList.map((c) => c.id), selectableItemIds);
+  const jobs = imageJobs(patch, champList.map((c) => c.id), selectableItemIds, iconFiles.flat());
   await downloadImages(jobs);
   console.log(`Wrote data and ${jobs.length} images for patch ${patch}`);
 }
