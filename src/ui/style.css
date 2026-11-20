@@ -17,3 +17,6 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .portrait img { height: 96px; width: 96px; border-radius: 8px; }
 .item-slot { display: inline-flex; align-items: center; gap: 0.25rem; }
 .item-icon { width: 28px; height: 28px; border-radius: 4px; }
+.level-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.level-row label { margin: 0.4rem 0; }
+.warning { color: #ff5252; font-weight: 600; margin: 0.3rem 0; }

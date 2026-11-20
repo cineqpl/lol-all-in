@@ -18,8 +18,12 @@ const oddW = {
 
 const data: GameData = {
   meta: { patch: '16.1.1', abilitiesPatch: '15.1' },
-  champions: { Alpha: champ('Alpha', 1000), Beta: champ('Beta', 500) },
-  abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)] },
+  champions: {
+    Alpha: champ('Alpha', 1000),
+    Beta: champ('Beta', 500),
+    Gamma: { id: 'Gamma', name: 'Gamma', base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
+  },
+  abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)], Gamma: [trueQ(1)] },
   items: {
     '1': { name: 'Sword', stats: { ad: 10 }, hasEffects: false },
     '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
@@ -112,6 +116,51 @@ describe('icons', () => {
     expect(icon('you', 'item-icon-0').hidden).toBe(false);
     set(field('you', 'item-0'), '');
     expect(icon('you', 'item-icon-0').hidden).toBe(true);
+  });
+});
+
+describe('level and rank validation', () => {
+  const warning = (side: string) => q(`.side[data-side=${side}] [data-role=rank-warning]`);
+  const quest = (side: string) => field(side, 'role-quest');
+  const tick = (side: string, on: boolean) => {
+    quest(side).checked = on;
+    quest(side).dispatchEvent(new Event('change', { bubbles: true }));
+  };
+
+  test('level input caps at 18 and the top lane quest raises it to 20', () => {
+    expect(field('you', 'level').max).toBe('18');
+    tick('you', true);
+    expect(field('you', 'level').max).toBe('20');
+  });
+  test('unticking the quest while above 18 brings the level back to 18', () => {
+    tick('you', true);
+    set(field('you', 'level'), '20');
+    tick('you', false);
+    expect(field('you', 'level').value).toBe('18');
+  });
+  test('the quest checkbox is per panel', () => {
+    tick('you', true);
+    expect(field('enemy', 'level').max).toBe('18');
+  });
+  test('level 20 reaches the damage calculation with level-20 stats', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Gamma');
+    expect(q('[data-testid=your-damage]').textContent).toContain('10%'); // 100 / 1000 hp
+    tick('enemy', true);
+    set(field('enemy', 'level'), '20');
+    expect(q('[data-testid=your-damage]').textContent).toContain('3%'); // 100 / 2966.5 hp
+  });
+  test('a rank above half the level shows a red warning', () => {
+    set(field('you', 'rank-Q'), '3');
+    expect(warning('you').hidden).toBe(false);
+    expect(warning('you').textContent).toMatch(/Q/);
+    expect(warning('enemy').hidden).toBe(true);
+  });
+  test('R rank 1 below level 6 warns and clears at level 6', () => {
+    set(field('you', 'rank-R'), '1');
+    expect(warning('you').textContent).toMatch(/R.*6/);
+    set(field('you', 'level'), '6');
+    expect(warning('you').hidden).toBe(true);
   });
 });
 

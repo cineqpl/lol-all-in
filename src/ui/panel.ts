@@ -1,6 +1,7 @@
 import { lookupChampion, sumItemStats, type GameData } from '../data/load';
 import type { Side } from '../model/matchup';
 import type { AbilityKey } from '../model/types';
+import { validateRanks } from '../model/validation';
 import { championIconPath, itemIconPath } from '../data/images';
 import { h } from './dom';
 
@@ -9,6 +10,8 @@ export type Panel = { el: HTMLElement; getSide(): Side };
 const KEYS: AbilityKey[] = ['Q', 'W', 'E', 'R'];
 const MAX_RANK: Record<AbilityKey, number> = { Q: 5, W: 5, E: 5, R: 3 };
 const ITEM_SLOTS = 6;
+const BASE_MAX_LEVEL = 18;
+const QUEST_MAX_LEVEL = 20;
 
 function select(field: string, options: [string, string][], blank?: string): HTMLSelectElement {
   const sel = h('select', { 'data-field': field }) as HTMLSelectElement;
@@ -53,7 +56,9 @@ export function createPanel(
 ): Panel {
   const champions = Object.values(data.champions).sort((a, b) => a.name.localeCompare(b.name));
   const champion = select('champion', champions.map((c): [string, string] => [c.id, c.name]));
-  const level = numberInput('level', 1, 18, 1);
+  const level = numberInput('level', 1, BASE_MAX_LEVEL, 1);
+  const quest = h('input', { type: 'checkbox', 'data-field': 'role-quest' }) as HTMLInputElement;
+  const warning = h('p', { class: 'warning', 'data-role': 'rank-warning', hidden: '' });
   const ranks = Object.fromEntries(
     KEYS.map((k) => [k, numberInput(`rank-${k}`, 0, MAX_RANK[k], k === 'Q' ? 1 : 0)]),
   ) as Record<AbilityKey, HTMLInputElement>;
@@ -84,8 +89,14 @@ export function createPanel(
     { class: 'panel', 'data-side': side },
     h('h2', {}, title),
     h('label', {}, 'Champion ', champion),
-    h('label', {}, 'Level ', level),
+    h(
+      'div',
+      { class: 'level-row' },
+      h('label', {}, 'Level ', level),
+      h('label', { class: 'quest' }, quest, ' Top lane role quest (level cap 20)'),
+    ),
     h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, ranks[k]))),
+    warning,
     h(
       'div',
       { class: 'items' },
@@ -94,14 +105,27 @@ export function createPanel(
     h('label', {}, 'Rune ', runes),
     h('p', { class: 'note' }, 'Rune and item effects beyond flat stats are not modelled yet.'),
   );
+  const maxLevel = () => (quest.checked ? QUEST_MAX_LEVEL : BASE_MAX_LEVEL);
+  const currentLevel = () => Math.min(maxLevel(), Math.max(1, Number(level.value) || 1));
+  const currentRanks = () =>
+    Object.fromEntries(KEYS.map((k) => [k, Number(ranks[k].value) || 0])) as Record<AbilityKey, number>;
+  const refreshLevelAndWarnings = () => {
+    level.max = String(maxLevel());
+    if (Number(level.value) > maxLevel()) level.value = String(maxLevel());
+    const problems = validateRanks(currentLevel(), currentRanks());
+    warning.textContent = problems.join(' ');
+    warning.hidden = problems.length === 0;
+  };
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
     items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
   };
   section.addEventListener('change', () => {
+    refreshLevelAndWarnings();
     refreshIcons();
     onChange();
   });
+  refreshLevelAndWarnings();
   refreshIcons();
   const el = h(
     'div',
@@ -120,10 +144,8 @@ export function createPanel(
         abilities: data.abilities[champ.id] ?? [],
         build: {
           championId: champ.id,
-          level: Number(level.value) || 1,
-          ranks: Object.fromEntries(
-            KEYS.map((k) => [k, Number(ranks[k].value) || 0]),
-          ) as Record<AbilityKey, number>,
+          level: currentLevel(),
+          ranks: currentRanks(),
           itemIds,
           runeIds: runes.value ? [runes.value] : [],
         },

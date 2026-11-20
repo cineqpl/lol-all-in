@@ -27,8 +27,13 @@ describe('statsAtLevel', () => {
     expect(s.mr).toBeCloseTo(32 + 1.25 * 0.72, 6);
   });
 
-  test('levels outside 1-18 clamp', () => {
+  test('levels 19 and 20 keep scaling (top lane role quest)', () => {
+    expect(statsAtLevel(champ, 20).hp).toBeCloseTo(600 + 100 * 19.665, 6);
+    expect(statsAtLevel(champ, 19).ad).toBeCloseTo(60 + 3 * 18 * (0.7025 + 0.0175 * 18), 6);
+  });
+
+  test('levels outside 1-20 clamp', () => {
     expect(statsAtLevel(champ, 0)).toEqual(statsAtLevel(champ, 1));
-    expect(statsAtLevel(champ, 19)).toEqual(statsAtLevel(champ, 18));
+    expect(statsAtLevel(champ, 21)).toEqual(statsAtLevel(champ, 20));
   });
 });
