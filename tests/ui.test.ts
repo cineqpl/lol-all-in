@@ -235,6 +235,22 @@ describe('champion leveling exceptions', () => {
     plus('R').click();
     expect(warning().textContent).toMatch(/R.*6/);
   });
+  test('Karma, Nidalee, Elise and Jayce: the ultimate cannot go below rank 1', () => {
+    for (const id of ['Karma', 'Jayce']) {
+      set(field('you', 'champion'), id);
+      const minus = q('.side[data-side=you] [data-role=rank-minus-R]') as HTMLButtonElement;
+      expect(minus.disabled).toBe(true);
+      minus.click();
+      expect(rank('R')).toBe('1');
+    }
+    set(field('you', 'champion'), 'Karma');
+    plus('R').click();
+    const minus = q('.side[data-side=you] [data-role=rank-minus-R]') as HTMLButtonElement;
+    expect(minus.disabled).toBe(false);
+    minus.click();
+    expect(rank('R')).toBe('1');
+    expect(minus.disabled).toBe(true);
+  });
   test('Jayce: basics have six ranks and his ultimate is a single rank, already learned', () => {
     set(field('you', 'champion'), 'Jayce');
     expect([pips('Q'), pips('W'), pips('E'), pips('R')]).toEqual([6, 6, 6, 1]);

@@ -5,7 +5,7 @@ import type { AbilityKey } from '../model/types';
 import { count } from '../model/combo';
 import type { StatPart } from '../model/stats';
 import { summarizeStats } from '../model/summary';
-import { KEYS, levelingFor, startingRanks } from '../model/leveling';
+import { KEYS, levelingFor, minRank, startingRanks } from '../model/leveling';
 import { validateRanks } from '../model/validation';
 import { championIconPath, itemIconPath, spellIconPath, statIconPath, type StatIconKey } from '../data/images';
 import { h } from './dom';
@@ -161,7 +161,7 @@ export function createPanel(
     KEYS.map((k) => [k, h('span', { class: 'rank-pips', 'data-role': `rank-pips-${k}` })]),
   ) as Record<AbilityKey, HTMLElement>;
   const stepRank = (k: AbilityKey, delta: number) => {
-    const next = Math.min(rules().maxRank[k], Math.max(0, (Number(ranks[k].value) || 0) + delta));
+    const next = Math.min(rules().maxRank[k], Math.max(minRank(rules(), k), (Number(ranks[k].value) || 0) + delta));
     ranks[k].value = String(next);
     ranks[k].dispatchEvent(new Event('change', { bubbles: true }));
   };
@@ -189,7 +189,7 @@ export function createPanel(
         ...Array.from({ length: rules().maxRank[k] }, (_, i) => h('span', { class: i < rank ? 'pip on' : 'pip' })),
       );
       rankButtons[k].plus.disabled = rank >= rules().maxRank[k];
-      rankButtons[k].minus.disabled = rank <= 0;
+      rankButtons[k].minus.disabled = rank <= minRank(rules(), k);
     }
   };
 

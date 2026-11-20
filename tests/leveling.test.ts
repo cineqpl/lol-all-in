@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { clampRanks, levelingFor, startingRanks } from '../src/model/leveling';
+import { clampRanks, levelingFor, minRank, startingRanks } from '../src/model/leveling';
 import { validateRanks } from '../src/model/validation';
 
 const ranks = (Q = 0, W = 0, E = 0, R = 0) => ({ Q, W, E, R });
@@ -48,6 +48,17 @@ describe('validateRanks against a champion maximum', () => {
   });
 });
 
+describe('minRank', () => {
+  test.each(['Nidalee', 'Elise', 'Karma', 'Jayce'])('%s cannot go below ultimate rank 1', (id) => {
+    expect(minRank(levelingFor(id), 'R')).toBe(1);
+    expect(minRank(levelingFor(id), 'Q')).toBe(0);
+  });
+  test('everyone else can leave the ultimate unlearned', () => {
+    expect(minRank(levelingFor('Annie'), 'R')).toBe(0);
+    expect(minRank(levelingFor('Udyr'), 'R')).toBe(0);
+  });
+});
+
 describe('startingRanks and clampRanks', () => {
   test('Q starts at 1; the ultimate also starts at 1 when it is available at level 1', () => {
     expect(startingRanks(levelingFor('Annie'))).toEqual(ranks(1, 0, 0, 0));
@@ -57,5 +68,8 @@ describe('startingRanks and clampRanks', () => {
   });
   test('clampRanks cuts ranks to the champion maximum', () => {
     expect(clampRanks(ranks(6, 2, 0, 5), levelingFor('Annie'))).toEqual(ranks(5, 2, 0, 3));
+  });
+  test('clampRanks raises an ultimate that must stay learned', () => {
+    expect(clampRanks(ranks(1, 0, 0, 0), levelingFor('Karma'))).toEqual(ranks(1, 0, 0, 1));
   });
 });

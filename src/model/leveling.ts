@@ -34,9 +34,14 @@ export function levelingFor(championId: string): LevelingRules {
   return OVERRIDES[championId] ?? DEFAULT_LEVELING;
 }
 
+/** An ultimate that is available from level 1 is always learned, so it cannot be lowered to 0. */
+export function minRank(rules: LevelingRules, key: AbilityKey): number {
+  return key === 'R' && rules.ultimateLevels?.[0] === 1 ? 1 : 0;
+}
+
 /** Q at rank 1; the ultimate too when it is available at level 1. */
 export function startingRanks(rules: LevelingRules): Record<AbilityKey, number> {
-  return { Q: 1, W: 0, E: 0, R: rules.ultimateLevels?.[0] === 1 ? 1 : 0 };
+  return { Q: 1, W: 0, E: 0, R: minRank(rules, 'R') };
 }
 
 export function clampRanks(
@@ -44,6 +49,6 @@ export function clampRanks(
   rules: LevelingRules,
 ): Record<AbilityKey, number> {
   const out = { ...ranks };
-  for (const k of KEYS) out[k] = Math.min(out[k], rules.maxRank[k]);
+  for (const k of KEYS) out[k] = Math.max(minRank(rules, k), Math.min(out[k], rules.maxRank[k]));
   return out;
 }
