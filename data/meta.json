@@ -1,4 +1,7 @@
 {
  "patch": "16.23.1",
- "fetchedAt": "2026-11-20T12:05:19.065Z"
+ "fetchedAt": "2026-11-20T12:06:23.427Z",
+ "abilitiesSource": "meraki",
+ "abilitiesPatch": "25.15",
+ "abilitiesLastModified": "Fri, 01 Aug 2025 08:37:37 GMT"
 }

@@ -1,0 +1,8477 @@
+{
+ "Aatrox": [
+  {
+   "key": "Q",
+   "name": "The Darkin Blade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Infernal Chains",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Umbral Dash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "World Ender",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Ahri": [
+  {
+   "key": "Q",
+   "name": "Orb of Deception",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Fox-Fire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Charm",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.85
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Spirit Rush",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    90,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.35
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Akali": [
+  {
+   "key": "Q",
+   "name": "Five Point Strike",
+   "damageType": "magic",
+   "baseByRank": [
+    45,
+    70,
+    95,
+    120,
+    145
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 0.65
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Twilight Shroud",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Shuriken Flip",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Perfect Execution",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Akshan": [
+  {
+   "key": "Q",
+   "name": "Avengerang",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Going Rogue",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Heroic Swing",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Comeuppance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Alistar": [
+  {
+   "key": "Q",
+   "name": "Pulverize",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Headbutt",
+   "damageType": "magic",
+   "baseByRank": [
+    55,
+    110,
+    165,
+    220,
+    275
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Trample",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Unbreakable Will",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Ambessa": [
+  {
+   "key": "Q",
+   "name": "Cunning Sweep",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Repudiation",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Lacerate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Public Execution",
+   "damageType": "physical",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Amumu": [
+  {
+   "key": "Q",
+   "name": "Bandage Toss",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    95,
+    120,
+    145,
+    170
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.85
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Despair",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Tantrum",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Curse of the Sad Mummy",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Anivia": [
+  {
+   "key": "Q",
+   "name": "Flash Frost",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Crystallize",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Frostbite",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Glacial Storm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Annie": [
+  {
+   "key": "Q",
+   "name": "Disintegrate",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Incinerate",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Molten Shield",
+   "damageType": "magic",
+   "baseByRank": [
+    25,
+    35,
+    45,
+    55,
+    65
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Summon: Tibbers",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Aphelios": [
+  {
+   "key": "Q",
+   "name": "Weapons of the Faithful",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Phase",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Weapon Queue System",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Moonlight Vigil",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Ashe": [
+  {
+   "key": "Q",
+   "name": "Ranger's Focus",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Volley",
+   "damageType": "physical",
+   "baseByRank": [
+    60,
+    95,
+    130,
+    165,
+    200
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Hawkshot",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Enchanted Crystal Arrow",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    400,
+    600
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "AurelionSol": [
+  {
+   "key": "Q",
+   "name": "Breath of Light",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Astral Flight",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Singularity",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Falling Star",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Aurora": [
+  {
+   "key": "Q",
+   "name": "Twofold Hex",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Across the Veil",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "The Weirding",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    110,
+    150,
+    190,
+    230
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Between Worlds",
+   "damageType": "magic",
+   "baseByRank": [
+    175,
+    275,
+    375
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Azir": [
+  {
+   "key": "Q",
+   "name": "Conquering Sands",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    80,
+    100,
+    120,
+    140
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.35
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Arise!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: "
+  },
+  {
+   "key": "E",
+   "name": "Shifting Sands",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Emperor's Divide",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    400,
+    600
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Bard": [
+  {
+   "key": "Q",
+   "name": "Cosmic Binding",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Caretaker's Shrine",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Magical Journey",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Tempered Fate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Belveth": [
+  {
+   "key": "Q",
+   "name": "Void Surge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Above and Below",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    110,
+    150,
+    190,
+    230
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    },
+    {
+     "stat": "ap",
+     "ratio": 1.25
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Royal Maelstrom",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Endless Banquet",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Blitzcrank": [
+  {
+   "key": "Q",
+   "name": "Rocket Grab",
+   "damageType": "magic",
+   "baseByRank": [
+    110,
+    160,
+    210,
+    260,
+    310
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Overdrive",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Power Fist",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Static Field",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Brand": [
+  {
+   "key": "Q",
+   "name": "Sear",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    100,
+    130,
+    160,
+    190
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Pillar of Flame",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Conflagration",
+   "damageType": "magic",
+   "baseByRank": [
+    55,
+    80,
+    105,
+    130,
+    155
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Pyroclasm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Braum": [
+  {
+   "key": "Q",
+   "name": "Winter's Bite",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of Braum's maximum health"
+  },
+  {
+   "key": "W",
+   "name": "Stand Behind Me",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Unbreakable",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Glacial Fissure",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    300,
+    450
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Briar": [
+  {
+   "key": "Q",
+   "name": "Head Rush",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    90,
+    120,
+    150,
+    180
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.8
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Blood Frenzy",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no flat base damage"
+  },
+  {
+   "key": "E",
+   "name": "Chilling Scream",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Certain Death",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    },
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Caitlyn": [
+  {
+   "key": "Q",
+   "name": "Piltover Peacemaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Yordle Snap Trap",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "90 Caliber Net",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    130,
+    180,
+    230,
+    280
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Ace in the Hole",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Camille": [
+  {
+   "key": "Q",
+   "name": "Precision Protocol",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Tactical Sweep",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Hookshot",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "The Hextech Ultimatum",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Cassiopeia": [
+  {
+   "key": "Q",
+   "name": "Noxious Blast",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Miasma",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Twin Fang",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Petrifying Gaze",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Chogath": [
+  {
+   "key": "Q",
+   "name": "Rupture",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Feral Scream",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Vorpal Spikes",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Feast",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Corki": [
+  {
+   "key": "Q",
+   "name": "Phosphorus Bomb",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.3
+    },
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Valkyrie",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Gatling Gun",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Missile Barrage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Darius": [
+  {
+   "key": "Q",
+   "name": "Decimate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Crippling Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Apprehend",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Noxian Guillotine",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Diana": [
+  {
+   "key": "Q",
+   "name": "Crescent Strike",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Pale Cascade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Lunar Rush",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    70,
+    90,
+    110,
+    130
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Moonfall",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Draven": [
+  {
+   "key": "Q",
+   "name": "Spinning Axe",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Blood Rush",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Stand Aside",
+   "damageType": "physical",
+   "baseByRank": [
+    75,
+    110,
+    145,
+    180,
+    215
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Whirling Death",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "DrMundo": [
+  {
+   "key": "Q",
+   "name": "Infected Bonesaw",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Heart Zapper",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Blunt Force Trauma",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Maximum Dosage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Ekko": [
+  {
+   "key": "Q",
+   "name": "Timewinder",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Parallel Convergence",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Phase Dive",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Chronobreak",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    350,
+    500
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.75
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Elise": [
+  {
+   "key": "Q",
+   "name": "Neurotoxin",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Volatile Spiderling",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Cocoon",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Spider Form / Human Form",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Evelynn": [
+  {
+   "key": "Q",
+   "name": "Hate Spike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Allure",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Whiplash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % (+ 1.5% per 100 AP) of target's maximum health"
+  },
+  {
+   "key": "R",
+   "name": "Last Caress",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Ezreal": [
+  {
+   "key": "Q",
+   "name": "Mystic Shot",
+   "damageType": "physical",
+   "baseByRank": [
+    20,
+    45,
+    70,
+    95,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.3
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.15
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Essence Flux",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Arcane Shift",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    130,
+    180,
+    230,
+    280
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Trueshot Barrage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Fiddlesticks": [
+  {
+   "key": "Q",
+   "name": "Terrify",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Bountiful Harvest",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Reap",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Crowstorm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Fiora": [
+  {
+   "key": "Q",
+   "name": "Lunge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% bonus AD ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Riposte",
+   "damageType": "magic",
+   "baseByRank": [
+    110,
+    150,
+    190,
+    230,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Bladework",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Grand Challenge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Fizz": [
+  {
+   "key": "Q",
+   "name": "Urchin Strike",
+   "damageType": "magic",
+   "baseByRank": [
+    10,
+    25,
+    40,
+    55,
+    70
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.55
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Seastone Trident",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Playful",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    130,
+    180,
+    230,
+    280
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.95
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Chum the Waters",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Galio": [
+  {
+   "key": "Q",
+   "name": "Winds of War",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Shield of Durand",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Justice Punch",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Hero's Entrance",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Gangplank": [
+  {
+   "key": "Q",
+   "name": "Parrrley",
+   "damageType": "physical",
+   "baseByRank": [
+    10,
+    40,
+    70,
+    100,
+    130
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Remove Scurvy",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Powder Keg",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Cannon Barrage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Garen": [
+  {
+   "key": "Q",
+   "name": "Decisive Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Courage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Judgment",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Demacian Justice",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's missing health"
+  }
+ ],
+ "Gnar": [
+  {
+   "key": "Q",
+   "name": "Boomerang Throw",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Hyper",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Hop",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % maximum health"
+  },
+  {
+   "key": "R",
+   "name": "GNAR!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Gragas": [
+  {
+   "key": "Q",
+   "name": "Barrel Roll",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Drunken Rage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Body Slam",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    125,
+    170,
+    215,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Explosive Cask",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Graves": [
+  {
+   "key": "Q",
+   "name": "End of the Line",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Smoke Screen",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    110,
+    160,
+    210,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Quickdraw",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Collateral Damage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Gwen": [
+  {
+   "key": "Q",
+   "name": "Snip Snip!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Hallowed Mist",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Skip 'n Slash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Needlework",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Hecarim": [
+  {
+   "key": "Q",
+   "name": "Rampage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Spirit of Dread",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Devastating Charge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Onslaught of Shadows",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Heimerdinger": [
+  {
+   "key": "Q",
+   "name": "H-28G Evolution Turret",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Hextech Micro-Rockets",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "CH-2 Electron Storm Grenade",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "UPGRADE!!!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Hwei": [
+  {
+   "key": "Q",
+   "name": "Subject: Disaster",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Subject: Serenity",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Subject: Torment",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Spiraling Despair",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Illaoi": [
+  {
+   "key": "Q",
+   "name": "Tentacle Smash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Harsh Lesson",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Test of Spirit",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Leap of Faith",
+   "damageType": "physical",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Irelia": [
+  {
+   "key": "Q",
+   "name": "Bladesurge",
+   "damageType": "physical",
+   "baseByRank": [
+    5,
+    25,
+    45,
+    65,
+    85
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Defiant Dance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Flawless Duet",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    110,
+    150,
+    190,
+    230
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Vanguard's Edge",
+   "damageType": "magic",
+   "baseByRank": [
+    125,
+    200,
+    275
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Ivern": [
+  {
+   "key": "Q",
+   "name": "Rootcaller",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    125,
+    170,
+    215,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Brushmaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Triggerseed",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    90,
+    110,
+    130,
+    150
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Daisy!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Janna": [
+  {
+   "key": "Q",
+   "name": "Howling Gale",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Zephyr",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus movement speed"
+  },
+  {
+   "key": "E",
+   "name": "Eye of the Storm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Monsoon",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "JarvanIV": [
+  {
+   "key": "Q",
+   "name": "Dragon Strike",
+   "damageType": "physical",
+   "baseByRank": [
+    90,
+    130,
+    170,
+    210,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.45
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Golden Aegis",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Demacian Standard",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Cataclysm",
+   "damageType": "physical",
+   "baseByRank": [
+    200,
+    325,
+    450
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.8
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Jax": [
+  {
+   "key": "Q",
+   "name": "Leap Strike",
+   "damageType": "physical",
+   "baseByRank": [
+    65,
+    105,
+    145,
+    185,
+    225
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Empower",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Counter Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Grandmaster-at-Arms",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Jayce": [
+  {
+   "key": "Q",
+   "name": "To the Skies!",
+   "damageType": "physical",
+   "baseByRank": [
+    60,
+    105,
+    150,
+    195,
+    240,
+    285
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.35
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Lightning Field",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Thundering Blow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Transform Mercury Cannon",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Jhin": [
+  {
+   "key": "Q",
+   "name": "Dancing Grenade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Deadly Flourish",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Captive Audience",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Curtain Call",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Jinx": [
+  {
+   "key": "Q",
+   "name": "Switcheroo!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Zap!",
+   "damageType": "physical",
+   "baseByRank": [
+    10,
+    60,
+    110,
+    160,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Flame Chompers!",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    120,
+    170,
+    220,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Super Mega Death Rocket!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Kaisa": [
+  {
+   "key": "Q",
+   "name": "Icathian Rain",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Void Seeker",
+   "damageType": "magic",
+   "baseByRank": [
+    30,
+    55,
+    80,
+    105,
+    130
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.3
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.45
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Supercharge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Killer Instinct",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Kalista": [
+  {
+   "key": "Q",
+   "name": "Pierce",
+   "damageType": "physical",
+   "baseByRank": [
+    10,
+    75,
+    140,
+    205,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.05
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Sentinel",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Rend",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Fate's Call",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Karma": [
+  {
+   "key": "Q",
+   "name": "Inner Flame",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    110,
+    160,
+    210,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Focused Resolve",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Inspire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Mantra",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Karthus": [
+  {
+   "key": "Q",
+   "name": "Lay Waste",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Wall of Pain",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Defile",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Requiem",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    350,
+    500
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Kassadin": [
+  {
+   "key": "Q",
+   "name": "Null Sphere",
+   "damageType": "magic",
+   "baseByRank": [
+    65,
+    95,
+    125,
+    155,
+    185
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Nether Blade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Force Pulse",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    100,
+    130,
+    160,
+    190
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Riftwalk",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Katarina": [
+  {
+   "key": "Q",
+   "name": "Bouncing Blade",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    115,
+    150,
+    185,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Preparation",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Shunpo",
+   "damageType": "magic",
+   "baseByRank": [
+    20,
+    30,
+    40,
+    50,
+    60
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 0.4
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.25
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Death Lotus",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Kayle": [
+  {
+   "key": "Q",
+   "name": "Radiant Blast",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.6
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Celestial Blessing",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Starfire Spellblade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Divine Judgment",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Kayn": [
+  {
+   "key": "Q",
+   "name": "Reaping Slash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Blade's Reach",
+   "damageType": "physical",
+   "baseByRank": [
+    85,
+    130,
+    175,
+    220,
+    265
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Shadow Step",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Umbral Trespass",
+   "damageType": "physical",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Kennen": [
+  {
+   "key": "Q",
+   "name": "Thundering Shuriken",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    125,
+    175,
+    225,
+    275
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Electrical Surge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Lightning Rush",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Slicing Maelstrom",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Khazix": [
+  {
+   "key": "Q",
+   "name": "Taste Their Fear",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Void Spike",
+   "damageType": "physical",
+   "baseByRank": [
+    85,
+    115,
+    145,
+    175,
+    205
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Leap",
+   "damageType": "physical",
+   "baseByRank": [
+    65,
+    100,
+    135,
+    170,
+    205
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Void Assault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Kindred": [
+  {
+   "key": "Q",
+   "name": "Dance of Arrows",
+   "damageType": "physical",
+   "baseByRank": [
+    40,
+    65,
+    90,
+    115,
+    140
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Wolf's Frenzy",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Mounting Dread",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Lamb's Respite",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Kled": [
+  {
+   "key": "Q",
+   "name": "Bear Trap on a Rope",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Violent Tendencies",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Jousting",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Chaaaaaaaarge!!!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "KogMaw": [
+  {
+   "key": "Q",
+   "name": "Caustic Spittle",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    125,
+    170,
+    215,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Bio-Arcane Barrage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Void Ooze",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    110,
+    150,
+    190,
+    230
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Living Artillery",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "KSante": [
+  {
+   "key": "Q",
+   "name": "Ntofo Strikes",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus armor"
+  },
+  {
+   "key": "W",
+   "name": "Path Maker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Footwork",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "All Out",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Leblanc": [
+  {
+   "key": "Q",
+   "name": "Sigil of Malice",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Distortion",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    115,
+    155,
+    195,
+    235
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Ethereal Chains",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Mimic",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "LeeSin": [
+  {
+   "key": "Q",
+   "name": "Sonic Wave",
+   "damageType": "physical",
+   "baseByRank": [
+    55,
+    80,
+    105,
+    130,
+    155
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.15
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Safeguard",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Tempest",
+   "damageType": "magic",
+   "baseByRank": [
+    35,
+    60,
+    85,
+    110,
+    135
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Dragon's Rage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Leona": [
+  {
+   "key": "Q",
+   "name": "Shield of Daybreak",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Eclipse",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Zenith Blade",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    90,
+    130,
+    170,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Solar Flare",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    225,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Lillia": [
+  {
+   "key": "Q",
+   "name": "Blooming Blows",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Watch Out! Eep!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Swirlseed",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    85,
+    110,
+    135,
+    160
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Lilting Lullaby",
+   "damageType": "magic",
+   "baseByRank": [
+    100,
+    150,
+    200
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Lissandra": [
+  {
+   "key": "Q",
+   "name": "Ice Shard",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    115,
+    150,
+    185,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Ring of Frost",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Glacial Path",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Frozen Tomb",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Locke": [
+  {
+   "key": "Q",
+   "name": "Q",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "W",
+   "name": "W",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "E",
+   "name": "E",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "R",
+   "name": "R",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  }
+ ],
+ "Lucian": [
+  {
+   "key": "Q",
+   "name": "Piercing Light",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% bonus AD ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Ardent Blaze",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    110,
+    145,
+    180,
+    215
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Relentless Pursuit",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "The Culling",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Lulu": [
+  {
+   "key": "Q",
+   "name": "Glitterlance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Whimsy",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Help, Pix!",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Wild Growth",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Lux": [
+  {
+   "key": "Q",
+   "name": "Light Binding",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Prismatic Barrier",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Lucent Singularity",
+   "damageType": "magic",
+   "baseByRank": [
+    65,
+    115,
+    165,
+    215,
+    265
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Final Spark",
+   "damageType": "magic",
+   "baseByRank": [
+    300,
+    400,
+    500
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Malphite": [
+  {
+   "key": "Q",
+   "name": "Seismic Shard",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    120,
+    170,
+    220,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Thunderclap",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Ground Slam",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % armor"
+  },
+  {
+   "key": "R",
+   "name": "Unstoppable Force",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Malzahar": [
+  {
+   "key": "Q",
+   "name": "Call of the Void",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.55
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Void Swarm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Malefic Visions",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Nether Grasp",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Maokai": [
+  {
+   "key": "Q",
+   "name": "Bramble Smash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Twisted Advance",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    85,
+    110,
+    135,
+    160
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Sapling Toss",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Nature's Grasp",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    225,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "MasterYi": [
+  {
+   "key": "Q",
+   "name": "Alpha Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Meditate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Wuju Style",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Highlander",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Mel": [
+  {
+   "key": "Q",
+   "name": "Radiant Volley",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Rebuttal",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Solar Snare",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Golden Eclipse",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Milio": [
+  {
+   "key": "Q",
+   "name": "Ultra Mega Fire Kick",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    140,
+    200,
+    260,
+    320
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Cozy Campfire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Warm Hugs",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Breath of Life",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "MissFortune": [
+  {
+   "key": "Q",
+   "name": "Double Up",
+   "damageType": "physical",
+   "baseByRank": [
+    20,
+    45,
+    70,
+    95,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.35
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Strut",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Make It Rain",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Bullet Time",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "MonkeyKing": [
+  {
+   "key": "Q",
+   "name": "Crushing Blow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Warrior Trickster",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Nimbus Strike",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    110,
+    140,
+    170,
+    200
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Cyclone",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Mordekaiser": [
+  {
+   "key": "Q",
+   "name": "Obliterate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Indestructible",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Death's Grasp",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    75,
+    90,
+    105,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Realm of Death",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Morgana": [
+  {
+   "key": "Q",
+   "name": "Dark Binding",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    135,
+    190,
+    245,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Tormented Shadow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Black Shield",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Soul Shackles",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Naafiri": [
+  {
+   "key": "Q",
+   "name": "Darkin Daggers",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "The Call of the Pack",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Eviscerate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Hounds' Pursuit",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Nami": [
+  {
+   "key": "Q",
+   "name": "Aqua Prison",
+   "damageType": "magic",
+   "baseByRank": [
+    90,
+    145,
+    200,
+    255,
+    310
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Ebb and Flow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Tidecaller's Blessing",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Tidal Wave",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Nasus": [
+  {
+   "key": "Q",
+   "name": "Siphoning Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Wither",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Spirit Fire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Fury of the Sands",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Nautilus": [
+  {
+   "key": "Q",
+   "name": "Dredge Line",
+   "damageType": "magic",
+   "baseByRank": [
+    85,
+    130,
+    175,
+    220,
+    265
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Titan's Wrath",
+   "damageType": "magic",
+   "baseByRank": [
+    30,
+    40,
+    50,
+    60,
+    70
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Riptide",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Depth Charge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Neeko": [
+  {
+   "key": "Q",
+   "name": "Blooming Burst",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Shapesplitter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Tangle-Barbs",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Pop Blossom",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    350,
+    550
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Nidalee": [
+  {
+   "key": "Q",
+   "name": "Javelin Toss",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Bushwhack",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Primal Surge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Aspect of the Cougar",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Nilah": [
+  {
+   "key": "Q",
+   "name": "Formless Blade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Jubilant Veil",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Slipstream",
+   "damageType": "physical",
+   "baseByRank": [
+    60,
+    70,
+    80,
+    90,
+    100
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.2
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Apotheosis",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Nocturne": [
+  {
+   "key": "Q",
+   "name": "Duskbringer",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Shroud of Darkness",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Unspeakable Horror",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Paranoia",
+   "damageType": "physical",
+   "baseByRank": [
+    150,
+    275,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.2
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Nunu": [
+  {
+   "key": "Q",
+   "name": "Consume",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Biggest Snowball Ever!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Snowball Barrage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Absolute Zero",
+   "damageType": "magic",
+   "baseByRank": [
+    625,
+    950,
+    1275
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 3
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Olaf": [
+  {
+   "key": "Q",
+   "name": "Undertow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Tough It Out",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Reckless Swing",
+   "damageType": "true",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Ragnarok",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Orianna": [
+  {
+   "key": "Q",
+   "name": "Command: Attack",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Command: Dissonance",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    120,
+    170,
+    220,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Command: Protect",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    90,
+    120,
+    150,
+    180
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.3
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Command: Shockwave",
+   "damageType": "magic",
+   "baseByRank": [
+    250,
+    400,
+    550
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.95
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Ornn": [
+  {
+   "key": "Q",
+   "name": "Volcanic Rupture",
+   "damageType": "physical",
+   "baseByRank": [
+    20,
+    45,
+    70,
+    95,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Bellows Breath",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Searing Charge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus armor"
+  },
+  {
+   "key": "R",
+   "name": "Call of the Forge God",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Pantheon": [
+  {
+   "key": "Q",
+   "name": "Comet Spear",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Shield Vault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no flat base damage"
+  },
+  {
+   "key": "E",
+   "name": "Aegis Assault",
+   "damageType": "physical",
+   "baseByRank": [
+    55,
+    105,
+    155,
+    205,
+    255
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Grand Starfall",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Poppy": [
+  {
+   "key": "Q",
+   "name": "Hammer Shock",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Steadfast Presence",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    110,
+    150,
+    190,
+    230
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Heroic Charge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Keeper's Verdict",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Pyke": [
+  {
+   "key": "Q",
+   "name": "Bone Skewer",
+   "damageType": "physical",
+   "baseByRank": [
+    100,
+    150,
+    200,
+    250,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.75
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Ghostwater Dive",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Phantom Undertow",
+   "damageType": "physical",
+   "baseByRank": [
+    100,
+    150,
+    200,
+    250,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Death from Below",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Qiyana": [
+  {
+   "key": "Q",
+   "name": "Edge of Ixtal",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Terrashape",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Audacity",
+   "damageType": "physical",
+   "baseByRank": [
+    50,
+    90,
+    130,
+    170,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Supreme Display of Talent",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Quinn": [
+  {
+   "key": "Q",
+   "name": "Blinding Assault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% bonus AD ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Heightened Senses",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Vault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Behind Enemy Lines",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Rakan": [
+  {
+   "key": "Q",
+   "name": "Gleaming Quill",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Grand Entrance",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    120,
+    170,
+    220,
+    270
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Battle Dance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "The Quickness",
+   "damageType": "magic",
+   "baseByRank": [
+    100,
+    200,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Rammus": [
+  {
+   "key": "Q",
+   "name": "Powerball",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Defensive Ball Curl",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Frenzying Taunt",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Soaring Slam",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "RekSai": [
+  {
+   "key": "Q",
+   "name": "Queen's Wrath",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Burrow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Furious Bite",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Void Rush",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's maximum health"
+  }
+ ],
+ "Rell": [
+  {
+   "key": "Q",
+   "name": "Shattering Strike",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Ferromancy: Crash Down",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    90,
+    120,
+    150,
+    180
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Full Tilt",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Magnet Storm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Renata": [
+  {
+   "key": "Q",
+   "name": "Handshake",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    125,
+    170,
+    215,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Bailout",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Loyalty Program",
+   "damageType": "magic",
+   "baseByRank": [
+    65,
+    95,
+    125,
+    155,
+    185
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.55
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Hostile Takeover",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Renekton": [
+  {
+   "key": "Q",
+   "name": "Cull the Meek",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Ruthless Predator",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Slice",
+   "damageType": "physical",
+   "baseByRank": [
+    40,
+    70,
+    100,
+    130,
+    160
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Dominus",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Rengar": [
+  {
+   "key": "Q",
+   "name": "Savagery",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Battle Roar",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    80,
+    110,
+    140,
+    170
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Bola Strike",
+   "damageType": "physical",
+   "baseByRank": [
+    55,
+    100,
+    145,
+    190,
+    235
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Thrill of the Hunt",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Riven": [
+  {
+   "key": "Q",
+   "name": "Broken Wings",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Ki Burst",
+   "damageType": "physical",
+   "baseByRank": [
+    65,
+    95,
+    125,
+    155,
+    185
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Valor",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Blade of the Exile",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Rumble": [
+  {
+   "key": "Q",
+   "name": "Flamespitter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Scrap Shield",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Electro Harpoon",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "The Equalizer",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Ryze": [
+  {
+   "key": "Q",
+   "name": "Overload",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus mana"
+  },
+  {
+   "key": "W",
+   "name": "Rune Prison",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus mana"
+  },
+  {
+   "key": "E",
+   "name": "Spell Flux",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus mana"
+  },
+  {
+   "key": "R",
+   "name": "Realm Warp",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Samira": [
+  {
+   "key": "Q",
+   "name": "Flair",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% AD ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Blade Whirl",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Wild Rush",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    60,
+    70,
+    80,
+    90
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.2
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Inferno Trigger",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Sejuani": [
+  {
+   "key": "Q",
+   "name": "Arctic Assault",
+   "damageType": "magic",
+   "baseByRank": [
+    90,
+    140,
+    190,
+    240,
+    290
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Winter's Wrath",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Permafrost",
+   "damageType": "magic",
+   "baseByRank": [
+    55,
+    105,
+    155,
+    205,
+    255
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Glacial Prison",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Senna": [
+  {
+   "key": "Q",
+   "name": "Piercing Darkness",
+   "damageType": "physical",
+   "baseByRank": [
+    30,
+    60,
+    90,
+    120,
+    150
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Last Embrace",
+   "damageType": "physical",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Curse of the Black Mist",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Dawning Shadow",
+   "damageType": "physical",
+   "baseByRank": [
+    250,
+    400,
+    550
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.15
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Seraphine": [
+  {
+   "key": "Q",
+   "name": "High Note",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Surround Sound",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Beat Drop",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Encore",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    200,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.4
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Sett": [
+  {
+   "key": "Q",
+   "name": "Knuckle Down",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Haymaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Facebreaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "The Show Stopper",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Shaco": [
+  {
+   "key": "Q",
+   "name": "Deceive",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Jack in the Box",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Two-Shiv Poison",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Hallucinate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Shen": [
+  {
+   "key": "Q",
+   "name": "Twilight Assault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Spirit's Refuge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Shadow Dash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus health"
+  },
+  {
+   "key": "R",
+   "name": "Stand United",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Shyvana": [
+  {
+   "key": "Q",
+   "name": "Twin Bite",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Burnout",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Flame Breath",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Dragon's Descent",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Singed": [
+  {
+   "key": "Q",
+   "name": "Poison Trail",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Mega Adhesive",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Fling",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's maximum health"
+  },
+  {
+   "key": "R",
+   "name": "Insanity Potion",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Sion": [
+  {
+   "key": "Q",
+   "name": "Decimating Smash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Soul Furnace",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's maximum health"
+  },
+  {
+   "key": "E",
+   "name": "Roar of the Slayer",
+   "damageType": "magic",
+   "baseByRank": [
+    65,
+    100,
+    135,
+    170,
+    205
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.55
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Unstoppable Onslaught",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Sivir": [
+  {
+   "key": "Q",
+   "name": "Boomerang Blade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Ricochet",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Spell Shield",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "On the Hunt",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Skarner": [
+  {
+   "key": "Q",
+   "name": "Shattered Earth",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Seismic Bastion",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    70,
+    90,
+    110,
+    130
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Ixtal's Impact",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of his maximum health"
+  },
+  {
+   "key": "R",
+   "name": "Impale",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Smolder": [
+  {
+   "key": "Q",
+   "name": "Super Scorcher Breath",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Achooo!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Flap, Flap, Flap",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "MMOOOMMMM!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Sona": [
+  {
+   "key": "Q",
+   "name": "Hymn of Valor",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Aria of Perseverance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Song of Celerity",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Crescendo",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Soraka": [
+  {
+   "key": "Q",
+   "name": "Starcall",
+   "damageType": "magic",
+   "baseByRank": [
+    85,
+    120,
+    155,
+    190,
+    225
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.35
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Astral Infusion",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Equinox",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Wish",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Swain": [
+  {
+   "key": "Q",
+   "name": "Death's Hand",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Vision of Empire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Nevermove",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Demonic Ascension",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Sylas": [
+  {
+   "key": "Q",
+   "name": "Chain Lash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Kingslayer",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    110,
+    145,
+    180,
+    215
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Abscond",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Hijack",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Syndra": [
+  {
+   "key": "Q",
+   "name": "Dark Sphere",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    110,
+    145,
+    180,
+    215
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Force of Will",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Scatter the Weak",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    95,
+    130,
+    165,
+    200
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Unleashed Power",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "TahmKench": [
+  {
+   "key": "Q",
+   "name": "Tongue Lash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no flat base damage"
+  },
+  {
+   "key": "W",
+   "name": "Abyssal Dive",
+   "damageType": "magic",
+   "baseByRank": [
+    100,
+    135,
+    170,
+    205,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Thick Skin",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Devour",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Taliyah": [
+  {
+   "key": "Q",
+   "name": "Threaded Volley",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Seismic Shove",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Unraveled Earth",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Weaver's Wall",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Talon": [
+  {
+   "key": "Q",
+   "name": "Noxian Diplomacy",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Rake",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Assassin's Path",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Shadow Assault",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Taric": [
+  {
+   "key": "Q",
+   "name": "Starlight's Touch",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Bastion",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Dazzle",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % bonus armor"
+  },
+  {
+   "key": "R",
+   "name": "Cosmic Radiance",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Teemo": [
+  {
+   "key": "Q",
+   "name": "Blinding Dart",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    125,
+    170,
+    215,
+    260
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Move Quick",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Toxic Shot",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Noxious Trap",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Thresh": [
+  {
+   "key": "Q",
+   "name": "Death Sentence",
+   "damageType": "magic",
+   "baseByRank": [
+    100,
+    150,
+    200,
+    250,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Dark Passage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Flay",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "The Box",
+   "damageType": "magic",
+   "baseByRank": [
+    250,
+    400,
+    550
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Tristana": [
+  {
+   "key": "Q",
+   "name": "Rapid Fire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Rocket Jump",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Explosive Charge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Buster Shot",
+   "damageType": "magic",
+   "baseByRank": [
+    225,
+    275,
+    325
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.7
+    },
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Trundle": [
+  {
+   "key": "Q",
+   "name": "Chomp",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Frozen Domain",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Pillar of Ice",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Subjugate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Tryndamere": [
+  {
+   "key": "Q",
+   "name": "Bloodlust",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Mocking Shout",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Spinning Slash",
+   "damageType": "physical",
+   "baseByRank": [
+    75,
+    105,
+    135,
+    165,
+    195
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.3
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Undying Rage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "TwistedFate": [
+  {
+   "key": "Q",
+   "name": "Wild Cards",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    105,
+    150,
+    195,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.85
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Pick a Card",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Stacked Deck",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Destiny",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Twitch": [
+  {
+   "key": "Q",
+   "name": "Ambush",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "W",
+   "name": "Venom Cask",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Contaminate",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Spray and Pray",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Udyr": [
+  {
+   "key": "Q",
+   "name": "Wilding Claw",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Iron Mantle",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Blazing Stampede",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Wingborne Storm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Urgot": [
+  {
+   "key": "Q",
+   "name": "Corrosive Charge",
+   "damageType": "physical",
+   "baseByRank": [
+    25,
+    70,
+    115,
+    160,
+    205
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Purge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Disdain",
+   "damageType": "physical",
+   "baseByRank": [
+    90,
+    120,
+    150,
+    180,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Fear Beyond Death",
+   "damageType": "physical",
+   "baseByRank": [
+    100,
+    225,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Varus": [
+  {
+   "key": "Q",
+   "name": "Piercing Arrow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Blighted Quiver",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Hail of Arrows",
+   "damageType": "physical",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Chain of Corruption",
+   "damageType": "magic",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Vayne": [
+  {
+   "key": "Q",
+   "name": "Tumble",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Silver Bolts",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Condemn",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Final Hour",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Veigar": [
+  {
+   "key": "Q",
+   "name": "Baleful Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% AP ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Dark Matter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% AP ratio changes by rank"
+  },
+  {
+   "key": "E",
+   "name": "Event Horizon",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Primordial Burst",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Velkoz": [
+  {
+   "key": "Q",
+   "name": "Plasma Fission",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Void Rift",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Tectonic Disruption",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    100,
+    130,
+    160,
+    190
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.3
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Life Form Disintegration Ray",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Vex": [
+  {
+   "key": "Q",
+   "name": "Mistral Bolt",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    115,
+    160,
+    205,
+    250
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Personal Space",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    120,
+    160,
+    200,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.3
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Looming Darkness",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% AP ratio changes by rank"
+  },
+  {
+   "key": "R",
+   "name": "Shadow Surge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Vi": [
+  {
+   "key": "Q",
+   "name": "Vault Breaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Denting Blows",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Relentless Force",
+   "damageType": "physical",
+   "baseByRank": [
+    10,
+    30,
+    50,
+    70,
+    90
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.1
+    },
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Cease and Desist",
+   "damageType": "physical",
+   "baseByRank": [
+    150,
+    250,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Viego": [
+  {
+   "key": "Q",
+   "name": "Blade of the Ruined King",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Spectral Maw",
+   "damageType": "magic",
+   "baseByRank": [
+    80,
+    135,
+    190,
+    245,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Harrowed Path",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Heartbreaker",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no flat base damage"
+  }
+ ],
+ "Viktor": [
+  {
+   "key": "Q",
+   "name": "Siphon Power",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Gravity Field",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Hextech Ray",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Arcane Storm",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Vladimir": [
+  {
+   "key": "Q",
+   "name": "Transfusion",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Sanguine Pool",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Tides of Blood",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Hemoplague",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Volibear": [
+  {
+   "key": "Q",
+   "name": "Thundering Smash",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Frenzied Maul",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of his bonus health"
+  },
+  {
+   "key": "E",
+   "name": "Sky Splitter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's maximum health"
+  },
+  {
+   "key": "R",
+   "name": "Stormbringer",
+   "damageType": "physical",
+   "baseByRank": [
+    300,
+    500,
+    700
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 2.5
+    },
+    {
+     "stat": "ap",
+     "ratio": 1.25
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Warwick": [
+  {
+   "key": "Q",
+   "name": "Jaws of the Beast",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Blood Hunt",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Primal Howl",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Infinite Duress",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Xayah": [
+  {
+   "key": "Q",
+   "name": "Double Daggers",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Deadly Plumage",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Bladecaller",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Featherstorm",
+   "damageType": "physical",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Xerath": [
+  {
+   "key": "Q",
+   "name": "Arcanopulse",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    115,
+    155,
+    195,
+    235
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Eye of Destruction",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Shocking Orb",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    100,
+    130,
+    160,
+    190
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.45
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Rite of the Arcane",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "XinZhao": [
+  {
+   "key": "Q",
+   "name": "Three Talon Strike",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Wind Becomes Lightning",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Audacious Charge",
+   "damageType": "magic",
+   "baseByRank": [
+    50,
+    75,
+    100,
+    125,
+    150
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Crescent Guard",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "unsupported scaling: % of target's current health"
+  }
+ ],
+ "Yasuo": [
+  {
+   "key": "Q",
+   "name": "Steel Tempest",
+   "damageType": "physical",
+   "baseByRank": [
+    20,
+    45,
+    70,
+    95,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.05
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Wind Wall",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Sweeping Blade",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Last Breath",
+   "damageType": "physical",
+   "baseByRank": [
+    200,
+    350,
+    500
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1.5
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Yone": [
+  {
+   "key": "Q",
+   "name": "Mortal Steel",
+   "damageType": "physical",
+   "baseByRank": [
+    20,
+    45,
+    70,
+    95,
+    120
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.05
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Spirit Cleave",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Soul Unbound",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Fate Sealed",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Yorick": [
+  {
+   "key": "Q",
+   "name": "Last Rites",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Dark Procession",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Mourning Mist",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Eulogy of the Isles",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Yunara": [
+  {
+   "key": "Q",
+   "name": "Cultivation of Spirit",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Arc of Judgment",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Kanmei's Steps",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Transcend One's Self",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Yuumi": [
+  {
+   "key": "Q",
+   "name": "Prowling Projectile",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "You and Me!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Zoomies",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Final Chapter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Zaahen": [
+  {
+   "key": "Q",
+   "name": "Q",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "W",
+   "name": "W",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "E",
+   "name": "E",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  },
+  {
+   "key": "R",
+   "name": "R",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no ability data for this champion"
+  }
+ ],
+ "Zac": [
+  {
+   "key": "Q",
+   "name": "Stretching Strikes",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Unstable Matter",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Elastic Slingshot",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    105,
+    150,
+    195,
+    240
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Let's Bounce!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Zed": [
+  {
+   "key": "Q",
+   "name": "Razor Shuriken",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Living Shadow",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Shadow Slash",
+   "damageType": "physical",
+   "baseByRank": [
+    70,
+    95,
+    120,
+    145,
+    170
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 0.8
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Death Mark",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no flat base damage"
+  }
+ ],
+ "Zeri": [
+  {
+   "key": "Q",
+   "name": "Burst Fire",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Ultrashock Laser",
+   "damageType": "physical",
+   "baseByRank": [
+    30,
+    70,
+    110,
+    150,
+    190
+   ],
+   "scalings": [
+    {
+     "stat": "ad",
+     "ratio": 1.3
+    },
+    {
+     "stat": "ap",
+     "ratio": 0.25
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Spark Surge",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Lightning Crash",
+   "damageType": "magic",
+   "baseByRank": [
+    200,
+    300,
+    400
+   ],
+   "scalings": [
+    {
+     "stat": "bonusAd",
+     "ratio": 1
+    },
+    {
+     "stat": "ap",
+     "ratio": 1.1
+    }
+   ],
+   "status": "modelled"
+  }
+ ],
+ "Ziggs": [
+  {
+   "key": "Q",
+   "name": "Bouncing Bomb",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "% AP ratio changes by rank"
+  },
+  {
+   "key": "W",
+   "name": "Satchel Charge",
+   "damageType": "magic",
+   "baseByRank": [
+    70,
+    105,
+    140,
+    175,
+    210
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.5
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "E",
+   "name": "Hexplosive Minefield",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Mega Inferno Bomb",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  }
+ ],
+ "Zilean": [
+  {
+   "key": "Q",
+   "name": "Time Bomb",
+   "damageType": "magic",
+   "baseByRank": [
+    75,
+    115,
+    165,
+    230,
+    300
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.9
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Rewind",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Time Warp",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "R",
+   "name": "Chronoshift",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Zoe": [
+  {
+   "key": "Q",
+   "name": "Paddle Star!",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "W",
+   "name": "Spell Thief",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "E",
+   "name": "Sleepy Trouble Bubble",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "multiple or non-standard damage components"
+  },
+  {
+   "key": "R",
+   "name": "Portal Jump",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  }
+ ],
+ "Zyra": [
+  {
+   "key": "Q",
+   "name": "Deadly Spines",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    100,
+    140,
+    180,
+    220
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.65
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "W",
+   "name": "Rampant Growth",
+   "damageType": "magic",
+   "baseByRank": [],
+   "scalings": [],
+   "status": "not-modelled",
+   "reason": "no damage"
+  },
+  {
+   "key": "E",
+   "name": "Grasping Roots",
+   "damageType": "magic",
+   "baseByRank": [
+    60,
+    95,
+    130,
+    165,
+    200
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.6
+    }
+   ],
+   "status": "modelled"
+  },
+  {
+   "key": "R",
+   "name": "Stranglethorns",
+   "damageType": "magic",
+   "baseByRank": [
+    180,
+    265,
+    350
+   ],
+   "scalings": [
+    {
+     "stat": "ap",
+     "ratio": 0.7
+    }
+   ],
+   "status": "modelled"
+  }
+ ]
+}
