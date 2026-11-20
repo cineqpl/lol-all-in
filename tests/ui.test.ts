@@ -92,6 +92,29 @@ describe('duplicate item names', () => {
   });
 });
 
+describe('icons', () => {
+  const icon = (side: string, role: string) => q(`.side[data-side=${side}] img[data-role=${role}]`) as HTMLImageElement;
+  test('champion portrait sits above the panel and follows the selection', () => {
+    set(field('you', 'champion'), 'Beta');
+    expect(icon('you', 'champion-icon').getAttribute('src')).toBe('/img/champion/Beta.png');
+    const side = q('.side[data-side=you]');
+    expect(side.firstElementChild).toBe(icon('you', 'champion-icon').parentElement);
+  });
+  test('each panel has its own portrait', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Beta');
+    expect(icon('you', 'champion-icon').getAttribute('src')).toBe('/img/champion/Alpha.png');
+    expect(icon('enemy', 'champion-icon').getAttribute('src')).toBe('/img/champion/Beta.png');
+  });
+  test('item icon shows the chosen item and hides when the slot is emptied', () => {
+    set(field('you', 'item-0'), '2');
+    expect(icon('you', 'item-icon-0').getAttribute('src')).toBe('/img/item/2.png');
+    expect(icon('you', 'item-icon-0').hidden).toBe(false);
+    set(field('you', 'item-0'), '');
+    expect(icon('you', 'item-icon-0').hidden).toBe(true);
+  });
+});
+
 describe('bootstrap errors', () => {
   test('a load failure shows the message with the missing id instead of a blank page', async () => {
     const el = document.createElement('div');

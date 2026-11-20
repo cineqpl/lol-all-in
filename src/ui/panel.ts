@@ -1,6 +1,7 @@
 import { lookupChampion, sumItemStats, type GameData } from '../data/load';
 import type { Side } from '../model/matchup';
 import type { AbilityKey } from '../model/types';
+import { championIconPath, itemIconPath } from '../data/images';
 import { h } from './dom';
 
 export type Panel = { el: HTMLElement; getSide(): Side };
@@ -14,6 +15,24 @@ function select(field: string, options: [string, string][], blank?: string): HTM
   if (blank !== undefined) sel.append(h('option', { value: '' }, blank));
   for (const [value, label] of options) sel.append(h('option', { value }, label));
   return sel;
+}
+
+function icon(role: string, cls: string): HTMLImageElement {
+  const img = h('img', { 'data-role': role, class: cls, alt: '' }) as HTMLImageElement;
+  img.addEventListener('error', () => {
+    img.hidden = true;
+  });
+  return img;
+}
+
+function setIcon(img: HTMLImageElement, src: string): void {
+  if (src) {
+    img.setAttribute('src', src);
+    img.hidden = false;
+  } else {
+    img.removeAttribute('src');
+    img.hidden = true;
+  }
 }
 
 function numberInput(field: string, min: number, max: number, value: number): HTMLInputElement {
@@ -52,24 +71,44 @@ export function createPanel(
   const items = Array.from({ length: ITEM_SLOTS }, (_, i) =>
     select(`item-${i}`, itemOptions, '(no item)'),
   );
+  const itemIcons = items.map((_, i) => icon(`item-icon-${i}`, 'item-icon'));
+  const portrait = icon('champion-icon', 'champion-icon');
 
   const runeOptions = Object.entries(data.runes).map(
     ([id, r]): [string, string] => [id, `${r.name} (${r.tree})`],
   );
   const runes = select('runes', runeOptions, '(no rune)');
 
-  const el = h(
+  const section = h(
     'section',
     { class: 'panel', 'data-side': side },
     h('h2', {}, title),
     h('label', {}, 'Champion ', champion),
     h('label', {}, 'Level ', level),
     h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, ranks[k]))),
-    h('div', { class: 'items' }, ...items),
+    h(
+      'div',
+      { class: 'items' },
+      ...items.map((sel, i) => h('span', { class: 'item-slot' }, itemIcons[i], sel)),
+    ),
     h('label', {}, 'Rune ', runes),
     h('p', { class: 'note' }, 'Rune and item effects beyond flat stats are not modelled yet.'),
   );
-  el.addEventListener('change', onChange);
+  const refreshIcons = () => {
+    setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
+    items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
+  };
+  section.addEventListener('change', () => {
+    refreshIcons();
+    onChange();
+  });
+  refreshIcons();
+  const el = h(
+    'div',
+    { class: 'side', 'data-side': side },
+    h('div', { class: 'portrait' }, portrait),
+    section,
+  );
 
   return {
     el,

@@ -12,3 +12,8 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .status.danger { background: #5a2020; }
 .note { opacity: 0.7; font-size: 0.85rem; }
 .error { color: #ff8080; }
+.side { display: flex; flex-direction: column; gap: 0.75rem; }
+.portrait { height: 96px; display: flex; justify-content: center; }
+.portrait img { height: 96px; width: 96px; border-radius: 8px; }
+.item-slot { display: inline-flex; align-items: center; gap: 0.25rem; }
+.item-icon { width: 28px; height: 28px; border-radius: 4px; }
