@@ -22,7 +22,7 @@ const data: GameData = {
   champions: {
     Alpha: champ('Alpha', 1000, 'Mana', 300),
     Beta: champ('Beta', 500, 'Energy', 200),
-    Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
+    Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', adGrowthUnknown: true, base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
   },
   abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)], Gamma: [trueQ(1)] },
   items: {
@@ -220,6 +220,14 @@ describe('stat summary', () => {
     set(field('you', 'item-0'), '3');
     expect(stat('you', 'armor').textContent).toContain('25');
     expect(stat('you', 'mr').textContent).toContain('15');
+  });
+  test('warns when a champion has no AD growth data', () => {
+    const note = () => q('.side[data-side=you] [data-role=ad-growth-note]');
+    set(field('you', 'champion'), 'Gamma');
+    expect(note().hidden).toBe(false);
+    expect(note().textContent).toMatch(/AD growth/);
+    set(field('you', 'champion'), 'Alpha');
+    expect(note().hidden).toBe(true);
   });
   test('hides the resource row when the champion has none', () => {
     set(field('you', 'champion'), 'Gamma');

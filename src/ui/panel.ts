@@ -68,10 +68,12 @@ export function createPanel(
     armor: statCell('armor'),
     mr: statCell('mr'),
   };
+  const adNote = h('p', { class: 'warning', 'data-role': 'ad-growth-note', hidden: '' }, 'AD growth data is unavailable for this champion, so its AD is understated at higher levels.');
   const summary = h(
     'div',
     { class: 'stat-summary', 'data-role': 'stat-summary' },
     stats.hp, stats.resource, stats.ad, stats.ap, stats.armor, stats.mr,
+    adNote,
   );
   const warning = h('p', { class: 'warning', 'data-role': 'rank-warning', hidden: '' });
   const ranks = Object.fromEntries(
@@ -162,6 +164,7 @@ export function createPanel(
     stats.ap.textContent = `AP ${Math.round(s.ap)}`;
     stats.armor.textContent = `Armor ${Math.round(s.armor)}`;
     stats.mr.textContent = `MR ${Math.round(s.mr)}`;
+    adNote.hidden = !data.champions[champion.value]?.adGrowthUnknown;
     stats.resource.hidden = !s.resource;
     stats.resource.textContent = s.resource ? `${s.resource.label} ${Math.round(s.resource.value)}` : '';
   };

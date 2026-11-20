@@ -13,6 +13,7 @@ import { dirname } from 'node:path';
 import { imageJobs, type ImageJob } from '../src/data/images';
 import {
   abilityIconFiles,
+  applyAdGrowth,
   normaliseChampions,
   normaliseItems,
   normaliseRunes,
@@ -77,7 +78,10 @@ async function main() {
   const iconFiles = await mapPool(baseChamps, async (c) =>
     abilityIconFiles(await getJson(`${base}/champion/${c.id}.json`), c.id),
   );
-  const champList = baseChamps.map((c, i) => ({ ...c, abilityIcons: iconFiles[i] }));
+  const champList = applyAdGrowth(baseChamps, meraki.champions).map((c, i) => ({
+    ...c,
+    abilityIcons: iconFiles[i],
+  }));
   const abilities = Object.fromEntries(
     champList.map((c) => [c.id, meraki.champions[c.id] ? normaliseAbilities(meraki.champions[c.id]) : missingAbilities()]),
   );

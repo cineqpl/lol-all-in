@@ -1,6 +1,12 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
-import { abilityIconFiles, normaliseChampions, normaliseItems, normaliseRunes } from '../src/data/normalise';
+import {
+  abilityIconFiles,
+  applyAdGrowth,
+  normaliseChampions,
+  normaliseItems,
+  normaliseRunes,
+} from '../src/data/normalise';
 
 const fx = (f: string) => JSON.parse(readFileSync(`tests/fixtures/${f}`, 'utf8'));
 
@@ -67,5 +73,36 @@ describe('abilityIconFiles', () => {
   });
   test('unknown champion id throws naming the id', () => {
     expect(() => abilityIconFiles(fx('dd-champion-detail.json'), 'Nobody')).toThrow(/Nobody/);
+  });
+});
+
+describe('applyAdGrowth', () => {
+  const meraki = fx('meraki-champions.json');
+  const champs = normaliseChampions(fx('dd-champion.json'));
+  const fixed = applyAdGrowth(champs, meraki);
+  const byId = Object.fromEntries(fixed.map((c) => [c.id, c]));
+
+  test('Data Dragon reports 0 AD growth, so Meraki growth is used', () => {
+    expect(champs.find((c) => c.id === 'Annie')!.growth.ad).toBe(0);
+    expect(byId.Annie.growth.ad).toBe(2.65);
+    expect(byId.Annie.adGrowthUnknown).toBeUndefined();
+  });
+  test('a champion unknown to Meraki is flagged and keeps 0', () => {
+    expect(byId.Locke.growth.ad).toBe(0);
+    expect(byId.Locke.adGrowthUnknown).toBe(true);
+  });
+  test('a positive Data Dragon value wins over Meraki', () => {
+    const dd = [{ ...champs[0], growth: { ...champs[0].growth, ad: 3.3 } }];
+    expect(applyAdGrowth(dd, { [dd[0].id]: { stats: { attackDamage: { perLevel: 9 } } } })[0].growth.ad).toBe(3.3);
+  });
+  test('an explicit 0 from Meraki is real zero growth, not unknown', () => {
+    const dd = [champs[0]];
+    const out = applyAdGrowth(dd, { [dd[0].id]: { stats: { attackDamage: { perLevel: 0 } } } })[0];
+    expect(out.growth.ad).toBe(0);
+    expect(out.adGrowthUnknown).toBeUndefined();
+  });
+  test('does not change other stats', () => {
+    expect(byId.Annie.base).toEqual(champs.find((c) => c.id === 'Annie')!.base);
+    expect(byId.Annie.growth.hp).toBe(96);
   });
 });

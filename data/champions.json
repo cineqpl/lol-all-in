@@ -16,7 +16,7 @@
    "mana": 0,
    "armor": 4.8,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 5,
    "ap": 0
   },
   "abilityIcons": [
@@ -43,7 +43,7 @@
    "mana": 25,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -70,7 +70,7 @@
    "mana": 0,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -97,7 +97,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -124,7 +124,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -151,7 +151,7 @@
    "mana": 0,
    "armor": 4.9,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -178,7 +178,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.8,
    "ap": 0
   },
   "abilityIcons": [
@@ -205,7 +205,7 @@
    "mana": 45,
    "armor": 4.1,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -232,7 +232,7 @@
    "mana": 25,
    "armor": 4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.65,
    "ap": 0
   },
   "abilityIcons": [
@@ -259,7 +259,7 @@
    "mana": 42,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -286,7 +286,7 @@
    "mana": 35,
    "armor": 4.6,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.95,
    "ap": 0
   },
   "abilityIcons": [
@@ -313,7 +313,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -340,7 +340,7 @@
    "mana": 30,
    "armor": 4.5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -367,7 +367,7 @@
    "mana": 50,
    "armor": 5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -394,7 +394,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -421,7 +421,7 @@
    "mana": 0,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 1.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -448,7 +448,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -475,7 +475,7 @@
    "mana": 21,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -502,7 +502,7 @@
    "mana": 45,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -529,7 +529,7 @@
    "mana": 0,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -556,7 +556,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.8,
    "ap": 0
   },
   "abilityIcons": [
@@ -583,7 +583,7 @@
    "mana": 52,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.8,
    "ap": 0
   },
   "abilityIcons": [
@@ -610,7 +610,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -637,7 +637,7 @@
    "mana": 60,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -664,7 +664,7 @@
    "mana": 40,
    "armor": 4.5,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -691,7 +691,7 @@
    "mana": 58,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 5,
    "ap": 0
   },
   "abilityIcons": [
@@ -718,7 +718,7 @@
    "mana": 25,
    "armor": 4.3,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -745,7 +745,7 @@
    "mana": 39,
    "armor": 4.5,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.6,
    "ap": 0
   },
   "abilityIcons": [
@@ -772,7 +772,7 @@
    "mana": 0,
    "armor": 4.5,
    "mr": 2.3,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -799,7 +799,7 @@
    "mana": 70,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -826,7 +826,7 @@
    "mana": 50,
    "armor": 4.5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -853,7 +853,7 @@
    "mana": 42,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -880,7 +880,7 @@
    "mana": 70,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -907,7 +907,7 @@
    "mana": 28,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.65,
    "ap": 0
   },
   "abilityIcons": [
@@ -934,7 +934,7 @@
    "mana": 60,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -961,7 +961,7 @@
    "mana": 52,
    "armor": 4.6,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -988,7 +988,7 @@
    "mana": 40,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1015,7 +1015,7 @@
    "mana": 60,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -1042,7 +1042,7 @@
    "mana": 0,
    "armor": 4.2,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 4.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1069,7 +1069,7 @@
    "mana": 0,
    "armor": 3.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -1096,7 +1096,7 @@
    "mana": 47,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1123,7 +1123,7 @@
    "mana": 40,
    "armor": 4.6,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -1150,7 +1150,7 @@
    "mana": 40,
    "armor": 4.9,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1177,7 +1177,7 @@
    "mana": 40,
    "armor": 5.45,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -1204,7 +1204,7 @@
    "mana": 20,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -1231,7 +1231,7 @@
    "mana": 30,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1258,7 +1258,7 @@
    "mana": 50,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1285,7 +1285,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1312,7 +1312,7 @@
    "mana": 60,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1339,7 +1339,7 @@
    "mana": 50,
    "armor": 4.5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1366,7 +1366,7 @@
    "mana": 55,
    "armor": 4.6,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1393,7 +1393,7 @@
    "mana": 52,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4.25,
    "ap": 0
   },
   "abilityIcons": [
@@ -1420,7 +1420,7 @@
    "mana": 45,
    "armor": 5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 4.25,
    "ap": 0
   },
   "abilityIcons": [
@@ -1447,7 +1447,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 4.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -1474,7 +1474,7 @@
    "mana": 50,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.25,
    "ap": 0
   },
   "abilityIcons": [
@@ -1501,7 +1501,7 @@
    "mana": 40,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.6,
    "ap": 0
   },
   "abilityIcons": [
@@ -1528,7 +1528,7 @@
    "mana": 45,
    "armor": 5.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -1555,7 +1555,7 @@
    "mana": 40,
    "armor": 5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1582,7 +1582,7 @@
    "mana": 31,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.25,
    "ap": 0
   },
   "abilityIcons": [
@@ -1609,7 +1609,7 @@
    "mana": 87,
    "armor": 4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.9,
    "ap": 0
   },
   "abilityIcons": [
@@ -1636,7 +1636,7 @@
    "mana": 0,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -1663,7 +1663,7 @@
    "mana": 50,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1690,7 +1690,7 @@
    "mana": 50,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1717,7 +1717,7 @@
    "mana": 0,
    "armor": 4.95,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -1744,7 +1744,7 @@
    "mana": 40,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -1771,7 +1771,7 @@
    "mana": 35,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.25,
    "ap": 0
   },
   "abilityIcons": [
@@ -1798,7 +1798,7 @@
    "mana": 0,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1825,7 +1825,7 @@
    "mana": 40,
    "armor": 4.45,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -1852,7 +1852,7 @@
    "mana": 60,
    "armor": 5.2,
    "mr": 2.1,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -1879,7 +1879,7 @@
    "mana": 25,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -1906,7 +1906,7 @@
    "mana": 0,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -1933,7 +1933,7 @@
    "mana": 40,
    "armor": 4.8,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -1960,7 +1960,7 @@
    "mana": 50,
    "armor": 4.5,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -1987,7 +1987,7 @@
    "mana": 30,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -2017,6 +2017,7 @@
    "ad": 0,
    "ap": 0
   },
+  "adGrowthUnknown": true,
   "abilityIcons": [
    "LockeQ.png",
    "LockeW.png",
@@ -2041,7 +2042,7 @@
    "mana": 43,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.9,
    "ap": 0
   },
   "abilityIcons": [
@@ -2068,7 +2069,7 @@
    "mana": 55,
    "armor": 4.6,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.6,
    "ap": 0
   },
   "abilityIcons": [
@@ -2095,7 +2096,7 @@
    "mana": 23.5,
    "armor": 5.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2122,7 +2123,7 @@
    "mana": 60,
    "armor": 4.95,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -2149,7 +2150,7 @@
    "mana": 28,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2176,7 +2177,7 @@
    "mana": 43,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2203,7 +2204,7 @@
    "mana": 42,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2.8,
    "ap": 0
   },
   "abilityIcons": [
@@ -2230,7 +2231,7 @@
    "mana": 38,
    "armor": 5.4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2257,7 +2258,7 @@
    "mana": 43,
    "armor": 4.6,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -2284,7 +2285,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -2311,7 +2312,7 @@
    "mana": 65,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2338,7 +2339,7 @@
    "mana": 0,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -2365,7 +2366,7 @@
    "mana": 60,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2392,7 +2393,7 @@
    "mana": 55,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -2419,7 +2420,7 @@
    "mana": 43,
    "armor": 5.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -2446,7 +2447,7 @@
    "mana": 62,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -2473,7 +2474,7 @@
    "mana": 47,
    "armor": 4.95,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2500,7 +2501,7 @@
    "mana": 30,
    "armor": 5.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2527,7 +2528,7 @@
    "mana": 45,
    "armor": 5,
    "mr": 1.45,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2554,7 +2555,7 @@
    "mana": 35,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -2581,7 +2582,7 @@
    "mana": 35,
    "armor": 4.2,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 2.6,
    "ap": 0
   },
   "abilityIcons": [
@@ -2608,7 +2609,7 @@
    "mana": 42,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2635,7 +2636,7 @@
    "mana": 50,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -2662,7 +2663,7 @@
    "mana": 25,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.6,
    "ap": 0
   },
   "abilityIcons": [
@@ -2689,7 +2690,7 @@
    "mana": 65,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2716,7 +2717,7 @@
    "mana": 31,
    "armor": 4.95,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2743,7 +2744,7 @@
    "mana": 45,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -2770,7 +2771,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -2797,7 +2798,7 @@
    "mana": 60,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -2824,7 +2825,7 @@
    "mana": 35,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -2851,7 +2852,7 @@
    "mana": 50,
    "armor": 4.9,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -2878,7 +2879,7 @@
    "mana": 33,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -2905,7 +2906,7 @@
    "mana": 0,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2932,7 +2933,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.8,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2959,7 +2960,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -2986,7 +2987,7 @@
    "mana": 0,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4.15,
    "ap": 0
   },
   "abilityIcons": [
@@ -3013,7 +3014,7 @@
    "mana": 0,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3040,7 +3041,7 @@
    "mana": 0,
    "armor": 4.4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3067,7 +3068,7 @@
    "mana": 0,
    "armor": 4.7,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -3094,7 +3095,7 @@
    "mana": 70,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3121,7 +3122,7 @@
    "mana": 38,
    "armor": 4.7,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3148,7 +3149,7 @@
    "mana": 40,
    "armor": 5.45,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3202,7 +3203,7 @@
    "mana": 40,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3229,7 +3230,7 @@
    "mana": 0,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3256,7 +3257,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3283,7 +3284,7 @@
    "mana": 0,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3310,7 +3311,7 @@
    "mana": 0,
    "armor": 4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3337,7 +3338,7 @@
    "mana": 45,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3364,7 +3365,7 @@
    "mana": 52,
    "armor": 4.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3391,7 +3392,7 @@
    "mana": 45,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -3418,7 +3419,7 @@
    "mana": 40,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3445,7 +3446,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3472,7 +3473,7 @@
    "mana": 45,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3499,7 +3500,7 @@
    "mana": 40,
    "armor": 5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3526,7 +3527,7 @@
    "mana": 29,
    "armor": 4.7,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 2.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -3553,7 +3554,7 @@
    "mana": 70,
    "armor": 5.2,
    "mr": 2.55,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3580,7 +3581,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.9,
    "ap": 0
   },
   "abilityIcons": [
@@ -3607,7 +3608,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -3634,7 +3635,7 @@
    "mana": 30,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3661,7 +3662,7 @@
    "mana": 37,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -3688,7 +3689,7 @@
    "mana": 60,
    "armor": 4.3,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -3715,7 +3716,7 @@
    "mana": 25,
    "armor": 4.5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -3742,7 +3743,7 @@
    "mana": 44,
    "armor": 0,
    "mr": 1.55,
-   "ad": 0,
+   "ad": 2.2,
    "ap": 0
   },
   "abilityIcons": [
@@ -3769,7 +3770,7 @@
    "mana": 32,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -3796,7 +3797,7 @@
    "mana": 45,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3823,7 +3824,7 @@
    "mana": 0,
    "armor": 4.8,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3850,7 +3851,7 @@
    "mana": 39,
    "armor": 4.35,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -3877,7 +3878,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -3904,7 +3905,7 @@
    "mana": 50,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3931,7 +3932,7 @@
    "mana": 45,
    "armor": 5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3958,7 +3959,7 @@
    "mana": 40,
    "armor": 4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -3985,7 +3986,7 @@
    "mana": 35,
    "armor": 4.6,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.35,
    "ap": 0
   },
   "abilityIcons": [
@@ -4012,7 +4013,7 @@
    "mana": 26,
    "armor": 5.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.7,
    "ap": 0
   },
   "abilityIcons": [
@@ -4039,7 +4040,7 @@
    "mana": 21,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.1416,
    "ap": 0
   },
   "abilityIcons": [
@@ -4066,7 +4067,7 @@
    "mana": 32,
    "armor": 4.45,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 2.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -4093,7 +4094,7 @@
    "mana": 65,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4120,7 +4121,7 @@
    "mana": 0,
    "armor": 4.6,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4147,7 +4148,7 @@
    "mana": 45,
    "armor": 4.4,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4174,7 +4175,7 @@
    "mana": 0,
    "armor": 4.5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4201,7 +4202,7 @@
    "mana": 70,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4228,7 +4229,7 @@
    "mana": 35,
    "armor": 4.4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2.75,
    "ap": 0
   },
   "abilityIcons": [
@@ -4255,7 +4256,7 @@
    "mana": 40,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4282,7 +4283,7 @@
    "mana": 22,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4309,7 +4310,7 @@
    "mana": 55,
    "armor": 4.4,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4336,7 +4337,7 @@
    "mana": 0,
    "armor": 4.6,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4363,7 +4364,7 @@
    "mana": 0,
    "armor": 4.6,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -4390,7 +4391,7 @@
    "mana": 60,
    "armor": 4.5,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4417,7 +4418,7 @@
    "mana": 45,
    "armor": 4.4,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2.5,
    "ap": 0
   },
   "abilityIcons": [
@@ -4444,7 +4445,7 @@
    "mana": 45,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -4474,6 +4475,7 @@
    "ad": 0,
    "ap": 0
   },
+  "adGrowthUnknown": true,
   "abilityIcons": [
    "ZaahenQ.png",
    "ZaahenW.png",
@@ -4498,7 +4500,7 @@
    "mana": 0,
    "armor": 5.2,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -4525,7 +4527,7 @@
    "mana": 0,
    "armor": 4.7,
    "mr": 2.05,
-   "ad": 0,
+   "ad": 3.4,
    "ap": 0
   },
   "abilityIcons": [
@@ -4552,7 +4554,7 @@
    "mana": 45,
    "armor": 4.2,
    "mr": 1.1,
-   "ad": 0,
+   "ad": 2,
    "ap": 0
   },
   "abilityIcons": [
@@ -4579,7 +4581,7 @@
    "mana": 23.5,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.1,
    "ap": 0
   },
   "abilityIcons": [
@@ -4606,7 +4608,7 @@
    "mana": 50,
    "armor": 5,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4633,7 +4635,7 @@
    "mana": 25,
    "armor": 4.7,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.3,
    "ap": 0
   },
   "abilityIcons": [
@@ -4660,7 +4662,7 @@
    "mana": 25,
    "armor": 4.2,
    "mr": 1.3,
-   "ad": 0,
+   "ad": 3.2,
    "ap": 0
   },
   "abilityIcons": [

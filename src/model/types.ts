@@ -17,6 +17,8 @@ export type ChampionBase = {
   abilityIcons?: string[];
   /** Data Dragon partype: Mana, Energy, Fury, None, ... */
   resource?: string;
+  /** True when no data source has this champion's per-level AD growth (it is then 0). */
+  adGrowthUnknown?: boolean;
 };
 
 export type Scaling = {

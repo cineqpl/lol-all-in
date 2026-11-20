@@ -79,3 +79,17 @@ export function abilityIconFiles(raw: unknown, id: string): string[] {
   if (!spells || spells.length < 4) throw new Error(`Champion ${id} has no spell icon data`);
   return spells.slice(0, 4).map((s) => s.image.full as string);
 }
+
+/**
+ * Data Dragon currently publishes attackdamageperlevel as 0 for every champion, which is wrong.
+ * Use its value when positive, otherwise Meraki's per-level AD (an explicit 0 is real, e.g. Senna),
+ * otherwise flag the champion as unknown.
+ */
+export function applyAdGrowth(champs: ChampionBase[], meraki: Record<string, any>): ChampionBase[] {
+  return champs.map((c) => {
+    if (c.growth.ad > 0) return c;
+    const perLevel = meraki[c.id]?.stats?.attackDamage?.perLevel;
+    if (typeof perLevel === 'number') return { ...c, growth: { ...c.growth, ad: perLevel } };
+    return { ...c, adGrowthUnknown: true };
+  });
+}
