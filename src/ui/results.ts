@@ -12,10 +12,16 @@ const STATUS_TEXT: Record<MatchupResult['status'], string> = {
   danger: 'Danger: their worst-case combo can kill you',
 };
 
-function notModelledList(testId: string, title: string, abilities: Ability[]): HTMLElement {
-  const items = abilities.map((a) =>
-    h('li', {}, `${a.key} ${a.name}: ${a.reason ?? 'not modelled'}`),
-  );
+function notModelledList(
+  testId: string,
+  title: string,
+  abilities: Ability[],
+  effects: string[],
+): HTMLElement {
+  const items = [
+    ...abilities.map((a) => h('li', {}, `${a.key} ${a.name}: ${a.reason ?? 'not modelled'}`)),
+    ...effects.map((e) => h('li', {}, `${e}: effect not modelled`)),
+  ];
   return h('div', { 'data-testid': testId }, h('h3', {}, title), h('ul', {}, ...items));
 }
 
@@ -36,8 +42,8 @@ export function renderResults(el: HTMLElement, r: MatchupResult, data: GameData)
       { 'data-testid': 'enemy-damage' },
       `Their worst-case combo: ${dmg(r.enemyDamage)} damage (${pct(r.enemyPctOfYourHp)} of your HP)`,
     ),
-    notModelledList('not-modelled-you', 'Your abilities not modelled', r.yourNotModelled),
-    notModelledList('not-modelled-enemy', 'Their abilities not modelled', r.enemyNotModelled),
+    notModelledList('not-modelled-you', 'Your abilities and effects not modelled', r.yourNotModelled, r.yourUnmodelledEffects),
+    notModelledList('not-modelled-enemy', 'Their abilities and effects not modelled', r.enemyNotModelled, r.enemyUnmodelledEffects),
     h(
       'p',
       { class: 'note', 'data-testid': 'patch' },

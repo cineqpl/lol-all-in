@@ -39,6 +39,8 @@ export function normaliseItems(raw: unknown): Record<string, ItemData> {
   const data = (raw as Raw).data as Raw;
   const out: Record<string, ItemData> = {};
   for (const [id, item] of Object.entries<Raw>(data)) {
+    // Summoners Rift (map 11) purchasable items only: other modes reuse names with different stats.
+    if (item.maps?.['11'] !== true || item.gold?.purchasable === false) continue;
     const stats: Partial<StatBlock> = {};
     for (const [k, v] of Object.entries<number>(item.stats ?? {})) {
       const key = ITEM_STAT_KEYS[k];

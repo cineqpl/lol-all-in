@@ -20,7 +20,11 @@ const data: GameData = {
   meta: { patch: '16.1.1', abilitiesPatch: '15.1' },
   champions: { Alpha: champ('Alpha', 1000), Beta: champ('Beta', 500) },
   abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)] },
-  items: { '1': { name: 'Sword', stats: { ad: 10 }, hasEffects: false } },
+  items: {
+    '1': { name: 'Sword', stats: { ad: 10 }, hasEffects: false },
+    '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
+    '99': { name: 'Sword', stats: { ad: 12 }, hasEffects: false },
+  },
   runes: {},
 };
 
@@ -63,6 +67,28 @@ describe('matchup UI', () => {
     set(field('enemy', 'champion'), 'Alpha');
     set(field('you', 'level'), '12');
     expect(field('enemy', 'level').value).toBe('1');
+  });
+});
+
+describe('unmodelled item effects', () => {
+  test('a chosen item with effects is listed as not modelled', () => {
+    set(field('you', 'item-0'), '2');
+    expect(q('[data-testid=not-modelled-you]').textContent).toContain('Deathcap');
+  });
+  test('a flat-stat item is not listed', () => {
+    set(field('you', 'item-0'), '1');
+    expect(q('[data-testid=not-modelled-you]').textContent).not.toContain('Sword');
+  });
+});
+
+describe('duplicate item names', () => {
+  const labels = () => Array.from(field('you', 'item-0').querySelectorAll('option')).map((o) => o.textContent);
+  test('are disambiguated by item id', () => {
+    expect(labels()).toContain('Sword (#1)');
+    expect(labels()).toContain('Sword (#99)');
+  });
+  test('unique names are left alone', () => {
+    expect(labels()).toContain('Deathcap');
   });
 });
 

@@ -10,6 +10,8 @@ export type Side = {
   abilities: Ability[];
   build: Build;
   itemStats: StatBlock;
+  /** Selected items/runes whose effects the model ignores (shown to the user). */
+  unmodelledEffects?: string[];
 };
 
 export type MatchupResult = {
@@ -20,6 +22,8 @@ export type MatchupResult = {
   status: 'safe' | 'even' | 'danger';
   yourNotModelled: Ability[];
   enemyNotModelled: Ability[];
+  yourUnmodelledEffects: string[];
+  enemyUnmodelledEffects: string[];
 };
 
 function totalStats(side: Side): StatBlock {
@@ -56,5 +60,7 @@ export function computeMatchup(you: Side, enemy: Side): MatchupResult {
     status,
     yourNotModelled: mine.notModelled,
     enemyNotModelled: their.notModelled,
+    yourUnmodelledEffects: you.unmodelledEffects ?? [],
+    enemyUnmodelledEffects: enemy.unmodelledEffects ?? [],
   };
 }

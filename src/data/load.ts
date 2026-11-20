@@ -11,6 +11,23 @@ export type GameData = {
   runes: Record<string, RuneData>;
 };
 
+const STAT_KEYS = ['hp', 'mana', 'armor', 'mr', 'ad', 'ap'] as const;
+
+/** Fails loudly, naming the champion, if the data files disagree or contain unusable numbers. */
+export function validateData(data: GameData): void {
+  for (const champ of Object.values(data.champions)) {
+    if ((data.abilities[champ.id]?.length ?? 0) !== 4) {
+      throw new Error(`Champion ${champ.id} has no ability data (expected Q/W/E/R)`);
+    }
+    for (const k of STAT_KEYS) {
+      if (!Number.isFinite(champ.base[k]) || !Number.isFinite(champ.growth[k])) {
+        throw new Error(`Champion ${champ.id} has a non-numeric ${k} stat`);
+      }
+    }
+    if (champ.base.hp <= 0) throw new Error(`Champion ${champ.id} has non-positive base HP`);
+  }
+}
+
 /** Loads the committed JSON assets. They are bundled, so no network call is made at runtime. */
 export async function loadData(): Promise<GameData> {
   const [meta, champions, abilities, items, runes] = await Promise.all([
@@ -21,13 +38,15 @@ export async function loadData(): Promise<GameData> {
     import('../../data/runes.json'),
   ]);
   const list = champions.default as unknown as ChampionBase[];
-  return {
+  const loaded: GameData = {
     meta: { patch: meta.default.patch, abilitiesPatch: meta.default.abilitiesPatch },
     champions: Object.fromEntries(list.map((c) => [c.id, c])),
     abilities: abilities.default as unknown as Record<string, Ability[]>,
     items: items.default as unknown as Record<string, ItemData>,
     runes: runes.default as unknown as Record<string, RuneData>,
   };
+  validateData(loaded);
+  return loaded;
 }
 
 export function lookupChampion(data: GameData, id: string): ChampionBase {

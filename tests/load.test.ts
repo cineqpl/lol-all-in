@@ -38,3 +38,29 @@ describe('loadData', () => {
     expect(d.abilities.Annie).toHaveLength(4);
   });
 });
+
+import { validateData } from '../src/data/load';
+
+describe('validateData', () => {
+  const ability = (key: 'Q' | 'W' | 'E' | 'R') => ({
+    key, name: key, damageType: 'magic' as const, baseByRank: [], scalings: [],
+    status: 'not-modelled' as const, reason: 'x',
+  });
+  const full: GameData = {
+    ...data,
+    champions: { Annie: { id: 'Annie', name: 'Annie', base: { ...zero, hp: 500 }, growth: zero } },
+    abilities: { Annie: (['Q', 'W', 'E', 'R'] as const).map(ability) },
+  };
+  test('accepts consistent data', () => expect(() => validateData(full)).not.toThrow());
+  test('champion without abilities throws naming the id', () => {
+    expect(() => validateData({ ...full, abilities: {} })).toThrow(/Annie/);
+  });
+  test('non-finite stat throws naming the id', () => {
+    const bad = { ...full, champions: { Annie: { ...full.champions.Annie, base: { ...zero, hp: NaN } } } };
+    expect(() => validateData(bad)).toThrow(/Annie/);
+  });
+  test('zero base hp throws naming the id', () => {
+    const bad = { ...full, champions: { Annie: { ...full.champions.Annie, base: { ...zero, hp: 0 } } } };
+    expect(() => validateData(bad)).toThrow(/Annie/);
+  });
+});

@@ -39,10 +39,16 @@ export function createPanel(
     KEYS.map((k) => [k, numberInput(`rank-${k}`, 0, MAX_RANK[k], k === 'Q' ? 1 : 0)]),
   ) as Record<AbilityKey, HTMLInputElement>;
 
-  const itemOptions = Object.entries(data.items)
-    .filter(([, item]) => Object.keys(item.stats).length > 0)
+  const selectable = Object.entries(data.items).filter(([, item]) => Object.keys(item.stats).length > 0);
+  const nameCount = new Map<string, number>();
+  for (const [, item] of selectable) nameCount.set(item.name, (nameCount.get(item.name) ?? 0) + 1);
+  // Variants of the same item can have different stats, so duplicated names show their id.
+  const itemOptions = selectable
     .sort((a, b) => a[1].name.localeCompare(b[1].name))
-    .map(([id, item]): [string, string] => [id, item.name]);
+    .map(([id, item]): [string, string] => [
+      id,
+      (nameCount.get(item.name) ?? 0) > 1 ? `${item.name} (#${id})` : item.name,
+    ]);
   const items = Array.from({ length: ITEM_SLOTS }, (_, i) =>
     select(`item-${i}`, itemOptions, '(no item)'),
   );
@@ -83,6 +89,10 @@ export function createPanel(
           runeIds: runes.value ? [runes.value] : [],
         },
         itemStats: sumItemStats(data, itemIds),
+        unmodelledEffects: [
+          ...itemIds.filter((id) => data.items[id].hasEffects).map((id) => `${data.items[id].name} (item)`),
+          ...(runes.value ? [`${data.runes[runes.value].name} (rune)`] : []),
+        ],
       };
     },
   };

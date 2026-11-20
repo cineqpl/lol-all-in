@@ -48,3 +48,12 @@ describe('computeMatchup', () => {
     expect(computeMatchup(you, side(0)).yourNotModelled).toHaveLength(1);
   });
 });
+
+describe('unmodelled effects', () => {
+  test('are passed through per side', () => {
+    const you = { ...side(0), unmodelledEffects: ['Rabadon (item)'] };
+    const r = computeMatchup(you, side(0));
+    expect(r.yourUnmodelledEffects).toEqual(['Rabadon (item)']);
+    expect(r.enemyUnmodelledEffects).toEqual([]);
+  });
+});

@@ -41,3 +41,16 @@ describe('normaliseRunes', () => {
     expect(first.tree).toBeTruthy();
   });
 });
+
+describe('normaliseItems filtering', () => {
+  const raw = {
+    data: {
+      '1': { name: 'Sword', description: '', stats: { FlatPhysicalDamageMod: 10 }, maps: { '11': true }, gold: { purchasable: true } },
+      '771': { name: 'Sword', description: '', stats: { FlatPhysicalDamageMod: 12 }, maps: { '11': false, '30': true }, gold: { purchasable: true } },
+      '2': { name: 'Hidden', description: '', stats: { FlatHPPoolMod: 5 }, maps: { '11': true }, gold: { purchasable: false } },
+    },
+  };
+  test('keeps only purchasable Summoners Rift items', () => {
+    expect(Object.keys(normaliseItems(raw))).toEqual(['1']);
+  });
+});
