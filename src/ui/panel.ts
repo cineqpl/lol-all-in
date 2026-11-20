@@ -5,6 +5,7 @@ import type { AbilityKey } from '../model/types';
 import { count } from '../model/combo';
 import type { StatPart } from '../model/stats';
 import { summarizeStats } from '../model/summary';
+import { KEYS, levelingFor, startingRanks } from '../model/leveling';
 import { validateRanks } from '../model/validation';
 import { championIconPath, itemIconPath, spellIconPath, statIconPath, type StatIconKey } from '../data/images';
 import { h } from './dom';
@@ -19,8 +20,6 @@ export type Panel = {
   refreshCombo(): void;
 };
 
-const KEYS: AbilityKey[] = ['Q', 'W', 'E', 'R'];
-const MAX_RANK: Record<AbilityKey, number> = { Q: 5, W: 5, E: 5, R: 3 };
 const ITEM_SLOTS = 6;
 const BASE_MAX_LEVEL = 18;
 const QUEST_MAX_LEVEL = 20;
@@ -162,7 +161,7 @@ export function createPanel(
     KEYS.map((k) => [k, h('span', { class: 'rank-pips', 'data-role': `rank-pips-${k}` })]),
   ) as Record<AbilityKey, HTMLElement>;
   const stepRank = (k: AbilityKey, delta: number) => {
-    const next = Math.min(MAX_RANK[k], Math.max(0, (Number(ranks[k].value) || 0) + delta));
+    const next = Math.min(rules().maxRank[k], Math.max(0, (Number(ranks[k].value) || 0) + delta));
     ranks[k].value = String(next);
     ranks[k].dispatchEvent(new Event('change', { bubbles: true }));
   };
@@ -174,13 +173,22 @@ export function createPanel(
     };
     rankButtons[k] = { plus: button('plus', '+', 1), minus: button('minus', '−', -1) };
   }
+  const rules = () => levelingFor(champion.value);
+  let rankedFor = champion.value;
+  /** A new champion means different abilities and rules: start from that champion's usual ranks. */
+  const resetRanksForChampion = () => {
+    if (champion.value === rankedFor) return;
+    rankedFor = champion.value;
+    const start = startingRanks(rules());
+    for (const k of KEYS) ranks[k].value = String(start[k]);
+  };
   const refreshRanks = () => {
     for (const k of KEYS) {
       const rank = Number(ranks[k].value) || 0;
       rankPips[k].replaceChildren(
-        ...Array.from({ length: MAX_RANK[k] }, (_, i) => h('span', { class: i < rank ? 'pip on' : 'pip' })),
+        ...Array.from({ length: rules().maxRank[k] }, (_, i) => h('span', { class: i < rank ? 'pip on' : 'pip' })),
       );
-      rankButtons[k].plus.disabled = rank >= MAX_RANK[k];
+      rankButtons[k].plus.disabled = rank >= rules().maxRank[k];
       rankButtons[k].minus.disabled = rank <= 0;
     }
   };
@@ -255,7 +263,7 @@ export function createPanel(
   const refreshLevelAndWarnings = () => {
     level.max = String(maxLevel());
     if (Number(level.value) > maxLevel()) level.value = String(maxLevel());
-    const problems = validateRanks(currentLevel(), currentRanks());
+    const problems = validateRanks(currentLevel(), currentRanks(), rules());
     warning.textContent = problems.join(' ');
     warning.hidden = problems.length === 0;
     levelMinus.disabled = currentLevel() <= 1;
@@ -368,6 +376,7 @@ export function createPanel(
     KEYS.forEach((k, i) => setIcon(abilityIcons[k], files?.[i] ? spellIconPath(files[i]) : ''));
   };
   section.addEventListener('change', () => {
+    resetRanksForChampion();
     refreshLevelAndWarnings();
     refreshRanks();
     refreshStats();

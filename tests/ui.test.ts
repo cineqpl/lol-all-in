@@ -32,6 +32,9 @@ const data: GameData = {
     Alpha: champ('Alpha', 1000, 'Mana', 300),
     Beta: champ('Beta', 500, 'Energy', 200),
     Delta: { id: 'Delta', name: 'Delta', resource: 'None', base: { ...zero, hp: 600, attackSpeed: 0.625 }, growth: { ...zero, attackSpeed: 0.02 } },
+    Jayce: champ('Jayce', 800, 'Mana', 300),
+    Karma: champ('Karma', 700, 'Mana', 300),
+    Udyr: champ('Udyr', 900, 'None', 0),
     Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', adGrowthUnknown: true, base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
   },
   abilities: { Alpha: [trueQ(100), oddW, comboE], Beta: [trueQ(400)], Gamma: [trueQ(1)], Delta: [trueQ(1)] },
@@ -208,6 +211,42 @@ describe('level and rank validation', () => {
     expect(warning('you').textContent).toMatch(/R.*6/);
     set(field('you', 'level'), '6');
     expect(warning('you').hidden).toBe(true);
+  });
+});
+
+describe('champion leveling exceptions', () => {
+  const pips = (key: string) => root.querySelectorAll(`.side[data-side=you] [data-role=rank-pips-${key}] .pip`).length;
+  const rank = (key: string) => field('you', `rank-${key}`).value;
+  const plus = (key: string) => q(`.side[data-side=you] [data-role=rank-plus-${key}]`) as HTMLButtonElement;
+  const warning = () => q('.side[data-side=you] [data-role=rank-warning]');
+
+  test('Udyr: R is an ordinary ability with five ranks', () => {
+    set(field('you', 'champion'), 'Udyr');
+    expect([pips('Q'), pips('R')]).toEqual([5, 5]);
+    for (let i = 0; i < 5; i++) plus('R').click();
+    expect(rank('R')).toBe('5');
+    expect(warning().textContent).toMatch(/R rank 5.*level 1/); // half-level rule applies to R
+  });
+  test('Karma: ultimate starts at rank 1, has four ranks, and warns by the 1/6/11/16 table', () => {
+    set(field('you', 'champion'), 'Karma');
+    expect(rank('R')).toBe('1');
+    expect(pips('R')).toBe(4);
+    expect(warning().hidden).toBe(true);
+    plus('R').click();
+    expect(warning().textContent).toMatch(/R.*6/);
+  });
+  test('Jayce: basics have six ranks and his ultimate is a single rank, already learned', () => {
+    set(field('you', 'champion'), 'Jayce');
+    expect([pips('Q'), pips('W'), pips('E'), pips('R')]).toEqual([6, 6, 6, 1]);
+    expect(rank('R')).toBe('1');
+    expect(plus('R').disabled).toBe(true);
+  });
+  test('switching back to a standard champion restores the standard ranks', () => {
+    set(field('you', 'champion'), 'Karma');
+    set(field('you', 'champion'), 'Alpha');
+    expect(pips('R')).toBe(3);
+    expect(rank('R')).toBe('0');
+    expect(rank('Q')).toBe('1');
   });
 });
 
