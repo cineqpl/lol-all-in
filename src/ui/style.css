@@ -2,9 +2,19 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .panel, .results { background: #1e2127; padding: 1rem; border-radius: 8px; }
 .panel label { display: block; margin: 0.4rem 0; }
-.ranks label { display: inline-block; margin-right: 0.5rem; }
-.ranks input { width: 3rem; }
-.items select { margin: 0 0.3rem 0.3rem 0; max-width: 12rem; }
+.ranks { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+.rank-control { display: inline-flex; align-items: center; gap: 0.3rem; }
+.rank-icon { width: 60px; height: 60px; border-radius: 6px; }
+.rank-buttons { display: inline-flex; flex-direction: column; height: 60px; }
+.rank-button { flex: 1; width: 1.6rem; padding: 0; line-height: 1; font-size: 1rem; cursor: pointer; background: #2a2e36; color: #e6e6e6; border: 1px solid #3c424d; }
+.rank-button:disabled { opacity: 0.35; cursor: default; }
+/* A column as tall as the icon; the first level is at the bottom, so squares turn green bottom to top. */
+.rank-pips { display: inline-flex; flex-direction: column-reverse; justify-content: flex-start; gap: 2px; height: 60px; }
+.pip { width: 10px; height: 10px; background: #6b7078; }
+.pip.on { background: #3fcf5a; }
+/* At most three slots per row: columns are at least 14rem wide and at least a third of the width. */
+.items { display: grid; grid-template-columns: repeat(auto-fit, minmax(max(14rem, calc((100% - 1rem) / 3)), 1fr)); gap: 0.4rem 0.5rem; }
+.items select { min-width: 0; flex: 1; }
 .results { margin-top: 1.5rem; }
 .status { font-weight: 700; padding: 0.5rem; border-radius: 6px; }
 .status.safe { background: #1f4d2b; }
@@ -15,10 +25,18 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .side { display: flex; flex-direction: column; gap: 0.75rem; }
 .portrait { height: 96px; display: flex; justify-content: center; }
 .portrait img { height: 96px; width: 96px; border-radius: 8px; }
-.item-slot { display: inline-flex; align-items: center; gap: 0.25rem; }
+.item-slot { display: flex; align-items: center; gap: 0.25rem; }
+.item-icon-box { display: inline-block; flex: none; width: 28px; height: 28px; border-radius: 4px; }
+.item-icon-box.empty { background: #c9ccd1; }
+.item-icon-box .item-icon { display: block; }
+.item-icon-box .item-icon[hidden] { display: none; }
 .item-icon { width: 28px; height: 28px; border-radius: 4px; }
 .level-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .level-row label { margin: 0.4rem 0; }
+.level-control { display: inline-flex; align-items: center; gap: 0.3rem; }
+.level-control label { margin: 0; }
+.level-buttons { display: inline-flex; }
+.level-buttons .rank-button { flex: none; height: 1.6rem; }
 .warning { color: #ff5252; font-weight: 600; margin: 0.3rem 0; }
 .ability-icon { width: 28px; height: 28px; border-radius: 4px; vertical-align: middle; margin: 0 0.2rem; }
 .stat-summary { display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #333842; font-weight: 600; }

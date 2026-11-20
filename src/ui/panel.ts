@@ -75,6 +75,17 @@ export function createPanel(
   const champion = select('champion', champions.map((c): [string, string] => [c.id, c.name]));
   const level = numberInput('level', 1, BASE_MAX_LEVEL, 1);
   const quest = h('input', { type: 'checkbox', 'data-field': 'role-quest' }) as HTMLInputElement;
+  // Handlers run later, so they may use maxLevel/currentLevel defined further down.
+  const levelButton = (which: 'plus' | 'minus', text: string, delta: number) => {
+    const b = h('button', { type: 'button', class: 'rank-button', 'data-role': `level-${which}`, 'aria-label': `${which === 'plus' ? 'Raise' : 'Lower'} level` }, text) as HTMLButtonElement;
+    b.addEventListener('click', () => {
+      level.value = String(Math.min(maxLevel(), Math.max(1, currentLevel() + delta)));
+      level.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+    return b;
+  };
+  const levelMinus = levelButton('minus', '−', -1);
+  const levelPlus = levelButton('plus', '+', 1);
   // stats.* are the text spans; cells.* are the outer [data-stat] elements (icon + text).
   const cells = {} as Record<string, HTMLElement>;
   let resourceIcon: HTMLImageElement;
@@ -142,9 +153,37 @@ export function createPanel(
     adNote,
   );
   const warning = h('p', { class: 'warning', 'data-role': 'rank-warning', hidden: '' });
+  // The rank lives in a hidden input; the +/- buttons change it and the squares show it.
   const ranks = Object.fromEntries(
-    KEYS.map((k) => [k, numberInput(`rank-${k}`, 0, MAX_RANK[k], k === 'Q' ? 1 : 0)]),
+    KEYS.map((k) => [k, h('input', { type: 'hidden', 'data-field': `rank-${k}`, value: k === 'Q' ? '1' : '0' })]),
   ) as Record<AbilityKey, HTMLInputElement>;
+  const rankButtons = {} as Record<AbilityKey, { plus: HTMLButtonElement; minus: HTMLButtonElement }>;
+  const rankPips = Object.fromEntries(
+    KEYS.map((k) => [k, h('span', { class: 'rank-pips', 'data-role': `rank-pips-${k}` })]),
+  ) as Record<AbilityKey, HTMLElement>;
+  const stepRank = (k: AbilityKey, delta: number) => {
+    const next = Math.min(MAX_RANK[k], Math.max(0, (Number(ranks[k].value) || 0) + delta));
+    ranks[k].value = String(next);
+    ranks[k].dispatchEvent(new Event('change', { bubbles: true }));
+  };
+  for (const k of KEYS) {
+    const button = (which: 'plus' | 'minus', text: string, delta: number) => {
+      const b = h('button', { type: 'button', class: 'rank-button', 'data-role': `rank-${which}-${k}`, 'aria-label': `${which === 'plus' ? 'Raise' : 'Lower'} ${k}` }, text) as HTMLButtonElement;
+      b.addEventListener('click', () => stepRank(k, delta));
+      return b;
+    };
+    rankButtons[k] = { plus: button('plus', '+', 1), minus: button('minus', '−', -1) };
+  }
+  const refreshRanks = () => {
+    for (const k of KEYS) {
+      const rank = Number(ranks[k].value) || 0;
+      rankPips[k].replaceChildren(
+        ...Array.from({ length: MAX_RANK[k] }, (_, i) => h('span', { class: i < rank ? 'pip on' : 'pip' })),
+      );
+      rankButtons[k].plus.disabled = rank >= MAX_RANK[k];
+      rankButtons[k].minus.disabled = rank <= 0;
+    }
+  };
 
   const selectable = Object.entries(data.items).filter(([, item]) => Object.keys(item.stats).length > 0);
   const nameCount = new Map<string, number>();
@@ -160,9 +199,11 @@ export function createPanel(
     select(`item-${i}`, itemOptions, '(no item)'),
   );
   const itemIcons = items.map((_, i) => icon(`item-icon-${i}`, 'item-icon'));
+  // The box keeps its size (a light gray square) when the slot is empty, so the rows do not collapse.
+  const itemBoxes = itemIcons.map((img, i) => h('span', { class: 'item-icon-box empty', 'data-role': `item-box-${i}` }, img));
   const portrait = icon('champion-icon', 'champion-icon');
   const abilityIcons = Object.fromEntries(
-    KEYS.map((k) => [k, icon(`ability-icon-${k}`, 'ability-icon')]),
+    KEYS.map((k) => [k, icon(`ability-icon-${k}`, 'rank-icon')]),
   ) as Record<AbilityKey, HTMLImageElement>;
 
   const runeOptions = Object.entries(data.runes).map(
@@ -178,15 +219,29 @@ export function createPanel(
     h(
       'div',
       { class: 'level-row' },
-      h('label', {}, 'Level ', level),
+      h('span', { class: 'level-control' }, h('label', {}, 'Level ', level), h('span', { class: 'level-buttons' }, levelMinus, levelPlus)),
       h('label', { class: 'quest' }, quest, ' Top lane role quest (level cap 20)'),
     ),
-    h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, abilityIcons[k], ranks[k]))),
+    h(
+      'div',
+      { class: 'ranks' },
+      ...KEYS.map((k) =>
+        h(
+          'div',
+          { class: 'rank-control' },
+          `${k} `,
+          abilityIcons[k],
+          rankPips[k],
+          h('span', { class: 'rank-buttons', 'data-role': `rank-buttons-${k}` }, rankButtons[k].plus, rankButtons[k].minus),
+          ranks[k],
+        ),
+      ),
+    ),
     warning,
     h(
       'div',
       { class: 'items' },
-      ...items.map((sel, i) => h('span', { class: 'item-slot' }, itemIcons[i], sel)),
+      ...items.map((sel, i) => h('span', { class: 'item-slot' }, itemBoxes[i], sel)),
     ),
     h('label', {}, 'Rune ', runes),
     summary,
@@ -203,6 +258,8 @@ export function createPanel(
     const problems = validateRanks(currentLevel(), currentRanks());
     warning.textContent = problems.join(' ');
     warning.hidden = problems.length === 0;
+    levelMinus.disabled = currentLevel() <= 1;
+    levelPlus.disabled = currentLevel() >= maxLevel();
   };
   const buildSide = (): Side => {
     const champ = lookupChampion(data, champion.value);
@@ -303,18 +360,23 @@ export function createPanel(
   };
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
-    items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
+    items.forEach((sel, i) => {
+      setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : '');
+      itemBoxes[i].classList.toggle('empty', !sel.value);
+    });
     const files = data.champions[champion.value]?.abilityIcons;
     KEYS.forEach((k, i) => setIcon(abilityIcons[k], files?.[i] ? spellIconPath(files[i]) : ''));
   };
   section.addEventListener('change', () => {
     refreshLevelAndWarnings();
+    refreshRanks();
     refreshStats();
     refreshCombo();
     refreshIcons();
     onChange();
   });
   refreshLevelAndWarnings();
+  refreshRanks();
   refreshStats();
   refreshCombo();
   refreshIcons();

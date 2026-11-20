@@ -155,6 +155,15 @@ describe('icons', () => {
     set(field('you', 'item-0'), '');
     expect(icon('you', 'item-icon-0').hidden).toBe(true);
   });
+  test('an empty item slot shows a placeholder square so the rows keep their shape', () => {
+    const box = (i: number) => q(`.panel[data-side=you] [data-role=item-box-${i}]`);
+    expect(box(0).classList.contains('empty')).toBe(true);
+    set(field('you', 'item-0'), '2');
+    expect(box(0).classList.contains('empty')).toBe(false);
+    expect(box(1).classList.contains('empty')).toBe(true);
+    set(field('you', 'item-0'), '');
+    expect(box(0).classList.contains('empty')).toBe(true);
+  });
 });
 
 describe('level and rank validation', () => {
@@ -199,6 +208,92 @@ describe('level and rank validation', () => {
     expect(warning('you').textContent).toMatch(/R.*6/);
     set(field('you', 'level'), '6');
     expect(warning('you').hidden).toBe(true);
+  });
+});
+
+describe('level buttons', () => {
+  const lvl = (which: 'plus' | 'minus', side = 'you') =>
+    q(`.side[data-side=${side}] [data-role=level-${which}]`) as HTMLButtonElement;
+  test('plus and minus change the level, side by side right after the level box', () => {
+    const box = field('you', 'level');
+    expect(box.value).toBe('1');
+    lvl('plus').click();
+    lvl('plus').click();
+    expect(box.value).toBe('3');
+    lvl('minus').click();
+    expect(box.value).toBe('2');
+    const row = lvl('plus').parentElement as HTMLElement;
+    expect([...row.children].map((b) => b.getAttribute('data-role'))).toEqual(['level-minus', 'level-plus']);
+    expect(row.previousElementSibling?.contains(box)).toBe(true);
+  });
+  test('stops at level 1 and at 18, or 20 with the top lane quest', () => {
+    expect(lvl('minus').disabled).toBe(true);
+    for (let i = 0; i < 30; i++) lvl('plus').click();
+    expect(field('you', 'level').value).toBe('18');
+    expect(lvl('plus').disabled).toBe(true);
+    const quest = field('you', 'role-quest');
+    quest.checked = true;
+    quest.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(lvl('plus').disabled).toBe(false);
+    lvl('plus').click();
+    lvl('plus').click();
+    expect(field('you', 'level').value).toBe('20');
+  });
+  test('the level feeds the stats like typing it does, and each side has its own buttons', () => {
+    set(field('you', 'champion'), 'Gamma'); // 1000 HP + 100 per level growth
+    lvl('plus').click();
+    expect(q('.side[data-side=you] [data-stat=hp]').textContent).toContain('1072');
+    expect(field('enemy', 'level').value).toBe('1');
+  });
+});
+
+describe('ability rank buttons', () => {
+  const btn = (key: string, which: 'plus' | 'minus') =>
+    q(`.side[data-side=you] [data-role=rank-${which}-${key}]`) as HTMLButtonElement;
+  const pips = (key: string) => [...root.querySelectorAll(`.side[data-side=you] [data-role=rank-pips-${key}] .pip`)];
+  const learned = (key: string) => pips(key).filter((p) => p.classList.contains('on')).length;
+  test('plus raises and minus lowers the rank', () => {
+    expect(learned('W')).toBe(0);
+    btn('W', 'plus').click();
+    btn('W', 'plus').click();
+    expect(field('you', 'rank-W').value).toBe('2');
+    btn('W', 'minus').click();
+    expect(field('you', 'rank-W').value).toBe('1');
+  });
+  test('each ability reads icon, then level squares, then the buttons, and the icon is the large one', () => {
+    const control = q('.side[data-side=you] [data-role=rank-buttons-Q]').parentElement as HTMLElement;
+    const parts = [...control.children].map((c) => c.getAttribute('data-role') ?? c.tagName.toLowerCase());
+    expect(parts).toEqual(['ability-icon-Q', 'rank-pips-Q', 'rank-buttons-Q', 'input']);
+    expect(control.querySelector('img')?.classList.contains('rank-icon')).toBe(true);
+  });
+  test('squares fill from the bottom: they are laid out as a column that starts at the bottom', () => {
+    // The first square in the DOM is the first level, shown lowest (CSS column-reverse).
+    const first = q('.side[data-side=you] [data-role=rank-pips-Q] .pip');
+    expect(first.classList.contains('on')).toBe(true);
+  });
+  test('plus is above minus', () => {
+    const box = q('.side[data-side=you] [data-role=rank-buttons-Q]');
+    expect([...box.children].map((b) => b.getAttribute('data-role'))).toEqual(['rank-plus-Q', 'rank-minus-Q']);
+  });
+  test('one green square per learned level and one gray square per level still to learn', () => {
+    expect(pips('Q')).toHaveLength(5);
+    expect(learned('Q')).toBe(1); // Q starts at rank 1
+    btn('Q', 'plus').click();
+    expect(learned('Q')).toBe(2);
+    expect(pips('Q')).toHaveLength(5);
+    expect(pips('R')).toHaveLength(3);
+    expect(learned('R')).toBe(0);
+  });
+  test('the buttons stop at 0 and at the maximum rank', () => {
+    expect(btn('R', 'minus').disabled).toBe(true);
+    for (let i = 0; i < 5; i++) btn('R', 'plus').click();
+    expect(field('you', 'rank-R').value).toBe('3');
+    expect(btn('R', 'plus').disabled).toBe(true);
+    expect(learned('R')).toBe(3);
+  });
+  test('changing a rank updates the rank warning and the damage', () => {
+    for (let i = 0; i < 3; i++) btn('Q', 'plus').click();
+    expect(root.querySelector('.side[data-side=you] [data-role=rank-warning]')?.textContent).toMatch(/Q/);
   });
 });
 
