@@ -37,7 +37,7 @@ export type ComponentDamage = {
   type: DamageType;
   base: number;
   /** What each scaling adds, in the order the ability lists them. */
-  scalings: { stat: ComponentStat; value: number }[];
+  scalings: { stat: ComponentStat; via?: ComponentStat; value: number }[];
   /** base plus scalings, before armor or magic resist. */
   raw: number;
 };
@@ -53,7 +53,10 @@ export function evaluateComponent(
   const base = learned ? atRank(c.base, rank) : 0;
   const scalings = c.scalings.map((s) => ({
     stat: s.stat,
-    value: learned ? atRank(s.ratio, rank) * statValue(s.stat, caster, target) : 0,
+    ...(s.via ? { via: s.via } : {}),
+    value: learned
+      ? atRank(s.ratio, rank) * statValue(s.stat, caster, target) * (s.via ? statValue(s.via, caster, target) : 1)
+      : 0,
   }));
   const raw = scalings.reduce((sum, s) => sum + s.value, base);
   return { label: c.label, type: c.type, base, scalings, raw };

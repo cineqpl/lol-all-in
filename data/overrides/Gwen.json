@@ -17,11 +17,11 @@
   ],
   "skipped": [
    "Damage per Snip: damage type unknown",
-   "Center Damage per Snip: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+   "Center Damage per Snip: damage type unknown",
    "Final Snip Damage: damage type unknown",
-   "Final Snip Center Damage: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+   "Final Snip Center Damage: damage type unknown",
    "Minimum Damage: damage type unknown",
-   "Minimum Center Damage: unknown scaling \"(+ 2%   of the target's maximum health)\"",
+   "Minimum Center Damage: damage type unknown",
    "Maximum Damage: maximum of a range (minimum is used)",
    "Maximum Center Damage: maximum of a range (minimum is used)"
   ],
@@ -33,7 +33,8 @@
   "name": "Needlework",
   "status": "unchecked",
   "reasons": [
-   "3 unread damage line(s)",
+   "2 casts",
+   "several damage lines in one cast",
    "per-hit wording (stacks, ticks, empowered, bonus, execute)"
   ],
   "wikiLines": [
@@ -44,13 +45,13 @@
    "[Recast] Maximum Total Damage = 270 / 450 / 630 (+ 90% AP) (+ 9% (+ 5.4% per 100 AP) of the target's maximum health)"
   ],
   "skipped": [
-   "Damage with A Thousand Cuts: unknown scaling \"(+ 1%   of the target's maximum health)\"",
-   "Second Cast Total Damage: unknown scaling \"(+ 3%   of the target's maximum health)\"",
-   "Third Cast Total Damage: unknown scaling \"(+ 5%   of the target's maximum health)\"",
    "Maximum Total Damage: sum of other lines"
   ],
   "parsed": [
-   "Active: Magic Damage per Needle (magic) 30/50/70 + 10% AP"
+   "Active: Magic Damage per Needle (magic) 30/50/70 + 10% AP",
+   "Active: Damage with A Thousand Cuts (magic) 30/50/70 + 10% AP + 1% target's max HP + 0.006% target's max HP x AP",
+   "Recast: Second Cast Total Damage (magic) 90/150/210 + 30% AP + 3% target's max HP + 0.018% target's max HP x AP",
+   "Recast: Third Cast Total Damage (magic) 150/250/350 + 50% AP + 5% target's max HP + 0.03% target's max HP x AP"
   ],
   "override": null,
   "note": ""

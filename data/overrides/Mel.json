@@ -79,7 +79,7 @@
    "[Active] Magic Damage = 125 / 200 / 275 (+ 30% AP) (+ 4 / 7 / 10 (+ 4% AP) per Overwhelm stack on the target)"
   ],
   "skipped": [
-   "Magic Damage: unknown scaling \"(+ 4 / 7 / 10   per Overwhelm stack on the target)\""
+   "Magic Damage: unknown scaling \"4 / 7 / 10 per Overwhelm stack on the target\""
   ],
   "parsed": [
    "Passive: Increased Stored Damage (magic) 10/20/30"

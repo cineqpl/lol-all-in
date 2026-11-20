@@ -3,17 +3,18 @@
   "name": "Knuckle Down",
   "status": "unchecked",
   "reasons": [
-   "1 unread damage line(s)"
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
   ],
   "wikiLines": [
    "[Active] Physical Damage Per Hit = 10 / 20 / 30 / 40 / 50 (+ 100% AD) (+ 1% (+ 1 / 1.5 / 2 / 2.5 / 3% per 100 AD) of target's maximum health)",
    "[Active] Total Physical Damage = 20 / 40 / 60 / 80 / 100 (+ 200% AD) (+ 2% (+ 2 / 3 / 4 / 5 / 6% per 100 AD) of target's maximum health)"
   ],
   "skipped": [
-   "Physical Damage Per Hit: unknown scaling \"(+ 1%   of target's maximum health)\"",
    "Total Physical Damage: sum of other lines"
   ],
-  "parsed": [],
+  "parsed": [
+   "Active: Physical Damage Per Hit (physical) 10/20/30/40/50 + 100% AD + 1% target's max HP + 0.01/0.015/0.02/0.025/0.03% target's max HP x AD"
+  ],
   "override": null,
   "note": ""
  },
@@ -27,7 +28,7 @@
    "[Active] Damage = 80 / 100 / 120 / 140 / 160 (+ 25% (+ 25% per 100 bonus AD) of expended Grit)"
   ],
   "skipped": [
-   "Damage: unknown scaling \"(+ 25%   of expended Grit)\""
+   "Damage: unknown scaling \"of expended Grit\""
   ],
   "parsed": [],
   "override": null,

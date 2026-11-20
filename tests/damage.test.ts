@@ -71,6 +71,12 @@ describe('evaluateComponent', () => {
     expect(stat('bonusMr')).toBe(10);
     expect(stat('maxMana')).toBe(600);
   });
+  test('a scaling that goes through a second stat multiplies both', () => {
+    const c = comp({ base: [5], scalings: [{ stat: 'targetMaxHp', via: 'ap', ratio: [0.000025] }] });
+    const r = evaluateComponent(c, 1, attacker, target); // 0.000025 * 2000 target HP * 100 AP
+    expect(r.scalings).toEqual([{ stat: 'targetMaxHp', via: 'ap', value: 5 }]);
+    expect(r.raw).toBe(10);
+  });
   test('target health scalings assume a target at full health', () => {
     const stat = (s: Parameters<typeof evaluateComponent>[0]['scalings'][0]['stat']) =>
       evaluateComponent(comp({ base: [0], scalings: [{ stat: s, ratio: [0.1] }] }), 1, attacker, target).raw;

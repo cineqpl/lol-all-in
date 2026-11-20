@@ -123,6 +123,34 @@ describe('parseComponents', () => {
   });
 });
 
+describe('scalings that name the champion or nest another scaling', () => {
+  it("reads \"of <Champion>'s ...\" as the champion's own stat", () => {
+    const braum = ability([{ text: 'Active: dealing magic damage.', values: [['Magic Damage', "75 / 120 (+ 2.5% of Braum's maximum health)"]] }]);
+    const { components } = parseComponents(braum, 'Braum');
+    expect(components[0].scalings).toEqual([{ stat: 'maxHp', ratio: [0.025] }]);
+    const sona = ability([{ text: 'Active: dealing magic damage.', values: [['Magic Damage', "10 (+ 20% of Sona's AP)"]] }]);
+    expect(parseComponents(sona, 'Sona').components[0].scalings).toEqual([{ stat: 'ap', ratio: [0.2] }]);
+  });
+  it("does not treat another champion's name as the caster", () => {
+    const x = ability([{ text: 'Active: dealing magic damage.', values: [['Magic Damage', "10 (+ 20% of Braum's maximum health)"]] }]);
+    expect(parseComponents(x, 'Annie').components).toEqual([]);
+  });
+  it('splits a percentage that grows with another stat into its own scaling', () => {
+    const amumu = ability([{
+      text: 'Toggle: dealing magic damage.',
+      values: [['Magic Damage Per Tick', "5 (+ 0.5 / 0.625 / 0.75 / 0.875 / 1% (+ 0.25% per 100 AP) of target's maximum health)"]],
+    }]);
+    const { components, skipped } = parseComponents(amumu, 'Amumu');
+    expect(skipped).toEqual([]);
+    expect(components[0].base).toEqual([5]);
+    expect(components[0].scalings).toEqual([
+      { stat: 'targetMaxHp', ratio: [0.005, 0.00625, 0.0075, 0.00875, 0.01] },
+      // 0.25% per 100 AP = 0.000025 per AP, applied to the target's max HP
+      { stat: 'targetMaxHp', via: 'ap', ratio: [0.000025] },
+    ]);
+  });
+});
+
 describe('abilitiesFromWiki', () => {
   const block = (slot: WikiAbility['slot'], name: string, rows: Parameters<typeof ability>[0]): WikiAbility => ({ ...ability(rows), slot, name });
 

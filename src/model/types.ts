@@ -36,8 +36,12 @@ export type ComponentStat =
   | 'maxMana'
   | 'targetMaxHp' | 'targetCurrentHp' | 'targetMissingHp';
 
-/** ratio is a fraction (0.6 = 60%): one value for every rank, or one per rank. */
-export type ComponentScaling = { stat: ComponentStat; ratio: number[] };
+/**
+ * ratio is a fraction (0.6 = 60%): one value for every rank, or one per rank.
+ * With `via`, the value is ratio * stat * via: a percentage of one stat that grows with another
+ * (0.25% of target max HP per 100 AP is stat targetMaxHp, via ap, ratio 0.000025).
+ */
+export type ComponentScaling = { stat: ComponentStat; ratio: number[]; via?: ComponentStat };
 
 export type DamageType = 'physical' | 'magic' | 'true';
 

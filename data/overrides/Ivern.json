@@ -3,17 +3,16 @@
   "name": "Brushmaker",
   "status": "unchecked",
   "reasons": [
-   "1 unread damage line(s)"
+   "2 casts"
   ],
   "wikiLines": [
    "[Passive] Additional Magic Damage = 20 / 27.5 / 35 / 42.5 / 50 (+ 20% AP)",
    "[Active] Ally Additional Magic Damage = 10 / 15 / 20 / 25 / 30 (+ 10% of Ivern's AP)"
   ],
-  "skipped": [
-   "Ally Additional Magic Damage: unknown scaling \"of Ivern's AP\""
-  ],
+  "skipped": [],
   "parsed": [
-   "Passive: Additional Magic Damage (magic) 20/27.5/35/42.5/50 + 20% AP"
+   "Passive: Additional Magic Damage (magic) 20/27.5/35/42.5/50 + 20% AP",
+   "Active: Ally Additional Magic Damage (magic) 10/15/20/25/30 + 10% AP"
   ],
   "override": null,
   "note": ""

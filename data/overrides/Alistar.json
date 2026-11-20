@@ -1,7 +1,7 @@
 {
  "E": {
   "name": "Trample",
-  "status": "unchecked",
+  "status": "fixed",
   "reasons": [
    "per-hit wording (stacks, ticks, empowered, bonus, execute)"
   ],
@@ -15,7 +15,35 @@
   "parsed": [
    "Active: Magic Damage Per Tick (magic) 8/11/14/17/20 + 7% AP"
   ],
-  "override": null,
-  "note": ""
+  "override": {
+   "casts": [
+    {
+     "name": "Active",
+     "components": [
+      {
+       "label": "Total Magic Damage",
+       "cast": "Active",
+       "type": "magic",
+       "base": [
+        80,
+        110,
+        140,
+        170,
+        200
+       ],
+       "scalings": [
+        {
+         "stat": "ap",
+         "ratio": [
+          0.7
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "note": "Count total damage only."
  }
 }

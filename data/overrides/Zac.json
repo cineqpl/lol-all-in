@@ -2,36 +2,34 @@
  "Q": {
   "name": "Stretching Strikes",
   "status": "unchecked",
-  "reasons": [
-   "1 unread damage line(s)"
-  ],
+  "reasons": [],
   "wikiLines": [
    "[Active] Magic Damage = 60 / 90 / 120 / 150 / 180 (+ 30% AP) (+ 3% of Zac's bonus health)",
    "[Active] Total Magic Damage = 120 / 180 / 240 / 300 / 360 (+ 60% AP) (+ 6% of Zac's bonus health)"
   ],
   "skipped": [
-   "Magic Damage: unknown scaling \"of Zac's bonus health\"",
    "Total Magic Damage: sum of other lines"
   ],
-  "parsed": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/90/120/150/180 + 30% AP + 3% bonus HP"
+  ],
   "override": null,
   "note": ""
  },
  "W": {
   "name": "Unstable Matter",
   "status": "unchecked",
-  "reasons": [
-   "1 unread damage line(s)"
-  ],
+  "reasons": [],
   "wikiLines": [
    "[Active] Magic Damage = 40 / 50 / 60 / 70 / 80 (+ 4 / 5 / 6 / 7 / 8% (+ 3% per 100 AP) of target's maximum health)",
    "[Active] Capped Non-Champion Damage = 240 / 250 / 260 / 270 / 280"
   ],
   "skipped": [
-   "Magic Damage: unknown scaling \"(+ 4 / 5 / 6 / 7 / 8%   of target's maximum health)\"",
    "Capped Non-Champion Damage: not against champions"
   ],
-  "parsed": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 40/50/60/70/80 + 4/5/6/7/8% target's max HP + 0.03% target's max HP x AP"
+  ],
   "override": null,
   "note": ""
  },

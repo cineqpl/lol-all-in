@@ -1,18 +1,16 @@
 {
  "Q": {
   "name": "Winter's Bite",
-  "status": "unchecked",
-  "reasons": [
-   "1 unread damage line(s)"
-  ],
+  "status": "ok",
+  "reasons": [],
   "wikiLines": [
    "[Active] Magic Damage = 75 / 120 / 165 / 210 / 255 (+ 2.5% of Braum's maximum health)"
   ],
-  "skipped": [
-   "Magic Damage: unknown scaling \"of Braum's maximum health\""
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 75/120/165/210/255 + 2.5% max HP"
   ],
-  "parsed": [],
   "override": null,
-  "note": ""
+  "note": "The scaling is based on your max HP."
  }
 }

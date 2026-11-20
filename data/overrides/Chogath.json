@@ -12,7 +12,7 @@
    "[Active] Total Monster Damage = 330 / 480 / 630 / 780 / 930 (+ 90% AP)"
   ],
   "skipped": [
-   "Magic Damage: unknown scaling \"(+ 2.5 / 2.85 / 3.2 / 3.55 / 3.9%   of target's maximum health)\"",
+   "Magic Damage: unknown scaling \"per Feast stack\"",
    "Total Magic Damage: sum of other lines",
    "Monster Damage: not against champions",
    "Total Monster Damage: sum of other lines"

@@ -13,7 +13,7 @@ const wiki = JSON.parse(await readFile('data/wiki-abilities.json', 'utf8')) as {
   fetchedAt: string;
   champions: Record<string, { abilities: WikiAbility[] }>;
 };
-const champions = JSON.parse(await readFile('data/champions.json', 'utf8')) as { id: string }[];
+const champions = JSON.parse(await readFile('data/champions.json', 'utf8')) as { id: string; name: string }[];
 
 /** Reviewed entries from data/overrides/<Champion>.json (see scripts/init-overrides.ts). */
 async function overridesFor(id: string): Promise<Record<string, OverrideEntry>> {
@@ -27,7 +27,7 @@ async function overridesFor(id: string): Promise<Record<string, OverrideEntry>> 
 const out: Record<string, unknown> = {};
 for (const c of champions) {
   const overrides = await overridesFor(c.id);
-  out[c.id] = abilitiesFromWiki(wiki.champions[c.id]?.abilities).map((a) => applyOverride(a, overrides[a.key]));
+  out[c.id] = abilitiesFromWiki(wiki.champions[c.id]?.abilities, c.name).map((a) => applyOverride(a, overrides[a.key]));
 }
 await writeFile(
   'data/abilities.json',

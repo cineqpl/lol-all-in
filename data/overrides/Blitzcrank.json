@@ -1,7 +1,7 @@
 {
  "R": {
   "name": "Static Field",
-  "status": "unchecked",
+  "status": "ok",
   "reasons": [
    "2 casts"
   ],
@@ -15,6 +15,6 @@
    "Active: Magic Damage (magic) 275/400/525 + 100% AP"
   ],
   "override": null,
-  "note": ""
+  "note": "Count passive and active damage hits separately."
  }
 }

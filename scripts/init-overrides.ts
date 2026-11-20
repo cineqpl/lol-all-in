@@ -10,6 +10,9 @@ import { riskReasons } from '../src/data/overrides';
 import type { WikiAbility } from '../src/data/wiki';
 import type { Cast } from '../src/model/types';
 
+const names = Object.fromEntries(
+  (JSON.parse(await readFile('data/champions.json', 'utf8')) as { id: string; name: string }[]).map((c) => [c.id, c.name]),
+);
 const wiki = JSON.parse(await readFile('data/wiki-abilities.json', 'utf8')).champions as Record<string, { abilities: WikiAbility[] }>;
 
 const LABEL: Record<string, string> = {
@@ -21,7 +24,7 @@ const pct = (r: number[]) => r.map((x) => +(x * 100).toFixed(3)).join('/');
 const summary = (casts: Cast[]) =>
   casts.flatMap((c) =>
     c.components.map((x) => {
-      const sc = x.scalings.map((s) => ` + ${pct(s.ratio)}% ${LABEL[s.stat]}`).join('');
+      const sc = x.scalings.map((s) => ` + ${pct(s.ratio)}% ${LABEL[s.stat]}${s.via ? ` x ${LABEL[s.via]}` : ''}`).join('');
       return `${c.name}: ${x.label} (${x.type}) ${x.base.join('/')}${sc}`;
     }),
   );
@@ -31,7 +34,7 @@ await mkdir('data/overrides', { recursive: true });
 let abilitiesWritten = 0;
 let champions = 0;
 for (const [id, c] of Object.entries(wiki)) {
-  const abilities = abilitiesFromWiki(c.abilities);
+  const abilities = abilitiesFromWiki(c.abilities, names[id]);
   const path = `data/overrides/${id}.json`;
   let existing: Record<string, any> = {};
   try { existing = JSON.parse(await readFile(path, 'utf8')); } catch { /* new file */ }
@@ -46,7 +49,7 @@ for (const [id, c] of Object.entries(wiki)) {
       status: old?.status ?? 'unchecked',
       reasons,
       wikiLines: block.rows.flatMap((r) => r.values.filter((v) => /damage/i.test(v.label)).map((v) => `[${stageOf(r.text)}] ${v.label} = ${v.value}`)),
-      skipped: parseComponents(block).skipped.map((s) => `${s.label}: ${s.reason}`),
+      skipped: parseComponents(block, names[id]).skipped.map((s) => `${s.label}: ${s.reason}`),
       parsed: summary(a.casts),
       override: old?.override ?? null,
       note: old?.note ?? '',

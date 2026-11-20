@@ -36,19 +36,36 @@ const STATS: [RegExp, ComponentStat][] = [
 type Parsed = { base: number[]; scalings: ComponentScaling[] } | { error: string };
 
 /** "(+ 60 / 67.5% AD)", "(+ 2% per 100 AP)", "(+ 8% of his bonus health)" */
-function parseScaling(text: string): ComponentScaling | { error: string } {
+function parseScaling(text: string, championName?: string): ComponentScaling | { error: string } {
   const m = SERIES.exec(text.replace(/^\+\s*/, ''));
   if (!m || !m[1].includes('%')) return { error: `unknown scaling "${text}"` };
   let rest = m[2];
   let per = 1;
   const pm = /^per (\d+)\s+(.*)$/.exec(rest);
   if (pm) { per = parseFloat(pm[1]); rest = pm[2]; }
+  // "of Braum's maximum health": the champion's own stat, the same as "of his maximum health".
+  if (championName) {
+    const own = `of ${championName.toLowerCase()}'s `;
+    if (rest.toLowerCase().startsWith(own)) rest = 'of his ' + rest.slice(own.length);
+  }
   const stat = STATS.find(([re]) => re.test(rest.toLowerCase()));
   if (!stat) return { error: `unknown scaling "${rest}"` };
   return { stat: stat[1], ratio: numbers(m[1]).map((n) => n / 100 / per) };
 }
 
-function parseValue(value: string): Parsed {
+/** "(+ 0.5 / 1% (+ 0.25% per 100 AP) of target's maximum health)": a percentage that grows with another stat. */
+const NESTED = /\(\s*\+\s*([^()]*?)\s*\(\s*\+\s*([^()]*?)\s*\)\s*([^()]*?)\s*\)/g;
+
+function parseValue(value: string, championName?: string): Parsed {
+  const nested: ComponentScaling[] = [];
+  for (const m of value.matchAll(NESTED)) {
+    const outer = parseScaling(`${m[1]} ${m[3]}`, championName);
+    const inner = parseScaling(m[2], championName);
+    if ('error' in outer) return outer;
+    if ('error' in inner) return inner;
+    nested.push(outer, { stat: outer.stat, via: inner.stat, ratio: inner.ratio });
+  }
+  value = value.replace(NESTED, ' ');
   const parens = [...value.matchAll(/\(([^()]*)\)/g)].map((m) => m[1]);
   const head = value.replace(/\([^()]*\)/g, ' ').trim();
   const m = SERIES.exec(head);
@@ -57,7 +74,7 @@ function parseValue(value: string): Parsed {
   let base: number[];
   if (m[1].includes('%')) {
     // "40 / 45 / 50% AD": a percentage of a stat, no flat part.
-    const s = parseScaling(head);
+    const s = parseScaling(head, championName);
     if ('error' in s) return s;
     base = [0];
     scalings.push(s);
@@ -68,11 +85,11 @@ function parseValue(value: string): Parsed {
   }
   for (const p of parens) {
     if (!/^\s*\+/.test(p)) return { error: `unknown scaling "${p.trim()}"` };
-    const s = parseScaling(p.trim());
+    const s = parseScaling(p.trim(), championName);
     if ('error' in s) return s;
     scalings.push(s);
   }
-  return { base, scalings };
+  return { base, scalings: [...scalings, ...nested] };
 }
 
 const TYPE_WORD = /\b(physical|magic|true) damage/gi;
@@ -102,7 +119,7 @@ function skipReason(label: string, siblings: string[]): string | undefined {
   return undefined;
 }
 
-export function parseComponents(ability: WikiAbility): ParsedAbility {
+export function parseComponents(ability: WikiAbility, championName?: string): ParsedAbility {
   const abilityType = typeIn(ability.rows.map((r) => r.text).join(' '));
   const components: DamageComponent[] = [];
   const skipped: SkippedLine[] = [];
@@ -114,7 +131,7 @@ export function parseComponents(ability: WikiAbility): ParsedAbility {
       const skip = (reason: string) => skipped.push({ label: v.label, value: v.value, reason });
       const why = skipReason(v.label, labels);
       if (why) { skip(why); continue; }
-      const parsed = parseValue(v.value);
+      const parsed = parseValue(v.value, championName);
       if ('error' in parsed) { skip(parsed.error); continue; }
       const type = typeIn(v.label) ?? abilityType;
       if (!type) { skip('damage type unknown'); continue; }
@@ -133,14 +150,14 @@ const KEYS: AbilityKey[] = ['Q', 'W', 'E', 'R'];
  * Q/W/E/R for one champion from its wiki ability blocks. Where a slot has several forms
  * (Jayce, Elise, Nidalee...), the first one is used. Pass undefined for a champion the wiki data lacks.
  */
-export function abilitiesFromWiki(blocks: WikiAbility[] | undefined): Ability[] {
+export function abilitiesFromWiki(blocks: WikiAbility[] | undefined, championName?: string): Ability[] {
   return KEYS.map((key): Ability => {
     const block = blocks?.find((b) => b.slot === key.toLowerCase());
     if (!block) {
       const unread = blocks ? [] : ['no ability data for this champion'];
       return { key, name: key, casts: [], unread };
     }
-    const { components, skipped } = parseComponents(block);
+    const { components, skipped } = parseComponents(block, championName);
     const casts: Cast[] = [];
     for (const c of components) {
       let cast = casts.find((x) => x.name === c.cast);

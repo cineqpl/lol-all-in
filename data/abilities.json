@@ -152,10 +152,54 @@
    {
     "key": "Q",
     "name": "Orb of Deception",
-    "casts": [],
-    "unread": [
-     "Damage Per Pass: damage type unknown"
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Damage Per Pass (outgoing, magic)",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         35,
+         60,
+         85,
+         110,
+         135
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.5
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Damage Per Pass (return, true)",
+        "cast": "Active",
+        "type": "true",
+        "base": [
+         35,
+         60,
+         85,
+         110,
+         135
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.5
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
@@ -165,41 +209,21 @@
       "name": "Active",
       "components": [
        {
-        "label": "Primary Magic Damage",
+        "label": "Total Single-Target Damage",
         "cast": "Active",
         "type": "magic",
         "base": [
-         40,
-         60,
-         80,
-         100,
-         120
+         72,
+         108,
+         144,
+         180,
+         216
         ],
         "scalings": [
          {
           "stat": "ap",
           "ratio": [
-           0.4
-          ]
-         }
-        ]
-       },
-       {
-        "label": "Subsequent Magic Damage",
-        "cast": "Active",
-        "type": "magic",
-        "base": [
-         16,
-         24,
-         32,
-         40,
-         48
-        ],
-        "scalings": [
-         {
-          "stat": "ap",
-          "ratio": [
-           0.16
+           0.72
           ]
          }
         ]
@@ -637,21 +661,21 @@
       "name": "Active",
       "components": [
        {
-        "label": "Magic Damage Per Tick",
+        "label": "Total Magic Damage",
         "cast": "Active",
         "type": "magic",
         "base": [
-         8,
-         11,
-         14,
-         17,
-         20
+         80,
+         110,
+         140,
+         170,
+         200
         ],
         "scalings": [
          {
           "stat": "ap",
           "ratio": [
-           0.07
+           0.7
           ]
          }
         ]
@@ -672,13 +696,162 @@
    {
     "key": "Q",
     "name": "Cunning Sweep",
-    "casts": [],
-    "unread": [
-     "Physical Damage: unknown scaling \"(+ 2 / 2.25 / 2.5 / 2.75 / 3%   of target's maximum health)\"",
-     "Increased Physical Damage: unknown scaling \"(+ 4 / 4.5 / 5 / 5.5 / 6%   of target's maximum health)\"",
-     "Physical Damage: unknown scaling \"(+ 2 / 2.25 / 2.5 / 2.75 / 3%   of the target's maximum health)\"",
-     "Increased Physical Damage: unknown scaling \"(+ 4 / 4.5 / 5 / 5.5 / 6%   of the target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Physical Damage",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         20,
+         30,
+         40,
+         50,
+         60
+        ],
+        "scalings": [
+         {
+          "stat": "bonusAd",
+          "ratio": [
+           0.3
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.02,
+           0.0225,
+           0.025,
+           0.0275,
+           0.03
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "bonusAd",
+          "ratio": [
+           0.00015
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Increased Physical Damage",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         40,
+         60,
+         80,
+         100,
+         120
+        ],
+        "scalings": [
+         {
+          "stat": "bonusAd",
+          "ratio": [
+           0.6
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.04,
+           0.045,
+           0.05,
+           0.055,
+           0.06
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "bonusAd",
+          "ratio": [
+           0.0003
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Physical Damage",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         25,
+         37.5,
+         50,
+         62.5,
+         75
+        ],
+        "scalings": [
+         {
+          "stat": "bonusAd",
+          "ratio": [
+           0.45
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.02,
+           0.0225,
+           0.025,
+           0.0275,
+           0.03
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "bonusAd",
+          "ratio": [
+           0.0002
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Increased Physical Damage",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         50,
+         75,
+         100,
+         125,
+         150
+        ],
+        "scalings": [
+         {
+          "stat": "bonusAd",
+          "ratio": [
+           0.9
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.04,
+           0.045,
+           0.05,
+           0.055,
+           0.06
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "bonusAd",
+          "ratio": [
+           0.0004
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
@@ -831,10 +1004,41 @@
    {
     "key": "W",
     "name": "Despair",
-    "casts": [],
-    "unread": [
-     "Magic Damage Per Tick: unknown scaling \"(+ 0.5 / 0.625 / 0.75 / 0.875 / 1%   of target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Toggle",
+      "components": [
+       {
+        "label": "Magic Damage Per Tick",
+        "cast": "Toggle",
+        "type": "magic",
+        "base": [
+         5
+        ],
+        "scalings": [
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.005,
+           0.00625,
+           0.0075,
+           0.00875,
+           0.01
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.000025
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "E",
@@ -2316,10 +2520,34 @@
    {
     "key": "Q",
     "name": "Winter's Bite",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"of Braum's maximum health\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         75,
+         120,
+         165,
+         210,
+         255
+        ],
+        "scalings": [
+         {
+          "stat": "maxHp",
+          "ratio": [
+           0.025
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
@@ -2431,11 +2659,47 @@
         ]
        }
       ]
+     },
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Bonus Physical Damage",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         5,
+         20,
+         35,
+         50,
+         65
+        ],
+        "scalings": [
+         {
+          "stat": "ad",
+          "ratio": [
+           0.05
+          ]
+         },
+         {
+          "stat": "targetMissingHp",
+          "ratio": [
+           0.09
+          ]
+         },
+         {
+          "stat": "targetMissingHp",
+          "via": "bonusAd",
+          "ratio": [
+           0.00025
+          ]
+         }
+        ]
+       }
+      ]
      }
     ],
-    "unread": [
-     "Bonus Physical Damage: unknown scaling \"(+ 9%   of the target's missing health)\""
-    ]
+    "unread": []
    },
    {
     "key": "E",
@@ -2997,7 +3261,7 @@
     "name": "Vorpal Spikes",
     "casts": [],
     "unread": [
-     "Magic Damage: unknown scaling \"(+ 2.5 / 2.85 / 3.2 / 3.55 / 3.9%   of target's maximum health)\""
+     "Magic Damage: unknown scaling \"per Feast stack\""
     ]
    },
    {
@@ -3861,10 +4125,41 @@
    {
     "key": "Q",
     "name": "Neurotoxin",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"(+ 4%   of target's current health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         40,
+         70,
+         100,
+         130,
+         160
+        ],
+        "scalings": [
+         {
+          "stat": "targetCurrentHp",
+          "ratio": [
+           0.04
+          ]
+         },
+         {
+          "stat": "targetCurrentHp",
+          "via": "ap",
+          "ratio": [
+           0.0003
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
@@ -4024,11 +4319,68 @@
    {
     "key": "E",
     "name": "Whiplash",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"(+ 3%   of target's maximum health)\"",
-     "Empowered Magic Damage: unknown scaling \"(+ 4%   of target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         60,
+         90,
+         120,
+         150,
+         180
+        ],
+        "scalings": [
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.03
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.00015
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Empowered Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         80,
+         120,
+         160,
+         200,
+         240
+        ],
+        "scalings": [
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.04
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.00025
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "R",
@@ -5759,11 +6111,11 @@
     "casts": [],
     "unread": [
      "Damage per Snip: damage type unknown",
-     "Center Damage per Snip: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+     "Center Damage per Snip: damage type unknown",
      "Final Snip Damage: damage type unknown",
-     "Final Snip Center Damage: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+     "Final Snip Center Damage: damage type unknown",
      "Minimum Damage: damage type unknown",
-     "Minimum Center Damage: unknown scaling \"(+ 2%   of the target's maximum health)\""
+     "Minimum Center Damage: damage type unknown"
     ]
    },
    {
@@ -5802,15 +6154,109 @@
           ]
          }
         ]
+       },
+       {
+        "label": "Damage with A Thousand Cuts",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         30,
+         50,
+         70
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.1
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.01
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.00006
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Recast",
+      "components": [
+       {
+        "label": "Second Cast Total Damage",
+        "cast": "Recast",
+        "type": "magic",
+        "base": [
+         90,
+         150,
+         210
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.3
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.03
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.00018
+          ]
+         }
+        ]
+       },
+       {
+        "label": "Third Cast Total Damage",
+        "cast": "Recast",
+        "type": "magic",
+        "base": [
+         150,
+         250,
+         350
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.5
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.05
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.0003
+          ]
+         }
+        ]
        }
       ]
      }
     ],
-    "unread": [
-     "Damage with A Thousand Cuts: unknown scaling \"(+ 1%   of the target's maximum health)\"",
-     "Second Cast Total Damage: unknown scaling \"(+ 3%   of the target's maximum health)\"",
-     "Third Cast Total Damage: unknown scaling \"(+ 5%   of the target's maximum health)\""
-    ]
+    "unread": []
    }
   ],
   "Hecarim": [
@@ -6664,11 +7110,34 @@
         ]
        }
       ]
+     },
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Ally Additional Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         10,
+         15,
+         20,
+         25,
+         30
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.1
+          ]
+         }
+        ]
+       }
+      ]
      }
     ],
-    "unread": [
-     "Ally Additional Magic Damage: unknown scaling \"of Ivern's AP\""
-    ]
+    "unread": []
    },
    {
     "key": "E",
@@ -8833,7 +9302,7 @@
     "name": "Wolf's Frenzy",
     "casts": [],
     "unread": [
-     "Magic Damage: unknown scaling \"(+ 1.5%   of target's current health)\""
+     "Magic Damage: unknown scaling \"per mark\""
     ]
    },
    {
@@ -8841,7 +9310,7 @@
     "name": "Mounting Dread",
     "casts": [],
     "unread": [
-     "Additional Physical Damage: unknown scaling \"(+ 5%   of target's missing health)\""
+     "Additional Physical Damage: unknown scaling \"per Mark\""
     ]
    },
    {
@@ -11206,7 +11675,7 @@
      }
     ],
     "unread": [
-     "Magic Damage: unknown scaling \"(+ 4 / 7 / 10   per Overwhelm stack on the target)\""
+     "Magic Damage: unknown scaling \"4 / 7 / 10 per Overwhelm stack on the target\""
     ]
    }
   ],
@@ -15820,17 +16289,58 @@
    {
     "key": "Q",
     "name": "Knuckle Down",
-    "casts": [],
-    "unread": [
-     "Physical Damage Per Hit: unknown scaling \"(+ 1%   of target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Physical Damage Per Hit",
+        "cast": "Active",
+        "type": "physical",
+        "base": [
+         10,
+         20,
+         30,
+         40,
+         50
+        ],
+        "scalings": [
+         {
+          "stat": "ad",
+          "ratio": [
+           1
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.01
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ad",
+          "ratio": [
+           0.0001,
+           0.00015,
+           0.0002,
+           0.00025,
+           0.0003
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
     "name": "Haymaker",
     "casts": [],
     "unread": [
-     "Damage: unknown scaling \"(+ 25%   of expended Grit)\""
+     "Damage: unknown scaling \"of expended Grit\""
     ]
    },
    {
@@ -16096,8 +16606,8 @@
     "name": "Twilight Assault",
     "casts": [],
     "unread": [
-     "Bonus Magic Damage: unknown scaling \"– 40   (+ 2 / 2.5 / 3 / 3.5 / 4%   of target's maximum health)\"",
-     "Increased Bonus Damage: unknown scaling \"– 40   (+ 5 / 5.5 / 6 / 6.5 / 7%   of target's maximum health)\""
+     "Bonus Magic Damage: unknown scaling \"– 40\"",
+     "Increased Bonus Damage: unknown scaling \"– 40\""
     ]
    },
    {
@@ -17198,11 +17708,34 @@
         ]
        }
       ]
+     },
+     {
+      "name": "Melody Bonus",
+      "components": [
+       {
+        "label": "Bonus Magic Damage",
+        "cast": "Melody Bonus",
+        "type": "magic",
+        "base": [
+         10,
+         15,
+         20,
+         25,
+         30
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.1
+          ]
+         }
+        ]
+       }
+      ]
      }
     ],
-    "unread": [
-     "Bonus Magic Damage: unknown scaling \"of Sona's AP\""
-    ]
+    "unread": []
    },
    {
     "key": "W",
@@ -17821,10 +18354,39 @@
    {
     "key": "R",
     "name": "Devour",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"(+ 15%   of the target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         100,
+         250,
+         400
+        ],
+        "scalings": [
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.15
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.0007000000000000001
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    }
   ],
   "Taliyah": [
@@ -22175,18 +22737,83 @@
    {
     "key": "Q",
     "name": "Stretching Strikes",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"of Zac's bonus health\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         60,
+         90,
+         120,
+         150,
+         180
+        ],
+        "scalings": [
+         {
+          "stat": "ap",
+          "ratio": [
+           0.3
+          ]
+         },
+         {
+          "stat": "bonusHp",
+          "ratio": [
+           0.03
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "W",
     "name": "Unstable Matter",
-    "casts": [],
-    "unread": [
-     "Magic Damage: unknown scaling \"(+ 4 / 5 / 6 / 7 / 8%   of target's maximum health)\""
-    ]
+    "casts": [
+     {
+      "name": "Active",
+      "components": [
+       {
+        "label": "Magic Damage",
+        "cast": "Active",
+        "type": "magic",
+        "base": [
+         40,
+         50,
+         60,
+         70,
+         80
+        ],
+        "scalings": [
+         {
+          "stat": "targetMaxHp",
+          "ratio": [
+           0.04,
+           0.05,
+           0.06,
+           0.07,
+           0.08
+          ]
+         },
+         {
+          "stat": "targetMaxHp",
+          "via": "ap",
+          "ratio": [
+           0.0003
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "unread": []
    },
    {
     "key": "E",

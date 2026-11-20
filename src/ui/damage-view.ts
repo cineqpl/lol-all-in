@@ -40,7 +40,9 @@ export function renderDamageLine(d: ComponentDamage): HTMLElement {
   if (d.base !== 0) parts.push(h('span', { class: 'dmg-base' }, whole(d.base)), ' + ');
   d.scalings.forEach((s, i) => {
     if (i > 0) parts.push(' + ');
-    parts.push(h('span', { class: 'scale', 'data-color': STAT_COLOR[s.stat], 'data-stat': s.stat }, `${whole(s.value)} ${STAT_LABEL[s.stat]}`));
+    // A percentage that grows with another stat is coloured, and labelled, by that other stat.
+    const label = s.via ? `${STAT_LABEL[s.stat]} from ${STAT_LABEL[s.via]}` : STAT_LABEL[s.stat];
+    parts.push(h('span', { class: 'scale', 'data-color': STAT_COLOR[s.via ?? s.stat], 'data-stat': s.stat }, `${whole(s.value)} ${label}`));
   });
   parts.push(')');
   line.append(...parts);

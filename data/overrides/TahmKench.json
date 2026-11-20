@@ -36,16 +36,14 @@
  "R": {
   "name": "Devour",
   "status": "unchecked",
-  "reasons": [
-   "1 unread damage line(s)"
-  ],
+  "reasons": [],
   "wikiLines": [
    "[Active] Magic Damage = 100 / 250 / 400 (+ 15% (+ 7% per 100 AP) of the target's maximum health)"
   ],
-  "skipped": [
-   "Magic Damage: unknown scaling \"(+ 15%   of the target's maximum health)\""
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 100/250/400 + 15% target's max HP + 0.07% target's max HP x AP"
   ],
-  "parsed": [],
   "override": null,
   "note": ""
  }

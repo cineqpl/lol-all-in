@@ -13,9 +13,9 @@
    "[Active] Maximum Monster Damage = 120 / 140 / 160 / 180 / 200"
   ],
   "skipped": [
-   "Bonus Magic Damage: unknown scaling \"– 40   (+ 2 / 2.5 / 3 / 3.5 / 4%   of target's maximum health)\"",
+   "Bonus Magic Damage: unknown scaling \"– 40\"",
    "Total Magic Damage: sum of other lines",
-   "Increased Bonus Damage: unknown scaling \"– 40   (+ 5 / 5.5 / 6 / 6.5 / 7%   of target's maximum health)\"",
+   "Increased Bonus Damage: unknown scaling \"– 40\"",
    "Total Increased Damage: sum of other lines",
    "Maximum Monster Damage: sum of other lines"
   ],

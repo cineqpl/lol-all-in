@@ -9,7 +9,7 @@ const champ = (id: string, hp: number, resource = 'Mana', mana = 0) => ({
   id, name: id, resource, base: { ...zero, hp, mana }, growth: zero,
   abilityIcons: [`${id}Q.png`, `${id}W.png`, `${id}E.png`, `${id}R.png`],
 });
-const comp = (type: 'physical' | 'magic' | 'true', base: number, scalings: { stat: ComponentStat; ratio: number[] }[] = [], label = 'Damage') => ({
+const comp = (type: 'physical' | 'magic' | 'true', base: number, scalings: { stat: ComponentStat; ratio: number[]; via?: ComponentStat }[] = [], label = 'Damage') => ({
   label, cast: 'Active', type, base: [base], scalings,
 });
 const cast = (name: string, ...components: ReturnType<typeof comp>[]) => ({ name, components });
@@ -18,6 +18,10 @@ const trueQ = (dmg: number) => ({
 });
 const oddW = { key: 'W' as const, name: 'Weird', casts: [], unread: ['Magic Damage: unknown scaling "x"'] };
 // Two casts with different damage types and scalings, for the damage display.
+const drainR = {
+  key: 'R' as const, name: 'Drain', unread: [],
+  casts: [cast('Active', comp('magic', 0, [{ stat: 'targetMaxHp', ratio: [0.01] }, { stat: 'targetMaxHp', via: 'ap', ratio: [0.00005] }]))],
+};
 const comboE = {
   key: 'E' as const, name: 'Combo', unread: [],
   casts: [
@@ -37,7 +41,7 @@ const data: GameData = {
     Udyr: champ('Udyr', 900, 'None', 0),
     Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', adGrowthUnknown: true, base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
   },
-  abilities: { Alpha: [trueQ(100), oddW, comboE], Beta: [trueQ(400)], Gamma: [trueQ(1)], Delta: [trueQ(1)] },
+  abilities: { Alpha: [trueQ(100), oddW, comboE, drainR], Beta: [trueQ(400)], Gamma: [trueQ(1)], Delta: [trueQ(1)] },
   items: {
     '1': { name: 'Sword', stats: { ad: 10, mana: 250 }, hasEffects: false },
     '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
@@ -550,6 +554,12 @@ describe('damage display next to the hit counter', () => {
     const colours = [...line('you', 'E', 0).querySelectorAll('.scale')].map((s) => s.getAttribute('data-color'));
     expect(colours).toEqual(['ad', 'hp']);
     expect(line('you', 'E', 1).querySelector('.scale')?.getAttribute('data-color')).toBe('ap');
+  });
+  test('a percentage that grows with AP shows its AP part separately, in the AP colour', () => {
+    set(field('you', 'rank-R'), '1');
+    const parts = [...line('you', 'R', 0).querySelectorAll('.scale')];
+    expect(text(line('you', 'R', 0))).toBe("15 (10 target's max HP + 5 target's max HP from AP)");
+    expect(parts.map((p) => p.getAttribute('data-color'))).toEqual(['hp', 'ap']);
   });
   test('an ability with no scaling shows only its damage', () => {
     expect(text(line('you', 'Q', 0))).toBe('100');

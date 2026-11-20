@@ -10,7 +10,7 @@
    "[Active] Monster Damage = 41.25 / 49.5 / 57.75 / 66 / 74.25 (+ 33% bonus AD) (+ 33% AP) (+ 2.475% (+ 1.65% per mark) of target's current health)"
   ],
   "skipped": [
-   "Magic Damage: unknown scaling \"(+ 1.5%   of target's current health)\"",
+   "Magic Damage: unknown scaling \"per mark\"",
    "Monster Damage: not against champions"
   ],
   "parsed": [],
@@ -27,7 +27,7 @@
    "[Active] Additional Physical Damage = 80 / 110 / 140 / 170 / 200 (+ 100% bonus AD) (+ 5% (+ 0.5% per Mark) of target's missing health)"
   ],
   "skipped": [
-   "Additional Physical Damage: unknown scaling \"(+ 5%   of target's missing health)\""
+   "Additional Physical Damage: unknown scaling \"per Mark\""
   ],
   "parsed": [],
   "override": null,
