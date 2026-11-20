@@ -1,6 +1,7 @@
 import { lookupChampion, sumItemStats, type GameData } from '../data/load';
 import type { Side } from '../model/matchup';
 import type { AbilityKey } from '../model/types';
+import { summarizeStats } from '../model/summary';
 import { validateRanks } from '../model/validation';
 import { championIconPath, itemIconPath, spellIconPath } from '../data/images';
 import { h } from './dom';
@@ -58,6 +59,18 @@ export function createPanel(
   const champion = select('champion', champions.map((c): [string, string] => [c.id, c.name]));
   const level = numberInput('level', 1, BASE_MAX_LEVEL, 1);
   const quest = h('input', { type: 'checkbox', 'data-field': 'role-quest' }) as HTMLInputElement;
+  const statCell = (name: string) => h('span', { 'data-stat': name });
+  const stats = {
+    hp: statCell('hp'),
+    resource: statCell('resource'),
+    ad: statCell('ad'),
+    ap: statCell('ap'),
+  };
+  const summary = h(
+    'div',
+    { class: 'stat-summary', 'data-role': 'stat-summary' },
+    stats.hp, stats.resource, stats.ad, stats.ap,
+  );
   const warning = h('p', { class: 'warning', 'data-role': 'rank-warning', hidden: '' });
   const ranks = Object.fromEntries(
     KEYS.map((k) => [k, numberInput(`rank-${k}`, 0, MAX_RANK[k], k === 'Q' ? 1 : 0)]),
@@ -106,6 +119,7 @@ export function createPanel(
       ...items.map((sel, i) => h('span', { class: 'item-slot' }, itemIcons[i], sel)),
     ),
     h('label', {}, 'Rune ', runes),
+    summary,
     h('p', { class: 'note' }, 'Rune and item effects beyond flat stats are not modelled yet.'),
   );
   const maxLevel = () => (quest.checked ? QUEST_MAX_LEVEL : BASE_MAX_LEVEL);
@@ -119,6 +133,34 @@ export function createPanel(
     warning.textContent = problems.join(' ');
     warning.hidden = problems.length === 0;
   };
+  const buildSide = (): Side => {
+    const champ = lookupChampion(data, champion.value);
+    const itemIds = items.map((s) => s.value).filter(Boolean);
+    return {
+      champion: champ,
+      abilities: data.abilities[champ.id] ?? [],
+      build: {
+        championId: champ.id,
+        level: currentLevel(),
+        ranks: currentRanks(),
+        itemIds,
+        runeIds: runes.value ? [runes.value] : [],
+      },
+      itemStats: sumItemStats(data, itemIds),
+      unmodelledEffects: [
+        ...itemIds.filter((id) => data.items[id].hasEffects).map((id) => `${data.items[id].name} (item)`),
+        ...(runes.value ? [`${data.runes[runes.value].name} (rune)`] : []),
+      ],
+    };
+  };
+  const refreshStats = () => {
+    const s = summarizeStats(buildSide());
+    stats.hp.textContent = `HP ${Math.round(s.hp)}`;
+    stats.ad.textContent = `AD ${Math.round(s.ad)}`;
+    stats.ap.textContent = `AP ${Math.round(s.ap)}`;
+    stats.resource.hidden = !s.resource;
+    stats.resource.textContent = s.resource ? `${s.resource.label} ${Math.round(s.resource.value)}` : '';
+  };
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
     items.forEach((sel, i) => setIcon(itemIcons[i], sel.value ? itemIconPath(sel.value) : ''));
@@ -127,10 +169,12 @@ export function createPanel(
   };
   section.addEventListener('change', () => {
     refreshLevelAndWarnings();
+    refreshStats();
     refreshIcons();
     onChange();
   });
   refreshLevelAndWarnings();
+  refreshStats();
   refreshIcons();
   const el = h(
     'div',
@@ -141,25 +185,6 @@ export function createPanel(
 
   return {
     el,
-    getSide(): Side {
-      const champ = lookupChampion(data, champion.value);
-      const itemIds = items.map((s) => s.value).filter(Boolean);
-      return {
-        champion: champ,
-        abilities: data.abilities[champ.id] ?? [],
-        build: {
-          championId: champ.id,
-          level: currentLevel(),
-          ranks: currentRanks(),
-          itemIds,
-          runeIds: runes.value ? [runes.value] : [],
-        },
-        itemStats: sumItemStats(data, itemIds),
-        unmodelledEffects: [
-          ...itemIds.filter((id) => data.items[id].hasEffects).map((id) => `${data.items[id].name} (item)`),
-          ...(runes.value ? [`${data.runes[runes.value].name} (rune)`] : []),
-        ],
-      };
-    },
+    getSide: buildSide,
   };
 }

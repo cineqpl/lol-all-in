@@ -13,6 +13,7 @@ export function normaliseChampions(raw: unknown): ChampionBase[] {
     return {
       id: c.id,
       name: c.name,
+      resource: c.partype,
       base: { hp: s.hp, mana: s.mp, armor: s.armor, mr: s.spellblock, ad: s.attackdamage, ap: 0 },
       growth: {
         hp: s.hpperlevel,

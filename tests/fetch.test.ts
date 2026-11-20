@@ -17,6 +17,10 @@ describe('normaliseChampions', () => {
     expect(annie.growth.ap).toBe(0);
   });
 
+  test('keeps the resource type (partype)', () => {
+    expect(annie.resource).toBe('Mana');
+  });
+
   test('keeps the Data Dragon id, not the display name', () => {
     expect(champs.some((c) => c.id === 'MonkeyKing' && c.name === 'Wukong')).toBe(true);
   });

@@ -2,6 +2,7 @@
  {
   "id": "Aatrox",
   "name": "Aatrox",
+  "resource": "Blood Well",
   "base": {
    "hp": 650,
    "mana": 0,
@@ -28,6 +29,7 @@
  {
   "id": "Ahri",
   "name": "Ahri",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 418,
@@ -54,6 +56,7 @@
  {
   "id": "Akali",
   "name": "Akali",
+  "resource": "Energy",
   "base": {
    "hp": 600,
    "mana": 200,
@@ -80,6 +83,7 @@
  {
   "id": "Akshan",
   "name": "Akshan",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 350,
@@ -106,6 +110,7 @@
  {
   "id": "Alistar",
   "name": "Alistar",
+  "resource": "Mana",
   "base": {
    "hp": 685,
    "mana": 350,
@@ -132,6 +137,7 @@
  {
   "id": "Ambessa",
   "name": "Ambessa",
+  "resource": "Energy",
   "base": {
    "hp": 630,
    "mana": 200,
@@ -158,6 +164,7 @@
  {
   "id": "Amumu",
   "name": "Amumu",
+  "resource": "Mana",
   "base": {
    "hp": 685,
    "mana": 285,
@@ -184,6 +191,7 @@
  {
   "id": "Anivia",
   "name": "Anivia",
+  "resource": "Mana",
   "base": {
    "hp": 550,
    "mana": 495,
@@ -210,6 +218,7 @@
  {
   "id": "Annie",
   "name": "Annie",
+  "resource": "Mana",
   "base": {
    "hp": 560,
    "mana": 418,
@@ -236,6 +245,7 @@
  {
   "id": "Aphelios",
   "name": "Aphelios",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 348,
@@ -262,6 +272,7 @@
  {
   "id": "Ashe",
   "name": "Ashe",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 280,
@@ -288,6 +299,7 @@
  {
   "id": "AurelionSol",
   "name": "Aurelion Sol",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 530,
@@ -314,6 +326,7 @@
  {
   "id": "Aurora",
   "name": "Aurora",
+  "resource": "Mana",
   "base": {
    "hp": 607,
    "mana": 475,
@@ -340,6 +353,7 @@
  {
   "id": "Azir",
   "name": "Azir",
+  "resource": "Mana",
   "base": {
    "hp": 575,
    "mana": 320,
@@ -366,6 +380,7 @@
  {
   "id": "Bard",
   "name": "Bard",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 350,
@@ -392,6 +407,7 @@
  {
   "id": "Belveth",
   "name": "Bel'Veth",
+  "resource": "",
   "base": {
    "hp": 580,
    "mana": 45,
@@ -418,6 +434,7 @@
  {
   "id": "Blitzcrank",
   "name": "Blitzcrank",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 267,
@@ -444,6 +461,7 @@
  {
   "id": "Brand",
   "name": "Brand",
+  "resource": "Mana",
   "base": {
    "hp": 570,
    "mana": 469,
@@ -470,6 +488,7 @@
  {
   "id": "Braum",
   "name": "Braum",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 311,
@@ -496,6 +515,7 @@
  {
   "id": "Briar",
   "name": "Briar",
+  "resource": "Fury",
   "base": {
    "hp": 625,
    "mana": 0,
@@ -522,6 +542,7 @@
  {
   "id": "Caitlyn",
   "name": "Caitlyn",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 315,
@@ -548,6 +569,7 @@
  {
   "id": "Camille",
   "name": "Camille",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 375,
@@ -574,6 +596,7 @@
  {
   "id": "Cassiopeia",
   "name": "Cassiopeia",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 450,
@@ -600,6 +623,7 @@
  {
   "id": "Chogath",
   "name": "Cho'Gath",
+  "resource": "Mana",
   "base": {
    "hp": 644,
    "mana": 270,
@@ -626,6 +650,7 @@
  {
   "id": "Corki",
   "name": "Corki",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 350,
@@ -652,6 +677,7 @@
  {
   "id": "Darius",
   "name": "Darius",
+  "resource": "Mana",
   "base": {
    "hp": 652,
    "mana": 263,
@@ -678,6 +704,7 @@
  {
   "id": "Diana",
   "name": "Diana",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 375,
@@ -704,6 +731,7 @@
  {
   "id": "Draven",
   "name": "Draven",
+  "resource": "Mana",
   "base": {
    "hp": 675,
    "mana": 361,
@@ -730,6 +758,7 @@
  {
   "id": "DrMundo",
   "name": "Dr. Mundo",
+  "resource": "None",
   "base": {
    "hp": 640,
    "mana": 0,
@@ -756,6 +785,7 @@
  {
   "id": "Ekko",
   "name": "Ekko",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 280,
@@ -782,6 +812,7 @@
  {
   "id": "Elise",
   "name": "Elise",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 324,
@@ -808,6 +839,7 @@
  {
   "id": "Evelynn",
   "name": "Evelynn",
+  "resource": "Mana",
   "base": {
    "hp": 642,
    "mana": 315,
@@ -834,6 +866,7 @@
  {
   "id": "Ezreal",
   "name": "Ezreal",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 375,
@@ -860,6 +893,7 @@
  {
   "id": "Fiddlesticks",
   "name": "Fiddlesticks",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 500,
@@ -886,6 +920,7 @@
  {
   "id": "Fiora",
   "name": "Fiora",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 300,
@@ -912,6 +947,7 @@
  {
   "id": "Fizz",
   "name": "Fizz",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 317,
@@ -938,6 +974,7 @@
  {
   "id": "Galio",
   "name": "Galio",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 410,
@@ -964,6 +1001,7 @@
  {
   "id": "Gangplank",
   "name": "Gangplank",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 280,
@@ -990,6 +1028,7 @@
  {
   "id": "Garen",
   "name": "Garen",
+  "resource": "None",
   "base": {
    "hp": 690,
    "mana": 0,
@@ -1016,6 +1055,7 @@
  {
   "id": "Gnar",
   "name": "Gnar",
+  "resource": "Rage",
   "base": {
    "hp": 540,
    "mana": 100,
@@ -1042,6 +1082,7 @@
  {
   "id": "Gragas",
   "name": "Gragas",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 400,
@@ -1068,6 +1109,7 @@
  {
   "id": "Graves",
   "name": "Graves",
+  "resource": "Mana",
   "base": {
    "hp": 625,
    "mana": 325,
@@ -1094,6 +1136,7 @@
  {
   "id": "Gwen",
   "name": "Gwen",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 330,
@@ -1120,6 +1163,7 @@
  {
   "id": "Hecarim",
   "name": "Hecarim",
+  "resource": "Mana",
   "base": {
    "hp": 625,
    "mana": 280,
@@ -1146,6 +1190,7 @@
  {
   "id": "Heimerdinger",
   "name": "Heimerdinger",
+  "resource": "Mana",
   "base": {
    "hp": 558,
    "mana": 385,
@@ -1172,6 +1217,7 @@
  {
   "id": "Hwei",
   "name": "Hwei",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 480,
@@ -1198,6 +1244,7 @@
  {
   "id": "Illaoi",
   "name": "Illaoi",
+  "resource": "Mana",
   "base": {
    "hp": 656,
    "mana": 350,
@@ -1224,6 +1271,7 @@
  {
   "id": "Irelia",
   "name": "Irelia",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 350,
@@ -1250,6 +1298,7 @@
  {
   "id": "Ivern",
   "name": "Ivern",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 450,
@@ -1276,6 +1325,7 @@
  {
   "id": "Janna",
   "name": "Janna",
+  "resource": "Mana",
   "base": {
    "hp": 570,
    "mana": 360,
@@ -1302,6 +1352,7 @@
  {
   "id": "JarvanIV",
   "name": "Jarvan IV",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 300,
@@ -1328,6 +1379,7 @@
  {
   "id": "Jax",
   "name": "Jax",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 339,
@@ -1354,6 +1406,7 @@
  {
   "id": "Jayce",
   "name": "Jayce",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 375,
@@ -1380,6 +1433,7 @@
  {
   "id": "Jhin",
   "name": "Jhin",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 300,
@@ -1406,6 +1460,7 @@
  {
   "id": "Jinx",
   "name": "Jinx",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 260,
@@ -1432,6 +1487,7 @@
  {
   "id": "Kaisa",
   "name": "Kai'Sa",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 345,
@@ -1458,6 +1514,7 @@
  {
   "id": "Kalista",
   "name": "Kalista",
+  "resource": "Mana",
   "base": {
    "hp": 560,
    "mana": 300,
@@ -1484,6 +1541,7 @@
  {
   "id": "Karma",
   "name": "Karma",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 374,
@@ -1510,6 +1568,7 @@
  {
   "id": "Karthus",
   "name": "Karthus",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 467,
@@ -1536,6 +1595,7 @@
  {
   "id": "Kassadin",
   "name": "Kassadin",
+  "resource": "Mana",
   "base": {
    "hp": 646,
    "mana": 400,
@@ -1562,6 +1622,7 @@
  {
   "id": "Katarina",
   "name": "Katarina",
+  "resource": "None",
   "base": {
    "hp": 672,
    "mana": 0,
@@ -1588,6 +1649,7 @@
  {
   "id": "Kayle",
   "name": "Kayle",
+  "resource": "Mana",
   "base": {
    "hp": 670,
    "mana": 330,
@@ -1614,6 +1676,7 @@
  {
   "id": "Kayn",
   "name": "Kayn",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 410,
@@ -1640,6 +1703,7 @@
  {
   "id": "Kennen",
   "name": "Kennen",
+  "resource": "Energy",
   "base": {
    "hp": 580,
    "mana": 200,
@@ -1666,6 +1730,7 @@
  {
   "id": "Khazix",
   "name": "Kha'Zix",
+  "resource": "Mana",
   "base": {
    "hp": 643,
    "mana": 327,
@@ -1692,6 +1757,7 @@
  {
   "id": "Kindred",
   "name": "Kindred",
+  "resource": "Mana",
   "base": {
    "hp": 595,
    "mana": 300,
@@ -1718,6 +1784,7 @@
  {
   "id": "Kled",
   "name": "Kled",
+  "resource": "Courage",
   "base": {
    "hp": 410,
    "mana": 100,
@@ -1744,6 +1811,7 @@
  {
   "id": "KogMaw",
   "name": "Kog'Maw",
+  "resource": "Mana",
   "base": {
    "hp": 635,
    "mana": 325,
@@ -1770,6 +1838,7 @@
  {
   "id": "KSante",
   "name": "K'Sante",
+  "resource": "Mana",
   "base": {
    "hp": 625,
    "mana": 320,
@@ -1796,6 +1865,7 @@
  {
   "id": "Leblanc",
   "name": "LeBlanc",
+  "resource": "Mana",
   "base": {
    "hp": 598,
    "mana": 400,
@@ -1822,6 +1892,7 @@
  {
   "id": "LeeSin",
   "name": "Lee Sin",
+  "resource": "Energy",
   "base": {
    "hp": 645,
    "mana": 200,
@@ -1848,6 +1919,7 @@
  {
   "id": "Leona",
   "name": "Leona",
+  "resource": "Mana",
   "base": {
    "hp": 646,
    "mana": 302,
@@ -1874,6 +1946,7 @@
  {
   "id": "Lillia",
   "name": "Lillia",
+  "resource": "Mana",
   "base": {
    "hp": 605,
    "mana": 410,
@@ -1900,6 +1973,7 @@
  {
   "id": "Lissandra",
   "name": "Lissandra",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 475,
@@ -1926,6 +2000,7 @@
  {
   "id": "Locke",
   "name": "Locke",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 280,
@@ -1952,6 +2027,7 @@
  {
   "id": "Lucian",
   "name": "Lucian",
+  "resource": "Mana",
   "base": {
    "hp": 641,
    "mana": 320,
@@ -1978,6 +2054,7 @@
  {
   "id": "Lulu",
   "name": "Lulu",
+  "resource": "Mana",
   "base": {
    "hp": 565,
    "mana": 350,
@@ -2004,6 +2081,7 @@
  {
   "id": "Lux",
   "name": "Lux",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 440,
@@ -2030,6 +2108,7 @@
  {
   "id": "Malphite",
   "name": "Malphite",
+  "resource": "Mana",
   "base": {
    "hp": 665,
    "mana": 280,
@@ -2056,6 +2135,7 @@
  {
   "id": "Malzahar",
   "name": "Malzahar",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 375,
@@ -2082,6 +2162,7 @@
  {
   "id": "Maokai",
   "name": "Maokai",
+  "resource": "Mana",
   "base": {
    "hp": 665,
    "mana": 375,
@@ -2108,6 +2189,7 @@
  {
   "id": "MasterYi",
   "name": "Master Yi",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 251,
@@ -2134,6 +2216,7 @@
  {
   "id": "Mel",
   "name": "Mel",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 455,
@@ -2160,6 +2243,7 @@
  {
   "id": "Milio",
   "name": "Milio",
+  "resource": "Mana",
   "base": {
    "hp": 560,
    "mana": 365,
@@ -2186,6 +2270,7 @@
  {
   "id": "MissFortune",
   "name": "Miss Fortune",
+  "resource": "Mana",
   "base": {
    "hp": 625,
    "mana": 300,
@@ -2212,6 +2297,7 @@
  {
   "id": "MonkeyKing",
   "name": "Wukong",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 330,
@@ -2238,6 +2324,7 @@
  {
   "id": "Mordekaiser",
   "name": "Mordekaiser",
+  "resource": "Shield",
   "base": {
    "hp": 645,
    "mana": 100,
@@ -2264,6 +2351,7 @@
  {
   "id": "Morgana",
   "name": "Morgana",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 340,
@@ -2290,6 +2378,7 @@
  {
   "id": "Naafiri",
   "name": "Naafiri",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 400,
@@ -2316,6 +2405,7 @@
  {
   "id": "Nami",
   "name": "Nami",
+  "resource": "Mana",
   "base": {
    "hp": 560,
    "mana": 365,
@@ -2342,6 +2432,7 @@
  {
   "id": "Nasus",
   "name": "Nasus",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 326,
@@ -2368,6 +2459,7 @@
  {
   "id": "Nautilus",
   "name": "Nautilus",
+  "resource": "Mana",
   "base": {
    "hp": 646,
    "mana": 400,
@@ -2394,6 +2486,7 @@
  {
   "id": "Neeko",
   "name": "Neeko",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 450,
@@ -2420,6 +2513,7 @@
  {
   "id": "Nidalee",
   "name": "Nidalee",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 295,
@@ -2446,6 +2540,7 @@
  {
   "id": "Nilah",
   "name": "Nilah",
+  "resource": "Mana",
   "base": {
    "hp": 570,
    "mana": 350,
@@ -2472,6 +2567,7 @@
  {
   "id": "Nocturne",
   "name": "Nocturne",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 275,
@@ -2498,6 +2594,7 @@
  {
   "id": "Nunu",
   "name": "Nunu & Willump",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 280,
@@ -2524,6 +2621,7 @@
  {
   "id": "Olaf",
   "name": "Olaf",
+  "resource": "Mana",
   "base": {
    "hp": 645,
    "mana": 316,
@@ -2550,6 +2648,7 @@
  {
   "id": "Orianna",
   "name": "Orianna",
+  "resource": "Mana",
   "base": {
    "hp": 565,
    "mana": 418,
@@ -2576,6 +2675,7 @@
  {
   "id": "Ornn",
   "name": "Ornn",
+  "resource": "Mana",
   "base": {
    "hp": 660,
    "mana": 341,
@@ -2602,6 +2702,7 @@
  {
   "id": "Pantheon",
   "name": "Pantheon",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 317,
@@ -2628,6 +2729,7 @@
  {
   "id": "Poppy",
   "name": "Poppy",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 300,
@@ -2654,6 +2756,7 @@
  {
   "id": "Pyke",
   "name": "Pyke",
+  "resource": "Mana",
   "base": {
    "hp": 670,
    "mana": 415,
@@ -2680,6 +2783,7 @@
  {
   "id": "Qiyana",
   "name": "Qiyana",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 375,
@@ -2706,6 +2810,7 @@
  {
   "id": "Quinn",
   "name": "Quinn",
+  "resource": "Mana",
   "base": {
    "hp": 565,
    "mana": 269,
@@ -2732,6 +2837,7 @@
  {
   "id": "Rakan",
   "name": "Rakan",
+  "resource": "Mana",
   "base": {
    "hp": 610,
    "mana": 315,
@@ -2758,6 +2864,7 @@
  {
   "id": "Rammus",
   "name": "Rammus",
+  "resource": "Mana",
   "base": {
    "hp": 645,
    "mana": 310,
@@ -2784,6 +2891,7 @@
  {
   "id": "RekSai",
   "name": "Rek'Sai",
+  "resource": "Rage",
   "base": {
    "hp": 600,
    "mana": 100,
@@ -2810,6 +2918,7 @@
  {
   "id": "Rell",
   "name": "Rell",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 320,
@@ -2836,6 +2945,7 @@
  {
   "id": "Renata",
   "name": "Renata Glasc",
+  "resource": "Mana",
   "base": {
    "hp": 545,
    "mana": 350,
@@ -2862,6 +2972,7 @@
  {
   "id": "Renekton",
   "name": "Renekton",
+  "resource": "Fury",
   "base": {
    "hp": 660,
    "mana": 100,
@@ -2888,6 +2999,7 @@
  {
   "id": "Rengar",
   "name": "Rengar",
+  "resource": "Ferocity",
   "base": {
    "hp": 590,
    "mana": 4,
@@ -2914,6 +3026,7 @@
  {
   "id": "Riven",
   "name": "Riven",
+  "resource": "None",
   "base": {
    "hp": 630,
    "mana": 0,
@@ -2940,6 +3053,7 @@
  {
   "id": "Rumble",
   "name": "Rumble",
+  "resource": "Heat",
   "base": {
    "hp": 640,
    "mana": 150,
@@ -2966,6 +3080,7 @@
  {
   "id": "Ryze",
   "name": "Ryze",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 300,
@@ -2992,6 +3107,7 @@
  {
   "id": "Samira",
   "name": "Samira",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 349,
@@ -3018,6 +3134,7 @@
  {
   "id": "Sejuani",
   "name": "Sejuani",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 400,
@@ -3044,6 +3161,7 @@
  {
   "id": "Senna",
   "name": "Senna",
+  "resource": "Mana",
   "base": {
    "hp": 530,
    "mana": 350,
@@ -3070,6 +3188,7 @@
  {
   "id": "Seraphine",
   "name": "Seraphine",
+  "resource": "Mana",
   "base": {
    "hp": 570,
    "mana": 360,
@@ -3096,6 +3215,7 @@
  {
   "id": "Sett",
   "name": "Sett",
+  "resource": "Grit",
   "base": {
    "hp": 670,
    "mana": 0,
@@ -3122,6 +3242,7 @@
  {
   "id": "Shaco",
   "name": "Shaco",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 297,
@@ -3148,6 +3269,7 @@
  {
   "id": "Shen",
   "name": "Shen",
+  "resource": "Energy",
   "base": {
    "hp": 610,
    "mana": 400,
@@ -3174,6 +3296,7 @@
  {
   "id": "Shyvana",
   "name": "Shyvana",
+  "resource": "Fury",
   "base": {
    "hp": 625,
    "mana": 100,
@@ -3200,6 +3323,7 @@
  {
   "id": "Singed",
   "name": "Singed",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 330,
@@ -3226,6 +3350,7 @@
  {
   "id": "Sion",
   "name": "Sion",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 400,
@@ -3252,6 +3377,7 @@
  {
   "id": "Sivir",
   "name": "Sivir",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 340,
@@ -3278,6 +3404,7 @@
  {
   "id": "Skarner",
   "name": "Skarner",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 320,
@@ -3304,6 +3431,7 @@
  {
   "id": "Smolder",
   "name": "Smolder",
+  "resource": "Mana",
   "base": {
    "hp": 575,
    "mana": 300,
@@ -3330,6 +3458,7 @@
  {
   "id": "Sona",
   "name": "Sona",
+  "resource": "Mana",
   "base": {
    "hp": 550,
    "mana": 340,
@@ -3356,6 +3485,7 @@
  {
   "id": "Soraka",
   "name": "Soraka",
+  "resource": "Mana",
   "base": {
    "hp": 605,
    "mana": 425,
@@ -3382,6 +3512,7 @@
  {
   "id": "Swain",
   "name": "Swain",
+  "resource": "Mana",
   "base": {
    "hp": 595,
    "mana": 400,
@@ -3408,6 +3539,7 @@
  {
   "id": "Sylas",
   "name": "Sylas",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 400,
@@ -3434,6 +3566,7 @@
  {
   "id": "Syndra",
   "name": "Syndra",
+  "resource": "Mana",
   "base": {
    "hp": 583,
    "mana": 480,
@@ -3460,6 +3593,7 @@
  {
   "id": "TahmKench",
   "name": "Tahm Kench",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 325,
@@ -3486,6 +3620,7 @@
  {
   "id": "Taliyah",
   "name": "Taliyah",
+  "resource": "Mana",
   "base": {
    "hp": 550,
    "mana": 470,
@@ -3512,6 +3647,7 @@
  {
   "id": "Talon",
   "name": "Talon",
+  "resource": "Mana",
   "base": {
    "hp": 658,
    "mana": 400,
@@ -3538,6 +3674,7 @@
  {
   "id": "Taric",
   "name": "Taric",
+  "resource": "Mana",
   "base": {
    "hp": 645,
    "mana": 300,
@@ -3564,6 +3701,7 @@
  {
   "id": "Teemo",
   "name": "Teemo",
+  "resource": "Mana",
   "base": {
    "hp": 615,
    "mana": 334,
@@ -3590,6 +3728,7 @@
  {
   "id": "Thresh",
   "name": "Thresh",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 274,
@@ -3616,6 +3755,7 @@
  {
   "id": "Tristana",
   "name": "Tristana",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 300,
@@ -3642,6 +3782,7 @@
  {
   "id": "Trundle",
   "name": "Trundle",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 340,
@@ -3668,6 +3809,7 @@
  {
   "id": "Tryndamere",
   "name": "Tryndamere",
+  "resource": "Fury",
   "base": {
    "hp": 696,
    "mana": 100,
@@ -3694,6 +3836,7 @@
  {
   "id": "TwistedFate",
   "name": "Twisted Fate",
+  "resource": "Mana",
   "base": {
    "hp": 604,
    "mana": 333,
@@ -3720,6 +3863,7 @@
  {
   "id": "Twitch",
   "name": "Twitch",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 300,
@@ -3746,6 +3890,7 @@
  {
   "id": "Udyr",
   "name": "Udyr",
+  "resource": "Mana",
   "base": {
    "hp": 664,
    "mana": 271,
@@ -3772,6 +3917,7 @@
  {
   "id": "Urgot",
   "name": "Urgot",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 340,
@@ -3798,6 +3944,7 @@
  {
   "id": "Varus",
   "name": "Varus",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 320,
@@ -3824,6 +3971,7 @@
  {
   "id": "Vayne",
   "name": "Vayne",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 232,
@@ -3850,6 +3998,7 @@
  {
   "id": "Veigar",
   "name": "Veigar",
+  "resource": "Mana",
   "base": {
    "hp": 580,
    "mana": 490,
@@ -3876,6 +4025,7 @@
  {
   "id": "Velkoz",
   "name": "Vel'Koz",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 469,
@@ -3902,6 +4052,7 @@
  {
   "id": "Vex",
   "name": "Vex",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 490,
@@ -3928,6 +4079,7 @@
  {
   "id": "Vi",
   "name": "Vi",
+  "resource": "Mana",
   "base": {
    "hp": 655,
    "mana": 295,
@@ -3954,6 +4106,7 @@
  {
   "id": "Viego",
   "name": "Viego",
+  "resource": "None",
   "base": {
    "hp": 630,
    "mana": 10000,
@@ -3980,6 +4133,7 @@
  {
   "id": "Viktor",
   "name": "Viktor",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 405,
@@ -4006,6 +4160,7 @@
  {
   "id": "Vladimir",
   "name": "Vladimir",
+  "resource": "Crimson Rush",
   "base": {
    "hp": 600,
    "mana": 2,
@@ -4032,6 +4187,7 @@
  {
   "id": "Volibear",
   "name": "Volibear",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 350,
@@ -4058,6 +4214,7 @@
  {
   "id": "Warwick",
   "name": "Warwick",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 280,
@@ -4084,6 +4241,7 @@
  {
   "id": "Xayah",
   "name": "Xayah",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 340,
@@ -4110,6 +4268,7 @@
  {
   "id": "Xerath",
   "name": "Xerath",
+  "resource": "Mana",
   "base": {
    "hp": 575,
    "mana": 400,
@@ -4136,6 +4295,7 @@
  {
   "id": "XinZhao",
   "name": "Xin Zhao",
+  "resource": "Mana",
   "base": {
    "hp": 620,
    "mana": 274,
@@ -4162,6 +4322,7 @@
  {
   "id": "Yasuo",
   "name": "Yasuo",
+  "resource": "Flow",
   "base": {
    "hp": 590,
    "mana": 100,
@@ -4188,6 +4349,7 @@
  {
   "id": "Yone",
   "name": "Yone",
+  "resource": "Flow",
   "base": {
    "hp": 620,
    "mana": 500,
@@ -4214,6 +4376,7 @@
  {
   "id": "Yorick",
   "name": "Yorick",
+  "resource": "Mana",
   "base": {
    "hp": 650,
    "mana": 300,
@@ -4240,6 +4403,7 @@
  {
   "id": "Yunara",
   "name": "Yunara",
+  "resource": "Mana",
   "base": {
    "hp": 590,
    "mana": 275,
@@ -4266,6 +4430,7 @@
  {
   "id": "Yuumi",
   "name": "Yuumi",
+  "resource": "Mana",
   "base": {
    "hp": 500,
    "mana": 440,
@@ -4292,6 +4457,7 @@
  {
   "id": "Zaahen",
   "name": "Zaahen",
+  "resource": "Mana",
   "base": {
    "hp": 640,
    "mana": 350,
@@ -4318,6 +4484,7 @@
  {
   "id": "Zac",
   "name": "Zac",
+  "resource": "None",
   "base": {
    "hp": 685,
    "mana": 0,
@@ -4344,6 +4511,7 @@
  {
   "id": "Zed",
   "name": "Zed",
+  "resource": "Energy",
   "base": {
    "hp": 654,
    "mana": 200,
@@ -4370,6 +4538,7 @@
  {
   "id": "Zeri",
   "name": "Zeri",
+  "resource": "Mana",
   "base": {
    "hp": 600,
    "mana": 250,
@@ -4396,6 +4565,7 @@
  {
   "id": "Ziggs",
   "name": "Ziggs",
+  "resource": "Mana",
   "base": {
    "hp": 606,
    "mana": 480,
@@ -4422,6 +4592,7 @@
  {
   "id": "Zilean",
   "name": "Zilean",
+  "resource": "Mana",
   "base": {
    "hp": 574,
    "mana": 452,
@@ -4448,6 +4619,7 @@
  {
   "id": "Zoe",
   "name": "Zoe",
+  "resource": "Mana",
   "base": {
    "hp": 630,
    "mana": 425,
@@ -4474,6 +4646,7 @@
  {
   "id": "Zyra",
   "name": "Zyra",
+  "resource": "Mana",
   "base": {
    "hp": 574,
    "mana": 418,

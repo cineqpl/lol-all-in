@@ -26,7 +26,7 @@ export type MatchupResult = {
   enemyUnmodelledEffects: string[];
 };
 
-function totalStats(side: Side): StatBlock {
+export function totalStats(side: Side): StatBlock {
   const base = statsAtLevel(side.champion, side.build.level);
   const out = { ...base };
   for (const k of Object.keys(out) as (keyof StatBlock)[]) out[k] += side.itemStats[k];

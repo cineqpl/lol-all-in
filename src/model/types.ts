@@ -15,6 +15,8 @@ export type ChampionBase = {
   growth: StatBlock;
   /** Q/W/E/R icon file names from Data Dragon (served from /img/spell/). */
   abilityIcons?: string[];
+  /** Data Dragon partype: Mana, Energy, Fury, None, ... */
+  resource?: string;
 };
 
 export type Scaling = {

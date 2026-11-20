@@ -4,8 +4,8 @@ import type { GameData } from '../src/data/load';
 import { bootstrap, mount } from '../src/ui/main';
 
 const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
-const champ = (id: string, hp: number) => ({
-  id, name: id, base: { ...zero, hp }, growth: zero,
+const champ = (id: string, hp: number, resource = 'Mana', mana = 0) => ({
+  id, name: id, resource, base: { ...zero, hp, mana }, growth: zero,
   abilityIcons: [`${id}Q.png`, `${id}W.png`, `${id}E.png`, `${id}R.png`],
 });
 const trueQ = (dmg: number) => ({
@@ -20,13 +20,13 @@ const oddW = {
 const data: GameData = {
   meta: { patch: '16.1.1', abilitiesPatch: '15.1' },
   champions: {
-    Alpha: champ('Alpha', 1000),
-    Beta: champ('Beta', 500),
-    Gamma: { id: 'Gamma', name: 'Gamma', base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
+    Alpha: champ('Alpha', 1000, 'Mana', 300),
+    Beta: champ('Beta', 500, 'Energy', 200),
+    Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
   },
   abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)], Gamma: [trueQ(1)] },
   items: {
-    '1': { name: 'Sword', stats: { ad: 10 }, hasEffects: false },
+    '1': { name: 'Sword', stats: { ad: 10, mana: 250 }, hasEffects: false },
     '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
     '99': { name: 'Sword', stats: { ad: 12 }, hasEffects: false },
   },
@@ -184,6 +184,46 @@ describe('ability icons', () => {
     const bare = { ...data, champions: { Solo: { id: 'Solo', name: 'Solo', base: { ...zero, hp: 1 }, growth: zero } }, abilities: { Solo: [] } };
     mount(root, bare);
     expect(abilityIcon('you', 'Q').hidden).toBe(true);
+  });
+});
+
+describe('stat summary', () => {
+  const stat = (side: string, name: string) =>
+    q(`.side[data-side=${side}] [data-role=stat-summary] [data-stat=${name}]`);
+  test('shows hp, ad and ap from the champion and items', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(stat('you', 'hp').textContent).toContain('1000');
+    expect(stat('you', 'ad').textContent).toContain('0');
+    set(field('you', 'item-0'), '1');
+    expect(stat('you', 'ad').textContent).toContain('10');
+  });
+  test('updates with the level (quest level 20)', () => {
+    set(field('enemy', 'champion'), 'Gamma');
+    expect(stat('enemy', 'hp').textContent).toContain('1000');
+    const box = field('enemy', 'role-quest');
+    box.checked = true;
+    box.dispatchEvent(new Event('change', { bubbles: true }));
+    set(field('enemy', 'level'), '20');
+    expect(stat('enemy', 'hp').textContent).toContain('2967');
+  });
+  test('labels the resource as Mana or Energy, with item mana only for Mana', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('you', 'item-0'), '1');
+    expect(stat('you', 'resource').textContent).toMatch(/Mana.*550/);
+    set(field('you', 'champion'), 'Beta');
+    expect(stat('you', 'resource').textContent).toMatch(/Energy.*200/);
+  });
+  test('hides the resource row when the champion has none', () => {
+    set(field('you', 'champion'), 'Gamma');
+    expect(stat('you', 'resource').hidden).toBe(true);
+  });
+  test('each panel has its own summary', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Gamma');
+    expect(stat('you', 'hp').textContent).toContain('1000');
+    expect(stat('enemy', 'hp').textContent).toContain('1000');
+    set(field('you', 'item-0'), '1');
+    expect(stat('enemy', 'ad').textContent).toContain('0');
   });
 });
 

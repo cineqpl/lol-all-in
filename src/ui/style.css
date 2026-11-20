@@ -21,3 +21,5 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .level-row label { margin: 0.4rem 0; }
 .warning { color: #ff5252; font-weight: 600; margin: 0.3rem 0; }
 .ability-icon { width: 28px; height: 28px; border-radius: 4px; vertical-align: middle; margin: 0 0.2rem; }
+.stat-summary { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #333842; font-weight: 600; }
+.stat-summary [hidden] { display: none; }
