@@ -1,0 +1,5843 @@
+{
+ "1001": {
+  "name": "Boots",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1004": {
+  "name": "Faerie Charm",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1006": {
+  "name": "Rejuvenation Bead",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1011": {
+  "name": "Giant's Belt",
+  "stats": {
+   "hp": 350
+  },
+  "hasEffects": false
+ },
+ "1018": {
+  "name": "Cloak of Agility",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1026": {
+  "name": "Blasting Wand",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": false
+ },
+ "1027": {
+  "name": "Sapphire Crystal",
+  "stats": {
+   "mana": 300
+  },
+  "hasEffects": false
+ },
+ "1028": {
+  "name": "Ruby Crystal",
+  "stats": {
+   "hp": 150
+  },
+  "hasEffects": false
+ },
+ "1029": {
+  "name": "Cloth Armor",
+  "stats": {
+   "armor": 15
+  },
+  "hasEffects": false
+ },
+ "1031": {
+  "name": "Chain Vest",
+  "stats": {
+   "armor": 40
+  },
+  "hasEffects": false
+ },
+ "1033": {
+  "name": "Null-Magic Mantle",
+  "stats": {
+   "mr": 20
+  },
+  "hasEffects": false
+ },
+ "1035": {
+  "name": "Emberknife",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1036": {
+  "name": "Long Sword",
+  "stats": {
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "1037": {
+  "name": "Pickaxe",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "1038": {
+  "name": "B. F. Sword",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": false
+ },
+ "1039": {
+  "name": "Hailblade",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1040": {
+  "name": "Obsidian Edge",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1042": {
+  "name": "Dagger",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1043": {
+  "name": "Recurve Bow",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1052": {
+  "name": "Amplifying Tome",
+  "stats": {
+   "ap": 20
+  },
+  "hasEffects": false
+ },
+ "1053": {
+  "name": "Vampiric Scepter",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "1054": {
+  "name": "Doran's Shield",
+  "stats": {
+   "hp": 110
+  },
+  "hasEffects": true
+ },
+ "1055": {
+  "name": "Doran's Blade",
+  "stats": {
+   "hp": 80,
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "1056": {
+  "name": "Doran's Ring",
+  "stats": {
+   "hp": 90,
+   "ap": 18
+  },
+  "hasEffects": true
+ },
+ "1057": {
+  "name": "Negatron Cloak",
+  "stats": {
+   "mr": 45
+  },
+  "hasEffects": false
+ },
+ "1058": {
+  "name": "Needlessly Large Rod",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": false
+ },
+ "1082": {
+  "name": "Dark Seal",
+  "stats": {
+   "hp": 50,
+   "ap": 15
+  },
+  "hasEffects": true
+ },
+ "1083": {
+  "name": "Cull",
+  "stats": {
+   "ad": 7
+  },
+  "hasEffects": true
+ },
+ "1086": {
+  "name": "Doran's Bow",
+  "stats": {
+   "ad": 7
+  },
+  "hasEffects": false
+ },
+ "1090": {
+  "name": "Quest: Top",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1091": {
+  "name": "Quest: Mid",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1092": {
+  "name": "Quest: Bot",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1093": {
+  "name": "Quest: Support",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1094": {
+  "name": "Quest: Jungle",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1101": {
+  "name": "Scorchclaw Pup",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1102": {
+  "name": "Gustwalker Hatchling",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1103": {
+  "name": "Mosstomper Seedling",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1104": {
+  "name": "Eye of the Herald",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1105": {
+  "name": "Mosstomper Seedling",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1106": {
+  "name": "Gustwalker Hatchling",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1107": {
+  "name": "Scorchclaw Pup",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1111": {
+  "name": "Jarvan I's",
+  "stats": {
+   "mr": 20,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "1120": {
+  "name": "Doran's Helm",
+  "stats": {
+   "mr": 8,
+   "hp": 150,
+   "armor": 8
+  },
+  "hasEffects": true
+ },
+ "1200": {
+  "name": "Top Lane Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1201": {
+  "name": "Mid Lane Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1202": {
+  "name": "Bot Lane Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1203": {
+  "name": "Support Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1204": {
+  "name": "Jungle Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1205": {
+  "name": "Jungle Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1206": {
+  "name": "Mid Lane Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1207": {
+  "name": "Bot Lane Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1208": {
+  "name": "Support Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1209": {
+  "name": "Jungle Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1210": {
+  "name": "Jungle Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1211": {
+  "name": "Jungle Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1220": {
+  "name": "Unleashed Teleport (Top Lane Quest Reward)",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1221": {
+  "name": "Top Lane Quest Reward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1222": {
+  "name": "Top Lane Quest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1500": {
+  "name": "Penetrating Bullets",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1501": {
+  "name": "Fortification",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1502": {
+  "name": "Reinforced Armor",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1503": {
+  "name": "Warden's Eye",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1504": {
+  "name": "Vanguard",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1505": {
+  "name": "Reinforced Armor",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1506": {
+  "name": "Reinforced Armor",
+  "stats": {},
+  "hasEffects": true
+ },
+ "1507": {
+  "name": "Overcharged",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1508": {
+  "name": "Anti-tower Socks",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1509": {
+  "name": "Gusto",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1510": {
+  "name": "Phreakish Gusto",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1511": {
+  "name": "Super Mech Armor",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1512": {
+  "name": "Super Mech Power Field",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1515": {
+  "name": "Turret Plating",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1516": {
+  "name": "Structure Bounty",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1517": {
+  "name": "Structure Bounty",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1518": {
+  "name": "Structure Bounty",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1519": {
+  "name": "Structure Bounty",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1520": {
+  "name": "OvererchargedHA",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1521": {
+  "name": "Fortification",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1522": {
+  "name": "Tower Power-Up",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1523": {
+  "name": "Overcharged",
+  "stats": {},
+  "hasEffects": false
+ },
+ "1524": {
+  "name": "Overgrowth",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2001": {
+  "name": "Recall",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2002": {
+  "name": "Enhanced Recall",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2003": {
+  "name": "Health Potion",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2007": {
+  "name": "Disabled Recall",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2008": {
+  "name": "",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2010": {
+  "name": "Total Biscuit of Everlasting Will",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2015": {
+  "name": "Kircheis Shard",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": true
+ },
+ "2019": {
+  "name": "Steel Sigil",
+  "stats": {
+   "armor": 30,
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "2020": {
+  "name": "The Brutalizer",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "2021": {
+  "name": "Tunneler",
+  "stats": {
+   "hp": 250,
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "2022": {
+  "name": "Glowing Mote",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2031": {
+  "name": "Refillable Potion",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2033": {
+  "name": "Corrupting Potion",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2049": {
+  "name": "Guardian's Amulet",
+  "stats": {
+   "ap": 20
+  },
+  "hasEffects": true
+ },
+ "2050": {
+  "name": "Guardian's Shroud",
+  "stats": {
+   "hp": 300,
+   "ap": 35
+  },
+  "hasEffects": false
+ },
+ "2051": {
+  "name": "Guardian's Horn",
+  "stats": {
+   "hp": 150
+  },
+  "hasEffects": true
+ },
+ "2052": {
+  "name": "Poro-Snax",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2055": {
+  "name": "Control Ward",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2056": {
+  "name": "Stealth Ward",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2065": {
+  "name": "Shurelya's Battlesong",
+  "stats": {
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "2138": {
+  "name": "Elixir of Iron",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2139": {
+  "name": "Elixir of Sorcery",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2140": {
+  "name": "Elixir of Wrath",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2141": {
+  "name": "Cappa Juice",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2142": {
+  "name": "Juice of Power",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2143": {
+  "name": "Juice of Vitality",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2144": {
+  "name": "Juice of Haste",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2145": {
+  "name": "Lucky Dice",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2146": {
+  "name": "Enhanced Lucky Dice",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2147": {
+  "name": "Augment Level",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2150": {
+  "name": "Elixir of Skill",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2151": {
+  "name": "Elixir of Avarice",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2152": {
+  "name": "Elixir of Force",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2161": {
+  "name": "Bandle Juice of Power",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2162": {
+  "name": "Bandle Juice of Vitality",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2163": {
+  "name": "Bandle Juice of Haste",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2403": {
+  "name": "Minion Dematerializer",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2420": {
+  "name": "Seeker's Armguard",
+  "stats": {
+   "ap": 40,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "2421": {
+  "name": "Shattered Armguard",
+  "stats": {
+   "ap": 40,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "2422": {
+  "name": "Slightly Magical Footwear",
+  "stats": {},
+  "hasEffects": false
+ },
+ "2501": {
+  "name": "Overlord's Bloodmail",
+  "stats": {
+   "hp": 550,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "2502": {
+  "name": "Unending Despair",
+  "stats": {
+   "hp": 400,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "2503": {
+  "name": "Blackfire Torch",
+  "stats": {
+   "mana": 600,
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "2504": {
+  "name": "Kaenic Rookern",
+  "stats": {
+   "mr": 80,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "2508": {
+  "name": "Fated Ashes",
+  "stats": {
+   "ap": 30
+  },
+  "hasEffects": true
+ },
+ "2510": {
+  "name": "Dusk and Dawn",
+  "stats": {
+   "hp": 300,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "2512": {
+  "name": "Fiendhunter Bolts",
+  "stats": {},
+  "hasEffects": true
+ },
+ "2517": {
+  "name": "Endless Hunger",
+  "stats": {
+   "ad": 65
+  },
+  "hasEffects": true
+ },
+ "2520": {
+  "name": "Bastionbreaker",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "2522": {
+  "name": "Actualizer",
+  "stats": {
+   "mana": 300,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "2523": {
+  "name": "Hexoptics C44",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "2524": {
+  "name": "Bandlepipes",
+  "stats": {
+   "mr": 20,
+   "hp": 200,
+   "armor": 20
+  },
+  "hasEffects": true
+ },
+ "2525": {
+  "name": "Protoplasm Harness",
+  "stats": {
+   "hp": 600
+  },
+  "hasEffects": true
+ },
+ "2526": {
+  "name": "Whispering Circlet",
+  "stats": {
+   "mana": 300,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "2530": {
+  "name": "Diadem of Songs",
+  "stats": {
+   "mana": 1000,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3001": {
+  "name": "Evenshroud",
+  "stats": {
+   "mr": 30,
+   "hp": 200,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "3002": {
+  "name": "Trailblazer",
+  "stats": {
+   "hp": 250,
+   "armor": 40
+  },
+  "hasEffects": true
+ },
+ "3003": {
+  "name": "Archangel's Staff",
+  "stats": {
+   "mana": 600,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "3004": {
+  "name": "Manamune",
+  "stats": {
+   "mana": 500,
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "3005": {
+  "name": "Ghostcrawlers",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3006": {
+  "name": "Berserker's Greaves",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3008": {
+  "name": "Gluttonous Greaves",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3009": {
+  "name": "Boots of Swiftness",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3010": {
+  "name": "Symbiotic Soles",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3011": {
+  "name": "Chemtech Putrifier",
+  "stats": {
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "3012": {
+  "name": "Chalice of Blessing",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3013": {
+  "name": "Synchronized Souls",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3020": {
+  "name": "Sorcerer's Shoes",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3023": {
+  "name": "Lifewell Pendant",
+  "stats": {
+   "hp": 150,
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "3024": {
+  "name": "Glacial Buckler",
+  "stats": {
+   "mana": 300,
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "3026": {
+  "name": "Guardian Angel",
+  "stats": {
+   "armor": 45,
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "3031": {
+  "name": "Infinity Edge",
+  "stats": {
+   "ad": 75
+  },
+  "hasEffects": false
+ },
+ "3032": {
+  "name": "Yun Tal Wildarrows",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "3033": {
+  "name": "Mortal Reminder",
+  "stats": {
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "3035": {
+  "name": "Last Whisper",
+  "stats": {
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "3036": {
+  "name": "Lord Dominik's Regards",
+  "stats": {
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "3039": {
+  "name": "Atma's Reckoning",
+  "stats": {
+   "hp": 700
+  },
+  "hasEffects": true
+ },
+ "3040": {
+  "name": "Seraph's Embrace",
+  "stats": {
+   "mana": 1000,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "3041": {
+  "name": "Mejai's Soulstealer",
+  "stats": {
+   "hp": 100,
+   "ap": 20
+  },
+  "hasEffects": true
+ },
+ "3042": {
+  "name": "Muramana",
+  "stats": {
+   "mana": 1000,
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "3044": {
+  "name": "Phage",
+  "stats": {
+   "hp": 200,
+   "ad": 15
+  },
+  "hasEffects": true
+ },
+ "3046": {
+  "name": "Phantom Dancer",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3047": {
+  "name": "Plated Steelcaps",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "3050": {
+  "name": "Zeke's Convergence",
+  "stats": {
+   "mr": 25,
+   "hp": 300,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "3051": {
+  "name": "Hearthbound Axe",
+  "stats": {
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "3053": {
+  "name": "Sterak's Gage",
+  "stats": {
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "3057": {
+  "name": "Sheen",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3065": {
+  "name": "Spirit Visage",
+  "stats": {
+   "mr": 50,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "3066": {
+  "name": "Winged Moonplate",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "3067": {
+  "name": "Kindlegem",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "3068": {
+  "name": "Sunfire Aegis",
+  "stats": {
+   "hp": 350,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "3070": {
+  "name": "Tear of the Goddess",
+  "stats": {
+   "mana": 240
+  },
+  "hasEffects": true
+ },
+ "3071": {
+  "name": "Black Cleaver",
+  "stats": {
+   "hp": 400,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "3072": {
+  "name": "Bloodthirster",
+  "stats": {
+   "ad": 80
+  },
+  "hasEffects": true
+ },
+ "3073": {
+  "name": "Experimental Hexplate",
+  "stats": {
+   "hp": 450,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "3074": {
+  "name": "Ravenous Hydra",
+  "stats": {
+   "ad": 65
+  },
+  "hasEffects": true
+ },
+ "3075": {
+  "name": "Thornmail",
+  "stats": {
+   "hp": 150,
+   "armor": 75
+  },
+  "hasEffects": true
+ },
+ "3076": {
+  "name": "Bramble Vest",
+  "stats": {
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "3077": {
+  "name": "Tiamat",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": true
+ },
+ "3078": {
+  "name": "Trinity Force",
+  "stats": {
+   "hp": 333,
+   "ad": 36
+  },
+  "hasEffects": true
+ },
+ "3082": {
+  "name": "Warden's Mail",
+  "stats": {
+   "armor": 40
+  },
+  "hasEffects": true
+ },
+ "3083": {
+  "name": "Warmog's Armor",
+  "stats": {
+   "hp": 1000
+  },
+  "hasEffects": true
+ },
+ "3084": {
+  "name": "Heartsteel",
+  "stats": {
+   "hp": 900
+  },
+  "hasEffects": true
+ },
+ "3085": {
+  "name": "Runaan's Hurricane",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3086": {
+  "name": "Zeal",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3087": {
+  "name": "Statikk Shiv",
+  "stats": {
+   "ap": 45,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "3089": {
+  "name": "Rabadon's Deathcap",
+  "stats": {
+   "ap": 130
+  },
+  "hasEffects": true
+ },
+ "3091": {
+  "name": "Wit's End",
+  "stats": {
+   "mr": 45
+  },
+  "hasEffects": true
+ },
+ "3094": {
+  "name": "Rapid Firecannon",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3095": {
+  "name": "Stormrazor",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "3100": {
+  "name": "Lich Bane",
+  "stats": {
+   "ap": 100
+  },
+  "hasEffects": true
+ },
+ "3102": {
+  "name": "Banshee's Veil",
+  "stats": {
+   "mr": 40,
+   "ap": 105
+  },
+  "hasEffects": true
+ },
+ "3105": {
+  "name": "Aegis of the Legion",
+  "stats": {
+   "mr": 25,
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "3107": {
+  "name": "Redemption",
+  "stats": {
+   "ap": 30
+  },
+  "hasEffects": true
+ },
+ "3108": {
+  "name": "Fiendish Codex",
+  "stats": {
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "3109": {
+  "name": "Knight's Vow",
+  "stats": {
+   "hp": 200,
+   "armor": 40
+  },
+  "hasEffects": true
+ },
+ "3110": {
+  "name": "Frozen Heart",
+  "stats": {
+   "mana": 400,
+   "armor": 75
+  },
+  "hasEffects": true
+ },
+ "3111": {
+  "name": "Mercury's Treads",
+  "stats": {
+   "mr": 20
+  },
+  "hasEffects": false
+ },
+ "3112": {
+  "name": "Guardian's Orb",
+  "stats": {
+   "hp": 150,
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "3113": {
+  "name": "Aether Wisp",
+  "stats": {
+   "ap": 30
+  },
+  "hasEffects": false
+ },
+ "3114": {
+  "name": "Forbidden Idol",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3115": {
+  "name": "Nashor's Tooth",
+  "stats": {
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "3116": {
+  "name": "Rylai's Crystal Scepter",
+  "stats": {
+   "hp": 400,
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "3117": {
+  "name": "Mobility Boots",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3118": {
+  "name": "Malignance",
+  "stats": {
+   "mana": 600,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "3119": {
+  "name": "Winter's Approach",
+  "stats": {
+   "mana": 500,
+   "hp": 550
+  },
+  "hasEffects": true
+ },
+ "3121": {
+  "name": "Fimbulwinter",
+  "stats": {
+   "mana": 1000,
+   "hp": 550
+  },
+  "hasEffects": true
+ },
+ "3123": {
+  "name": "Executioner's Calling",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": true
+ },
+ "3124": {
+  "name": "Guinsoo's Rageblade",
+  "stats": {
+   "ap": 30,
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "3128": {
+  "name": "Deathfire Grasp",
+  "stats": {
+   "ap": 120
+  },
+  "hasEffects": true
+ },
+ "3131": {
+  "name": "Sword of the Divine",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "3133": {
+  "name": "Caulfield's Warhammer",
+  "stats": {
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "3134": {
+  "name": "Serrated Dirk",
+  "stats": {
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "3135": {
+  "name": "Void Staff",
+  "stats": {
+   "ap": 95
+  },
+  "hasEffects": false
+ },
+ "3137": {
+  "name": "Cryptbloom",
+  "stats": {
+   "ap": 75
+  },
+  "hasEffects": true
+ },
+ "3139": {
+  "name": "Mercurial Scimitar",
+  "stats": {
+   "mr": 35,
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "3140": {
+  "name": "Quicksilver Sash",
+  "stats": {
+   "mr": 30
+  },
+  "hasEffects": true
+ },
+ "3142": {
+  "name": "Youmuu's Ghostblade",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "3143": {
+  "name": "Randuin's Omen",
+  "stats": {
+   "hp": 350,
+   "armor": 75
+  },
+  "hasEffects": true
+ },
+ "3144": {
+  "name": "Scout's Slingshot",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3145": {
+  "name": "Hextech Alternator",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "3146": {
+  "name": "Hextech Gunblade",
+  "stats": {
+   "ap": 80,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "3147": {
+  "name": "Haunting Guise",
+  "stats": {
+   "hp": 200,
+   "ap": 30
+  },
+  "hasEffects": true
+ },
+ "3152": {
+  "name": "Hextech Rocketbelt",
+  "stats": {
+   "hp": 350,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "3153": {
+  "name": "Blade of The Ruined King",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "3155": {
+  "name": "Hexdrinker",
+  "stats": {
+   "mr": 25,
+   "ad": 25
+  },
+  "hasEffects": true
+ },
+ "3156": {
+  "name": "Maw of Malmortius",
+  "stats": {
+   "mr": 40,
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "3157": {
+  "name": "Zhonya's Hourglass",
+  "stats": {
+   "ap": 105,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "3158": {
+  "name": "Ionian Boots of Lucidity",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3161": {
+  "name": "Spear of Shojin",
+  "stats": {
+   "hp": 450,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "3165": {
+  "name": "Morellonomicon",
+  "stats": {
+   "hp": 350,
+   "ap": 75
+  },
+  "hasEffects": true
+ },
+ "3168": {
+  "name": "Immortal Path",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3170": {
+  "name": "Swiftmarch",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3171": {
+  "name": "Crimson Lucidity",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3172": {
+  "name": "Gunmetal Greaves",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3173": {
+  "name": "Chainlaced Crushers",
+  "stats": {
+   "mr": 25
+  },
+  "hasEffects": true
+ },
+ "3174": {
+  "name": "Armored Advance",
+  "stats": {
+   "armor": 35
+  },
+  "hasEffects": true
+ },
+ "3175": {
+  "name": "Spellslinger's Shoes",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3176": {
+  "name": "Forever Forward",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3177": {
+  "name": "Guardian's Blade",
+  "stats": {
+   "hp": 150,
+   "ad": 30
+  },
+  "hasEffects": false
+ },
+ "3179": {
+  "name": "Umbral Glaive",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "3181": {
+  "name": "Hullbreaker",
+  "stats": {
+   "hp": 500,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "3184": {
+  "name": "Guardian's Hammer",
+  "stats": {
+   "hp": 150,
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "3190": {
+  "name": "Locket of the Iron Solari",
+  "stats": {
+   "mr": 30,
+   "hp": 200,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "3193": {
+  "name": "Gargoyle Stoneplate",
+  "stats": {
+   "mr": 60,
+   "armor": 60
+  },
+  "hasEffects": true
+ },
+ "3211": {
+  "name": "Spectre's Cowl",
+  "stats": {
+   "mr": 35,
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "3222": {
+  "name": "Mikael's Blessing",
+  "stats": {
+   "hp": 250
+  },
+  "hasEffects": true
+ },
+ "3302": {
+  "name": "Terminus",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "3330": {
+  "name": "Scarecrow Effigy",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3340": {
+  "name": "Stealth Ward",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3348": {
+  "name": "Arcane Sweeper",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3349": {
+  "name": "Lucent Singularity",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3363": {
+  "name": "Farsight Alteration",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3364": {
+  "name": "Oracle Lens",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3398": {
+  "name": "Small Party Favor",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3399": {
+  "name": "Party Favor",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3400": {
+  "name": "Your Cut",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3430": {
+  "name": "Rite Of Ruin",
+  "stats": {
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "3504": {
+  "name": "Ardent Censer",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "3508": {
+  "name": "Essence Reaver",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "3513": {
+  "name": "Eye of the Herald",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3599": {
+  "name": "Kalista's Black Spear",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3600": {
+  "name": "Kalista's Black Spear",
+  "stats": {},
+  "hasEffects": true
+ },
+ "3742": {
+  "name": "Dead Man's Plate",
+  "stats": {
+   "hp": 350,
+   "armor": 55
+  },
+  "hasEffects": true
+ },
+ "3748": {
+  "name": "Titanic Hydra",
+  "stats": {
+   "hp": 600,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "3801": {
+  "name": "Crystalline Bracer",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "3802": {
+  "name": "Lost Chapter",
+  "stats": {
+   "mana": 300,
+   "ap": 40
+  },
+  "hasEffects": true
+ },
+ "3803": {
+  "name": "Catalyst of Aeons",
+  "stats": {
+   "mana": 375,
+   "hp": 300
+  },
+  "hasEffects": true
+ },
+ "3814": {
+  "name": "Edge of Night",
+  "stats": {
+   "hp": 250,
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "3850": {
+  "name": "Spellthief's Edge",
+  "stats": {
+   "hp": 25,
+   "ap": 10
+  },
+  "hasEffects": true
+ },
+ "3851": {
+  "name": "Frostfang",
+  "stats": {
+   "hp": 70,
+   "ap": 15
+  },
+  "hasEffects": true
+ },
+ "3853": {
+  "name": "Shard of True Ice",
+  "stats": {
+   "hp": 75,
+   "ap": 40
+  },
+  "hasEffects": true
+ },
+ "3854": {
+  "name": "Steel Shoulderguards",
+  "stats": {
+   "hp": 50,
+   "ad": 4
+  },
+  "hasEffects": true
+ },
+ "3855": {
+  "name": "Runesteel Spaulders",
+  "stats": {
+   "hp": 100,
+   "ad": 6
+  },
+  "hasEffects": true
+ },
+ "3857": {
+  "name": "Pauldrons of Whiterock",
+  "stats": {
+   "hp": 250,
+   "ad": 15
+  },
+  "hasEffects": true
+ },
+ "3858": {
+  "name": "Relic Shield",
+  "stats": {
+   "hp": 50,
+   "ap": 7
+  },
+  "hasEffects": true
+ },
+ "3859": {
+  "name": "Targon's Buckler",
+  "stats": {
+   "hp": 100,
+   "ap": 10
+  },
+  "hasEffects": true
+ },
+ "3860": {
+  "name": "Bulwark of the Mountain",
+  "stats": {
+   "hp": 250,
+   "ap": 20
+  },
+  "hasEffects": true
+ },
+ "3862": {
+  "name": "Spectral Sickle",
+  "stats": {
+   "hp": 25,
+   "ad": 6
+  },
+  "hasEffects": true
+ },
+ "3863": {
+  "name": "Harrowing Crescent",
+  "stats": {
+   "hp": 60,
+   "ad": 10
+  },
+  "hasEffects": true
+ },
+ "3864": {
+  "name": "Black Mist Scythe",
+  "stats": {
+   "hp": 75,
+   "ad": 20
+  },
+  "hasEffects": true
+ },
+ "3865": {
+  "name": "World Atlas",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3866": {
+  "name": "Runic Compass",
+  "stats": {
+   "hp": 60
+  },
+  "hasEffects": true
+ },
+ "3867": {
+  "name": "Bounty of Worlds",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3869": {
+  "name": "Celestial Opposition",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3870": {
+  "name": "Dream Maker",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3871": {
+  "name": "Zaz'Zak's Realmspike",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3876": {
+  "name": "Solstice Sleigh",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3877": {
+  "name": "Bloodsong",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "3901": {
+  "name": "<rarityLegendary>Fire at Will</rarityLegendary><br><subtitleLeft><silver>500 Silver Serpents</silver></subtitleLeft>",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3902": {
+  "name": "<rarityLegendary>Death's Daughter</rarityLegendary><br><subtitleLeft><silver>500 Silver Serpents</silver></subtitleLeft>",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3903": {
+  "name": "<rarityLegendary>Raise Morale</rarityLegendary><br><subtitleLeft><silver>500 Silver Serpents</silver></subtitleLeft>",
+  "stats": {},
+  "hasEffects": false
+ },
+ "3916": {
+  "name": "Oblivion Orb",
+  "stats": {
+   "ap": 25
+  },
+  "hasEffects": true
+ },
+ "4003": {
+  "name": "Lifeline",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": true
+ },
+ "4004": {
+  "name": "Spectral Cutlass",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "4005": {
+  "name": "Imperial Mandate",
+  "stats": {
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "4010": {
+  "name": "Bloodletter's Curse",
+  "stats": {
+   "hp": 350,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "4011": {
+  "name": "Sword of Blossoming Dawn",
+  "stats": {
+   "hp": 200,
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "4012": {
+  "name": "Sin Eater",
+  "stats": {
+   "mr": 45,
+   "hp": 300,
+   "armor": 45
+  },
+  "hasEffects": true
+ },
+ "4013": {
+  "name": "Lightning Braid",
+  "stats": {
+   "mr": 30,
+   "ap": 70,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "4014": {
+  "name": "Frozen Mallet",
+  "stats": {
+   "hp": 600
+  },
+  "hasEffects": true
+ },
+ "4015": {
+  "name": "Perplexity",
+  "stats": {
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "4016": {
+  "name": "Wordless Promise",
+  "stats": {
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "4017": {
+  "name": "Hellfire Hatchet",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "4401": {
+  "name": "Force of Nature",
+  "stats": {
+   "mr": 55,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "4402": {
+  "name": "Innervating Locket",
+  "stats": {
+   "mana": 300,
+   "hp": 400,
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "4403": {
+  "name": "The Golden Spatula",
+  "stats": {
+   "mr": 30,
+   "mana": 250,
+   "hp": 250,
+   "ap": 120,
+   "armor": 30,
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "4628": {
+  "name": "Horizon Focus",
+  "stats": {
+   "ap": 75
+  },
+  "hasEffects": true
+ },
+ "4629": {
+  "name": "Cosmic Drive",
+  "stats": {
+   "hp": 350,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "4630": {
+  "name": "Blighting Jewel",
+  "stats": {
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "4632": {
+  "name": "Verdant Barrier",
+  "stats": {
+   "mr": 25,
+   "ap": 40
+  },
+  "hasEffects": true
+ },
+ "4633": {
+  "name": "Riftmaker",
+  "stats": {
+   "hp": 350,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "4635": {
+  "name": "Leeching Leer",
+  "stats": {
+   "hp": 250,
+   "ap": 20
+  },
+  "hasEffects": false
+ },
+ "4636": {
+  "name": "Night Harvester",
+  "stats": {
+   "hp": 300,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "4637": {
+  "name": "Demonic Embrace",
+  "stats": {
+   "hp": 350,
+   "ap": 75
+  },
+  "hasEffects": true
+ },
+ "4638": {
+  "name": "Watchful Wardstone",
+  "stats": {
+   "mr": 15,
+   "hp": 150,
+   "armor": 10
+  },
+  "hasEffects": true
+ },
+ "4641": {
+  "name": "Stirring Wardstone",
+  "stats": {
+   "hp": 80
+  },
+  "hasEffects": true
+ },
+ "4642": {
+  "name": "Bandleglass Mirror",
+  "stats": {
+   "ap": 20
+  },
+  "hasEffects": false
+ },
+ "4643": {
+  "name": "Vigilant Wardstone",
+  "stats": {
+   "mr": 30,
+   "hp": 250,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "4644": {
+  "name": "Crown of the Shattered Queen",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 85
+  },
+  "hasEffects": true
+ },
+ "4645": {
+  "name": "Shadowflame",
+  "stats": {
+   "ap": 110
+  },
+  "hasEffects": true
+ },
+ "4646": {
+  "name": "Stormsurge",
+  "stats": {
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "6029": {
+  "name": "Ironspike Whip",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "6032": {
+  "name": "Stat Bonus",
+  "stats": {},
+  "hasEffects": true
+ },
+ "6035": {
+  "name": "Silvermere Dawn",
+  "stats": {
+   "mr": 40,
+   "hp": 300,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "6333": {
+  "name": "Death's Dance",
+  "stats": {
+   "armor": 50,
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "6609": {
+  "name": "Chempunk Chainsword",
+  "stats": {
+   "hp": 450,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "6610": {
+  "name": "Sundered Sky",
+  "stats": {
+   "hp": 400,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "6616": {
+  "name": "Staff of Flowing Water",
+  "stats": {
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "6617": {
+  "name": "Moonstone Renewer",
+  "stats": {
+   "hp": 200,
+   "ap": 25
+  },
+  "hasEffects": true
+ },
+ "6620": {
+  "name": "Echoes of Helia",
+  "stats": {
+   "hp": 200,
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "6621": {
+  "name": "Dawncore",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "6630": {
+  "name": "Goredrinker",
+  "stats": {
+   "hp": 400,
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6631": {
+  "name": "Stridebreaker",
+  "stats": {
+   "hp": 450,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "6632": {
+  "name": "Divine Sunderer",
+  "stats": {
+   "hp": 300,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "6653": {
+  "name": "Liandry's Torment",
+  "stats": {
+   "hp": 300,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "6655": {
+  "name": "Luden's Echo",
+  "stats": {
+   "mana": 600,
+   "ap": 100
+  },
+  "hasEffects": true
+ },
+ "6656": {
+  "name": "Everfrost",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "6657": {
+  "name": "Rod of Ages",
+  "stats": {
+   "mana": 500,
+   "hp": 350,
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "6660": {
+  "name": "Bami's Cinder",
+  "stats": {
+   "hp": 150
+  },
+  "hasEffects": true
+ },
+ "6662": {
+  "name": "Iceborn Gauntlet",
+  "stats": {
+   "hp": 300,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "6664": {
+  "name": "Hollow Radiance",
+  "stats": {
+   "mr": 40,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "6665": {
+  "name": "Jak'Sho, The Protean",
+  "stats": {
+   "mr": 45,
+   "hp": 350,
+   "armor": 45
+  },
+  "hasEffects": true
+ },
+ "6667": {
+  "name": "Radiant Virtue",
+  "stats": {
+   "mr": 30,
+   "hp": 350,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "6670": {
+  "name": "Noonquiver",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "6671": {
+  "name": "Galeforce",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "6672": {
+  "name": "Kraken Slayer",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "6673": {
+  "name": "Immortal Shieldbow",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6675": {
+  "name": "Navori Flickerblade",
+  "stats": {},
+  "hasEffects": true
+ },
+ "6676": {
+  "name": "The Collector",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "6677": {
+  "name": "Rageknife",
+  "stats": {},
+  "hasEffects": true
+ },
+ "6690": {
+  "name": "Rectrix",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "6691": {
+  "name": "Duskblade of Draktharr",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "6692": {
+  "name": "Eclipse",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "6693": {
+  "name": "Prowler's Claw",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6694": {
+  "name": "Serylda's Grudge",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "6695": {
+  "name": "Serpent's Fang",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6696": {
+  "name": "Axiom Arc",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6697": {
+  "name": "Hubris",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6698": {
+  "name": "Profane Hydra",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6699": {
+  "name": "Voltaic Cyclosword",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6700": {
+  "name": "Shield of the Rakkor",
+  "stats": {
+   "armor": 30,
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "6701": {
+  "name": "Opportunity",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "6702": {
+  "name": "Scouting Ahead",
+  "stats": {},
+  "hasEffects": true
+ },
+ "7050": {
+  "name": "Gangplank Placeholder",
+  "stats": {},
+  "hasEffects": false
+ },
+ "8001": {
+  "name": "Anathema's Chains",
+  "stats": {
+   "hp": 650
+  },
+  "hasEffects": true
+ },
+ "8010": {
+  "name": "Bloodletter's Curse",
+  "stats": {
+   "hp": 400,
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "8020": {
+  "name": "Abyssal Mask",
+  "stats": {
+   "mr": 45,
+   "hp": 350
+  },
+  "hasEffects": true
+ },
+ "9168": {
+  "name": "Locked Weapon Slot",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9171": {
+  "name": "Cyclonic Slicers",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9172": {
+  "name": "YuumiBot",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9173": {
+  "name": "Radiant Field",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9174": {
+  "name": "Statikk Sword",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9175": {
+  "name": "Lioness's Lament",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9176": {
+  "name": "Gatling Bunny-Guns",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9177": {
+  "name": "Searing Shortbow",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9178": {
+  "name": "The Annihilator",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9179": {
+  "name": "Battle Bunny Crossbow",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9180": {
+  "name": "UwU Blaster",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9181": {
+  "name": "Vortex Glove",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9183": {
+  "name": "Blade-o-rang",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9184": {
+  "name": "Bunny Mega-Blast",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9185": {
+  "name": "Anti-Shark Sea Mine",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9187": {
+  "name": "T.I.B.B.E.R.S",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9188": {
+  "name": "Ani-Mines",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9189": {
+  "name": "Final City Transit",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9190": {
+  "name": "Echoing Batblades",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9192": {
+  "name": "Paw Print Poisoner",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9193": {
+  "name": "Iceblast Armor",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9271": {
+  "name": "Unceasing Cyclone",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9272": {
+  "name": "YuumiBot_Final_FINAL",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9273": {
+  "name": "Explosive Embrace",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9274": {
+  "name": "Prumbis's Electrocarver",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9275": {
+  "name": "Enveloping Light",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9276": {
+  "name": "Double Bun-Bun Barrage",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9277": {
+  "name": "Evolved Embershot",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9278": {
+  "name": "Animapocalypse",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9279": {
+  "name": "Bunny Prime Ballista",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9280": {
+  "name": "OwO Blaster",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9281": {
+  "name": "Tempest's Gauntlet",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9283": {
+  "name": "Quad-o-rang",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9284": {
+  "name": "Rapid Rabbit Raindown",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9285": {
+  "name": "Neverending Mobstomper",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9287": {
+  "name": "T.I.B.B.E.R.S (B.E.E.G Edition)",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9288": {
+  "name": "Jinx's Tri-Namite",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9289": {
+  "name": "FC Limited Express",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9290": {
+  "name": "Vayne's Chromablades",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9292": {
+  "name": "Bearfoot Chem-Dispenser",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9293": {
+  "name": "Deep Freeze",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9300": {
+  "name": "Meow Meow",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9301": {
+  "name": "Shield Slam",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9302": {
+  "name": "Sound Wave",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9303": {
+  "name": "Pillory Swipe",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9304": {
+  "name": "Steel Tempest",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9305": {
+  "name": "Tentacle Slam",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9306": {
+  "name": "Winged Dagger",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9307": {
+  "name": "Guiding Hex",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9308": {
+  "name": "Bunny Hop",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9400": {
+  "name": "Battle Cat Barrage",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9401": {
+  "name": "Light of the Lion",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9402": {
+  "name": "Anima Echo",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9403": {
+  "name": "Savage Slice",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9404": {
+  "name": "Wandering Storms",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9405": {
+  "name": "Grizzly Smash",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9406": {
+  "name": "Lover's Ricochet",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9407": {
+  "name": "Hopped-Up Hex",
+  "stats": {},
+  "hasEffects": false
+ },
+ "9408": {
+  "name": "Carrot Crash",
+  "stats": {},
+  "hasEffects": false
+ },
+ "123430": {
+  "name": "Rite of Ruin",
+  "stats": {
+   "ap": 55
+  },
+  "hasEffects": true
+ },
+ "124011": {
+  "name": "Sword of Blossoming Dawn",
+  "stats": {
+   "hp": 200,
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "126697": {
+  "name": "Hubris",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "220000": {
+  "name": "Stat Bonus",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220001": {
+  "name": "Legendary Fighter Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220002": {
+  "name": "Legendary Marksman Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220003": {
+  "name": "Legendary Assassin Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220004": {
+  "name": "Legendary Mage Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220005": {
+  "name": "Legendary Tank Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220006": {
+  "name": "Legendary Support Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220007": {
+  "name": "Prismatic Item",
+  "stats": {},
+  "hasEffects": true
+ },
+ "220008": {
+  "name": "Anvil Voucher",
+  "stats": {},
+  "hasEffects": false
+ },
+ "220009": {
+  "name": "Gold Stat Anvil Voucher",
+  "stats": {},
+  "hasEffects": false
+ },
+ "220010": {
+  "name": "Prismatic Stat Voucher",
+  "stats": {},
+  "hasEffects": false
+ },
+ "220011": {
+  "name": "Bravery Voucher",
+  "stats": {},
+  "hasEffects": false
+ },
+ "220012": {
+  "name": "Shardblade",
+  "stats": {},
+  "hasEffects": false
+ },
+ "220013": {
+  "name": "Poro-Snax",
+  "stats": {},
+  "hasEffects": true
+ },
+ "221011": {
+  "name": "Giant's Belt",
+  "stats": {
+   "hp": 300
+  },
+  "hasEffects": false
+ },
+ "221026": {
+  "name": "Blasting Wand",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": false
+ },
+ "221031": {
+  "name": "Chain Vest",
+  "stats": {
+   "armor": 40
+  },
+  "hasEffects": false
+ },
+ "221038": {
+  "name": "B. F. Sword",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": false
+ },
+ "221043": {
+  "name": "Recurve Bow",
+  "stats": {},
+  "hasEffects": true
+ },
+ "221053": {
+  "name": "Vampiric Scepter",
+  "stats": {
+   "ad": 15
+  },
+  "hasEffects": false
+ },
+ "221057": {
+  "name": "Negatron Cloak",
+  "stats": {
+   "mr": 30
+  },
+  "hasEffects": false
+ },
+ "221058": {
+  "name": "Needlessly Large Rod",
+  "stats": {
+   "ap": 120
+  },
+  "hasEffects": false
+ },
+ "222022": {
+  "name": "Glowing Mote",
+  "stats": {},
+  "hasEffects": false
+ },
+ "222051": {
+  "name": "Guardian's Horn",
+  "stats": {
+   "hp": 300
+  },
+  "hasEffects": true
+ },
+ "222065": {
+  "name": "Shurelya's Battlesong",
+  "stats": {
+   "ap": 55
+  },
+  "hasEffects": true
+ },
+ "222141": {
+  "name": "Cappa Juice",
+  "stats": {},
+  "hasEffects": true
+ },
+ "222502": {
+  "name": "Unending Despair",
+  "stats": {
+   "hp": 350,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "222503": {
+  "name": "Blackfire Torch",
+  "stats": {
+   "mana": 600,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "222504": {
+  "name": "Kaenic Rookern",
+  "stats": {
+   "mr": 80,
+   "hp": 350
+  },
+  "hasEffects": true
+ },
+ "222510": {
+  "name": "Dusk and Dawn",
+  "stats": {
+   "hp": 300,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "222512": {
+  "name": "Fiendhunter Bolts",
+  "stats": {},
+  "hasEffects": true
+ },
+ "222517": {
+  "name": "Endless Hunger",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "222522": {
+  "name": "Actualizer",
+  "stats": {
+   "mana": 300,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "222523": {
+  "name": "Hexoptics C44",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "222524": {
+  "name": "Bandlepipes",
+  "stats": {
+   "mr": 25,
+   "hp": 200,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "222525": {
+  "name": "Protoplasm Harness",
+  "stats": {
+   "hp": 600
+  },
+  "hasEffects": true
+ },
+ "222526": {
+  "name": "Whispering Circlet",
+  "stats": {
+   "mana": 300,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "222530": {
+  "name": "Diadem of Songs",
+  "stats": {
+   "mana": 1000,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "223001": {
+  "name": "Evenshroud",
+  "stats": {
+   "mr": 30,
+   "hp": 200,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "223002": {
+  "name": "Trailblazer",
+  "stats": {
+   "hp": 300,
+   "armor": 45
+  },
+  "hasEffects": true
+ },
+ "223003": {
+  "name": "Archangel's Staff",
+  "stats": {
+   "mana": 600,
+   "ap": 55
+  },
+  "hasEffects": true
+ },
+ "223004": {
+  "name": "Manamune",
+  "stats": {
+   "mana": 600,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223005": {
+  "name": "Ghostcrawlers",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223006": {
+  "name": "Berserker's Greaves",
+  "stats": {},
+  "hasEffects": false
+ },
+ "223008": {
+  "name": "Gluttonous Greaves",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223009": {
+  "name": "Boots of Swiftness",
+  "stats": {},
+  "hasEffects": false
+ },
+ "223011": {
+  "name": "Chemtech Putrifier",
+  "stats": {
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "223020": {
+  "name": "Sorcerer's Shoes",
+  "stats": {},
+  "hasEffects": false
+ },
+ "223026": {
+  "name": "Guardian Angel",
+  "stats": {
+   "armor": 45,
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "223031": {
+  "name": "Infinity Edge",
+  "stats": {
+   "ad": 75
+  },
+  "hasEffects": false
+ },
+ "223032": {
+  "name": "Yun Tal Wildarrows",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "223033": {
+  "name": "Mortal Reminder",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223036": {
+  "name": "Lord Dominik's Regards",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": false
+ },
+ "223039": {
+  "name": "Atma's Reckoning",
+  "stats": {
+   "hp": 700
+  },
+  "hasEffects": true
+ },
+ "223040": {
+  "name": "Seraph's Embrace",
+  "stats": {
+   "mana": 1200,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "223042": {
+  "name": "Muramana",
+  "stats": {
+   "mana": 1000,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223046": {
+  "name": "Phantom Dancer",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223047": {
+  "name": "Plated Steelcaps",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "223050": {
+  "name": "Zeke's Convergence",
+  "stats": {
+   "mr": 30,
+   "hp": 300,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "223053": {
+  "name": "Sterak's Gage",
+  "stats": {
+   "hp": 300
+  },
+  "hasEffects": true
+ },
+ "223057": {
+  "name": "Sheen",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223065": {
+  "name": "Spirit Visage",
+  "stats": {
+   "mr": 40,
+   "hp": 300
+  },
+  "hasEffects": true
+ },
+ "223067": {
+  "name": "Kindlegem",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "223068": {
+  "name": "Sunfire Aegis",
+  "stats": {
+   "hp": 350,
+   "armor": 40
+  },
+  "hasEffects": true
+ },
+ "223069": {
+  "name": "Void Immolation",
+  "stats": {
+   "mr": 80,
+   "hp": 1000,
+   "armor": 100
+  },
+  "hasEffects": true
+ },
+ "223071": {
+  "name": "Black Cleaver",
+  "stats": {
+   "hp": 350,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "223072": {
+  "name": "Bloodthirster",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "223073": {
+  "name": "Experimental Hexplate",
+  "stats": {
+   "hp": 450,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223074": {
+  "name": "Ravenous Hydra",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "223075": {
+  "name": "Thornmail",
+  "stats": {
+   "hp": 300,
+   "armor": 60
+  },
+  "hasEffects": true
+ },
+ "223078": {
+  "name": "Trinity Force",
+  "stats": {
+   "hp": 375,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223084": {
+  "name": "Heartsteel",
+  "stats": {
+   "hp": 700
+  },
+  "hasEffects": true
+ },
+ "223085": {
+  "name": "Runaan's Hurricane",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223087": {
+  "name": "Statikk Shiv",
+  "stats": {
+   "ap": 45,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "223089": {
+  "name": "Rabadon's Deathcap",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "223091": {
+  "name": "Wit's End",
+  "stats": {
+   "mr": 45
+  },
+  "hasEffects": true
+ },
+ "223094": {
+  "name": "Rapid Firecannon",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223095": {
+  "name": "Stormrazor",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "223100": {
+  "name": "Lich Bane",
+  "stats": {
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "223102": {
+  "name": "Banshee's Veil",
+  "stats": {
+   "mr": 40,
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "223105": {
+  "name": "Aegis of the Legion",
+  "stats": {
+   "mr": 30,
+   "armor": 30
+  },
+  "hasEffects": false
+ },
+ "223107": {
+  "name": "Redemption",
+  "stats": {
+   "ap": 30
+  },
+  "hasEffects": true
+ },
+ "223109": {
+  "name": "Knight's Vow",
+  "stats": {
+   "hp": 400,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "223110": {
+  "name": "Frozen Heart",
+  "stats": {
+   "mana": 450,
+   "armor": 90
+  },
+  "hasEffects": true
+ },
+ "223111": {
+  "name": "Mercury's Treads",
+  "stats": {
+   "mr": 30
+  },
+  "hasEffects": false
+ },
+ "223112": {
+  "name": "Guardian's Orb",
+  "stats": {
+   "ap": 55
+  },
+  "hasEffects": true
+ },
+ "223115": {
+  "name": "Nashor's Tooth",
+  "stats": {
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "223116": {
+  "name": "Rylai's Crystal Scepter",
+  "stats": {
+   "hp": 350,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "223118": {
+  "name": "Malignance",
+  "stats": {
+   "mana": 600,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "223119": {
+  "name": "Winter's Approach",
+  "stats": {
+   "mana": 600,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "223121": {
+  "name": "Fimbulwinter",
+  "stats": {
+   "mana": 1000,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "223124": {
+  "name": "Guinsoo's Rageblade",
+  "stats": {
+   "ap": 25,
+   "ad": 20
+  },
+  "hasEffects": true
+ },
+ "223135": {
+  "name": "Void Staff",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": false
+ },
+ "223137": {
+  "name": "Cryptbloom",
+  "stats": {
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "223139": {
+  "name": "Mercurial Scimitar",
+  "stats": {
+   "mr": 40,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "223142": {
+  "name": "Youmuu's Ghostblade",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "223143": {
+  "name": "Randuin's Omen",
+  "stats": {
+   "hp": 300,
+   "armor": 75
+  },
+  "hasEffects": true
+ },
+ "223146": {
+  "name": "Hextech Gunblade",
+  "stats": {
+   "ap": 90,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "223152": {
+  "name": "Hextech Rocketbelt",
+  "stats": {
+   "hp": 400,
+   "ap": 95
+  },
+  "hasEffects": true
+ },
+ "223153": {
+  "name": "Blade of The Ruined King",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "223156": {
+  "name": "Maw of Malmortius",
+  "stats": {
+   "mr": 40,
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "223157": {
+  "name": "Zhonya's Hourglass",
+  "stats": {
+   "ap": 80,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "223158": {
+  "name": "Ionian Boots of Lucidity",
+  "stats": {},
+  "hasEffects": false
+ },
+ "223161": {
+  "name": "Spear of Shojin",
+  "stats": {
+   "hp": 350,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223165": {
+  "name": "Morellonomicon",
+  "stats": {
+   "hp": 250,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "223172": {
+  "name": "Zephyr",
+  "stats": {},
+  "hasEffects": true
+ },
+ "223177": {
+  "name": "Guardian's Blade",
+  "stats": {
+   "hp": 250,
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "223181": {
+  "name": "Hullbreaker",
+  "stats": {
+   "hp": 500,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223184": {
+  "name": "Guardian's Hammer",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "223185": {
+  "name": "Guardian's Dirk",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": true
+ },
+ "223190": {
+  "name": "Locket of the Iron Solari",
+  "stats": {
+   "mr": 35,
+   "hp": 400,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "223193": {
+  "name": "Gargoyle Stoneplate",
+  "stats": {
+   "mr": 60,
+   "armor": 60
+  },
+  "hasEffects": true
+ },
+ "223222": {
+  "name": "Mikael's Blessing",
+  "stats": {
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "223302": {
+  "name": "Terminus",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": true
+ },
+ "223504": {
+  "name": "Ardent Censer",
+  "stats": {
+   "ap": 40
+  },
+  "hasEffects": true
+ },
+ "223508": {
+  "name": "Essence Reaver",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "223742": {
+  "name": "Dead Man's Plate",
+  "stats": {
+   "hp": 300,
+   "armor": 40
+  },
+  "hasEffects": true
+ },
+ "223748": {
+  "name": "Titanic Hydra",
+  "stats": {
+   "hp": 400,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "223814": {
+  "name": "Edge of Night",
+  "stats": {
+   "hp": 375,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "224004": {
+  "name": "Spectral Cutlass",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "224005": {
+  "name": "Imperial Mandate",
+  "stats": {
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "224401": {
+  "name": "Force of Nature",
+  "stats": {
+   "mr": 50,
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "224403": {
+  "name": "The Golden Spatula",
+  "stats": {
+   "mr": 30,
+   "mana": 250,
+   "hp": 250,
+   "ap": 125,
+   "armor": 30,
+   "ad": 90
+  },
+  "hasEffects": true
+ },
+ "224628": {
+  "name": "Horizon Focus",
+  "stats": {
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "224629": {
+  "name": "Cosmic Drive",
+  "stats": {
+   "hp": 350,
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "224633": {
+  "name": "Riftmaker",
+  "stats": {
+   "hp": 350,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "224636": {
+  "name": "Night Harvester",
+  "stats": {
+   "hp": 300,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "224637": {
+  "name": "Demonic Embrace",
+  "stats": {
+   "hp": 350,
+   "ap": 75
+  },
+  "hasEffects": true
+ },
+ "224644": {
+  "name": "Crown of the Shattered Queen",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 85
+  },
+  "hasEffects": true
+ },
+ "224645": {
+  "name": "Shadowflame",
+  "stats": {
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "224646": {
+  "name": "Stormsurge",
+  "stats": {
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "226035": {
+  "name": "Silvermere Dawn",
+  "stats": {
+   "mr": 40,
+   "hp": 300,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "226333": {
+  "name": "Death's Dance",
+  "stats": {
+   "armor": 45,
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "226609": {
+  "name": "Chempunk Chainsword",
+  "stats": {
+   "hp": 450,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "226610": {
+  "name": "Sundered Sky",
+  "stats": {
+   "hp": 400,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "226616": {
+  "name": "Staff of Flowing Water",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "226617": {
+  "name": "Moonstone Renewer",
+  "stats": {
+   "hp": 200,
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "226620": {
+  "name": "Echoes of Helia",
+  "stats": {
+   "hp": 300,
+   "ap": 40
+  },
+  "hasEffects": true
+ },
+ "226621": {
+  "name": "Dawncore",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "226630": {
+  "name": "Goredrinker",
+  "stats": {
+   "hp": 400,
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "226631": {
+  "name": "Stridebreaker",
+  "stats": {
+   "hp": 375,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "226632": {
+  "name": "Divine Sunderer",
+  "stats": {
+   "hp": 300,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "226653": {
+  "name": "Liandry's Anguish",
+  "stats": {
+   "hp": 250,
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "226655": {
+  "name": "Luden's Echo",
+  "stats": {
+   "mana": 600,
+   "ap": 85
+  },
+  "hasEffects": true
+ },
+ "226656": {
+  "name": "Everfrost",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "226657": {
+  "name": "Rod of Ages",
+  "stats": {
+   "mana": 300,
+   "hp": 350,
+   "ap": 60
+  },
+  "hasEffects": true
+ },
+ "226660": {
+  "name": "",
+  "stats": {
+   "hp": 550
+  },
+  "hasEffects": true
+ },
+ "226662": {
+  "name": "Iceborn Gauntlet",
+  "stats": {
+   "hp": 300,
+   "armor": 45
+  },
+  "hasEffects": true
+ },
+ "226664": {
+  "name": "Hollow Radiance",
+  "stats": {
+   "mr": 40,
+   "hp": 450
+  },
+  "hasEffects": true
+ },
+ "226665": {
+  "name": "Jak'Sho, The Protean",
+  "stats": {
+   "mr": 35,
+   "hp": 350,
+   "armor": 35
+  },
+  "hasEffects": true
+ },
+ "226667": {
+  "name": "Radiant Virtue",
+  "stats": {
+   "mr": 30,
+   "hp": 350,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "226668": {
+  "name": "Ultra Hydra",
+  "stats": {
+   "hp": 1000,
+   "ad": 200
+  },
+  "hasEffects": true
+ },
+ "226671": {
+  "name": "Galeforce",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "226672": {
+  "name": "Kraken Slayer",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "226673": {
+  "name": "Immortal Shieldbow",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "226675": {
+  "name": "Navori Flickerblades",
+  "stats": {},
+  "hasEffects": true
+ },
+ "226676": {
+  "name": "The Collector",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "226691": {
+  "name": "Duskblade of Draktharr",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "226692": {
+  "name": "Eclipse",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "226693": {
+  "name": "Prowler's Claw",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "226694": {
+  "name": "Serylda's Grudge",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "226695": {
+  "name": "Serpent's Fang",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "226696": {
+  "name": "Axiom Arc",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "226697": {
+  "name": "Hubris",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "226698": {
+  "name": "Profane Hydra",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "226699": {
+  "name": "Voltaic Cyclosword",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "226701": {
+  "name": "Opportunity",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "228001": {
+  "name": "Anathema's Chains",
+  "stats": {
+   "hp": 650
+  },
+  "hasEffects": true
+ },
+ "228002": {
+  "name": "Wooglet's Witchcap",
+  "stats": {
+   "ap": 300,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "228003": {
+  "name": "Deathblade",
+  "stats": {
+   "ad": 150
+  },
+  "hasEffects": true
+ },
+ "228004": {
+  "name": "Adaptive Helm",
+  "stats": {
+   "mr": 100,
+   "hp": 800,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "228005": {
+  "name": "Obsidian Cleaver",
+  "stats": {
+   "hp": 700,
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "228006": {
+  "name": "Sanguine Blade",
+  "stats": {
+   "ad": 130
+  },
+  "hasEffects": true
+ },
+ "228008": {
+  "name": "Runeglaive",
+  "stats": {
+   "hp": 600,
+   "ap": 85,
+   "armor": 50,
+   "ad": 65
+  },
+  "hasEffects": false
+ },
+ "228009": {
+  "name": "Multitool",
+  "stats": {},
+  "hasEffects": false
+ },
+ "228020": {
+  "name": "Abyssal Mask",
+  "stats": {
+   "mr": 50,
+   "hp": 350
+  },
+  "hasEffects": true
+ },
+ "322065": {
+  "name": "Shurelya's Battlesong",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "322526": {
+  "name": "Whispering Circlet",
+  "stats": {
+   "mana": 300,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "322530": {
+  "name": "Diadem of Songs",
+  "stats": {
+   "mana": 1000,
+   "hp": 200
+  },
+  "hasEffects": true
+ },
+ "323002": {
+  "name": "Trailblazer",
+  "stats": {
+   "hp": 300,
+   "armor": 45
+  },
+  "hasEffects": true
+ },
+ "323003": {
+  "name": "Archangel's Staff",
+  "stats": {
+   "mana": 600,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "323004": {
+  "name": "Manamune",
+  "stats": {
+   "mana": 500,
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "323040": {
+  "name": "Seraph's Embrace",
+  "stats": {
+   "mana": 1000,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "323042": {
+  "name": "Muramana",
+  "stats": {
+   "mana": 1000,
+   "ad": 35
+  },
+  "hasEffects": true
+ },
+ "323050": {
+  "name": "Zeke's Convergence",
+  "stats": {
+   "mr": 30,
+   "hp": 350,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "323070": {
+  "name": "Tear of the Goddess",
+  "stats": {
+   "mana": 240
+  },
+  "hasEffects": true
+ },
+ "323075": {
+  "name": "Thornmail",
+  "stats": {
+   "hp": 200,
+   "armor": 85
+  },
+  "hasEffects": true
+ },
+ "323107": {
+  "name": "Redemption",
+  "stats": {
+   "hp": 400,
+   "ap": 30
+  },
+  "hasEffects": true
+ },
+ "323109": {
+  "name": "Knight's Vow",
+  "stats": {
+   "hp": 300,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "323110": {
+  "name": "Frozen Heart",
+  "stats": {
+   "mana": 500,
+   "armor": 75
+  },
+  "hasEffects": true
+ },
+ "323119": {
+  "name": "Winter's Approach",
+  "stats": {
+   "mana": 500,
+   "hp": 550
+  },
+  "hasEffects": true
+ },
+ "323121": {
+  "name": "Fimbulwinter",
+  "stats": {
+   "mana": 1000,
+   "hp": 550
+  },
+  "hasEffects": true
+ },
+ "323190": {
+  "name": "Locket of the Iron Solari",
+  "stats": {
+   "mr": 30,
+   "hp": 250,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "323222": {
+  "name": "Mikael's Blessing",
+  "stats": {
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "323504": {
+  "name": "Ardent Censer",
+  "stats": {
+   "ap": 55
+  },
+  "hasEffects": true
+ },
+ "324005": {
+  "name": "Imperial Mandate",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "326616": {
+  "name": "Staff of Flowing Water",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "326617": {
+  "name": "Moonstone Renewer",
+  "stats": {
+   "hp": 400,
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "326620": {
+  "name": "Echoes of Helia",
+  "stats": {
+   "hp": 250,
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "326621": {
+  "name": "Dawncore",
+  "stats": {
+   "ap": 50
+  },
+  "hasEffects": true
+ },
+ "326657": {
+  "name": "Rod of Ages",
+  "stats": {
+   "mana": 500,
+   "hp": 350,
+   "ap": 45
+  },
+  "hasEffects": true
+ },
+ "328020": {
+  "name": "Abyssal Mask",
+  "stats": {
+   "mr": 50,
+   "hp": 350
+  },
+  "hasEffects": true
+ },
+ "443054": {
+  "name": "Darksteel Talons",
+  "stats": {
+   "armor": 55
+  },
+  "hasEffects": true
+ },
+ "443055": {
+  "name": "Fulmination",
+  "stats": {
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "443056": {
+  "name": "Demon King's Crown",
+  "stats": {},
+  "hasEffects": true
+ },
+ "443058": {
+  "name": "Shield of Molten Stone",
+  "stats": {
+   "hp": 300,
+   "armor": 100
+  },
+  "hasEffects": true
+ },
+ "443059": {
+  "name": "Cloak of Starry Night",
+  "stats": {
+   "mr": 100,
+   "hp": 300
+  },
+  "hasEffects": true
+ },
+ "443060": {
+  "name": "Sword of the Divine",
+  "stats": {},
+  "hasEffects": true
+ },
+ "443061": {
+  "name": "Force Of Entropy",
+  "stats": {
+   "hp": 900
+  },
+  "hasEffects": true
+ },
+ "443062": {
+  "name": "Sanguine Gift",
+  "stats": {
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "443063": {
+  "name": "Eleisa's Miracle",
+  "stats": {
+   "mr": 50,
+   "armor": 50
+  },
+  "hasEffects": true
+ },
+ "443064": {
+  "name": "Talisman Of Ascension",
+  "stats": {},
+  "hasEffects": true
+ },
+ "443069": {
+  "name": "Hamstringer",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "443079": {
+  "name": "Turbo Chemtank",
+  "stats": {
+   "hp": 600
+  },
+  "hasEffects": false
+ },
+ "443080": {
+  "name": "Twin Mask",
+  "stats": {},
+  "hasEffects": true
+ },
+ "443081": {
+  "name": "Hexbolt Companion",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "443083": {
+  "name": "Warmog's Armor",
+  "stats": {
+   "hp": 1100
+  },
+  "hasEffects": true
+ },
+ "443090": {
+  "name": "Reaper's Toll",
+  "stats": {},
+  "hasEffects": true
+ },
+ "443193": {
+  "name": "Gargoyle Stoneplate",
+  "stats": {
+   "mr": 65,
+   "armor": 65
+  },
+  "hasEffects": true
+ },
+ "444636": {
+  "name": "Night Harvester",
+  "stats": {
+   "hp": 300,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "444637": {
+  "name": "Demonic Embrace",
+  "stats": {
+   "hp": 700,
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "444644": {
+  "name": "Crown of the Shattered Queen",
+  "stats": {
+   "mana": 600,
+   "hp": 350,
+   "ap": 85
+  },
+  "hasEffects": true
+ },
+ "446632": {
+  "name": "Divine Sunderer",
+  "stats": {
+   "hp": 350,
+   "ad": 55
+  },
+  "hasEffects": true
+ },
+ "446656": {
+  "name": "Everfrost",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 100
+  },
+  "hasEffects": true
+ },
+ "446667": {
+  "name": "Radiant Virtue",
+  "stats": {
+   "mr": 35,
+   "hp": 400,
+   "armor": 35
+  },
+  "hasEffects": true
+ },
+ "446671": {
+  "name": "Galeforce",
+  "stats": {
+   "ad": 65
+  },
+  "hasEffects": true
+ },
+ "446691": {
+  "name": "Duskblade of Draktharr",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "446693": {
+  "name": "Prowler's Claw",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "447100": {
+  "name": "Mirage Blade",
+  "stats": {},
+  "hasEffects": true
+ },
+ "447101": {
+  "name": "Gambler's Blade",
+  "stats": {},
+  "hasEffects": true
+ },
+ "447102": {
+  "name": "Reality Fracture",
+  "stats": {
+   "hp": 300,
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "447103": {
+  "name": "Hemomancer's Helm",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "447104": {
+  "name": "Innervating Locket",
+  "stats": {
+   "hp": 200,
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "447105": {
+  "name": "Empyrean Promise",
+  "stats": {
+   "ap": 70
+  },
+  "hasEffects": true
+ },
+ "447106": {
+  "name": "Dragonheart",
+  "stats": {},
+  "hasEffects": true
+ },
+ "447107": {
+  "name": "Decapitator",
+  "stats": {},
+  "hasEffects": false
+ },
+ "447108": {
+  "name": "Runecarver",
+  "stats": {
+   "ap": 80
+  },
+  "hasEffects": true
+ },
+ "447109": {
+  "name": "Cruelty",
+  "stats": {
+   "mr": 30,
+   "ap": 80,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "447110": {
+  "name": "Moonflair Spellblade",
+  "stats": {
+   "hp": 400,
+   "ap": 85
+  },
+  "hasEffects": true
+ },
+ "447111": {
+  "name": "Overlord's Bloodmail",
+  "stats": {
+   "hp": 400,
+   "ad": 40
+  },
+  "hasEffects": true
+ },
+ "447112": {
+  "name": "Flesheater",
+  "stats": {
+   "hp": 500
+  },
+  "hasEffects": true
+ },
+ "447113": {
+  "name": "Detonation Orb",
+  "stats": {
+   "mana": 600,
+   "ap": 90
+  },
+  "hasEffects": true
+ },
+ "447114": {
+  "name": "Reverberation",
+  "stats": {
+   "mr": 35,
+   "armor": 35
+  },
+  "hasEffects": true
+ },
+ "447115": {
+  "name": "Regicide",
+  "stats": {
+   "ad": 60
+  },
+  "hasEffects": true
+ },
+ "447116": {
+  "name": "Kinkou Jitte",
+  "stats": {
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "447118": {
+  "name": "Pyromancer's Cloak",
+  "stats": {
+   "hp": 400
+  },
+  "hasEffects": true
+ },
+ "447119": {
+  "name": "Lightning Rod",
+  "stats": {
+   "mr": 30,
+   "hp": 500,
+   "armor": 30
+  },
+  "hasEffects": true
+ },
+ "447120": {
+  "name": "Diamond-Tipped Spear",
+  "stats": {},
+  "hasEffects": true
+ },
+ "447121": {
+  "name": "Twilight's Edge",
+  "stats": {
+   "ap": 100,
+   "ad": 70
+  },
+  "hasEffects": true
+ },
+ "447122": {
+  "name": "Black Hole Gauntlet",
+  "stats": {
+   "hp": 900
+  },
+  "hasEffects": true
+ },
+ "447123": {
+  "name": "Puppeteer",
+  "stats": {},
+  "hasEffects": true
+ },
+ "663039": {
+  "name": "Atma's Reckoning",
+  "stats": {
+   "hp": 500
+  },
+  "hasEffects": true
+ },
+ "663056": {
+  "name": "Demon King's Crown",
+  "stats": {},
+  "hasEffects": true
+ },
+ "663058": {
+  "name": "Shield of Molten Stone",
+  "stats": {
+   "hp": 250,
+   "armor": 80
+  },
+  "hasEffects": true
+ },
+ "663059": {
+  "name": "Cloak of Starry Night",
+  "stats": {
+   "mr": 60,
+   "hp": 250
+  },
+  "hasEffects": true
+ },
+ "663060": {
+  "name": "Sword of the Divine",
+  "stats": {},
+  "hasEffects": true
+ },
+ "663064": {
+  "name": "Veigar's Talisman of Ascension",
+  "stats": {},
+  "hasEffects": false
+ },
+ "663146": {
+  "name": "Hextech Gunblade",
+  "stats": {
+   "ap": 90,
+   "ad": 45
+  },
+  "hasEffects": true
+ },
+ "663172": {
+  "name": "Zephyr",
+  "stats": {},
+  "hasEffects": true
+ },
+ "663193": {
+  "name": "Gargoyle Stoneplate",
+  "stats": {
+   "mr": 55,
+   "armor": 55
+  },
+  "hasEffects": true
+ },
+ "664011": {
+  "name": "Sword of Blossoming Dawn",
+  "stats": {
+   "hp": 150,
+   "ap": 35
+  },
+  "hasEffects": true
+ },
+ "664403": {
+  "name": "The Golden Spatula",
+  "stats": {
+   "mr": 10,
+   "mana": 250,
+   "hp": 250,
+   "ap": 125,
+   "armor": 10,
+   "ad": 90
+  },
+  "hasEffects": false
+ },
+ "664644": {
+  "name": "Crown of the Shattered Queen",
+  "stats": {
+   "mana": 600,
+   "hp": 250,
+   "ap": 65
+  },
+  "hasEffects": true
+ },
+ "667101": {
+  "name": "Gambler's Blade",
+  "stats": {},
+  "hasEffects": true
+ },
+ "667109": {
+  "name": "Cruelty",
+  "stats": {
+   "mr": 25,
+   "ap": 60,
+   "armor": 25
+  },
+  "hasEffects": true
+ },
+ "667112": {
+  "name": "Flesheater",
+  "stats": {
+   "hp": 500
+  },
+  "hasEffects": true
+ },
+ "667666": {
+  "name": "The Collector",
+  "stats": {
+   "ad": 50
+  },
+  "hasEffects": true
+ },
+ "771001": {
+  "name": "Boots of Speed",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771004": {
+  "name": "Faerie Charm",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771006": {
+  "name": "Rejuvenation Bead",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771011": {
+  "name": "Giant's Belt",
+  "stats": {
+   "hp": 380
+  },
+  "hasEffects": false
+ },
+ "771018": {
+  "name": "Cloak of Agility",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771026": {
+  "name": "Blasting Wand",
+  "stats": {
+   "ap": 40
+  },
+  "hasEffects": false
+ },
+ "771027": {
+  "name": "Sapphire Crystal",
+  "stats": {
+   "mana": 200
+  },
+  "hasEffects": false
+ },
+ "771028": {
+  "name": "Ruby Crystal",
+  "stats": {
+   "hp": 180
+  },
+  "hasEffects": false
+ },
+ "771029": {
+  "name": "Cloth Armor",
+  "stats": {
+   "armor": 15
+  },
+  "hasEffects": false
+ },
+ "771031": {
+  "name": "Chain Vest",
+  "stats": {
+   "armor": 40
+  },
+  "hasEffects": false
+ },
+ "771033": {
+  "name": "Null-Magic Mantle",
+  "stats": {
+   "mr": 20
+  },
+  "hasEffects": false
+ },
+ "771036": {
+  "name": "Long Sword",
+  "stats": {
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "771037": {
+  "name": "Pickaxe",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "771038": {
+  "name": "B. F. Sword",
+  "stats": {
+   "ad": 45
+  },
+  "hasEffects": false
+ },
+ "771039": {
+  "name": "Hunter's Machete",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771042": {
+  "name": "Dagger",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771043": {
+  "name": "Recurve Bow",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771051": {
+  "name": "Brawler's Gloves",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771052": {
+  "name": "Amplifying Tome",
+  "stats": {
+   "ap": 20
+  },
+  "hasEffects": false
+ },
+ "771053": {
+  "name": "Vampiric Scepter",
+  "stats": {
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "771054": {
+  "name": "Doran's Shield",
+  "stats": {
+   "hp": 100
+  },
+  "hasEffects": false
+ },
+ "771055": {
+  "name": "Doran's Blade",
+  "stats": {
+   "hp": 80,
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "771056": {
+  "name": "Doran's Ring",
+  "stats": {
+   "hp": 60,
+   "ap": 15
+  },
+  "hasEffects": false
+ },
+ "771057": {
+  "name": "Negatron Cloak",
+  "stats": {
+   "mr": 40
+  },
+  "hasEffects": false
+ },
+ "771058": {
+  "name": "Needlessly Large Rod",
+  "stats": {
+   "ap": 80
+  },
+  "hasEffects": false
+ },
+ "771080": {
+  "name": "Spirit Stone",
+  "stats": {},
+  "hasEffects": false
+ },
+ "771500": {
+  "name": "Penetrating Bullets",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772001": {
+  "name": "Recall",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772003": {
+  "name": "Health Potion",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772004": {
+  "name": "Mana Potion",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772009": {
+  "name": "Total Biscuit of Rejuvenation",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772037": {
+  "name": "Elixir of Fortitude",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772038": {
+  "name": "Elixir of Agility",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772039": {
+  "name": "Elixir of Brilliance",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772041": {
+  "name": "Crystalline Flask",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772042": {
+  "name": "Oracle's Elixir",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772043": {
+  "name": "Vision Ward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772044": {
+  "name": "Sight Ward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772045": {
+  "name": "Ruby Sightstone",
+  "stats": {
+   "hp": 380
+  },
+  "hasEffects": false
+ },
+ "772049": {
+  "name": "Sightstone",
+  "stats": {
+   "hp": 180
+  },
+  "hasEffects": false
+ },
+ "772050": {
+  "name": "Explorer's Ward",
+  "stats": {},
+  "hasEffects": false
+ },
+ "772139": {
+  "name": "",
+  "stats": {
+   "mr": 12.06,
+   "hp": 30,
+   "ap": 22,
+   "armor": 17.69
+  },
+  "hasEffects": false
+ },
+ "772140": {
+  "name": "",
+  "stats": {
+   "mr": 12.06,
+   "hp": 36,
+   "armor": 12.69,
+   "ad": 9.55
+  },
+  "hasEffects": false
+ },
+ "773001": {
+  "name": "Abyssal Scepter",
+  "stats": {
+   "mr": 45,
+   "ap": 70
+  },
+  "hasEffects": false
+ },
+ "773003": {
+  "name": "Archangel's Staff",
+  "stats": {
+   "mana": 250,
+   "ap": 60
+  },
+  "hasEffects": false
+ },
+ "773004": {
+  "name": "Manamune",
+  "stats": {
+   "mana": 250,
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "773005": {
+  "name": "Atma's Impaler",
+  "stats": {
+   "armor": 45
+  },
+  "hasEffects": false
+ },
+ "773006": {
+  "name": "Berserker's Greaves",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773009": {
+  "name": "Boots of Swiftness",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773010": {
+  "name": "Catalyst the Protector",
+  "stats": {
+   "mana": 300,
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "773020": {
+  "name": "Sorcerer's Shoes",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773022": {
+  "name": "Frozen Mallet",
+  "stats": {
+   "hp": 700,
+   "ad": 30
+  },
+  "hasEffects": false
+ },
+ "773023": {
+  "name": "Twin Shadows",
+  "stats": {
+   "mr": 40,
+   "ap": 40
+  },
+  "hasEffects": false
+ },
+ "773024": {
+  "name": "Glacial Shroud",
+  "stats": {
+   "mana": 300,
+   "armor": 45
+  },
+  "hasEffects": false
+ },
+ "773025": {
+  "name": "Iceborn Gauntlet",
+  "stats": {
+   "mana": 500,
+   "ap": 30,
+   "armor": 70
+  },
+  "hasEffects": false
+ },
+ "773026": {
+  "name": "Guardian Angel",
+  "stats": {
+   "mr": 40,
+   "armor": 50
+  },
+  "hasEffects": false
+ },
+ "773027": {
+  "name": "Rod of Ages",
+  "stats": {
+   "mana": 450,
+   "hp": 450,
+   "ap": 60
+  },
+  "hasEffects": false
+ },
+ "773028": {
+  "name": "Chalice of Harmony",
+  "stats": {
+   "mr": 25
+  },
+  "hasEffects": false
+ },
+ "773031": {
+  "name": "Infinity Edge",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": false
+ },
+ "773035": {
+  "name": "Last Whisper",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": false
+ },
+ "773037": {
+  "name": "Mana Manipulator",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773040": {
+  "name": "Seraph's Embrace",
+  "stats": {
+   "mana": 1000,
+   "ap": 60
+  },
+  "hasEffects": false
+ },
+ "773041": {
+  "name": "Mejai's Soulstealer",
+  "stats": {
+   "ap": 20
+  },
+  "hasEffects": false
+ },
+ "773042": {
+  "name": "Muramana",
+  "stats": {
+   "mana": 1000,
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "773044": {
+  "name": "Phage",
+  "stats": {
+   "hp": 200,
+   "ad": 20
+  },
+  "hasEffects": false
+ },
+ "773046": {
+  "name": "Phantom Dancer",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773047": {
+  "name": "Ninja Tabi",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "773050": {
+  "name": "Stark's Fervor",
+  "stats": {
+   "hp": 250
+  },
+  "hasEffects": false
+ },
+ "773052": {
+  "name": "Emblem of Valor",
+  "stats": {
+   "armor": 20
+  },
+  "hasEffects": false
+ },
+ "773056": {
+  "name": "Ohmwrecker",
+  "stats": {
+   "hp": 350,
+   "ap": 50
+  },
+  "hasEffects": false
+ },
+ "773057": {
+  "name": "Sheen",
+  "stats": {
+   "mana": 200,
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "773060": {
+  "name": "Banner of Command",
+  "stats": {
+   "ap": 40,
+   "armor": 30
+  },
+  "hasEffects": false
+ },
+ "773063": {
+  "name": "Soul Shroud",
+  "stats": {
+   "hp": 520
+  },
+  "hasEffects": false
+ },
+ "773064": {
+  "name": "Force of Nature",
+  "stats": {
+   "mr": 76
+  },
+  "hasEffects": false
+ },
+ "773065": {
+  "name": "Spirit Visage",
+  "stats": {
+   "mr": 55,
+   "hp": 400
+  },
+  "hasEffects": false
+ },
+ "773067": {
+  "name": "Kindlegem",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "773068": {
+  "name": "Sunfire Cape",
+  "stats": {
+   "hp": 450,
+   "armor": 45
+  },
+  "hasEffects": false
+ },
+ "773069": {
+  "name": "Shurelya's Reverie",
+  "stats": {
+   "hp": 250
+  },
+  "hasEffects": false
+ },
+ "773070": {
+  "name": "Tear of the Goddess",
+  "stats": {
+   "mana": 250
+  },
+  "hasEffects": false
+ },
+ "773071": {
+  "name": "The Black Cleaver",
+  "stats": {
+   "hp": 200,
+   "ad": 50
+  },
+  "hasEffects": false
+ },
+ "773072": {
+  "name": "The Bloodthirster",
+  "stats": {
+   "ad": 70
+  },
+  "hasEffects": false
+ },
+ "773073": {
+  "name": "Stack of Sunfire Capes",
+  "stats": {
+   "hp": 450,
+   "armor": 45
+  },
+  "hasEffects": false
+ },
+ "773074": {
+  "name": "Ravenous Hydra",
+  "stats": {
+   "ad": 75
+  },
+  "hasEffects": false
+ },
+ "773075": {
+  "name": "Thornmail",
+  "stats": {
+   "armor": 100
+  },
+  "hasEffects": false
+ },
+ "773077": {
+  "name": "Tiamat",
+  "stats": {
+   "ad": 40
+  },
+  "hasEffects": false
+ },
+ "773078": {
+  "name": "Trinity Force",
+  "stats": {
+   "mana": 200,
+   "hp": 250,
+   "ap": 30,
+   "ad": 30
+  },
+  "hasEffects": false
+ },
+ "773082": {
+  "name": "Warden's Mail",
+  "stats": {
+   "armor": 50
+  },
+  "hasEffects": false
+ },
+ "773083": {
+  "name": "Warmog's Armor",
+  "stats": {
+   "hp": 920
+  },
+  "hasEffects": false
+ },
+ "773084": {
+  "name": "Innervating Locket",
+  "stats": {
+   "mana": 450,
+   "hp": 500
+  },
+  "hasEffects": false
+ },
+ "773085": {
+  "name": "Runaan's Hurricane",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773086": {
+  "name": "Zeal",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773087": {
+  "name": "Statikk Shiv",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773089": {
+  "name": "Rabadon's Deathcap",
+  "stats": {
+   "ap": 120
+  },
+  "hasEffects": false
+ },
+ "773091": {
+  "name": "Wit's End",
+  "stats": {
+   "mr": 25
+  },
+  "hasEffects": false
+ },
+ "773092": {
+  "name": "Shard of True Ice",
+  "stats": {
+   "ap": 45
+  },
+  "hasEffects": false
+ },
+ "773093": {
+  "name": "Avarice Blade",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773096": {
+  "name": "Philosopher's Stone",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773098": {
+  "name": "Lucky Pick",
+  "stats": {
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "773100": {
+  "name": "Lich Bane",
+  "stats": {
+   "mana": 250,
+   "ap": 80
+  },
+  "hasEffects": false
+ },
+ "773101": {
+  "name": "Stinger",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773102": {
+  "name": "Banshee's Veil",
+  "stats": {
+   "mr": 55,
+   "hp": 450
+  },
+  "hasEffects": false
+ },
+ "773105": {
+  "name": "Aegis of the Legion",
+  "stats": {
+   "mr": 20,
+   "hp": 250,
+   "armor": 20
+  },
+  "hasEffects": false
+ },
+ "773106": {
+  "name": "Madred's Razors",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "773107": {
+  "name": "Runic Bulwark",
+  "stats": {
+   "mr": 30,
+   "hp": 300,
+   "armor": 20
+  },
+  "hasEffects": false
+ },
+ "773108": {
+  "name": "Fiendish Codex",
+  "stats": {
+   "ap": 30
+  },
+  "hasEffects": false
+ },
+ "773109": {
+  "name": "Madred's Bloodrazor",
+  "stats": {
+   "armor": 25,
+   "ad": 40
+  },
+  "hasEffects": false
+ },
+ "773110": {
+  "name": "Frozen Heart",
+  "stats": {
+   "mana": 400,
+   "armor": 95
+  },
+  "hasEffects": false
+ },
+ "773111": {
+  "name": "Mercury's Treads",
+  "stats": {
+   "mr": 25
+  },
+  "hasEffects": false
+ },
+ "773114": {
+  "name": "Malady",
+  "stats": {
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "773115": {
+  "name": "Nashor's Tooth",
+  "stats": {
+   "ap": 65
+  },
+  "hasEffects": false
+ },
+ "773116": {
+  "name": "Rylai's Crystal Scepter",
+  "stats": {
+   "hp": 500,
+   "ap": 80
+  },
+  "hasEffects": false
+ },
+ "773117": {
+  "name": "Boots of Mobility",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773123": {
+  "name": "Executioner's Calling",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773124": {
+  "name": "Guinsoo's Rageblade",
+  "stats": {
+   "ap": 40,
+   "ad": 30
+  },
+  "hasEffects": false
+ },
+ "773128": {
+  "name": "Deathfire Grasp",
+  "stats": {
+   "ap": 120
+  },
+  "hasEffects": false
+ },
+ "773131": {
+  "name": "Sword of the Divine",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773132": {
+  "name": "Heart of Gold",
+  "stats": {
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "773134": {
+  "name": "The Brutalizer",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773135": {
+  "name": "Void Staff",
+  "stats": {
+   "ap": 70
+  },
+  "hasEffects": false
+ },
+ "773136": {
+  "name": "Haunting Guise",
+  "stats": {
+   "hp": 200,
+   "ap": 25
+  },
+  "hasEffects": false
+ },
+ "773138": {
+  "name": "Leviathan",
+  "stats": {
+   "hp": 180
+  },
+  "hasEffects": false
+ },
+ "773139": {
+  "name": "Mercurial Scimitar",
+  "stats": {
+   "mr": 45,
+   "ad": 60
+  },
+  "hasEffects": false
+ },
+ "773140": {
+  "name": "Quicksilver Sash",
+  "stats": {
+   "mr": 45
+  },
+  "hasEffects": false
+ },
+ "773141": {
+  "name": "Sword of the Occult",
+  "stats": {
+   "ad": 10
+  },
+  "hasEffects": false
+ },
+ "773142": {
+  "name": "Youmuu's Ghostblade",
+  "stats": {
+   "ad": 30
+  },
+  "hasEffects": false
+ },
+ "773143": {
+  "name": "Randuin's Omen",
+  "stats": {
+   "hp": 500,
+   "armor": 70
+  },
+  "hasEffects": false
+ },
+ "773144": {
+  "name": "Bilgewater Cutlass",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773145": {
+  "name": "Hextech Revolver",
+  "stats": {
+   "ap": 40
+  },
+  "hasEffects": false
+ },
+ "773146": {
+  "name": "Hextech Gunblade",
+  "stats": {
+   "ap": 65,
+   "ad": 45
+  },
+  "hasEffects": false
+ },
+ "773151": {
+  "name": "Liandry's Torment",
+  "stats": {
+   "hp": 300,
+   "ap": 50
+  },
+  "hasEffects": false
+ },
+ "773152": {
+  "name": "Will of the Ancients",
+  "stats": {
+   "ap": 50
+  },
+  "hasEffects": false
+ },
+ "773153": {
+  "name": "Blade of The Ruined King",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773154": {
+  "name": "Wriggle's Lantern",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "773155": {
+  "name": "Hexdrinker",
+  "stats": {
+   "mr": 25,
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773156": {
+  "name": "Maw of Malmortius",
+  "stats": {
+   "mr": 40,
+   "ad": 60
+  },
+  "hasEffects": false
+ },
+ "773157": {
+  "name": "Zhonya's Hourglass",
+  "stats": {
+   "ap": 120,
+   "armor": 50
+  },
+  "hasEffects": false
+ },
+ "773158": {
+  "name": "Ionian Boots of Lucidity",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773160": {
+  "name": "Feral Flare",
+  "stats": {
+   "armor": 25
+  },
+  "hasEffects": false
+ },
+ "773161": {
+  "name": "Moonflair Spellblade",
+  "stats": {
+   "mr": 50,
+   "ap": 50,
+   "armor": 50
+  },
+  "hasEffects": false
+ },
+ "773162": {
+  "name": "Cloak and Dagger",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773165": {
+  "name": "Morellonomicon",
+  "stats": {
+   "ap": 75
+  },
+  "hasEffects": false
+ },
+ "773172": {
+  "name": "Zephyr",
+  "stats": {
+   "ad": 25
+  },
+  "hasEffects": false
+ },
+ "773173": {
+  "name": "Eleisa's Miracle",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773174": {
+  "name": "Shushei's Mana Jug",
+  "stats": {
+   "mr": 40,
+   "ap": 60
+  },
+  "hasEffects": false
+ },
+ "773178": {
+  "name": "Ionic Spark",
+  "stats": {
+   "hp": 250
+  },
+  "hasEffects": false
+ },
+ "773190": {
+  "name": "Locket of the Iron Solari",
+  "stats": {
+   "hp": 300,
+   "armor": 35
+  },
+  "hasEffects": false
+ },
+ "773191": {
+  "name": "Seeker's Armguard",
+  "stats": {
+   "ap": 20,
+   "armor": 30
+  },
+  "hasEffects": false
+ },
+ "773206": {
+  "name": "Spirit of the Spectral Wraith",
+  "stats": {
+   "ap": 40
+  },
+  "hasEffects": false
+ },
+ "773207": {
+  "name": "Spirit of the Ancient Golem",
+  "stats": {
+   "hp": 500
+  },
+  "hasEffects": false
+ },
+ "773209": {
+  "name": "Spirit of the Elder Lizard",
+  "stats": {
+   "ad": 35
+  },
+  "hasEffects": false
+ },
+ "773211": {
+  "name": "Spectre's Cowl",
+  "stats": {
+   "mr": 45,
+   "hp": 200
+  },
+  "hasEffects": false
+ },
+ "773222": {
+  "name": "Mikael's Crucible",
+  "stats": {
+   "mr": 40
+  },
+  "hasEffects": false
+ },
+ "773340": {
+  "name": "Yellow Trinket",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773348": {
+  "name": "Red Trinket",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773504": {
+  "name": "Ardent Censer",
+  "stats": {
+   "ap": 40
+  },
+  "hasEffects": false
+ },
+ "773512": {
+  "name": "Zz'Rot Portal",
+  "stats": {
+   "mr": 50,
+   "armor": 50
+  },
+  "hasEffects": false
+ },
+ "773513": {
+  "name": "Prototype Hex Core",
+  "stats": {
+   "mr": 10,
+   "hp": 140,
+   "armor": 10
+  },
+  "hasEffects": false
+ },
+ "773514": {
+  "name": "Hex Core mk-1",
+  "stats": {
+   "mr": 10,
+   "hp": 140,
+   "armor": 10
+  },
+  "hasEffects": false
+ },
+ "773515": {
+  "name": "Hex Core mk-2",
+  "stats": {
+   "mr": 10,
+   "hp": 140,
+   "armor": 10
+  },
+  "hasEffects": false
+ },
+ "773516": {
+  "name": "Perfect Hex Core",
+  "stats": {
+   "mr": 10,
+   "hp": 140,
+   "armor": 10
+  },
+  "hasEffects": false
+ },
+ "773517": {
+  "name": "Eggnog",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773518": {
+  "name": "Bag of Tea",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773519": {
+  "name": "Candy Corn",
+  "stats": {},
+  "hasEffects": false
+ },
+ "773521": {
+  "name": "Health Potion",
+  "stats": {},
+  "hasEffects": false
+ },
+ "994403": {
+  "name": "Golden Spatula",
+  "stats": {
+   "mr": 20,
+   "mana": 200,
+   "hp": 200,
+   "ap": 110,
+   "armor": 20,
+   "ad": 90
+  },
+  "hasEffects": true
+ }
+}

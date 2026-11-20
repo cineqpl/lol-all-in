@@ -1,0 +1,3462 @@
+[
+ {
+  "id": "Aatrox",
+  "name": "Aatrox",
+  "base": {
+   "hp": 650,
+   "mana": 0,
+   "armor": 38,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 0,
+   "armor": 4.8,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ahri",
+  "name": "Ahri",
+  "base": {
+   "hp": 590,
+   "mana": 418,
+   "armor": 21,
+   "mr": 30,
+   "ad": 53,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 25,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Akali",
+  "name": "Akali",
+  "base": {
+   "hp": 600,
+   "mana": 200,
+   "armor": 23,
+   "mr": 37,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 119,
+   "mana": 0,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Akshan",
+  "name": "Akshan",
+  "base": {
+   "hp": 610,
+   "mana": 350,
+   "armor": 26,
+   "mr": 33,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Alistar",
+  "name": "Alistar",
+  "base": {
+   "hp": 685,
+   "mana": 350,
+   "armor": 40,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 120,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ambessa",
+  "name": "Ambessa",
+  "base": {
+   "hp": 630,
+   "mana": 200,
+   "armor": 35,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 0,
+   "armor": 4.9,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Amumu",
+  "name": "Amumu",
+  "base": {
+   "hp": 685,
+   "mana": 285,
+   "armor": 33,
+   "mr": 32,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 94,
+   "mana": 40,
+   "armor": 4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Anivia",
+  "name": "Anivia",
+  "base": {
+   "hp": 550,
+   "mana": 495,
+   "armor": 19,
+   "mr": 30,
+   "ad": 51,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 92,
+   "mana": 45,
+   "armor": 4.1,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Annie",
+  "name": "Annie",
+  "base": {
+   "hp": 560,
+   "mana": 418,
+   "armor": 23,
+   "mr": 30,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 96,
+   "mana": 25,
+   "armor": 4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Aphelios",
+  "name": "Aphelios",
+  "base": {
+   "hp": 600,
+   "mana": 348,
+   "armor": 26,
+   "mr": 33,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 42,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ashe",
+  "name": "Ashe",
+  "base": {
+   "hp": 610,
+   "mana": 280,
+   "armor": 26,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 101,
+   "mana": 35,
+   "armor": 4.6,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "AurelionSol",
+  "name": "Aurelion Sol",
+  "base": {
+   "hp": 600,
+   "mana": 530,
+   "armor": 22,
+   "mr": 30,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 90,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Aurora",
+  "name": "Aurora",
+  "base": {
+   "hp": 607,
+   "mana": 475,
+   "armor": 23,
+   "mr": 32,
+   "ad": 53,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 30,
+   "armor": 4.5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Azir",
+  "name": "Azir",
+  "base": {
+   "hp": 575,
+   "mana": 320,
+   "armor": 25,
+   "mr": 30,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 50,
+   "armor": 5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Bard",
+  "name": "Bard",
+  "base": {
+   "hp": 630,
+   "mana": 350,
+   "armor": 32,
+   "mr": 30,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 103,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Belveth",
+  "name": "Bel'Veth",
+  "base": {
+   "hp": 580,
+   "mana": 45,
+   "armor": 28,
+   "mr": 32,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 0,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Blitzcrank",
+  "name": "Blitzcrank",
+  "base": {
+   "hp": 600,
+   "mana": 267,
+   "armor": 37,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Brand",
+  "name": "Brand",
+  "base": {
+   "hp": 570,
+   "mana": 469,
+   "armor": 24,
+   "mr": 30,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 21,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Braum",
+  "name": "Braum",
+  "base": {
+   "hp": 610,
+   "mana": 311,
+   "armor": 35,
+   "mr": 32,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 112,
+   "mana": 45,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Briar",
+  "name": "Briar",
+  "base": {
+   "hp": 625,
+   "mana": 0,
+   "armor": 30,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 95,
+   "mana": 0,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Caitlyn",
+  "name": "Caitlyn",
+  "base": {
+   "hp": 580,
+   "mana": 315,
+   "armor": 27,
+   "mr": 33,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Camille",
+  "name": "Camille",
+  "base": {
+   "hp": 650,
+   "mana": 375,
+   "armor": 35,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 52,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Cassiopeia",
+  "name": "Cassiopeia",
+  "base": {
+   "hp": 610,
+   "mana": 450,
+   "armor": 18,
+   "mr": 32,
+   "ad": 53,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Chogath",
+  "name": "Cho'Gath",
+  "base": {
+   "hp": 644,
+   "mana": 270,
+   "armor": 38,
+   "mr": 32,
+   "ad": 69,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 94,
+   "mana": 60,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Corki",
+  "name": "Corki",
+  "base": {
+   "hp": 610,
+   "mana": 350,
+   "armor": 27,
+   "mr": 33,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 40,
+   "armor": 4.5,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Darius",
+  "name": "Darius",
+  "base": {
+   "hp": 652,
+   "mana": 263,
+   "armor": 37,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 58,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Diana",
+  "name": "Diana",
+  "base": {
+   "hp": 640,
+   "mana": 375,
+   "armor": 31,
+   "mr": 32,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 25,
+   "armor": 4.3,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Draven",
+  "name": "Draven",
+  "base": {
+   "hp": 675,
+   "mana": 361,
+   "armor": 29,
+   "mr": 33,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 39,
+   "armor": 4.5,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "DrMundo",
+  "name": "Dr. Mundo",
+  "base": {
+   "hp": 640,
+   "mana": 0,
+   "armor": 32,
+   "mr": 29,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 103,
+   "mana": 0,
+   "armor": 4.5,
+   "mr": 2.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ekko",
+  "name": "Ekko",
+  "base": {
+   "hp": 655,
+   "mana": 280,
+   "armor": 32,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 70,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Elise",
+  "name": "Elise",
+  "base": {
+   "hp": 620,
+   "mana": 324,
+   "armor": 30,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 50,
+   "armor": 4.5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Evelynn",
+  "name": "Evelynn",
+  "base": {
+   "hp": 642,
+   "mana": 315,
+   "armor": 37,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 42,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ezreal",
+  "name": "Ezreal",
+  "base": {
+   "hp": 600,
+   "mana": 375,
+   "armor": 24,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 70,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Fiddlesticks",
+  "name": "Fiddlesticks",
+  "base": {
+   "hp": 650,
+   "mana": 500,
+   "armor": 34,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 28,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Fiora",
+  "name": "Fiora",
+  "base": {
+   "hp": 620,
+   "mana": 300,
+   "armor": 33,
+   "mr": 32,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 60,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Fizz",
+  "name": "Fizz",
+  "base": {
+   "hp": 640,
+   "mana": 317,
+   "armor": 26,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 52,
+   "armor": 4.6,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Galio",
+  "name": "Galio",
+  "base": {
+   "hp": 600,
+   "mana": 410,
+   "armor": 24,
+   "mr": 32,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 126,
+   "mana": 40,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Gangplank",
+  "name": "Gangplank",
+  "base": {
+   "hp": 630,
+   "mana": 280,
+   "armor": 31,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 60,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Garen",
+  "name": "Garen",
+  "base": {
+   "hp": 690,
+   "mana": 0,
+   "armor": 38,
+   "mr": 32,
+   "ad": 69,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 0,
+   "armor": 4.2,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Gnar",
+  "name": "Gnar",
+  "base": {
+   "hp": 540,
+   "mana": 100,
+   "armor": 32,
+   "mr": 30,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 79,
+   "mana": 0,
+   "armor": 3.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Gragas",
+  "name": "Gragas",
+  "base": {
+   "hp": 640,
+   "mana": 400,
+   "armor": 38,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 115,
+   "mana": 47,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Graves",
+  "name": "Graves",
+  "base": {
+   "hp": 625,
+   "mana": 325,
+   "armor": 33,
+   "mr": 33,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 40,
+   "armor": 4.6,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Gwen",
+  "name": "Gwen",
+  "base": {
+   "hp": 620,
+   "mana": 330,
+   "armor": 39,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 115,
+   "mana": 40,
+   "armor": 4.9,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Hecarim",
+  "name": "Hecarim",
+  "base": {
+   "hp": 625,
+   "mana": 280,
+   "armor": 32,
+   "mr": 32,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 40,
+   "armor": 5.45,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Heimerdinger",
+  "name": "Heimerdinger",
+  "base": {
+   "hp": 558,
+   "mana": 385,
+   "armor": 19,
+   "mr": 30,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 20,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Hwei",
+  "name": "Hwei",
+  "base": {
+   "hp": 580,
+   "mana": 480,
+   "armor": 21,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 30,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Illaoi",
+  "name": "Illaoi",
+  "base": {
+   "hp": 656,
+   "mana": 350,
+   "armor": 35,
+   "mr": 32,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 115,
+   "mana": 50,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Irelia",
+  "name": "Irelia",
+  "base": {
+   "hp": 630,
+   "mana": 350,
+   "armor": 36,
+   "mr": 30,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 115,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ivern",
+  "name": "Ivern",
+  "base": {
+   "hp": 630,
+   "mana": 450,
+   "armor": 27,
+   "mr": 30,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 60,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Janna",
+  "name": "Janna",
+  "base": {
+   "hp": 570,
+   "mana": 360,
+   "armor": 28,
+   "mr": 30,
+   "ad": 47,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 90,
+   "mana": 50,
+   "armor": 4.5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "JarvanIV",
+  "name": "Jarvan IV",
+  "base": {
+   "hp": 640,
+   "mana": 300,
+   "armor": 36,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 55,
+   "armor": 4.6,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Jax",
+  "name": "Jax",
+  "base": {
+   "hp": 650,
+   "mana": 339,
+   "armor": 36,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 103,
+   "mana": 52,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Jayce",
+  "name": "Jayce",
+  "base": {
+   "hp": 590,
+   "mana": 375,
+   "armor": 22,
+   "mr": 30,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 45,
+   "armor": 5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Jhin",
+  "name": "Jhin",
+  "base": {
+   "hp": 655,
+   "mana": 300,
+   "armor": 24,
+   "mr": 33,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Jinx",
+  "name": "Jinx",
+  "base": {
+   "hp": 610,
+   "mana": 260,
+   "armor": 26,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 50,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kaisa",
+  "name": "Kai'Sa",
+  "base": {
+   "hp": 640,
+   "mana": 345,
+   "armor": 25,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 40,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kalista",
+  "name": "Kalista",
+  "base": {
+   "hp": 560,
+   "mana": 300,
+   "armor": 24,
+   "mr": 33,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 45,
+   "armor": 5.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Karma",
+  "name": "Karma",
+  "base": {
+   "hp": 630,
+   "mana": 374,
+   "armor": 28,
+   "mr": 30,
+   "ad": 49,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 40,
+   "armor": 5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Karthus",
+  "name": "Karthus",
+  "base": {
+   "hp": 620,
+   "mana": 467,
+   "armor": 21,
+   "mr": 30,
+   "ad": 46,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 31,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kassadin",
+  "name": "Kassadin",
+  "base": {
+   "hp": 646,
+   "mana": 400,
+   "armor": 21,
+   "mr": 30,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 113,
+   "mana": 87,
+   "armor": 4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Katarina",
+  "name": "Katarina",
+  "base": {
+   "hp": 672,
+   "mana": 0,
+   "armor": 32,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 0,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kayle",
+  "name": "Kayle",
+  "base": {
+   "hp": 670,
+   "mana": 330,
+   "armor": 26,
+   "mr": 22,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 92,
+   "mana": 50,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kayn",
+  "name": "Kayn",
+  "base": {
+   "hp": 655,
+   "mana": 410,
+   "armor": 38,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 103,
+   "mana": 50,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kennen",
+  "name": "Kennen",
+  "base": {
+   "hp": 580,
+   "mana": 200,
+   "armor": 29,
+   "mr": 30,
+   "ad": 48,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 0,
+   "armor": 4.95,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Khazix",
+  "name": "Kha'Zix",
+  "base": {
+   "hp": 643,
+   "mana": 327,
+   "armor": 32,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 40,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kindred",
+  "name": "Kindred",
+  "base": {
+   "hp": 595,
+   "mana": 300,
+   "armor": 29,
+   "mr": 33,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 35,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Kled",
+  "name": "Kled",
+  "base": {
+   "hp": 410,
+   "mana": 100,
+   "armor": 35,
+   "mr": 28,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 84,
+   "mana": 0,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "KogMaw",
+  "name": "Kog'Maw",
+  "base": {
+   "hp": 635,
+   "mana": 325,
+   "armor": 24,
+   "mr": 33,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 40,
+   "armor": 4.45,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "KSante",
+  "name": "K'Sante",
+  "base": {
+   "hp": 625,
+   "mana": 320,
+   "armor": 36,
+   "mr": 30,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 120,
+   "mana": 60,
+   "armor": 5.2,
+   "mr": 2.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Leblanc",
+  "name": "LeBlanc",
+  "base": {
+   "hp": 598,
+   "mana": 400,
+   "armor": 22,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 25,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "LeeSin",
+  "name": "Lee Sin",
+  "base": {
+   "hp": 645,
+   "mana": 200,
+   "armor": 36,
+   "mr": 32,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 0,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Leona",
+  "name": "Leona",
+  "base": {
+   "hp": 646,
+   "mana": 302,
+   "armor": 43,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 101,
+   "mana": 40,
+   "armor": 4.8,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Lillia",
+  "name": "Lillia",
+  "base": {
+   "hp": 605,
+   "mana": 410,
+   "armor": 24,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 50,
+   "armor": 4.5,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Lissandra",
+  "name": "Lissandra",
+  "base": {
+   "hp": 620,
+   "mana": 475,
+   "armor": 22,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 30,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Locke",
+  "name": "Locke",
+  "base": {
+   "hp": 620,
+   "mana": 280,
+   "armor": 32,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 60,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Lucian",
+  "name": "Lucian",
+  "base": {
+   "hp": 641,
+   "mana": 320,
+   "armor": 28,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 43,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Lulu",
+  "name": "Lulu",
+  "base": {
+   "hp": 565,
+   "mana": 350,
+   "armor": 26,
+   "mr": 30,
+   "ad": 47,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 92,
+   "mana": 55,
+   "armor": 4.6,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Lux",
+  "name": "Lux",
+  "base": {
+   "hp": 580,
+   "mana": 440,
+   "armor": 21,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 23.5,
+   "armor": 5.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Malphite",
+  "name": "Malphite",
+  "base": {
+   "hp": 665,
+   "mana": 280,
+   "armor": 40,
+   "mr": 28,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 60,
+   "armor": 4.95,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Malzahar",
+  "name": "Malzahar",
+  "base": {
+   "hp": 580,
+   "mana": 375,
+   "armor": 18,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 101,
+   "mana": 28,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Maokai",
+  "name": "Maokai",
+  "base": {
+   "hp": 665,
+   "mana": 375,
+   "armor": 35,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 43,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "MasterYi",
+  "name": "Master Yi",
+  "base": {
+   "hp": 640,
+   "mana": 251,
+   "armor": 33,
+   "mr": 32,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 42,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Mel",
+  "name": "Mel",
+  "base": {
+   "hp": 590,
+   "mana": 455,
+   "armor": 21,
+   "mr": 30,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 38,
+   "armor": 5.4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Milio",
+  "name": "Milio",
+  "base": {
+   "hp": 560,
+   "mana": 365,
+   "armor": 26,
+   "mr": 30,
+   "ad": 48,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 88,
+   "mana": 43,
+   "armor": 4.6,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "MissFortune",
+  "name": "Miss Fortune",
+  "base": {
+   "hp": 625,
+   "mana": 300,
+   "armor": 25,
+   "mr": 33,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "MonkeyKing",
+  "name": "Wukong",
+  "base": {
+   "hp": 610,
+   "mana": 330,
+   "armor": 31,
+   "mr": 28,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 65,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Mordekaiser",
+  "name": "Mordekaiser",
+  "base": {
+   "hp": 645,
+   "mana": 100,
+   "armor": 37,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 0,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Morgana",
+  "name": "Morgana",
+  "base": {
+   "hp": 630,
+   "mana": 340,
+   "armor": 25,
+   "mr": 30,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 60,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Naafiri",
+  "name": "Naafiri",
+  "base": {
+   "hp": 610,
+   "mana": 400,
+   "armor": 28,
+   "mr": 32,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 55,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nami",
+  "name": "Nami",
+  "base": {
+   "hp": 560,
+   "mana": 365,
+   "armor": 29,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 88,
+   "mana": 43,
+   "armor": 5.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nasus",
+  "name": "Nasus",
+  "base": {
+   "hp": 650,
+   "mana": 326,
+   "armor": 34,
+   "mr": 32,
+   "ad": 67,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 62,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nautilus",
+  "name": "Nautilus",
+  "base": {
+   "hp": 646,
+   "mana": 400,
+   "armor": 39,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 47,
+   "armor": 4.95,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Neeko",
+  "name": "Neeko",
+  "base": {
+   "hp": 610,
+   "mana": 450,
+   "armor": 21,
+   "mr": 30,
+   "ad": 48,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 30,
+   "armor": 5.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nidalee",
+  "name": "Nidalee",
+  "base": {
+   "hp": 610,
+   "mana": 295,
+   "armor": 32,
+   "mr": 30,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 45,
+   "armor": 5,
+   "mr": 1.45,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nilah",
+  "name": "Nilah",
+  "base": {
+   "hp": 570,
+   "mana": 350,
+   "armor": 27,
+   "mr": 32,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 101,
+   "mana": 35,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nocturne",
+  "name": "Nocturne",
+  "base": {
+   "hp": 640,
+   "mana": 275,
+   "armor": 36,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 35,
+   "armor": 4.2,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Nunu",
+  "name": "Nunu & Willump",
+  "base": {
+   "hp": 610,
+   "mana": 280,
+   "armor": 29,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 90,
+   "mana": 42,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Olaf",
+  "name": "Olaf",
+  "base": {
+   "hp": 645,
+   "mana": 316,
+   "armor": 35,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 119,
+   "mana": 50,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Orianna",
+  "name": "Orianna",
+  "base": {
+   "hp": 565,
+   "mana": 418,
+   "armor": 20,
+   "mr": 26,
+   "ad": 44,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 25,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ornn",
+  "name": "Ornn",
+  "base": {
+   "hp": 660,
+   "mana": 341,
+   "armor": 33,
+   "mr": 32,
+   "ad": 69,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 65,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Pantheon",
+  "name": "Pantheon",
+  "base": {
+   "hp": 650,
+   "mana": 317,
+   "armor": 40,
+   "mr": 28,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 31,
+   "armor": 4.95,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Poppy",
+  "name": "Poppy",
+  "base": {
+   "hp": 610,
+   "mana": 300,
+   "armor": 35,
+   "mr": 32,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 45,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Pyke",
+  "name": "Pyke",
+  "base": {
+   "hp": 670,
+   "mana": 415,
+   "armor": 37,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Qiyana",
+  "name": "Qiyana",
+  "base": {
+   "hp": 590,
+   "mana": 375,
+   "armor": 31,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 115,
+   "mana": 60,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Quinn",
+  "name": "Quinn",
+  "base": {
+   "hp": 565,
+   "mana": 269,
+   "armor": 28,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 35,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Rakan",
+  "name": "Rakan",
+  "base": {
+   "hp": 610,
+   "mana": 315,
+   "armor": 30,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 50,
+   "armor": 4.9,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Rammus",
+  "name": "Rammus",
+  "base": {
+   "hp": 645,
+   "mana": 310,
+   "armor": 35,
+   "mr": 32,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 33,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "RekSai",
+  "name": "Rek'Sai",
+  "base": {
+   "hp": 600,
+   "mana": 100,
+   "armor": 35,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 0,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Rell",
+  "name": "Rell",
+  "base": {
+   "hp": 620,
+   "mana": 320,
+   "armor": 30,
+   "mr": 28,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.8,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Renata",
+  "name": "Renata Glasc",
+  "base": {
+   "hp": 545,
+   "mana": 350,
+   "armor": 27,
+   "mr": 30,
+   "ad": 49,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 94,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Renekton",
+  "name": "Renekton",
+  "base": {
+   "hp": 660,
+   "mana": 100,
+   "armor": 35,
+   "mr": 28,
+   "ad": 69,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 111,
+   "mana": 0,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Rengar",
+  "name": "Rengar",
+  "base": {
+   "hp": 590,
+   "mana": 4,
+   "armor": 34,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 0,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Riven",
+  "name": "Riven",
+  "base": {
+   "hp": 630,
+   "mana": 0,
+   "armor": 33,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 0,
+   "armor": 4.4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Rumble",
+  "name": "Rumble",
+  "base": {
+   "hp": 640,
+   "mana": 150,
+   "armor": 36,
+   "mr": 28,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 0,
+   "armor": 4.7,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ryze",
+  "name": "Ryze",
+  "base": {
+   "hp": 620,
+   "mana": 300,
+   "armor": 22,
+   "mr": 32,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 124,
+   "mana": 70,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Samira",
+  "name": "Samira",
+  "base": {
+   "hp": 630,
+   "mana": 349,
+   "armor": 26,
+   "mr": 33,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 38,
+   "armor": 4.7,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sejuani",
+  "name": "Sejuani",
+  "base": {
+   "hp": 630,
+   "mana": 400,
+   "armor": 34,
+   "mr": 32,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 40,
+   "armor": 5.45,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Senna",
+  "name": "Senna",
+  "base": {
+   "hp": 530,
+   "mana": 350,
+   "armor": 25,
+   "mr": 33,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 89,
+   "mana": 45,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Seraphine",
+  "name": "Seraphine",
+  "base": {
+   "hp": 570,
+   "mana": 360,
+   "armor": 26,
+   "mr": 30,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 95,
+   "mana": 40,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sett",
+  "name": "Sett",
+  "base": {
+   "hp": 670,
+   "mana": 0,
+   "armor": 33,
+   "mr": 28,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 0,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Shaco",
+  "name": "Shaco",
+  "base": {
+   "hp": 630,
+   "mana": 297,
+   "armor": 30,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 40,
+   "armor": 4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Shen",
+  "name": "Shen",
+  "base": {
+   "hp": 610,
+   "mana": 400,
+   "armor": 34,
+   "mr": 32,
+   "ad": 64,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 0,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Shyvana",
+  "name": "Shyvana",
+  "base": {
+   "hp": 625,
+   "mana": 100,
+   "armor": 35,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 95,
+   "mana": 0,
+   "armor": 4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Singed",
+  "name": "Singed",
+  "base": {
+   "hp": 650,
+   "mana": 330,
+   "armor": 34,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 96,
+   "mana": 45,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sion",
+  "name": "Sion",
+  "base": {
+   "hp": 655,
+   "mana": 400,
+   "armor": 36,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 95,
+   "mana": 52,
+   "armor": 4.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sivir",
+  "name": "Sivir",
+  "base": {
+   "hp": 600,
+   "mana": 340,
+   "armor": 30,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 45,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Skarner",
+  "name": "Skarner",
+  "base": {
+   "hp": 630,
+   "mana": 320,
+   "armor": 33,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 40,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Smolder",
+  "name": "Smolder",
+  "base": {
+   "hp": 575,
+   "mana": 300,
+   "armor": 24,
+   "mr": 33,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sona",
+  "name": "Sona",
+  "base": {
+   "hp": 550,
+   "mana": 340,
+   "armor": 26,
+   "mr": 30,
+   "ad": 49,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 91,
+   "mana": 45,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Soraka",
+  "name": "Soraka",
+  "base": {
+   "hp": 605,
+   "mana": 425,
+   "armor": 32,
+   "mr": 30,
+   "ad": 50,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 88,
+   "mana": 40,
+   "armor": 5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Swain",
+  "name": "Swain",
+  "base": {
+   "hp": 595,
+   "mana": 400,
+   "armor": 23,
+   "mr": 34,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 29,
+   "armor": 4.7,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Sylas",
+  "name": "Sylas",
+  "base": {
+   "hp": 600,
+   "mana": 400,
+   "armor": 29,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 122,
+   "mana": 70,
+   "armor": 5.2,
+   "mr": 2.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Syndra",
+  "name": "Syndra",
+  "base": {
+   "hp": 583,
+   "mana": 480,
+   "armor": 25,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 100,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "TahmKench",
+  "name": "Tahm Kench",
+  "base": {
+   "hp": 640,
+   "mana": 325,
+   "armor": 39,
+   "mr": 32,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 103,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Taliyah",
+  "name": "Taliyah",
+  "base": {
+   "hp": 550,
+   "mana": 470,
+   "armor": 18,
+   "mr": 28,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 30,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Talon",
+  "name": "Talon",
+  "base": {
+   "hp": 658,
+   "mana": 400,
+   "armor": 30,
+   "mr": 36,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 37,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Taric",
+  "name": "Taric",
+  "base": {
+   "hp": 645,
+   "mana": 300,
+   "armor": 40,
+   "mr": 28,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 60,
+   "armor": 4.3,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Teemo",
+  "name": "Teemo",
+  "base": {
+   "hp": 615,
+   "mana": 334,
+   "armor": 24,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 25,
+   "armor": 4.5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Thresh",
+  "name": "Thresh",
+  "base": {
+   "hp": 620,
+   "mana": 274,
+   "armor": 33,
+   "mr": 30,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 120,
+   "mana": 44,
+   "armor": 0,
+   "mr": 1.55,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Tristana",
+  "name": "Tristana",
+  "base": {
+   "hp": 640,
+   "mana": 300,
+   "armor": 30,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 32,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Trundle",
+  "name": "Trundle",
+  "base": {
+   "hp": 650,
+   "mana": 340,
+   "armor": 37,
+   "mr": 32,
+   "ad": 68,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 45,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Tryndamere",
+  "name": "Tryndamere",
+  "base": {
+   "hp": 696,
+   "mana": 100,
+   "armor": 33,
+   "mr": 32,
+   "ad": 66,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 0,
+   "armor": 4.8,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "TwistedFate",
+  "name": "Twisted Fate",
+  "base": {
+   "hp": 604,
+   "mana": 333,
+   "armor": 24,
+   "mr": 30,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 39,
+   "armor": 4.35,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Twitch",
+  "name": "Twitch",
+  "base": {
+   "hp": 630,
+   "mana": 300,
+   "armor": 27,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Udyr",
+  "name": "Udyr",
+  "base": {
+   "hp": 664,
+   "mana": 271,
+   "armor": 31,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 92,
+   "mana": 50,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Urgot",
+  "name": "Urgot",
+  "base": {
+   "hp": 655,
+   "mana": 340,
+   "armor": 36,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 45,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Varus",
+  "name": "Varus",
+  "base": {
+   "hp": 600,
+   "mana": 320,
+   "armor": 24,
+   "mr": 33,
+   "ad": 59,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 40,
+   "armor": 4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Vayne",
+  "name": "Vayne",
+  "base": {
+   "hp": 580,
+   "mana": 232,
+   "armor": 23,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 98,
+   "mana": 35,
+   "armor": 4.6,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Veigar",
+  "name": "Veigar",
+  "base": {
+   "hp": 580,
+   "mana": 490,
+   "armor": 18,
+   "mr": 32,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 108,
+   "mana": 26,
+   "armor": 5.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Velkoz",
+  "name": "Vel'Koz",
+  "base": {
+   "hp": 590,
+   "mana": 469,
+   "armor": 22,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 102,
+   "mana": 21,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Vex",
+  "name": "Vex",
+  "base": {
+   "hp": 590,
+   "mana": 490,
+   "armor": 23,
+   "mr": 28,
+   "ad": 54,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 32,
+   "armor": 4.45,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Vi",
+  "name": "Vi",
+  "base": {
+   "hp": 655,
+   "mana": 295,
+   "armor": 30,
+   "mr": 32,
+   "ad": 61,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 65,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Viego",
+  "name": "Viego",
+  "base": {
+   "hp": 630,
+   "mana": 10000,
+   "armor": 34,
+   "mr": 32,
+   "ad": 57,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 0,
+   "armor": 4.6,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Viktor",
+  "name": "Viktor",
+  "base": {
+   "hp": 600,
+   "mana": 405,
+   "armor": 23,
+   "mr": 30,
+   "ad": 53,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 45,
+   "armor": 4.4,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Vladimir",
+  "name": "Vladimir",
+  "base": {
+   "hp": 600,
+   "mana": 2,
+   "armor": 24,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 0,
+   "armor": 4.5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Volibear",
+  "name": "Volibear",
+  "base": {
+   "hp": 650,
+   "mana": 350,
+   "armor": 35,
+   "mr": 32,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 104,
+   "mana": 70,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Warwick",
+  "name": "Warwick",
+  "base": {
+   "hp": 620,
+   "mana": 280,
+   "armor": 33,
+   "mr": 32,
+   "ad": 65,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 35,
+   "armor": 4.4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Xayah",
+  "name": "Xayah",
+  "base": {
+   "hp": 630,
+   "mana": 340,
+   "armor": 25,
+   "mr": 33,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 107,
+   "mana": 40,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Xerath",
+  "name": "Xerath",
+  "base": {
+   "hp": 575,
+   "mana": 400,
+   "armor": 22,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 22,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "XinZhao",
+  "name": "Xin Zhao",
+  "base": {
+   "hp": 620,
+   "mana": 274,
+   "armor": 35,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 55,
+   "armor": 4.4,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Yasuo",
+  "name": "Yasuo",
+  "base": {
+   "hp": 590,
+   "mana": 100,
+   "armor": 32,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 0,
+   "armor": 4.6,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Yone",
+  "name": "Yone",
+  "base": {
+   "hp": 620,
+   "mana": 500,
+   "armor": 33,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 105,
+   "mana": 0,
+   "armor": 4.6,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Yorick",
+  "name": "Yorick",
+  "base": {
+   "hp": 650,
+   "mana": 300,
+   "armor": 36,
+   "mr": 32,
+   "ad": 62,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 60,
+   "armor": 4.5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Yunara",
+  "name": "Yunara",
+  "base": {
+   "hp": 590,
+   "mana": 275,
+   "armor": 25,
+   "mr": 33,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 45,
+   "armor": 4.4,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Yuumi",
+  "name": "Yuumi",
+  "base": {
+   "hp": 500,
+   "mana": 440,
+   "armor": 25,
+   "mr": 25,
+   "ad": 49,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 69,
+   "mana": 45,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zaahen",
+  "name": "Zaahen",
+  "base": {
+   "hp": 640,
+   "mana": 350,
+   "armor": 36,
+   "mr": 32,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 114,
+   "mana": 55,
+   "armor": 5,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zac",
+  "name": "Zac",
+  "base": {
+   "hp": 685,
+   "mana": 0,
+   "armor": 33,
+   "mr": 32,
+   "ad": 60,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 109,
+   "mana": 0,
+   "armor": 5.2,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zed",
+  "name": "Zed",
+  "base": {
+   "hp": 654,
+   "mana": 200,
+   "armor": 32,
+   "mr": 29,
+   "ad": 63,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 99,
+   "mana": 0,
+   "armor": 4.7,
+   "mr": 2.05,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zeri",
+  "name": "Zeri",
+  "base": {
+   "hp": 600,
+   "mana": 250,
+   "armor": 24,
+   "mr": 33,
+   "ad": 56,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 110,
+   "mana": 45,
+   "armor": 4.2,
+   "mr": 1.1,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Ziggs",
+  "name": "Ziggs",
+  "base": {
+   "hp": 606,
+   "mana": 480,
+   "armor": 21,
+   "mr": 30,
+   "ad": 55,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 23.5,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zilean",
+  "name": "Zilean",
+  "base": {
+   "hp": 574,
+   "mana": 452,
+   "armor": 24,
+   "mr": 30,
+   "ad": 52,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 96,
+   "mana": 50,
+   "armor": 5,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zoe",
+  "name": "Zoe",
+  "base": {
+   "hp": 630,
+   "mana": 425,
+   "armor": 21,
+   "mr": 30,
+   "ad": 58,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 106,
+   "mana": 25,
+   "armor": 4.7,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ },
+ {
+  "id": "Zyra",
+  "name": "Zyra",
+  "base": {
+   "hp": 574,
+   "mana": 418,
+   "armor": 29,
+   "mr": 30,
+   "ad": 53,
+   "ap": 0
+  },
+  "growth": {
+   "hp": 93,
+   "mana": 25,
+   "armor": 4.2,
+   "mr": 1.3,
+   "ad": 0,
+   "ap": 0
+  }
+ }
+]

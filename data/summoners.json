@@ -1,0 +1,172 @@
+{
+ "SummonerBarrier": {
+  "id": "SummonerBarrier",
+  "name": "Barrier",
+  "cooldown": 180
+ },
+ "SummonerBarrier_Jade": {
+  "id": "SummonerBarrier_Jade",
+  "name": "Barrier",
+  "cooldown": 210
+ },
+ "SummonerBattleCry_Jade": {
+  "id": "SummonerBattleCry_Jade",
+  "name": "Surge",
+  "cooldown": 180
+ },
+ "SummonerBoost": {
+  "id": "SummonerBoost",
+  "name": "Cleanse",
+  "cooldown": 240
+ },
+ "SummonerBoost_Jade": {
+  "id": "SummonerBoost_Jade",
+  "name": "Cleanse",
+  "cooldown": 210
+ },
+ "SummonerCherryFlash": {
+  "id": "SummonerCherryFlash",
+  "name": "Flash",
+  "cooldown": 0.25
+ },
+ "SummonerCherryHold": {
+  "id": "SummonerCherryHold",
+  "name": "Flee",
+  "cooldown": 45
+ },
+ "SummonerClairvoyance_Jade": {
+  "id": "SummonerClairvoyance_Jade",
+  "name": "Clairvoyance",
+  "cooldown": 60
+ },
+ "SummonerDot": {
+  "id": "SummonerDot",
+  "name": "Ignite",
+  "cooldown": 180
+ },
+ "SummonerDot_Jade": {
+  "id": "SummonerDot_Jade",
+  "name": "Ignite",
+  "cooldown": 210
+ },
+ "SummonerExhaust": {
+  "id": "SummonerExhaust",
+  "name": "Exhaust",
+  "cooldown": 240
+ },
+ "SummonerExhaust_Jade": {
+  "id": "SummonerExhaust_Jade",
+  "name": "Exhaust",
+  "cooldown": 210
+ },
+ "SummonerFlash": {
+  "id": "SummonerFlash",
+  "name": "Flash",
+  "cooldown": 300
+ },
+ "SummonerFlash_Jade": {
+  "id": "SummonerFlash_Jade",
+  "name": "Flash",
+  "cooldown": 300
+ },
+ "SummonerFortify_Jade": {
+  "id": "SummonerFortify_Jade",
+  "name": "Fortify",
+  "cooldown": 180
+ },
+ "SummonerHaste": {
+  "id": "SummonerHaste",
+  "name": "Ghost",
+  "cooldown": 240
+ },
+ "SummonerHaste_Jade": {
+  "id": "SummonerHaste_Jade",
+  "name": "Ghost",
+  "cooldown": 240
+ },
+ "SummonerHeal": {
+  "id": "SummonerHeal",
+  "name": "Heal",
+  "cooldown": 240
+ },
+ "SummonerHeal_Jade": {
+  "id": "SummonerHeal_Jade",
+  "name": "Heal",
+  "cooldown": 300
+ },
+ "SummonerMana": {
+  "id": "SummonerMana",
+  "name": "Clarity",
+  "cooldown": 240
+ },
+ "SummonerMana_Jade": {
+  "id": "SummonerMana_Jade",
+  "name": "Clarity",
+  "cooldown": 135
+ },
+ "SummonerPoroRecall": {
+  "id": "SummonerPoroRecall",
+  "name": "To the King!",
+  "cooldown": 10
+ },
+ "SummonerPoroThrow": {
+  "id": "SummonerPoroThrow",
+  "name": "Poro Toss",
+  "cooldown": 20
+ },
+ "SummonerRally_Jade": {
+  "id": "SummonerRally_Jade",
+  "name": "Rally",
+  "cooldown": 270
+ },
+ "SummonerRevive_Jade": {
+  "id": "SummonerRevive_Jade",
+  "name": "Revive",
+  "cooldown": 510
+ },
+ "SummonerSmite": {
+  "id": "SummonerSmite",
+  "name": "Smite",
+  "cooldown": 15
+ },
+ "SummonerSmite_Jade": {
+  "id": "SummonerSmite_Jade",
+  "name": "Smite",
+  "cooldown": 70
+ },
+ "SummonerSnowURFSnowball_Mark": {
+  "id": "SummonerSnowURFSnowball_Mark",
+  "name": "Mark",
+  "cooldown": 80
+ },
+ "SummonerSnowball": {
+  "id": "SummonerSnowball",
+  "name": "Mark",
+  "cooldown": 80
+ },
+ "SummonerSpell_Promote_Jade": {
+  "id": "SummonerSpell_Promote_Jade",
+  "name": "Promote",
+  "cooldown": 270
+ },
+ "SummonerTeleport": {
+  "id": "SummonerTeleport",
+  "name": "Teleport",
+  "cooldown": 300
+ },
+ "SummonerTeleport_Jade": {
+  "id": "SummonerTeleport_Jade",
+  "name": "Teleport",
+  "cooldown": 300
+ },
+ "Summoner_UltBookPlaceholder": {
+  "id": "Summoner_UltBookPlaceholder",
+  "name": "Placeholder",
+  "cooldown": 0
+ },
+ "Summoner_UltBookSmitePlaceholder": {
+  "id": "Summoner_UltBookSmitePlaceholder",
+  "name": "Placeholder and Attack-Smite",
+  "cooldown": 0
+ }
+}
