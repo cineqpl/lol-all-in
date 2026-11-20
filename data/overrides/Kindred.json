@@ -1,0 +1,36 @@
+{
+ "W": {
+  "name": "Wolf's Frenzy",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 25 / 30 / 35 / 40 / 45 (+ 20% bonus AD) (+ 20% AP) (+ 1.5% (+ 1% per mark) of target's current health)",
+   "[Active] Monster Damage = 41.25 / 49.5 / 57.75 / 66 / 74.25 (+ 33% bonus AD) (+ 33% AP) (+ 2.475% (+ 1.65% per mark) of target's current health)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"(+ 1.5%   of target's current health)\"",
+   "Monster Damage: not against champions"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Mounting Dread",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Additional Physical Damage = 80 / 110 / 140 / 170 / 200 (+ 100% bonus AD) (+ 5% (+ 0.5% per Mark) of target's missing health)"
+  ],
+  "skipped": [
+   "Additional Physical Damage: unknown scaling \"(+ 5%   of target's missing health)\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

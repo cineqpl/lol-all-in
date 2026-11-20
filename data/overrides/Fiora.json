@@ -1,0 +1,18 @@
+{
+ "E": {
+  "name": "Bladework",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Critical damage = 160 / 170 / 180 / 190 / 200%"
+  ],
+  "skipped": [
+   "Critical damage: unknown scaling \"\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

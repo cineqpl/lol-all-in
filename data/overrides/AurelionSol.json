@@ -1,0 +1,73 @@
+{
+ "Q": {
+  "name": "Breath of Light",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 5.625 / 7.5 / 9.375 / 11.25 / 13.125 (+ 6.875% AP)",
+   "[Active] Magic Damage per Second = 45 / 60 / 75 / 90 / 105 (+ 55% AP)",
+   "[Active] Total Maximum Magic Damage = 146.25 / 195 / 243.75 / 292.5 (+ 178.75% AP)",
+   "[Active] Secondary Target Damage per Tick = 2.8125 / 3.75 / 4.6875 / 5.625 / 6.5625 (+ 3.4375% AP)",
+   "[Active] Secondary Magic Damage per Second = 22.5 / 30 / 37.5 / 45 / 52.5 (+ 27.5% AP)",
+   "[Active] Secondary Target Total Maximum Damage = 73.125 / 97.5 / 121.875 / 146.25 (+ 89.375% AP)",
+   "[Active] Bonus Magic Damage = 60 / 70 / 80 / 90 / 100 (+ 30% AP) (+ (3.1% Stardust)% of target's maximum health)"
+  ],
+  "skipped": [
+   "Total Maximum Magic Damage: sum of other lines",
+   "Bonus Magic Damage: unknown scaling \"(+  % of target's maximum health)\""
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 5.625/7.5/9.375/11.25/13.125 + 6.875% AP",
+   "Active: Magic Damage per Second (magic) 45/60/75/90/105 + 55% AP",
+   "Active: Secondary Target Damage per Tick (magic) 2.8125/3.75/4.6875/5.625/6.5625 + 3.438% AP",
+   "Active: Secondary Magic Damage per Second (magic) 22.5/30/37.5/45/52.5 + 27.5% AP",
+   "Active: Secondary Target Total Maximum Damage (magic) 73.125/97.5/121.875/146.25 + 89.375% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Singularity",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 2.5 / 4 / 5.5 / 7 / 8.5 (+ 3 / 3.25 / 3.5 / 3.75 / 4% AP)",
+   "[Active] Total Magic Damage = 50 / 80 / 110 / 140 / 170 (+ 60 / 65 / 70 / 75 / 80% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 2.5/4/5.5/7/8.5 + 3/3.25/3.5/3.75/4% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Falling Star",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 150 / 250 / 350 (+ 75% AP)",
+   "[Active] Empowered Magic Damage = 187.5 / 312.5 / 437.5 (+ 93.75% AP)",
+   "[Active] Magic Damage = 135 / 225 / 315 (+ 67.5% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 150/250/350 + 75% AP",
+   "Active: Empowered Magic Damage (magic) 187.5/312.5/437.5 + 93.75% AP",
+   "Active: Magic Damage (magic) 135/225/315 + 67.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

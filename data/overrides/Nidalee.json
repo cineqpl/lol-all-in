@@ -1,0 +1,21 @@
+{
+ "W": {
+  "name": "Bushwhack",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 10 / 20 / 30 / 40 / 50 (+ 5% AP)",
+   "[Active] Total Magic Damage = 40 / 80 / 120 / 160 / 200 (+ 20% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 10/20/30/40/50 + 5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

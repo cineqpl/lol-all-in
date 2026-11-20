@@ -1,0 +1,44 @@
+{
+ "E": {
+  "name": "Shuriken Flip",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 21 / 42 / 63 / 84 / 105 (+ 30% AD) (+ 33% AP)",
+   "[Recast] Magic Damage = 49 / 98 / 147 / 196 / 245 (+ 70% AD) (+ 77% AP)",
+   "[Recast] Total Magic Damage = 70 / 140 / 210 / 280 / 350 (+ 100% AD) (+ 110% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 21/42/63/84/105 + 30% AD + 33% AP",
+   "Recast: Magic Damage (magic) 49/98/147/196/245 + 70% AD + 77% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Perfect Execution",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 110 / 220 / 330 (+ 50% bonus AD) (+ 30% AP)",
+   "[Recast] Minimum Magic Damage = 70 / 140 / 210 (+ 30% AP)",
+   "[Recast] Maximum Magic Damage = 210 / 420 / 630 (+ 90% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 110/220/330 + 50% bonus AD + 30% AP",
+   "Recast: Minimum Magic Damage (magic) 70/140/210 + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

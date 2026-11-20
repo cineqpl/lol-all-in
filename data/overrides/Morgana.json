@@ -1,0 +1,26 @@
+{
+ "W": {
+  "name": "Tormented Shadow",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Minimum Damage Per Tick = 9 / 15.5 / 22 / 28.5 / 35 (+ 10% AP)",
+   "[Active] Maximum Damage Per Tick = 18 / 31 / 44 / 57 / 70 (+ 20% AP)",
+   "[Active] Minimum Total Damage = 90 / 155 / 220 / 285 / 350 (+ 100% AP)",
+   "[Active] Maximum Total Damage = 180 / 310 / 440 / 570 / 700 (+ 200% AP)"
+  ],
+  "skipped": [
+   "Maximum Damage Per Tick: maximum of a range (minimum is used)",
+   "Maximum Total Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Damage Per Tick (magic) 9/15.5/22/28.5/35 + 10% AP",
+   "Active: Minimum Total Damage (magic) 90/155/220/285/350 + 100% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

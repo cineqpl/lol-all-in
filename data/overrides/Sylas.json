@@ -1,0 +1,27 @@
+{
+ "Q": {
+  "name": "Chain Lash",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 40 / 60 / 80 / 100 / 120 (+ 40% AP)",
+   "[Active] Magic Damage = 60 / 115 / 170 / 225 / 280 (+ 80% AP)",
+   "[Active] Total Magic Damage = 100 / 175 / 250 / 325 / 400 (+ 120% AP)",
+   "[Active] Minion Damage = 24 / 46 / 68 / 90 / 112 (+ 32% AP)",
+   "[Active] Total Minion Damage = 64 / 106 / 148 / 190 / 232 (+ 72% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Minion Damage: not against champions",
+   "Total Minion Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 40/60/80/100/120 + 40% AP",
+   "Active: Magic Damage (magic) 60/115/170/225/280 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

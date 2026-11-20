@@ -1,0 +1,18 @@
+{
+ "Q": {
+  "name": "Shield of Daybreak",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage = 10 / 35 / 60 / 85 / 110 (+ 30% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 10/35/60/85/110 + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

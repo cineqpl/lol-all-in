@@ -1,0 +1,19 @@
+{
+ "Q": {
+  "name": "Obliterate",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 0 – 77 (based on level) (+ 80 / 115 / 150 / 185 / 220) (+ 120% bonus AD) (+ 70% AP)",
+   "[Active] Isolated Damage Increase = 30 / 35 / 40 / 45 / 50%"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"– 77\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

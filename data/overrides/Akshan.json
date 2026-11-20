@@ -1,0 +1,42 @@
+{
+ "E": {
+  "name": "Heroic Swing",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Second Cast] Physical Damage per Shot = 8 / 16 / 24 / 32 / 40 (+ 25% AD) × (1 + 0.3 per 100% bonus attack speed)"
+  ],
+  "skipped": [
+   "Physical Damage per Shot: unknown scaling \"×\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Comeuppance",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Recast] Minimum Physical Damage per Bullet = 25 / 35 / 45 (+ 15% AD)",
+   "[Recast] Maximum Physical Damage per Bullet = 75 / 105 / 135 (+ 45% AD)",
+   "[Recast] Minimum Charged Physical Damage = 125 / 210 / 315 (+ 75 / 90 / 105% AD)",
+   "[Recast] Damage to target on 67% missing hp = 375 / 630 / 945 (+ 225 / 270 / 315% AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage per Bullet: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Recast: Minimum Physical Damage per Bullet (physical) 25/35/45 + 15% AD",
+   "Recast: Minimum Charged Physical Damage (physical) 125/210/315 + 75/90/105% AD",
+   "Recast: Damage to target on 67% missing hp (physical) 375/630/945 + 225/270/315% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "Q": {
+  "name": "Edge of Ixtal",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 70 / 100 / 130 / 160 / 190 (+ 90% bonus AD)",
+   "[Active] Reduced Damage = 52.5 / 75 / 97.5 / 120 / 142.5 (+ 67.5% bonus AD)",
+   "[Active] Physical Damage = 70 / 100 / 130 / 160 / 190 (+ 90% bonus AD)",
+   "[Active] Reduced Damage = 52.5 / 75 / 97.5 / 120 / 142.5 (+ 67.5% bonus AD)",
+   "[Terrain] Increased Damage = 112 / 160 / 208 / 256 / 304 (+ 144% bonus AD)",
+   "[Terrain] Subsequent Increased Damage = 94.5 / 135 / 175.5 / 216 / 256.5 (+ 121.5% bonus AD)"
+  ],
+  "skipped": [
+   "Reduced Damage: secondary target",
+   "Reduced Damage: secondary target"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 70/100/130/160/190 + 90% bonus AD",
+   "Active: Physical Damage (physical) 70/100/130/160/190 + 90% bonus AD",
+   "Terrain: Increased Damage (physical) 112/160/208/256/304 + 144% bonus AD",
+   "Terrain: Subsequent Increased Damage (physical) 94.5/135/175.5/216/256.5 + 121.5% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Terrashape",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Magic Damage = 8 / 16 / 24 / 32 / 40 (+ 20% bonus AD) (+ 45% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Bonus Magic Damage (magic) 8/16/24/32/40 + 20% bonus AD + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

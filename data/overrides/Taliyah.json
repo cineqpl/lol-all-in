@@ -1,0 +1,54 @@
+{
+ "Q": {
+  "name": "Threaded Volley",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 55 / 72.5 / 90 / 107.5 / 125 (+ 50% AP)",
+   "[Active] Reduced Damage = 22 / 29 / 36 / 43 / 50 (+ 20% AP)",
+   "[Active] Total Magic Damage = 143 / 188.5 / 234 / 279.5 / 325 (+ 130% AP)",
+   "[Empowered Active] Empowered Damage = 99 / 130.5 / 162 / 193.5 / 225 (+ 90% AP)",
+   "[Empowered Active] Secondary Target Damage = 55 / 72.5 / 90 / 107.5 / 125 (+ 50% AP)",
+   "[Active] Bonus Monster Damage = 20 / 25 / 30 / 35 / 40",
+   "[Active] Boulder Bonus Monster Damage = 36 / 45 / 54 / 63 / 72"
+  ],
+  "skipped": [
+   "Reduced Damage: secondary target",
+   "Total Magic Damage: sum of other lines",
+   "Bonus Monster Damage: not against champions",
+   "Boulder Bonus Monster Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 55/72.5/90/107.5/125 + 50% AP",
+   "Empowered Active: Empowered Damage (magic) 99/130.5/162/193.5/225 + 90% AP",
+   "Empowered Active: Secondary Target Damage (magic) 55/72.5/90/107.5/125 + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Unraveled Earth",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 70 / 115 / 160 / 205 / 250 (+ 70% AP)",
+   "[Active] Detonation Magic Damage = 30 / 45 / 60 / 75 / 90 (+ 30% AP)",
+   "[Active] Total Maximum Detonation Damage = 75 / 112.5 / 150 / 187.5 / 225 (+ 75% AP)"
+  ],
+  "skipped": [
+   "Total Maximum Detonation Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 70/115/160/205/250 + 70% AP",
+   "Active: Detonation Magic Damage (magic) 30/45/60/75/90 + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "E": {
+  "name": "Toxic Shot",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Magic Damage On-Hit = 9 / 23 / 37 / 51 / 65 (+ 5% bonus AD) (+ 30% AP)",
+   "[Passive] Magic Damage per Tick = 6 / 12 / 18 / 24 / 30 (+ 2.5% bonus AD) (+ 10% AP)",
+   "[Passive] Total Poison Damage = 24 / 48 / 72 / 96 / 120 (+ 10% bonus AD) (+ 40% AP)",
+   "[Active] Monster Damage On-Hit = 14.4 / 36.8 / 59.2 / 81.6 / 104 (+ 8% bonus AD) (+ 48% AP)",
+   "[Active] Monster Damage per Tick = 9.6 / 19.2 / 28.8 / 38.4 / 48 (+ 4% bonus AD) (+ 16% AP)",
+   "[Active] Total Monster Poison Damage = 38.4 / 76.8 / 115.2 / 153.6 / 192 (+ 16% bonus AD) (+ 64% AP)"
+  ],
+  "skipped": [
+   "Total Poison Damage: sum of other lines",
+   "Monster Damage On-Hit: not against champions",
+   "Monster Damage per Tick: not against champions",
+   "Total Monster Poison Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Passive: Magic Damage On-Hit (magic) 9/23/37/51/65 + 5% bonus AD + 30% AP",
+   "Passive: Magic Damage per Tick (magic) 6/12/18/24/30 + 2.5% bonus AD + 10% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Noxious Trap",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[poison] Magic Damage per Tick = 50 / 81.25 / 112.5 (+ 12.5% AP)",
+   "[poison] Total Magic Damage = 200 / 325 / 450 (+ 50% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "poison: Magic Damage per Tick (magic) 50/81.25/112.5 + 12.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

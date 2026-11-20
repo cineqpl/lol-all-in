@@ -1,0 +1,20 @@
+{
+ "R": {
+  "name": "Keeper's Verdict",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Recast] Physical Damage = 100 / 150 / 200 (+ 45% bonus AD)",
+   "[Active] Increased Damage = 200 / 300 / 400 (+ 90% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Recast: Physical Damage (physical) 100/150/200 + 45% bonus AD",
+   "Active: Increased Damage (physical) 200/300/400 + 90% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "Q": {
+  "name": "Transfusion",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 80 / 100 / 120 / 140 / 160 (+ 60% AP)",
+   "[Active] Increased Damage = 148 / 185 / 222 / 259 / 296 (+ 111% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 80/100/120/140/160 + 60% AP",
+   "Active: Increased Damage (magic) 148/185/222/259/296 + 111% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Sanguine Pool",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 20 / 33.75 / 47.5 / 61.25 / 75 (+ 3.75% bonus health)",
+   "[Active] Total Magic Damage = 80 / 135 / 190 / 245 / 300 (+ 15% bonus health)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 20/33.75/47.5/61.25/75 + 3.75% bonus HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

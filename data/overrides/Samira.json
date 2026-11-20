@@ -1,0 +1,44 @@
+{
+ "W": {
+  "name": "Blade Whirl",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage per Hit = 20 / 35 / 50 / 65 / 80 (+ 50% bonus AD)",
+   "[Active] Total Physical Damage = 40 / 70 / 100 / 130 / 160 (+ 100% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage per Hit (physical) 20/35/50/65/80 + 50% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Inferno Trigger",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Shot = 20 / 40 / 60 (+ 30% AD)",
+   "[Active] Total Physical Damage = 200 / 400 / 600 (+ 300% AD)",
+   "[Active] Minion Damage Per Shot = 5 / 10 / 15 (+ 7.5% AD)",
+   "[Active] Total Minion Damage = 50 / 100 / 150 (+ 75% AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines",
+   "Minion Damage Per Shot: not against champions",
+   "Total Minion Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Shot (physical) 20/40/60 + 30% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

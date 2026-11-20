@@ -1,0 +1,52 @@
+{
+ "E": {
+  "name": "Ethereal Chains",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 50 / 70 / 90 / 110 / 130 (+ 40% AP)",
+   "[Active] Fracture Magic Damage = 80 / 120 / 160 / 200 / 240 (+ 85% AP)",
+   "[Active] Total Damage = 130 / 190 / 250 / 310 / 370 (+ 125% AP)"
+  ],
+  "skipped": [
+   "Total Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 50/70/90/110/130 + 40% AP",
+   "Active: Fracture Magic Damage (magic) 80/120/160/200/240 + 85% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Mimic",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Mimic] Orb Magic Damage = 70 / 150 / 230 (+ 40% AP)",
+   "[Mimic] Mark Magic Damage = 140 / 300 / 460 (+ 80% AP)",
+   "[Mimic] Total Magic Damage = 210 / 450 / 690 (+ 120% AP)",
+   "[Mimic] Magic Damage = 150 / 315 / 480 (+ 90% AP)",
+   "[Mimic] Application Magic Damage = 70 / 150 / 230 (+ 40% AP)",
+   "[Mimic] Fracture Magic Damage = 140 / 300 / 460 (+ 85% AP)",
+   "[Mimic] Total Magic Damage = 210 / 450 / 690 (+ 125% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Mimic: Orb Magic Damage (magic) 70/150/230 + 40% AP",
+   "Mimic: Mark Magic Damage (magic) 140/300/460 + 80% AP",
+   "Mimic: Magic Damage (magic) 150/315/480 + 90% AP",
+   "Mimic: Application Magic Damage (magic) 70/150/230 + 40% AP",
+   "Mimic: Fracture Magic Damage (magic) 140/300/460 + 85% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "Q": {
+  "name": "Icathian Rain",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Missile = 40 / 55 / 70 / 85 / 100 (+ 55% bonus AD) (+ 20% AP)",
+   "[Active] Reduced Damage Per Missile = 10 / 13.75 / 17.5 / 21.25 / 25 (+ 13.75% bonus AD) (+ 5% AP)",
+   "[Active] Total Single-Target Damage = 90 / 123.75 / 157.5 / 191.25 / 225 (+ 123.75% bonus AD) (+ 45% AP)",
+   "[Evolution] Total Evolved Single-Target Damage = 150 / 206.25 / 262.5 / 318.75 / 375 (+ 206.25% bonus AD) (+ 75% AP)"
+  ],
+  "skipped": [
+   "Reduced Damage Per Missile: secondary target",
+   "Total Single-Target Damage: sum of other lines",
+   "Total Evolved Single-Target Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Missile (physical) 40/55/70/85/100 + 55% bonus AD + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

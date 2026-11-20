@@ -1,0 +1,68 @@
+{
+ "Q": {
+  "name": "Terrify",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 4 / 4.5 / 5 / 5.5 / 6% (+ 3% per 100 AP) of target's current health",
+   "[Active] Minimum Damage = 40 / 60 / 80 / 100 / 120",
+   "[Active] Increased Magic Damage = 8 / 9 / 10 / 11 / 12% (+ 6% per 100 AP) of target's current health",
+   "[Active] Increased Minimum Damage = 80 / 120 / 160 / 200 / 240"
+  ],
+  "skipped": [
+   "Minimum Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 0 + 4/4.5/5/5.5/6% target's current HP + 0.03% AP",
+   "Active: Increased Magic Damage (magic) 0 + 8/9/10/11/12% target's current HP + 0.06% AP",
+   "Active: Increased Minimum Damage (magic) 80/120/160/200/240"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Bountiful Harvest",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Damage per second = 60 / 90 / 120 / 150 / 180 (+ 45% AP)",
+   "[Active] Damage per Instance = 15 / 22.5 / 30 / 37.5 / 45 (+ 11.25% AP)",
+   "[Active] Last Tick of Damage = 15 / 22.5 / 30 / 37.5 / 45 (+ 11.25% AP) (+ 12 / 14.5 / 17 / 19.5 / 22% of target's missing health)",
+   "[Active] Total Magic Damage = 120 / 180 / 240 / 300 / 360 (+ 90% AP) (+ 12 / 14.5 / 17 / 19.5 / 22% of target's missing health)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Damage per second (magic) 60/90/120/150/180 + 45% AP",
+   "Active: Damage per Instance (magic) 15/22.5/30/37.5/45 + 11.25% AP",
+   "Active: Last Tick of Damage (magic) 15/22.5/30/37.5/45 + 11.25% AP + 12/14.5/17/19.5/22% target's missing HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Crowstorm",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 37.5 / 62.5 / 87.5 (+ 12.5% AP)",
+   "[Active] Total Magic Damage = 750 / 1250 / 1750 (+ 250% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 37.5/62.5/87.5 + 12.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

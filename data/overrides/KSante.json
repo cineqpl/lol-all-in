@@ -1,0 +1,47 @@
+{
+ "W": {
+  "name": "Path Maker",
+  "status": "unchecked",
+  "reasons": [
+   "2 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Recast] Physical Damage = 45 / 85 / 125 / 165 / 205 (+ 8% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health)",
+   "[Recast] Monster Damage Cap = 180 / 260 / 340 / 420 / 500",
+   "[All Out Bonus] Minimum Bonus True Damage = 4.5 / 8.5 / 12.5 / 16.5 / 20.5 (+ 0.8% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health)",
+   "[All Out Bonus] Maximum Bonus True Damage = 33.75 / 63.75 / 93.75 / 123.75 / 153.75 (+ 6% (+ 1.5% per 100 bonus armor) (+ 1.5% per 100 bonus magic resistance) of target's maximum health)",
+   "[All Out Bonus] Total Maximum Mixed Damage = 78.75 / 148.75 / 218.75 / 288.75 / 358.75 (+ 14% (+ 3.5% per 100 bonus armor) (+ 3.5% per 100 bonus magic resistance) of target's maximum health)"
+  ],
+  "skipped": [
+   "Physical Damage: unknown scaling \"(+ 8%     of target's maximum health)\"",
+   "Monster Damage Cap: not against champions",
+   "Minimum Bonus True Damage: unknown scaling \"(+ 0.8%     of target's maximum health)\"",
+   "Maximum Bonus True Damage: maximum of a range (minimum is used)",
+   "Total Maximum Mixed Damage: sum of other lines"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "All Out",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 80 / 115 / 150",
+   "[Active] Strike Physical Damage = 80 / 115 / 150 (+ 5% of his bonus health)",
+   "[Active] Total Physical Damage = 160 / 230 / 300 (+ 5% of his bonus health)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 80/115/150",
+   "Active: Strike Physical Damage (physical) 80/115/150 + 5% bonus HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

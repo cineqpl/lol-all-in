@@ -1,0 +1,31 @@
+{
+ "Q": {
+  "name": "Inner Flame",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 110 / 160 / 210 / 260 (+ 70% AP)",
+   "[Mantra Bonus] Bonus Magic Damage = 40 / 100 / 160 / 220 (+ 30% AP)",
+   "[Mantra Bonus] Total Magic Damage = 60 / 110 / 160 / 210 / 260 (+ 40 / 100 / 160 / 220) (+ 100% AP)",
+   "[Active] Magic Damage = 40 / 130 / 220 / 310 (+ 50% AP)",
+   "[Active] Total Bonus Damage = 80 / 230 / 380 / 530 (+ 80% AP)",
+   "[Active] Total Damage = 60 / 110 / 160 / 210 / 260 (+ 80 / 230 / 380 / 530) (+ 150% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Total Bonus Damage: sum of other lines",
+   "Total Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/110/160/210/260 + 70% AP",
+   "Active: Magic Damage (magic) 40/130/220/310 + 50% AP",
+   "Mantra Bonus: Bonus Magic Damage (magic) 40/100/160/220 + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "Q": {
+  "name": "Snip Snip!",
+  "status": "unchecked",
+  "reasons": [
+   "6 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Damage per Snip = 10 / 14 / 18 / 22 / 26 (+ 5% AP)",
+   "[Active] Center Damage per Snip = 10 / 14 / 18 / 22 / 26 (+ 5% AP) (+ 1% (+ 0.6% per 100 AP) of the target's maximum health)",
+   "[Active] Final Snip Damage = 60 / 85 / 110 / 135 / 160 (+ 35% AP)",
+   "[Active] Final Snip Center Damage = 60 / 85 / 110 / 135 / 160 (+ 35% AP) (+ 1% (+ 0.6% per 100 AP) of the target's maximum health)",
+   "[Active] Minimum Damage = 70 / 99 / 128 / 157 / 186 (+ 40% AP)",
+   "[Active] Minimum Center Damage = 70 / 99 / 128 / 157 / 186 (+ 40% AP) (+ 2% (+ 1.2% per 100 AP) of the target's maximum health)",
+   "[Active] Maximum Damage = 110 / 155 / 200 / 245 / 290 (+ 60% AP)",
+   "[Active] Maximum Center Damage = 110 / 155 / 200 / 245 / 290 (+ 60% AP) (+ 6% (+ 3.6% per 100 AP) of the target's maximum health)"
+  ],
+  "skipped": [
+   "Damage per Snip: damage type unknown",
+   "Center Damage per Snip: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+   "Final Snip Damage: damage type unknown",
+   "Final Snip Center Damage: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+   "Minimum Damage: damage type unknown",
+   "Minimum Center Damage: unknown scaling \"(+ 2%   of the target's maximum health)\"",
+   "Maximum Damage: maximum of a range (minimum is used)",
+   "Maximum Center Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Needlework",
+  "status": "unchecked",
+  "reasons": [
+   "3 unread damage line(s)",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Needle = 30 / 50 / 70 (+ 10% AP)",
+   "[Active] Damage with A Thousand Cuts = 30 / 50 / 70 (+ 10% AP) (+ 1% (+ 0.6% per 100 AP) of the target's maximum health)",
+   "[Recast] Second Cast Total Damage = 90 / 150 / 210 (+ 30% AP) (+ 3% (+ 1.8% per 100 AP) of the target's maximum health)",
+   "[Recast] Third Cast Total Damage = 150 / 250 / 350 (+ 50% AP) (+ 5% (+ 3% per 100 AP) of the target's maximum health)",
+   "[Recast] Maximum Total Damage = 270 / 450 / 630 (+ 90% AP) (+ 9% (+ 5.4% per 100 AP) of the target's maximum health)"
+  ],
+  "skipped": [
+   "Damage with A Thousand Cuts: unknown scaling \"(+ 1%   of the target's maximum health)\"",
+   "Second Cast Total Damage: unknown scaling \"(+ 3%   of the target's maximum health)\"",
+   "Third Cast Total Damage: unknown scaling \"(+ 5%   of the target's maximum health)\"",
+   "Maximum Total Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Needle (magic) 30/50/70 + 10% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

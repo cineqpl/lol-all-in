@@ -1,0 +1,18 @@
+{
+ "R": {
+  "name": "Death Mark",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Marked for Death] Physical Damage = 100% AD (+ 25 / 40 / 55% of damage stored)"
+  ],
+  "skipped": [
+   "Physical Damage: unknown scaling \"of damage stored\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "W": {
+  "name": "Hyper",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage = 0 / 10 / 20 / 30 / 40 (+ 6 / 8 / 10 / 12 / 14% of target's maximum health) (+ 100% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 0/10/20/30/40 + 6/8/10/12/14% target's max HP + 100% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "GNAR!",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Mega Gnar - Active] Physical Damage = 200 / 300 / 400 (+ 50% bonus AD) (+ 100% AP)",
+   "[Active] Increased Damage = 300 / 450 / 600 (+ 75% bonus AD) (+ 150% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Mega Gnar - Active: Physical Damage (physical) 200/300/400 + 50% bonus AD + 100% AP",
+   "Active: Increased Damage (physical) 300/450/600 + 75% bonus AD + 150% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

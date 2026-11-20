@@ -1,0 +1,39 @@
+{
+ "Q": {
+  "name": "Queen's Wrath",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 30 / 35 / 40 / 45 / 50% AD",
+   "[Active] Total Bonus Physical Damage = 90 / 105 / 120 / 135 / 150% AD"
+  ],
+  "skipped": [
+   "Total Bonus Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 0 + 30/35/40/45/50% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Furious Bite",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 70 / 95 / 120 / 145 / 170 (+ 60% bonus AD)",
+   "[Active] True Damage = 84 / 114 / 144 / 174 / 204 (+ 72% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 70/95/120/145/170 + 60% bonus AD",
+   "Active: True Damage (true) 84/114/144/174/204 + 72% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

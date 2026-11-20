@@ -1,0 +1,62 @@
+{
+ "Q": {
+  "name": "Cultivation of Spirit",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Passive Bonus Magic Damage = 3 / 8 / 13 / 18 / 23 (+ 20% AP)",
+   "[Active] Active Bonus Magic Damage = 3 / 8 / 13 / 18 / 23 (+ 20% AP)",
+   "[Active] Combined Bonus Magic Damage = 6 / 16 / 26 / 36 / 46 (+ 40% AP)"
+  ],
+  "skipped": [
+   "Combined Bonus Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Passive: Passive Bonus Magic Damage (magic) 3/8/13/18/23 + 20% AP",
+   "Active: Active Bonus Magic Damage (magic) 3/8/13/18/23 + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Arc of Judgment",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Initial Magic Damage = 55 / 95 / 135 / 175 / 215 (+ 85% bonus AD) (+ 50% AP)",
+   "[Active] Linger Magic Damage per Tick = 8.25 / 14.25 / 20.25 / 26.25 / 32.25 (+ 12.75% bonus AD) (+ 7.5% AP)",
+   "[Active] Total Expanded Damage = 33 / 57 / 81 / 105 / 129 (+ 51% bonus AD) (+ 30% AP)"
+  ],
+  "skipped": [
+   "Total Expanded Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Initial Magic Damage (magic) 55/95/135/175/215 + 85% bonus AD + 50% AP",
+   "Active: Linger Magic Damage per Tick (magic) 8.25/14.25/20.25/26.25/32.25 + 12.75% bonus AD + 7.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Transcend One's Self",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Passive] Arc of Ruin Base Damage = 160 / 320 / 480"
+  ],
+  "skipped": [
+   "Arc of Ruin Base Damage: damage type unknown"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

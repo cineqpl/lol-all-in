@@ -1,0 +1,41 @@
+{
+ "W": {
+  "name": "Void Rift",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 30 / 50 / 70 / 90 / 110 (+ 20% AP)",
+   "[Active] Magic Damage = 45 / 75 / 105 / 135 / 165 (+ 25% AP)",
+   "[Active] Total Magic Damage = 75 / 125 / 175 / 225 / 275 (+ 45% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 30/50/70/90/110 + 20% AP",
+   "Active: Magic Damage (magic) 45/75/105/135/165 + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Life Form Disintegration Ray",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Damage Per Tick = 45 / 70 / 95 (+ 12.5% AP)",
+   "[Active] Maximum Damage = 450 / 700 / 950 (+ 125% AP)"
+  ],
+  "skipped": [
+   "Damage Per Tick: damage type unknown",
+   "Maximum Damage: sum of other lines"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

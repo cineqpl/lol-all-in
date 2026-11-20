@@ -1,0 +1,52 @@
+{
+ "Q": {
+  "name": "Tongue Lash",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 75 / 120 / 165 / 210 / 255 (+ 100% AP) + [ 5 – 60 (based on level) (+ 1.25% AP per 100 bonus health) (+ 4% bonus health) ]"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"+ [ 5 – 60       ]\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Thick Skin",
+  "status": "unchecked",
+  "reasons": [
+   "2 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Passive] Damage Stored into Grey Health = 15 / 23 / 31 / 39 / 47%",
+   "[Passive] Increased Damage Stored into Grey Health = 42 / 44 / 46 / 48 / 50%"
+  ],
+  "skipped": [
+   "Damage Stored into Grey Health: unknown scaling \"\"",
+   "Increased Damage Stored into Grey Health: unknown scaling \"\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Devour",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 100 / 250 / 400 (+ 15% (+ 7% per 100 AP) of the target's maximum health)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"(+ 15%   of the target's maximum health)\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

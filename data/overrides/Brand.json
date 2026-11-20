@@ -1,0 +1,20 @@
+{
+ "W": {
+  "name": "Pillar of Flame",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 75 / 120 / 165 / 210 / 255 (+ 70% AP)",
+   "[Ablaze Bonus] Increased Damage = 93.75 / 150 / 206.25 / 262.5 / 318.75 (+ 87.5% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 75/120/165/210/255 + 70% AP",
+   "Ablaze Bonus: Increased Damage (magic) 93.75/150/206.25/262.5/318.75 + 87.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

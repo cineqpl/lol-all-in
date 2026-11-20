@@ -1,0 +1,38 @@
+{
+ "W": {
+  "name": "Pick a Card",
+  "status": "unchecked",
+  "reasons": [
+   "3 casts"
+  ],
+  "wikiLines": [
+   "[Blue Card Bonus] Magic Damage = 40 / 60 / 80 / 100 / 120 (+ 100% AD) (+ 100% AP)",
+   "[Red Card Bonus] Magic Damage = 30 / 45 / 60 / 75 / 90 (+ 100% AD) (+ 70% AP)",
+   "[Gold Card Bonus] Magic Damage = 15 / 22.5 / 30 / 37.5 / 45 (+ 100% AD) (+ 50% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Blue Card Bonus: Magic Damage (magic) 40/60/80/100/120 + 100% AD + 100% AP",
+   "Red Card Bonus: Magic Damage (magic) 30/45/60/75/90 + 100% AD + 70% AP",
+   "Gold Card Bonus: Magic Damage (magic) 15/22.5/30/37.5/45 + 100% AD + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Stacked Deck",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Magic Damage = 65 / 90 / 115 / 140 / 165 (+ 20% bonus AD) (+ 40% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Bonus Magic Damage (magic) 65/90/115/140/165 + 20% bonus AD + 40% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

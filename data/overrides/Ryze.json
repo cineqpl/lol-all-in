@@ -1,0 +1,66 @@
+{
+ "Q": {
+  "name": "Overload",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 75 / 95 / 115 / 135 / 155 (+ 55% AP) (+ 2% bonus mana)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"bonus mana\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Rune Prison",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 90 / 120 / 150 / 180 (+ 70% AP) (+ 3% bonus mana)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"bonus mana\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Spell Flux",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 90 / 120 / 150 / 180 (+ 50% AP) (+ 2% bonus mana)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"bonus mana\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Realm Warp",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Overload Damage = 40 / 70 / 100%"
+  ],
+  "skipped": [
+   "Bonus Overload Damage: unknown scaling \"\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

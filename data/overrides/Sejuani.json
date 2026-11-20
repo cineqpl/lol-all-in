@@ -1,0 +1,41 @@
+{
+ "W": {
+  "name": "Winter's Wrath",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 5 / 15 / 25 / 35 / 45 (+ 30% AP) (+ 4% of her maximum health)",
+   "[Active] Physical Damage = 5 / 25 / 45 / 65 / 85 (+ 60% AP) (+ 8% of her maximum health)",
+   "[Active] Total Physical Damage = 10 / 40 / 70 / 100 / 130 (+ 90% AP) (+ 12% of her maximum health)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 5/15/25/35/45 + 30% AP + 4% max HP",
+   "Active: Physical Damage (physical) 5/25/45/65/85 + 60% AP + 8% max HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Glacial Prison",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 125 / 150 / 175 (+ 40% AP)",
+   "[Active] Increased Damage = 200 / 300 / 400 (+ 80% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 125/150/175 + 40% AP",
+   "Active: Increased Damage (magic) 200/300/400 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

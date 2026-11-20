@@ -1,0 +1,49 @@
+{
+ "E": {
+  "name": "Powder Keg",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Champion Damage = 75 / 95 / 115 / 135 / 155"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Champion Damage (physical) 75/95/115/135/155"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Cannon Barrage",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Wave = 40 / 70 / 100 (+ 10% AP)",
+   "[Active] Magic Damage Per Cluster = 120 / 210 / 300 (+ 30% AP)",
+   "[Active] Total Magic Damage = 480 / 840 / 1200 (+ 120% AP)",
+   "[Death's Daughter] True Damage with Death's Daughter = 120 / 210 / 300 (+ 30% AP)",
+   "[Death's Daughter] Total Mixed Damage with Death's Daughter = 600 / 1050 / 1500 (+ 150% AP)",
+   "[Fire at Will] Total Magic Damage with Fire at Will = 720 / 1260 / 1800 (+ 180% AP)",
+   "[Fire at Will] Maximum Mixed Total Damage with Fire at Will and Death's Daughter = 840 / 1470 / 2100 (+ 210% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Total Mixed Damage with Death's Daughter: sum of other lines",
+   "Total Magic Damage with Fire at Will: sum of other lines",
+   "Maximum Mixed Total Damage with Fire at Will and Death's Daughter: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Wave (magic) 40/70/100 + 10% AP",
+   "Active: Magic Damage Per Cluster (magic) 120/210/300 + 30% AP",
+   "Death's Daughter: True Damage with Death's Daughter (true) 120/210/300 + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

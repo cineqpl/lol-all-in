@@ -1,0 +1,41 @@
+{
+ "Q": {
+  "name": "Noxian Diplomacy",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 65 / 85 / 105 / 125 / 145 (+ 100% bonus AD)",
+   "[Active] Critical Physical Damage = 97.5 / 127.5 / 157.5 / 187.5 / 217.5 (+ 150% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 65/85/105/125/145 + 100% bonus AD",
+   "Active: Critical Physical Damage (physical) 97.5/127.5/157.5/187.5/217.5 + 150% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Rake",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 50 / 60 / 70 / 80 / 90 (+ 40% bonus AD)",
+   "[Active] Physical Damage = 60 / 90 / 120 / 150 / 180 (+ 90% bonus AD)",
+   "[Active] Total Physical Damage = 110 / 150 / 190 / 230 / 270 (+ 130% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 50/60/70/80/90 + 40% bonus AD",
+   "Active: Physical Damage (physical) 60/90/120/150/180 + 90% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

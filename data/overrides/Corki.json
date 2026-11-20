@@ -1,0 +1,58 @@
+{
+ "W": {
+  "name": "Valkyrie",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 30 / 45 / 60 / 75 / 90 (+ 40% bonus AD) (+ 30% AP)",
+   "[Active] Total Magic Damage = 150 / 225 / 300 / 375 / 450 (+ 200% bonus AD) (+ 150% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 30/45/60/75/90 + 40% bonus AD + 30% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Gatling Gun",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Tick = 5 / 8.125 / 11.25 / 14.375 / 17.5 (+ 15% bonus AD)",
+   "[Active] Total Physical Damage = 80 / 130 / 180 / 230 / 280 (+ 240% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Tick (physical) 5/8.125/11.25/14.375/17.5 + 15% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Missile Barrage",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 100 / 190 / 280 (+ 90% bonus AD)",
+   "[Active] Big One Physical Damage = 200 / 380 / 560 (+ 180% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 100/190/280 + 90% bonus AD",
+   "Active: Big One Physical Damage (physical) 200/380/560 + 180% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

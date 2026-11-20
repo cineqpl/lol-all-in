@@ -1,0 +1,18 @@
+{
+ "W": {
+  "name": "Denting Blows",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Physical Damage = 4 / 5 / 6 / 7 / 8% (+ 3.5% per 100 bonus AD) of target's maximum health"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Bonus Physical Damage (physical) 0 + 4/5/6/7/8% target's max HP + 0.035% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -9,7 +9,8 @@
     "test": "vitest run",
     "fetch-data": "tsx scripts/fetch-data.ts",
     "fetch-wiki": "tsx scripts/fetch-wiki.ts",
-    "build-abilities": "tsx scripts/build-abilities.ts"
+    "build-abilities": "tsx scripts/build-abilities.ts",
+    "init-overrides": "tsx scripts/init-overrides.ts"
   },
   "devDependencies": {
     "@types/jsdom": "^30.0.0",

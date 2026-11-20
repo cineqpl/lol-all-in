@@ -1,0 +1,23 @@
+{
+ "Q": {
+  "name": "End of the Line",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 50 / 75 / 100 / 125 / 150 (+ 55% bonus AD)",
+   "[Active] Physical Damage = 80 / 125 / 170 / 215 / 260 (+ 45 / 60 / 75 / 90 / 105% bonus AD)",
+   "[Active] Total Physical Damage = 130 / 200 / 270 / 340 / 410 (+ 100 / 115 / 130 / 145 / 160% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 50/75/100/125/150 + 55% bonus AD",
+   "Active: Physical Damage (physical) 80/125/170/215/260 + 45/60/75/90/105% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

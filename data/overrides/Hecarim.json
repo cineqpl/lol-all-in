@@ -1,0 +1,21 @@
+{
+ "W": {
+  "name": "Spirit of Dread",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 20 / 30 / 40 / 50 / 60 (+ 20% AP)",
+   "[Active] Total Magic Damage = 80 / 120 / 160 / 200 / 240 (+ 80% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 20/30/40/50/60 + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "R": {
+  "name": "Shadow Surge",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 75 / 125 / 175 (+ 20% AP)",
+   "[Recast] Magic Damage = 150 / 250 / 350 (+ 50% AP)",
+   "[Recast] Total Magic Damage = 225 / 375 / 525 (+ 70% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 75/125/175 + 20% AP",
+   "Recast: Magic Damage (magic) 150/250/350 + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

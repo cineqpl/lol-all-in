@@ -1,0 +1,45 @@
+{
+ "Q": {
+  "name": "Orb of Deception",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Damage Per Pass = 35 / 60 / 85 / 110 / 135 (+ 50% AP)",
+   "[Active] Total Mixed Damage = 70 / 120 / 170 / 220 / 270 (+ 100% AP)"
+  ],
+  "skipped": [
+   "Damage Per Pass: damage type unknown",
+   "Total Mixed Damage: sum of other lines"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Fox-Fire",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Primary Magic Damage = 40 / 60 / 80 / 100 / 120 (+ 40% AP)",
+   "[Active] Subsequent Magic Damage = 16 / 24 / 32 / 40 / 48 (+ 16% AP)",
+   "[Active] Total Single-Target Damage = 72 / 108 / 144 / 180 / 216 (+ 72% AP)",
+   "[Active] Primary Minion Damage = 80 / 120 / 160 / 200 / 240 (+ 80% AP)",
+   "[Active] Subsequent Minion Damage = 32 / 48 / 64 / 80 / 96 (+ 32% AP)"
+  ],
+  "skipped": [
+   "Total Single-Target Damage: sum of other lines",
+   "Primary Minion Damage: not against champions",
+   "Subsequent Minion Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Primary Magic Damage (magic) 40/60/80/100/120 + 40% AP",
+   "Active: Subsequent Magic Damage (magic) 16/24/32/40/48 + 16% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

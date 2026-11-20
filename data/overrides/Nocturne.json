@@ -1,0 +1,21 @@
+{
+ "E": {
+  "name": "Unspeakable Horror",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Magic Damage = 80 / 125 / 170 / 215 / 260 (+ 100% AP)",
+   "[Active] Magic Damage per Tick = 20 / 31.25 / 42.5 / 53.75 / 65 (+ 25% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 20/31.25/42.5/53.75/65 + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

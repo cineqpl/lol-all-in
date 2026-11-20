@@ -1,0 +1,42 @@
+{
+ "Q": {
+  "name": "Sonic Wave",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 60 / 90 / 120 / 150 / 180 (+ 90% bonus AD)",
+   "[Active] Minimum Physical Damage = 60 / 90 / 120 / 150 / 180 (+ 90% bonus AD)",
+   "[Active] Maximum Physical Damage = 120 / 180 / 240 / 300 / 360 (+ 180% bonus AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 60/90/120/150/180 + 90% bonus AD",
+   "Active: Minimum Physical Damage (physical) 60/90/120/150/180 + 90% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Dragon's Rage",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 150 / 350 / 550 (+ 200% bonus AD)",
+   "[Active] Collision Physical Damage = 150 / 350 / 550 (+ 200% bonus AD) (+ 12 / 15 / 18% of primary target's bonus health)"
+  ],
+  "skipped": [
+   "Collision Physical Damage: unknown scaling \"of primary target's bonus health\""
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 150/350/550 + 200% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

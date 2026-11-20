@@ -1,0 +1,18 @@
+{
+ "E": {
+  "name": "Test of Spirit",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Damage Transmission = 25 / 30 / 35 / 40 / 45% (+ 8% per 100 AD)"
+  ],
+  "skipped": [
+   "Damage Transmission: unknown scaling \"\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

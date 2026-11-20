@@ -1,0 +1,39 @@
+{
+ "Q": {
+  "name": "Lay Waste",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 40 / 59 / 78 / 97 / 116 (+ 35% AP)",
+   "[Active] Isolated Enhanced Damage = 80 / 118 / 156 / 194 / 232 (+ 70% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 40/59/78/97/116 + 35% AP",
+   "Active: Isolated Enhanced Damage (magic) 80/118/156/194/232 + 70% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Defile",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Toggle] Magic Damage Per Tick = 7.5 / 12.5 / 17.5 / 22.5 / 27.5 (+ 5% AP)",
+   "[Toggle] Damage Per Second = 30 / 50 / 70 / 90 / 110 (+ 20% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Toggle: Magic Damage Per Tick (magic) 7.5/12.5/17.5/22.5/27.5 + 5% AP",
+   "Toggle: Damage Per Second (magic) 30/50/70/90/110 + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

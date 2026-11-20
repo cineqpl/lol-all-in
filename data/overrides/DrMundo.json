@@ -1,0 +1,53 @@
+{
+ "W": {
+  "name": "Heart Zapper",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 5 / 8.75 / 12.5 / 16.25 / 20",
+   "[Active] Total Magic Damage = 80 / 140 / 200 / 260 / 320",
+   "[Recast] Magic Damage = 20 / 35 / 50 / 65 / 80 (+ 7% bonus health)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 5/8.75/12.5/16.25/20",
+   "Recast: Magic Damage (magic) 20/35/50/65/80 + 7% bonus HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Blunt Force Trauma",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Attack Damage = 2 / 2.3 / 2.6 / 2.9 / 3.2% maximum health",
+   "[Active] Minimum Bonus Physical Damage = 5 / 15 / 25 / 35 / 45 (+ 5% bonus health)",
+   "[Active] Maximum Bonus Physical Damage = 7 / 21 / 35 / 49 / 63 (+ 7% bonus health)",
+   "[Active] Minimum Minion Physical Damage = 7 / 21 / 35 / 49 / 63 (+ 7% bonus health)",
+   "[Active] Maximum Minion Physical Damage = 9.8 / 29.4 / 49 / 68.6 / 88.2 (+ 9.8% bonus health)",
+   "[Active] Minimum Monster Physical Damage = 7 / 21 / 35 / 49 / 63 (+ 7% bonus health)",
+   "[Active] Maximum Monster Physical Damage = 9.8 / 29.4 / 49 / 68.6 / 88.2 (+ 9.8% bonus health)"
+  ],
+  "skipped": [
+   "Maximum Bonus Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Minion Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Monster Physical Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Bonus Physical Damage (physical) 5/15/25/35/45 + 5% bonus HP",
+   "Active: Minimum Minion Physical Damage (physical) 7/21/35/49/63 + 7% bonus HP",
+   "Active: Minimum Monster Physical Damage (physical) 7/21/35/49/63 + 7% bonus HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

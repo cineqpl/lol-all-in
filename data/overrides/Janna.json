@@ -1,0 +1,40 @@
+{
+ "Q": {
+  "name": "Howling Gale",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Minimum Magic Damage = 55 / 90 / 125 / 160 / 195 (+ 50% AP)",
+   "[Active] Bonus Damage Per Second = 10 / 15 / 20 / 25 / 30 (+ 10% AP)",
+   "[Active] Maximum Magic Damage = 85 / 135 / 185 / 235 / 285 (+ 80% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Magic Damage (magic) 55/90/125/160/195 + 50% AP",
+   "Active: Bonus Damage Per Second (magic) 10/15/20/25/30 + 10% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Zephyr",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 55 / 85 / 115 / 145 / 175 (+ 50% AP) (+ 30% bonus movement speed)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"bonus movement speed\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

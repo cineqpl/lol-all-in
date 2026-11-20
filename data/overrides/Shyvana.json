@@ -1,0 +1,41 @@
+{
+ "Q": {
+  "name": "Emberstrike",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[First Cast] Area Physical Damage = 10 / 15 / 20 / 25 / 30 (+ 110% AD) (+ 30% AP)",
+   "[Dragon Form Bonus — Third Cast] True Damage = 15 / 22.5 / 30 / 37.5 / 45 (+ 165% AD) (+ 45% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "First Cast: Area Physical Damage (physical) 10/15/20/25/30 + 110% AD + 30% AP",
+   "Dragon Form Bonus — Third Cast: True Damage (true) 15/22.5/30/37.5/45 + 165% AD + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Molten Burst",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 50 / 65 / 80 / 95 / 110 (+ 60 / 65 / 70 / 75 / 80% AP) (+ 5% of target's maximum health)",
+   "[Dragon Form Bonus] Increased/Explosion Magic Damage = 62.5 / 81.25 / 100 / 118.75 / 137.5 (+ 75 / 81.25 / 87.5 / 93.75 / 100% AP) (+ 6.25% of target's maximum health)",
+   "[Dragon Form Bonus] Subsequent Explosion Damage = 25 / 32.5 / 40 / 47.5 / 55 (+ 30 / 32.5 / 35 / 37.5 / 40% AP) (+ 2.5% of target's maximum health)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 50/65/80/95/110 + 60/65/70/75/80% AP + 5% target's max HP",
+   "Dragon Form Bonus: Increased/Explosion Magic Damage (magic) 62.5/81.25/100/118.75/137.5 + 75/81.25/87.5/93.75/100% AP + 6.25% target's max HP",
+   "Dragon Form Bonus: Subsequent Explosion Damage (magic) 25/32.5/40/47.5/55 + 30/32.5/35/37.5/40% AP + 2.5% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

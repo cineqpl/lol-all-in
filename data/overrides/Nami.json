@@ -1,0 +1,21 @@
+{
+ "E": {
+  "name": "Tidecaller's Blessing",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage Per Hit = 20 / 35 / 50 / 65 / 80 (+ 20% AP)",
+   "[Active] Total Bonus Magic Damage = 60 / 105 / 150 / 195 / 240 (+ 60% AP)"
+  ],
+  "skipped": [
+   "Total Bonus Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Magic Damage Per Hit (magic) 20/35/50/65/80 + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

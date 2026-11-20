@@ -1,0 +1,42 @@
+{
+ "W": {
+  "name": "Eye of Destruction",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 50 / 85 / 120 / 155 / 190 (+ 65% AP)",
+   "[Active] Increased Damage = 83.35 / 141.695 / 200.04 / 258.385 / 316.73 (+ 108.355% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 50/85/120/155/190 + 65% AP",
+   "Active: Increased Damage (magic) 83.35/141.695/200.04/258.385/316.73 + 108.355% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Rite of the Arcane",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Recast - Arcane Barrage] Magic Damage = 170 / 220 / 270 (+ 45% AP)",
+   "[Recast - Arcane Barrage] Total Magic Damage = 680 / 1100 / 1620 (+ 180 / 225 / 270% AP)",
+   "[Active] Increased Damage per Stack = 20 / 25 / 30 (+ 5% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Recast - Arcane Barrage: Magic Damage (magic) 170/220/270 + 45% AP",
+   "Active: Increased Damage per Stack (magic) 20/25/30 + 5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

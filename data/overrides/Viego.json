@@ -1,0 +1,27 @@
+{
+ "Q": {
+  "name": "Blade of the Ruined King",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Physical Damage = 2 / 3 / 4 / 5 / 6% of target's current health",
+   "[Passive] Critical Bonus Physical Damage = 3.4 / 5.1 / 6.8 / 8.5 / 10.2% of target's current health",
+   "[Passive] Minimum Bonus Damage = 10 / 15 / 20 / 25 / 30",
+   "[Active] Physical Damage = 25 / 40 / 55 / 70 / 85 (+ 70% AD)"
+  ],
+  "skipped": [
+   "Minimum Bonus Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Passive: Bonus Physical Damage (physical) 0 + 2/3/4/5/6% target's current HP",
+   "Passive: Critical Bonus Physical Damage (physical) 0 + 3.4/5.1/6.8/8.5/10.2% target's current HP",
+   "Active: Physical Damage (physical) 25/40/55/70/85 + 70% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

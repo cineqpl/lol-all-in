@@ -1,0 +1,18 @@
+{
+ "Q": {
+  "name": "Spinning Axe",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 40 / 45 / 50 / 55 / 60 (+ 75 / 85 / 95 / 105 / 115% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 40/45/50/55/60 + 75/85/95/105/115% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

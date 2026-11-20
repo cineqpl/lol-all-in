@@ -1,0 +1,42 @@
+{
+ "Q": {
+  "name": "Barrel Roll",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Recast] Minimum Magic Damage = 80 / 120 / 160 / 200 / 240 (+ 80% AP)",
+   "[Recast] Maximum Magic Damage = 120 / 180 / 240 / 300 / 360 (+ 120% AP)",
+   "[Recast] Minimum Minion Damage = 56 / 84 / 112 / 140 / 168 (+ 56% AP)",
+   "[Recast] Maximum Minion Damage = 84 / 126 / 168 / 210 / 252 (+ 84% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)",
+   "Maximum Minion Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Recast: Minimum Magic Damage (magic) 80/120/160/200/240 + 80% AP",
+   "Recast: Minimum Minion Damage (magic) 56/84/112/140/168 + 56% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Drunken Rage",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Damage Reduction = 10 / 14 / 18 / 22 / 26% (+ 4% per 100 AP)",
+   "[Active] Bonus Magic Damage = 20 / 50 / 80 / 110 / 140 (+ 7% of target's maximum health) (+ 70% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 20/50/80/110/140 + 7% target's max HP + 70% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "Q": {
+  "name": "Hymn of Valor",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 50 / 85 / 120 / 155 / 190 (+ 40% AP)",
+   "[Melody Bonus] Bonus Magic Damage = 10 / 15 / 20 / 25 / 30 (+ 10% of Sona's AP)"
+  ],
+  "skipped": [
+   "Bonus Magic Damage: unknown scaling \"of Sona's AP\""
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 50/85/120/155/190 + 40% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

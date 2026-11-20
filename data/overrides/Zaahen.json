@@ -1,0 +1,66 @@
+{
+ "Q": {
+  "name": "The Darkin Glaive",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Physical Damage = 15 / 30 / 45 / 60 / 75 (+ 100% AD) (+ 20 / 25 / 30 / 35 / 40% bonus AD)",
+   "[Active] Physical Damage per Hit = 7.5 / 15 / 22.5 / 30 / 37.5 (+ 50% AD) (+ 10 / 12.5 / 15 / 17.5 / 20% bonus AD)",
+   "[Recast] Bonus Physical Damage = 30 / 60 / 90 / 120 / 150 (+ 20 / 25 / 30 / 35 / 40% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage per Hit (physical) 7.5/15/22.5/30/37.5 + 50% AD + 10/12.5/15/17.5/20% bonus AD",
+   "Recast: Bonus Physical Damage (physical) 30/60/90/120/150 + 20/25/30/35/40% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Dreaded Return",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Initial Physical Damage = 40 / 60 / 80 / 100 / 120 (+ 50% bonus AD)",
+   "[Active] Subsequent Physical Damage = 30 / 50 / 70 / 90 / 110 (+ 30% bonus AD)",
+   "[Active] Total Physical Damage = 70 / 110 / 150 / 190 / 230 (+ 80% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Initial Physical Damage (physical) 40/60/80/100/120 + 50% bonus AD",
+   "Active: Subsequent Physical Damage (physical) 30/50/70/90/110 + 30% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Aureate Rush",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 40 / 60 / 80 / 100 / 120 (+ 50% bonus AD)",
+   "[Active] Increased Physical Damage = 60 / 90 / 120 / 150 / 180 (+ 75% bonus AD)",
+   "[Active] Bonus Magic Damage = 4 / 4.5 / 5 / 5.5 / 6% of the target's maximum health"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 40/60/80/100/120 + 50% bonus AD",
+   "Active: Increased Physical Damage (physical) 60/90/120/150/180 + 75% bonus AD",
+   "Active: Bonus Magic Damage (magic) 0 + 4/4.5/5/5.5/6% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

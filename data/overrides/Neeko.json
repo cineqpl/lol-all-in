@@ -1,0 +1,41 @@
+{
+ "Q": {
+  "name": "Blooming Burst",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Initial Magic Damage = 60 / 110 / 160 / 210 / 260 (+ 60% AP)",
+   "[Active] Subsequent Magic Damage = 35 / 60 / 85 / 110 / 135 (+ 25% AP)",
+   "[Active] Total Maximum Magic Damage = 130 / 230 / 330 / 430 / 530 (+ 110% AP)",
+   "[Active] Bonus Monster Damage = 35 / 50 / 65 / 80 / 95"
+  ],
+  "skipped": [
+   "Total Maximum Magic Damage: sum of other lines",
+   "Bonus Monster Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Initial Magic Damage (magic) 60/110/160/210/260 + 60% AP",
+   "Active: Subsequent Magic Damage (magic) 35/60/85/110/135 + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Shapesplitter",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Magic Damage = 30 / 65 / 100 / 135 / 170 (+ 60% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Bonus Magic Damage (magic) 30/65/100/135/170 + 60% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

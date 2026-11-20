@@ -1,0 +1,28 @@
+{
+ "R": {
+  "name": "Death Lotus",
+  "status": "unchecked",
+  "reasons": [
+   "2 unread damage line(s)",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Dagger = 16% (+ 50% per 100% bonus attack speed) bonus AD",
+   "[Active] Maximum Physical Damage = 240% (+ 750% per 100% bonus attack speed) bonus AD",
+   "[Active] Magic Damage Per Dagger = 25 / 37.5 / 50 (+ 19% AP)",
+   "[Active] Maximum Magic Damage = 375 / 562.5 / 750 (+ 285% AP)",
+   "[Active] On-Hit/On-Attack Damage Effectiveness = 25 / 30 / 35%"
+  ],
+  "skipped": [
+   "Physical Damage Per Dagger: unknown scaling \"per 100% bonus attack speed\"",
+   "Maximum Physical Damage: sum of other lines",
+   "Maximum Magic Damage: sum of other lines",
+   "On-Hit/On-Attack Damage Effectiveness: unknown scaling \"\""
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Dagger (magic) 25/37.5/50 + 19% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "Q": {
+  "name": "Prowling Projectile",
+  "status": "unchecked",
+  "reasons": [
+   "3 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 95 / 130 / 165 / 200 / 235 (+ 20% AP)",
+   "[Attached Bonus] Increased Damage = 80 / 135 / 190 / 245 / 300 / 355 (+ 30% AP)",
+   "[Best Friend Bonus] Minimum Bonus Magic Damage On-Hit = 10 / 12 / 14 / 16 / 18 / 20 (+ 5% AP)",
+   "[Best Friend Bonus] Maximum Bonus Magic Damage On-Hit = 17.5 / 21 / 24.5 / 28 / 31.5 / 35 (+ 8.75% AP)"
+  ],
+  "skipped": [
+   "Maximum Bonus Magic Damage On-Hit: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/95/130/165/200/235 + 20% AP",
+   "Attached Bonus: Increased Damage (magic) 80/135/190/245/300/355 + 30% AP",
+   "Best Friend Bonus: Minimum Bonus Magic Damage On-Hit (magic) 10/12/14/16/18/20 + 5% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Final Chapter",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Hit = 75 / 125 / 175 (+ 25% AP)",
+   "[Active] Reduced Damage per Hit = 18.75 / 31.25 / 43.75 (+ 6.25% AP)",
+   "[Active] Total Magic Damage = 150 / 250 / 350 (+ 50% AP)"
+  ],
+  "skipped": [
+   "Reduced Damage per Hit: secondary target",
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Hit (magic) 75/125/175 + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

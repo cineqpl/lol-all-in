@@ -1,0 +1,55 @@
+{
+ "Q": {
+  "name": "Crushing Blow",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 20 / 45 / 70 / 95 / 120 (+ 50% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 20/45/70/95/120 + 50% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Warrior Trickster",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Clone Outgoing Damage = 40 / 45 / 50 / 55 / 60%"
+  ],
+  "skipped": [
+   "Clone Outgoing Damage: unknown scaling \"\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Cyclone",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Tick = 1 / 1.5 / 2% of target's maximum health (+ 34.375% AD)",
+   "[Active] Total Physical Damage = 8 / 12 / 16% of target's maximum health (+ 275% AD)",
+   "[Recast] Maximum Total Physical Damage = 16 / 24 / 32% of target's maximum health (+ 550% AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines",
+   "Maximum Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Tick (physical) 0 + 1/1.5/2% target's max HP + 34.375% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

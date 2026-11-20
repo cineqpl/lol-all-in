@@ -1,0 +1,96 @@
+{
+ "Q": {
+  "name": "Flamespitter",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Minimum Magic Damage = 12.5 / 18.75 / 25 / 31.25 / 37.5 (+ 26.25% AP) (+ 1.5 / 1.625 / 1.75 / 1.875 / 2% of target's maximum health)",
+   "[Active] Magic Damage per Second = 16.67 / 25 / 33.33 / 41.67 / 50 (+ 35% AP) (+ 2 / 2.167 / 2.333 / 2.5 / 2.667% of target's maximum health)",
+   "[Active] Magic Damage per Tick = 4.167 / 6.25 / 8.333 / 10.417 / 12.5 (+ 8.75% AP) (+ 0.5 / 0.542 / 0.583 / 0.625 / 0.667% of target's maximum health)",
+   "[Active] Maximum Magic Damage = 62.5 / 93.75 / 125 / 156.25 / 187.5 (+ 131.25% AP) (+ 7.5 / 8.13 / 8.75 / 9.38 / 10% of target's maximum health)",
+   "[Active] Minimum Minion Damage = 8.75 / 13.13 / 17.5 / 21.88 / 26.25 (+ 18.38% AP) (+ 1.05 / 1.14 / 1.23 / 1.31 / 1.4% of target's maximum health)",
+   "[Active] Minion Damage per Second = 11.67 / 17.5 / 23.33 / 29.17 / 35 (+ 24.5% AP) (+ 1.4 / 1.52 / 1.63 / 1.75 / 1.87% of target's maximum health)",
+   "[Active] Minion Damage per Tick = 2.917 / 4.375 / 5.833 / 7.292 / 8.75 (+ 6.125% AP) (+ 0.35 / 0.379 / 0.408 / 0.438 / 0.467% of target's maximum health)",
+   "[Active] Maximum Minion Damage = 43.75 / 65.63 / 87.5 / 109.38 / 131.25 (+ 91.88% AP) (+ 5.25 / 5.69 / 6.13 / 6.56 / 7% of target's maximum health)",
+   "[Danger Zone Bonus] Minimum Enhanced Damage = 18.75 / 28.125 / 37.5 / 46.875 / 56.25 (+ 39.375% AP) (+ 2.25 / 2.438 / 2.625 / 2.813 / 3% of target's maximum health)",
+   "[Danger Zone Bonus] Enhanced Damage per Second = 25 / 37.5 / 50 / 62.5 / 75 (+ 52.5% AP) (+ 3 / 3.25 / 3.5 / 3.75 / 4% of target's maximum health)",
+   "[Danger Zone Bonus] Enhanced Damage per Tick = 6.25 / 9.375 / 12.5 / 15.625 / 18.75 (+ 13.125% AP) (+ 0.75 / 0.813 / 0.875 / 0.938 / 1% of target's maximum health)",
+   "[Danger Zone Bonus] Maximum Enhanced Damage = 93.75 / 140.63 / 187.5 / 234.38 / 281.25 (+ 196.88% AP) (+ 11.25 / 12.19 / 13.13 / 14.06 / 15% of target's maximum health)",
+   "[Danger Zone Bonus] Minimum Enhanced Minion Damage = 13.125 / 19.688 / 26.25 / 32.813 / 39.375 (+ 27.563% AP) (+ 1.575 / 1.706 / 1.838 / 1.969 / 2.1% of target's maximum health)",
+   "[Danger Zone Bonus] Enhanced Minion Damage per Second = 17.5 / 26.25 / 35 / 43.75 / 52.5 (+ 36.75% AP) (+ 2.1 / 2.275 / 2.45 / 2.625 / 2.8% of target's maximum health)",
+   "[Danger Zone Bonus] Enhanced Minion Damage per Tick = 4.375 / 6.563 / 8.75 / 10.938 / 13.125 (+ 9.188% AP) (+ 0.525 / 0.569 / 0.613 / 0.656 / 0.7% of target's maximum health)",
+   "[Danger Zone Bonus] Maximum Enhanced Minion Damage = 65.63 / 110.74 / 155.86 / 200.98 / 246.09 (+ 137.81% AP) (+ 7.88 / 8.53 / 9.19 / 9.84 / 10.5% of target's maximum health)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)",
+   "Minion Damage per Second: not against champions",
+   "Minion Damage per Tick: not against champions",
+   "Maximum Minion Damage: maximum of a range (minimum is used)",
+   "Maximum Enhanced Damage: maximum of a range (minimum is used)",
+   "Enhanced Minion Damage per Second: not against champions",
+   "Enhanced Minion Damage per Tick: not against champions",
+   "Maximum Enhanced Minion Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Magic Damage (magic) 12.5/18.75/25/31.25/37.5 + 26.25% AP + 1.5/1.625/1.75/1.875/2% target's max HP",
+   "Active: Magic Damage per Second (magic) 16.67/25/33.33/41.67/50 + 35% AP + 2/2.167/2.333/2.5/2.667% target's max HP",
+   "Active: Magic Damage per Tick (magic) 4.167/6.25/8.333/10.417/12.5 + 8.75% AP + 0.5/0.542/0.583/0.625/0.667% target's max HP",
+   "Active: Minimum Minion Damage (magic) 8.75/13.13/17.5/21.88/26.25 + 18.38% AP + 1.05/1.14/1.23/1.31/1.4% target's max HP",
+   "Danger Zone Bonus: Minimum Enhanced Damage (magic) 18.75/28.125/37.5/46.875/56.25 + 39.375% AP + 2.25/2.438/2.625/2.813/3% target's max HP",
+   "Danger Zone Bonus: Enhanced Damage per Second (magic) 25/37.5/50/62.5/75 + 52.5% AP + 3/3.25/3.5/3.75/4% target's max HP",
+   "Danger Zone Bonus: Enhanced Damage per Tick (magic) 6.25/9.375/12.5/15.625/18.75 + 13.125% AP + 0.75/0.813/0.875/0.938/1% target's max HP",
+   "Danger Zone Bonus: Minimum Enhanced Minion Damage (magic) 13.125/19.688/26.25/32.813/39.375 + 27.563% AP + 1.575/1.706/1.838/1.969/2.1% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Electro Harpoon",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 55 / 80 / 105 / 130 / 155 (+ 50% AP)",
+   "[Active] Total Magic Damage = 110 / 160 / 210 / 260 / 310 (+ 100% AP)",
+   "[Danger Zone Bonus] Enhanced Damage = 82.5 / 120 / 157.5 / 195 / 232.5 (+ 75% AP)",
+   "[Danger Zone Bonus] Total Enhanced Damage = 165 / 240 / 315 / 390 / 465 (+ 150% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Total Enhanced Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 55/80/105/130/155 + 50% AP",
+   "Danger Zone Bonus: Enhanced Damage (magic) 82.5/120/157.5/195/232.5 + 75% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "The Equalizer",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 30 / 50 / 70 (+ 10% AP)",
+   "[Active] Magic Damage per Second = 120 / 200 / 280 (+ 40% AP)",
+   "[Active] Maximum Magic Damage = 600 / 1000 / 1400 (+ 200% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 30/50/70 + 10% AP",
+   "Active: Magic Damage per Second (magic) 120/200/280 + 40% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

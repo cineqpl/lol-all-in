@@ -1,0 +1,43 @@
+{
+ "Q": {
+  "name": "Wilding Claw",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active - Stance] Bonus Physical Damage = 3 / 4 / 5 / 6 / 7 / 8% (+ 3.5% per 100 bonus AD) of target's maximum health",
+   "[Active - Stance] Total Physical Damage = 6 / 8 / 10 / 12 / 14 / 16% (+ 7% per 100 bonus AD) of target's maximum health",
+   "[Active] Bonus Physical Damage On-Hit = 6 / 12 / 18 / 24 / 30 / 36 (+ 20% bonus AD) (+ 1 / 1.2 / 1.4 / 1.6 / 1.8 / 2% bonus health)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active - Stance: Bonus Physical Damage (physical) 0 + 3/4/5/6/7/8% target's max HP + 0.035% bonus AD",
+   "Active: Bonus Physical Damage On-Hit (physical) 6/12/18/24/30/36 + 20% bonus AD + 1/1.2/1.4/1.6/1.8/2% bonus HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Wingborne Storm",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Tick = 10 / 18 / 26 / 34 / 42 / 50 (+ 17.5% AP)",
+   "[Active] Total Magic Damage = 80 / 144 / 208 / 272 / 336 / 400 (+ 140% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Tick (magic) 10/18/26/34/42/50 + 17.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

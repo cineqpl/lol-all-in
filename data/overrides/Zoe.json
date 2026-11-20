@@ -1,0 +1,60 @@
+{
+ "Q": {
+  "name": "Paddle Star!",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Minimum Magic Damage = 2 – 58 (based on level) (+ 50 / 80 / 110 / 140 / 170) (+ 60% AP)",
+   "[Active] Maximum Magic Damage = 5 – 145 (based on level) (+ 125 / 200 / 275 / 350 / 425) (+ 150% AP)"
+  ],
+  "skipped": [
+   "Minimum Magic Damage: unknown scaling \"– 58\"",
+   "Maximum Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Spell Thief",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Bolt = 15 / 25 / 35 / 45 / 55 (+ 10% AP)",
+   "[Active] Total Magic Damage = 45 / 75 / 105 / 135 / 165 (+ 30% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Bolt (magic) 15/25/35/45/55 + 10% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Sleepy Trouble Bubble",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 70 / 110 / 150 / 190 / 230 (+ 45% AP)",
+   "[Active] Bonus Damage Cap = 70 / 110 / 150 / 190 / 230 (+ 45% AP)",
+   "[Active] Maximum Mixed Damage = 140 / 220 / 300 / 380 / 460 (+ 90% AP)"
+  ],
+  "skipped": [
+   "Bonus Damage Cap: damage type unknown",
+   "Maximum Mixed Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 70/110/150/190/230 + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

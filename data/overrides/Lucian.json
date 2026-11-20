@@ -1,0 +1,21 @@
+{
+ "R": {
+  "name": "The Culling",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Shot = 15 / 30 / 45 (+ 25% AD) (+ 15% AP)",
+   "[Active] Minion Damage Per Shot = 30 / 60 / 90 (+ 50% AD) (+ 30% AP)"
+  ],
+  "skipped": [
+   "Minion Damage Per Shot: not against champions"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Shot (physical) 15/30/45 + 25% AD + 15% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

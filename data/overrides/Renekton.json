@@ -1,0 +1,83 @@
+{
+ "Q": {
+  "name": "Cull the Meek",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 60 / 90 / 120 / 150 / 180 (+ 100% bonus AD)",
+   "[Active] Enhanced Damage = 90 / 135 / 180 / 225 / 270 (+ 140% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 60/90/120/150/180 + 100% bonus AD",
+   "Active: Enhanced Damage (physical) 90/135/180/225/270 + 140% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Ruthless Predator",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Physical Damage = 10 / 40 / 70 / 100 / 130 (+ 150% AD)",
+   "[Active] Physical Damage Per Hit = 5 / 20 / 35 / 50 / 65 (+ 75% AD)",
+   "[Reign of Anger Bonus] Total Physical Damage = 15 / 60 / 105 / 150 / 195 (+ 225% AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines",
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Hit (physical) 5/20/35/50/65 + 75% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Slice and Dice",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active - Slice] Physical Damage = 40 / 70 / 100 / 130 / 160 (+ 90% bonus AD)",
+   "[Recast - Dice] Total Physical Damage = 80 / 140 / 200 / 260 / 320 (+ 180% bonus AD)",
+   "[Reign of Anger Bonus] Enhanced Physical Damage = 70 / 115 / 160 / 205 / 250 (+ 135% bonus AD)",
+   "[Reign of Anger Bonus] Total Enhanced Damage = 110 / 185 / 260 / 335 / 410 (+ 225% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines",
+   "Total Enhanced Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active - Slice: Physical Damage (physical) 40/70/100/130/160 + 90% bonus AD",
+   "Reign of Anger Bonus: Enhanced Physical Damage (physical) 70/115/160/205/250 + 135% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Dominus",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 30 / 75 / 120 (+ 5% bonus AD) (+ 5% AP)",
+   "[Active] Total Magic Damage = 900 / 2250 / 3600 (+ 150% bonus AD) (+ 150% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 30/75/120 + 5% bonus AD + 5% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "Q": {
+  "name": "Three Talon Strike",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 15 / 30 / 45 / 60 / 75 (+ 45% bonus AD)",
+   "[Active] Total Bonus Physical Damage = 45 / 90 / 135 / 180 / 225 (+ 135% bonus AD)"
+  ],
+  "skipped": [
+   "Total Bonus Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 15/30/45/60/75 + 45% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Wind Becomes Lightning",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage per Slash = 7.5 / 10 / 12.5 / 15 / 17.5 (+ 7.5% AD)",
+   "[Active] Slash Total Physical Damage = 30 / 40 / 50 / 60 / 70 (+ 30% AD)",
+   "[Active] Thrust Physical Damage = 50 / 85 / 120 / 155 / 190 (+ 90% AD) (+ 65% AP)",
+   "[Active] Total Physical Damage = 80 / 125 / 170 / 215 / 260 (+ 120% AD) (+ 65% AP)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage per Slash (physical) 7.5/10/12.5/15/17.5 + 7.5% AD",
+   "Active: Slash Total Physical Damage (physical) 30/40/50/60/70 + 30% AD",
+   "Active: Thrust Physical Damage (physical) 50/85/120/155/190 + 90% AD + 65% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

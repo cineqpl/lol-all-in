@@ -1,0 +1,23 @@
+{
+ "E": {
+  "name": "Hexplosive Minefield",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Mine = 30 / 70 / 110 / 150 / 190 (+ 25 / 30 / 35 / 40 / 45% AP)",
+   "[Active] Reduced Damage per Mine = 12 / 28 / 44 / 60 / 76 (+ 10 / 12 / 14 / 16 / 18% AP)",
+   "[Active] Maximum Total Magic Damage = 150 / 350 / 550 / 750 / 950 (+ 125 / 150 / 175 / 200 / 225% AP)"
+  ],
+  "skipped": [
+   "Reduced Damage per Mine: secondary target",
+   "Maximum Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Mine (magic) 30/70/110/150/190 + 25/30/35/40/45% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

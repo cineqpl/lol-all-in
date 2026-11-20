@@ -1,0 +1,29 @@
+{
+ "E": {
+  "name": "Explosive Charge",
+  "status": "unchecked",
+  "reasons": [
+   "2 unread damage line(s)",
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Magic Damage = 45 / 60 / 75 / 90 / 105 (+ 25% AP)",
+   "[Active] Minimum Physical Damage = 60 / 85 / 110 / 135 / 160 (+ 80% bonus AD) (+ 50% AP)",
+   "[Active] Bonus Damage Per Stack = 15 / 21.25 / 27.5 / 33.75 / 40 (+ 20% bonus AD) (+ 12.5% AP)",
+   "[Active] Full Stack Bonus Damage = 60 / 85 / 110 / 135 / 160 (+ 80% bonus AD) (+ 50% AP)",
+   "[Active] Full Stack Physical Damage = 120 / 170 / 220 / 270 / 320 (+ 160% bonus AD) (+ 100% AP)"
+  ],
+  "skipped": [
+   "Minimum Physical Damage: sum of other lines",
+   "Bonus Damage Per Stack: damage type unknown",
+   "Full Stack Bonus Damage: damage type unknown"
+  ],
+  "parsed": [
+   "Passive: Magic Damage (magic) 45/60/75/90/105 + 25% AP",
+   "Active: Full Stack Physical Damage (physical) 120/170/220/270/320 + 160% bonus AD + 100% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "Q": {
+  "name": "Tumble",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 75 / 85 / 95 / 105 / 115% AD (+ 50% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 0 + 75/85/95/105/115% AD + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Silver Bolts",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus True Damage = 4 / 5.5 / 7 / 8.5 / 10% of target's maximum health",
+   "[Active] Minimum Bonus Damage = 40 / 55 / 70 / 85 / 100",
+   "[Active] Monster Damage = 140 / 155 / 170 / 185 / 200"
+  ],
+  "skipped": [
+   "Minimum Bonus Damage: sum of other lines",
+   "Monster Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Bonus True Damage (true) 0 + 4/5.5/7/8.5/10% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Condemn",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 50 / 85 / 120 / 155 / 190 (+ 50% bonus AD)",
+   "[Active] Bonus Physical Damage = 75 / 127.5 / 180 / 232.5 / 285 (+ 75% bonus AD)",
+   "[Active] Total Physical Damage = 125 / 212.5 / 300 / 387.5 / 475 (+ 125% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 50/85/120/155/190 + 50% bonus AD",
+   "Active: Bonus Physical Damage (physical) 75/127.5/180/232.5/285 + 75% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

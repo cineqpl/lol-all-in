@@ -1,0 +1,43 @@
+{
+ "Q": {
+  "name": "Bear Trap on a Rope",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 30 / 55 / 80 / 105 / 130 (+ 60% bonus AD)",
+   "[Active] Minion and Small Monster Damage = 45 / 82.5 / 120 / 157.5 / 195 (+ 90% bonus AD)",
+   "[Active] Physical Damage = 60 / 110 / 160 / 210 / 260 (+ 120% bonus AD)",
+   "[Active] Total Physical Damage = 90 / 165 / 240 / 315 / 390 (+ 180% bonus AD)"
+  ],
+  "skipped": [
+   "Minion and Small Monster Damage: not against champions",
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 30/55/80/105/130 + 60% bonus AD",
+   "Active: Physical Damage (physical) 60/110/160/210/260 + 120% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Violent Tendencies",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Violent Tendencies] Additional Physical Damage = 20 / 30 / 40 / 50 / 60 (+ 4.5 / 5 / 5.5 / 6 / 6.5% (+ 2% per 100 bonus AD) (+ 0.4% per 100 bonus health) of target's maximum health)",
+   "[Active] Structure Additional Damage = 62 – 91.75 (based on level) (+ 0 / 15 / 30 / 45 / 60)"
+  ],
+  "skipped": [
+   "Additional Physical Damage: unknown scaling \"(+ 4.5 / 5 / 5.5 / 6 / 6.5%     of target's maximum health)\"",
+   "Structure Additional Damage: not against champions"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

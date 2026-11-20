@@ -1,0 +1,23 @@
+{
+ "E": {
+  "name": "Flay",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Passive] Minimum Bonus Magic Damage = 1.7 per Soul collected (+ 0% AD)",
+   "[Passive] Maximum Bonus Magic Damage = 1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)",
+   "[Active] Magic Damage = 65 / 110 / 155 / 200 / 245 (+ 60% AP)"
+  ],
+  "skipped": [
+   "Minimum Bonus Magic Damage: unknown scaling \"per Soul collected\"",
+   "Maximum Bonus Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 65/110/155/200/245 + 60% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

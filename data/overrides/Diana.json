@@ -1,0 +1,43 @@
+{
+ "W": {
+  "name": "Pale Cascade",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Orb = 20 / 32 / 44 / 56 / 68 (+ 18% AP)",
+   "[Active] Total Magic Damage = 60 / 96 / 132 / 168 / 204 (+ 54% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Orb (magic) 20/32/44/56/68 + 18% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Moonfall",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 200 / 300 / 400 (+ 60% AP)",
+   "[Active] Bonus Damage Per Champion = 35 / 60 / 85 (+ 15% AP)",
+   "[Active] Total Damage Vs. 5 Champions = 340 / 540 / 740 (+ 120% AP)"
+  ],
+  "skipped": [
+   "Total Damage Vs. 5 Champions: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 200/300/400 + 60% AP",
+   "Active: Bonus Damage Per Champion (magic) 35/60/85 + 15% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

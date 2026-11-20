@@ -1,0 +1,18 @@
+{
+ "Q": {
+  "name": "Last Rites",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 30 / 50 / 70 / 90 / 110 (+ 50% AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 30/50/70/90/110 + 50% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

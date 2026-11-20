@@ -1,0 +1,40 @@
+{
+ "W": {
+  "name": "Electrical Surge",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Magic Damage = 35 / 45 / 55 / 65 / 75 (+ 80 / 90 / 100 / 110 / 120% bonus AD) (+ 35% AP)",
+   "[Active] Magic Damage = 70 / 95 / 120 / 145 / 170 (+ 80% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Bonus Magic Damage (magic) 35/45/55/65/75 + 80/90/100/110/120% bonus AD + 35% AP",
+   "Active: Magic Damage (magic) 70/95/120/145/170 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Slicing Maelstrom",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Bolt = 40 / 80 / 120 (+ 25% AP)",
+   "[Active] Total Single-Target Damage = 300 / 600 / 900 (+ 187.5% AP)"
+  ],
+  "skipped": [
+   "Total Single-Target Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Bolt (magic) 40/80/120 + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

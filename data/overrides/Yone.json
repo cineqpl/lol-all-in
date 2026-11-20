@@ -1,0 +1,79 @@
+{
+ "Q": {
+  "name": "Mortal Steel",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 25 / 50 / 75 / 100 / 125 (+ 105% AD)",
+   "[Active] Critical Strike Damage = 25 / 50 / 75 / 100 / 125 (+ (199.5% + 29.925%) AD)"
+  ],
+  "skipped": [
+   "Critical Strike Damage: unknown scaling \"(+   AD)\""
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 25/50/75/100/125 + 105% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Spirit Cleave",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Total Mixed Damage = 10 / 20 / 30 / 40 / 50 (+ 8 / 9 / 10 / 11 / 12% of target's maximum health)",
+   "[Active] Physical Damage = 5 / 10 / 15 / 20 / 25 (+ 4 / 4.5 / 5 / 5.5 / 6% of target's maximum health)",
+   "[Active] Magic Damage = 5 / 10 / 15 / 20 / 25 (+ 4 / 4.5 / 5 / 5.5 / 6% of target's maximum health)"
+  ],
+  "skipped": [
+   "Total Mixed Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 5/10/15/20/25 + 4/4.5/5/5.5/6% target's max HP",
+   "Active: Magic Damage (magic) 5/10/15/20/25 + 4/4.5/5/5.5/6% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Soul Unbound",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Spirit Form] Damage Stored = 25 / 27.5 / 30 / 32.5 / 35% of damage dealt"
+  ],
+  "skipped": [
+   "Damage Stored: unknown scaling \"of damage dealt\""
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Fate Sealed",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Total Mixed Damage = 200 / 400 / 600 (+ 80% bonus AD)",
+   "[Active] Physical Damage = 100 / 200 / 300 (+ 40% bonus AD)",
+   "[Active] Magic Damage = 100 / 200 / 300 (+ 40% bonus AD)"
+  ],
+  "skipped": [
+   "Total Mixed Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 100/200/300 + 40% bonus AD",
+   "Active: Magic Damage (magic) 100/200/300 + 40% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

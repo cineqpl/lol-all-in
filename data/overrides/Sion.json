@@ -1,0 +1,31 @@
+{
+ "Q": {
+  "name": "Decimating Smash",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Maximum Base Damage Increase = 200 / 244.44 / 266.67 / 280 / 288.89%",
+   "[Active] Minimum Physical Damage = 30 / 45 / 60 / 75 / 90 (+ 40 / 50 / 60 / 70 / 80% AD)",
+   "[Active] Maximum Physical Damage = 90 / 155 / 220 / 285 / 350 (+ 120 / 150 / 180 / 210 / 240% AD)",
+   "[Recast] Minimum Monster Damage = 49.5 / 74.25 / 99 / 123.75 / 148.5 (+ 66 / 82.5 / 99 / 115.5 / 132% AD)",
+   "[Recast] Maximum Monster Damage = 148.5 / 255.75 / 363 / 470.25 / 577.5 (+ 198 / 247.5 / 297 / 346.5 / 396% AD)",
+   "[Recast] Minimum Minion Damage = 18 / 27 / 36 / 45 / 54 (+ 24 / 30 / 36 / 42 / 48% AD)",
+   "[Recast] Maximum Minion Damage = 54 / 93 / 132 / 171 / 210 (+ 72 / 90 / 108 / 126 / 144% AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Monster Damage: maximum of a range (minimum is used)",
+   "Maximum Minion Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Physical Damage (physical) 30/45/60/75/90 + 40/50/60/70/80% AD",
+   "Recast: Minimum Monster Damage (physical) 49.5/74.25/99/123.75/148.5 + 66/82.5/99/115.5/132% AD",
+   "Recast: Minimum Minion Damage (physical) 18/27/36/45/54 + 24/30/36/42/48% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

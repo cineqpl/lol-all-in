@@ -1,0 +1,36 @@
+{
+ "W": {
+  "name": "Essence Flux",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage = 80 / 135 / 190 / 245 / 300 (+ 115% bonus AD) (+ 100% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 80/135/190/245/300 + 115% bonus AD + 100% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Trueshot Barrage",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 350 / 600 / 850 (+ 110% bonus AD) (+ 120% AP)",
+   "[Active] Modified Damage = 150 / 225 / 300 (+ 100% bonus AD) (+ 110% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 350/600/850 + 110% bonus AD + 120% AP",
+   "Active: Modified Damage (magic) 150/225/300 + 100% bonus AD + 110% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

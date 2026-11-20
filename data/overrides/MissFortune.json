@@ -1,0 +1,40 @@
+{
+ "E": {
+  "name": "Make It Rain",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 11.25 / 15 / 18.75 / 22.5 / 26.25 (+ 15% AP)",
+   "[Active] Total Magic Damage = 90 / 120 / 150 / 180 / 210 (+ 120% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 11.25/15/18.75/22.5/26.25 + 15% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Bullet Time",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage per Wave = 20 / 30 / 40 (+ 60% AD) (+ 25% AP)",
+   "[Active] Maximum Total Physical Damage = 280 / 500 / 720 (+ 840 / 960 / 1080% AD) (+ 350 / 400 / 450% AP)"
+  ],
+  "skipped": [
+   "Maximum Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage per Wave (physical) 20/30/40 + 60% AD + 25% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "W": {
+  "name": "Sentinel",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage = 10 / 12 / 14 / 16 / 18% of target's maximum health",
+   "[Active] Maximum Non-Champion Damage = 100 / 125 / 150 / 175 / 200"
+  ],
+  "skipped": [
+   "Maximum Non-Champion Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 0 + 10/12/14/16/18% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Rend",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 5 / 15 / 25 / 35 / 45 (+ 70% AD) (+ 65% AP)",
+   "[Active] Bonus Damage per Additional Stack = 7 / 14 / 21 / 28 / 35 (+ 20 / 27.5 / 35 / 42.5 / 50% AD) (+ 50% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 5/15/25/35/45 + 70% AD + 65% AP",
+   "Active: Bonus Damage per Additional Stack (physical) 7/14/21/28/35 + 20/27.5/35/42.5/50% AD + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

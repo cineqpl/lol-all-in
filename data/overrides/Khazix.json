@@ -1,0 +1,20 @@
+{
+ "Q": {
+  "name": "Taste Their Fear",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 80 / 105 / 130 / 155 / 180 (+ 105% bonus AD)",
+   "[Active] Isolated Target Physical Damage = 168 / 220.5 / 273 / 325.5 / 378 (+ 220.5% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 80/105/130/155/180 + 105% bonus AD",
+   "Active: Isolated Target Physical Damage (physical) 168/220.5/273/325.5/378 + 220.5% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

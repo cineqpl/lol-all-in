@@ -1,0 +1,90 @@
+{
+ "Q": {
+  "name": "Radiant Barrage",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Subsequent Explosion = 6 / 11 / 16 / 21 / 26 (+ 9% AP)",
+   "[Active] Maximum Magic Damage = 90 / 126 / 172 / 228 / 294 (+ 70 / 79 / 88 / 97 / 106% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Subsequent Explosion (magic) 6/11/16/21/26 + 9% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Rebuttal",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Initial Bolt Magic Damage = 35 / 45 / 55 / 65 / 75 (+ 10% AP)",
+   "[Active] Subsequent Bolt Reduced Damage = 5 / 10 / 15 / 20 / 25 (+ 5% AP)",
+   "[Active] Maximum Total Magic Damage = 65 / 105 / 145 / 185 / 225 (+ 40% AP)"
+  ],
+  "skipped": [
+   "Maximum Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Initial Bolt Magic Damage (magic) 35/45/55/65/75 + 10% AP",
+   "Active: Subsequent Bolt Reduced Damage (magic) 5/10/15/20/25 + 5% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Solar Snare",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Orb Magic Damage = 60 / 105 / 150 / 195 / 240 (+ 70% AP)",
+   "[Active] Field Magic Damage per Tick = 2 / 3.5 / 5 / 6.5 / 8 (+ 1% AP)",
+   "[Active] Field Magic Damage per Second = 16 / 28 / 40 / 52 / 64 (+ 8% AP)",
+   "[Active] Orb Minion Magic Damage = 30 / 52.5 / 75 / 97.5 / 120 (+ 35% AP)",
+   "[Active] Field Minion Magic Damage per Tick = 1 / 1.75 / 2.5 / 3.25 / 4 (+ 0.5% AP)",
+   "[Active] Field Magic Damage per Second = 8 / 14 / 20 / 26 / 32 (+ 4% AP)"
+  ],
+  "skipped": [
+   "Orb Minion Magic Damage: not against champions",
+   "Field Minion Magic Damage per Tick: not against champions"
+  ],
+  "parsed": [
+   "Active: Orb Magic Damage (magic) 60/105/150/195/240 + 70% AP",
+   "Active: Field Magic Damage per Tick (magic) 2/3.5/5/6.5/8 + 1% AP",
+   "Active: Field Magic Damage per Second (magic) 16/28/40/52/64 + 8% AP",
+   "Active: Field Magic Damage per Second (magic) 8/14/20/26/32 + 4% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Golden Eclipse",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Passive] Increased Stored Damage = 10 / 20 / 30",
+   "[Passive] Stored Damage Increase per Stack = 1 / 2 / 3",
+   "[Active] Magic Damage = 125 / 200 / 275 (+ 30% AP) (+ 4 / 7 / 10 (+ 4% AP) per Overwhelm stack on the target)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"(+ 4 / 7 / 10   per Overwhelm stack on the target)\""
+  ],
+  "parsed": [
+   "Passive: Increased Stored Damage (magic) 10/20/30"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

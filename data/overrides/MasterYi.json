@@ -1,0 +1,54 @@
+{
+ "Q": {
+  "name": "Alpha Strike",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Primary Physical Damage = 20 / 40 / 60 / 80 / 100 (+ 60% AD)",
+   "[Active] Reduced Damage per hit = 5 / 10 / 15 / 20 / 25 (+ 15% AD)",
+   "[Active] Maximum Single-Target Damage = 35 / 70 / 105 / 140 / 175 (+ 105% AD)",
+   "[Active] Primary Bonus Monster Damage = 60 / 85 / 110 / 135 / 160",
+   "[Active] Combined Primary Monster Damage = 80 / 125 / 170 / 215 / 260 (+ 60% AD)",
+   "[Active] Reduced Monster Damage per hit = 20 / 31.25 / 42.5 / 53.75 / 65 (+ 15% AD)",
+   "[Active] Max Single-Target Monster Damage = 140 / 218.75 / 297.5 / 376.25 / 455 (+ 105% AD)",
+   "[Active] Critical Primary Physical Damage = 40 / 80 / 120 / 160 / 200 (+ 120% AD)",
+   "[Active] Critical Reduced Damage per hit = 10 / 20 / 30 / 40 / 50 (+ 30% AD)",
+   "[Active] Maximum Critical Single-Target Damage = 70 / 140 / 210 / 280 / 350 (+ 210% AD)"
+  ],
+  "skipped": [
+   "Reduced Damage per hit: secondary target",
+   "Maximum Single-Target Damage: sum of other lines",
+   "Primary Bonus Monster Damage: not against champions",
+   "Combined Primary Monster Damage: sum of other lines",
+   "Reduced Monster Damage per hit: not against champions",
+   "Max Single-Target Monster Damage: not against champions",
+   "Maximum Critical Single-Target Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Primary Physical Damage (physical) 20/40/60/80/100 + 60% AD",
+   "Active: Critical Primary Physical Damage (physical) 40/80/120/160/200 + 120% AD",
+   "Active: Critical Reduced Damage per hit (physical) 10/20/30/40/50 + 30% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Wuju Style",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus True Damage = 20 / 25 / 30 / 35 / 40 (+ 35% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus True Damage (true) 20/25/30/35/40 + 35% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "Q": {
+  "name": "Darkin Daggers",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Initial Physical Damage = 35 / 40 / 45 / 50 / 55 (+ 20% bonus AD)",
+   "[Active] Bleed Physical Damage per Tick = 3.5 / 6 / 8.5 / 11 / 13.5 (+ 8% bonus AD)",
+   "[Active] Total Bleed Physical Damage = 35 / 60 / 85 / 110 / 135 (+ 80% bonus AD)",
+   "[Active] Total Physical Damage = 70 / 100 / 130 / 160 / 190 (+ 100% bonus AD)",
+   "[Active] Minimum Bonus Physical Damage = 30 / 42.5 / 55 / 67.5 / 80 (+ 40% bonus AD)",
+   "[Active] Maximum Bonus Physical Damage = 60 / 85 / 110 / 135 / 160 (+ 140% bonus AD)",
+   "[Active] Minimum Total Physical Damage = 100 / 142.5 / 185 / 227.5 / 270 (+ 140% bonus AD)",
+   "[Active] Maximum Total Physical Damage = 130 / 185 / 240 / 295 / 350 (+ 240% bonus AD)"
+  ],
+  "skipped": [
+   "Total Bleed Physical Damage: sum of other lines",
+   "Total Physical Damage: sum of other lines",
+   "Maximum Bonus Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Total Physical Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Initial Physical Damage (physical) 35/40/45/50/55 + 20% bonus AD",
+   "Active: Bleed Physical Damage per Tick (physical) 3.5/6/8.5/11/13.5 + 8% bonus AD",
+   "Active: Minimum Bonus Physical Damage (physical) 30/42.5/55/67.5/80 + 40% bonus AD",
+   "Active: Minimum Total Physical Damage (physical) 100/142.5/185/227.5/270 + 140% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Eviscerate",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Dash Physical Damage = 15 / 25 / 35 / 45 / 55 (+ 40% bonus AD)",
+   "[Active] Flurry Physical Damage = 60 / 85 / 110 / 135 / 160 (+ 80% bonus AD)",
+   "[Active] Total Physical Damage = 75 / 110 / 145 / 180 / 215 (+ 120% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Dash Physical Damage (physical) 15/25/35/45/55 + 40% bonus AD",
+   "Active: Flurry Physical Damage (physical) 60/85/110/135/160 + 80% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Hounds' Pursuit",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 125 / 200 / 275 (+ 100% bonus AD)",
+   "[Active] Physical Damage per Packmate = 12.5 / 20 / 27.5 (+ 10% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage (physical) 125/200/275 + 100% bonus AD",
+   "Active: Physical Damage per Packmate (physical) 12.5/20/27.5 + 10% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

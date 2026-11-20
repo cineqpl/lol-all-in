@@ -1,0 +1,49 @@
+{
+ "E": {
+  "name": "Royal Maelstrom",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Damage Reduction = 20 / 30 / 40 / 50 / 60%",
+   "[Active] Minimum Physical Damage per hit = 10 / 12 / 14 / 16 / 18 (+ 12% AD)",
+   "[Active] Maximum Physical Damage per hit = 20 / 24 / 28 / 32 / 36 (+ 24% AD)",
+   "[Active] Minimum Monster Damage per hit = 20 / 24 / 28 / 32 / 36 (+ 24% AD)",
+   "[Active] Maximum Monster Damage per hit = 40 / 48 / 56 / 64 / 72 (+ 48% AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage per hit: maximum of a range (minimum is used)",
+   "Maximum Monster Damage per hit: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Physical Damage per hit (physical) 10/12/14/16/18 + 12% AD",
+   "Active: Minimum Monster Damage per hit (physical) 20/24/28/32/36 + 24% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Endless Banquet",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus True Damage = 2 / 4 / 6 (+ 3% bonus AD)",
+   "[Passive] Maximum Monster Damage = 16 / 32 / 48 (+ 24% bonus AD)",
+   "[Active] True Damage = 150 / 200 / 250 (+ 150% AP) (+ 20% of target's missing health)"
+  ],
+  "skipped": [
+   "Maximum Monster Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Passive: Bonus True Damage (true) 2/4/6 + 3% bonus AD",
+   "Active: True Damage (true) 150/200/250 + 150% AP + 20% target's missing HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

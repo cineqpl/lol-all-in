@@ -1,0 +1,45 @@
+{
+ "W": {
+  "name": "Force of Will",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Recast] Magic Damage = 70 / 100 / 130 / 160 / 190 (+ 65% AP)",
+   "[Transcendent Bonus] Bonus True Damage = 8.4 / 12 / 15.6 / 19.2 / 22.8 (+ 9.2 / 9.8 / 10.4 / 11 / 11.6% AP) (+ 1.14% AP)2",
+   "[Transcendent Bonus] Total Mixed Damage = 78.4 / 112 / 145.6 / 179.2 / 212.8 (+ 74.2 / 74.8 / 75.4 / 76 / 76.6% AP) (+ 1.14% AP)2"
+  ],
+  "skipped": [
+   "Bonus True Damage: unknown scaling \"2\"",
+   "Total Mixed Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Recast: Magic Damage (magic) 70/100/130/160/190 + 65% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Unleashed Power",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage per Sphere = 80 / 120 / 160 (+ 20% AP)",
+   "[Active] Minimum Magic Damage = 240 / 360 / 480 (+ 60% AP)",
+   "[Active] Maximum Magic Damage = 560 / 840 / 1120 (+ 140% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Magic Damage per Sphere (magic) 80/120/160 + 20% AP",
+   "Active: Minimum Magic Damage (magic) 240/360/480 + 60% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

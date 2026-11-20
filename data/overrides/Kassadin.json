@@ -1,0 +1,42 @@
+{
+ "W": {
+  "name": "Nether Blade",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Increased Bonus Magic Damage = 50 / 75 / 100 / 125 / 150 (+ 80% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Increased Bonus Magic Damage (magic) 50/75/100/125/150 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Riftwalk",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 80 / 95 / 110 (+ 50% AP) (+ 2% maximum mana)",
+   "[Riftwalk] Bonus Damage Per Stack = 35 / 45 / 55 (+ 7% AP) (+ 1% maximum mana)",
+   "[Riftwalk] Maximum Bonus Damage = 140 / 180 / 220 (+ 28% AP) (+ 4% maximum mana)",
+   "[Riftwalk] Maximum Magic Damage = 220 / 275 / 330 (+ 78% AP) (+ 6% maximum mana)"
+  ],
+  "skipped": [
+   "Maximum Bonus Damage: sum of other lines",
+   "Maximum Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 80/95/110 + 50% AP + 2% max mana",
+   "Riftwalk: Bonus Damage Per Stack (magic) 35/45/55 + 7% AP + 1% max mana"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "W": {
+  "name": "Titan's Wrath",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Pain of Wrath] Total Magic Damage = 30 / 40 / 50 / 60 / 70 (+ 40% AP)",
+   "[Pain of Wrath] Magic Damage per Instance = 15 / 20 / 25 / 30 / 35 (+ 20% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Pain of Wrath: Magic Damage per Instance (magic) 15/20/25/30/35 + 20% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Depth Charge",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 125 / 175 / 225 (+ 40% AP)",
+   "[Active] Increased Damage = 150 / 275 / 400 (+ 80% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 125/175/225 + 40% AP",
+   "Active: Increased Damage (magic) 150/275/400 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "E": {
+  "name": "Trample",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Tick = 8 / 11 / 14 / 17 / 20 (+ 7% AP)",
+   "[Active] Total Magic Damage = 80 / 110 / 140 / 170 / 200 (+ 70% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 8/11/14/17/20 + 7% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

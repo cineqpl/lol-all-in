@@ -1,0 +1,26 @@
+{
+ "R": {
+  "name": "Apotheosis",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage per Tick = 15 / 25 / 35 (+ 10% bonus AD)",
+   "[Active] Total Physical Damage = 60 / 100 / 140 (+ 40% bonus AD)",
+   "[Active] Burst Physical Damage = 125 / 225 / 325 (+ 100% bonus AD)",
+   "[Active] Maximum Total Physical Damage = 185 / 325 / 465 (+ 140% bonus AD)"
+  ],
+  "skipped": [
+   "Total Physical Damage: sum of other lines",
+   "Maximum Total Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage per Tick (physical) 15/25/35 + 10% bonus AD",
+   "Active: Burst Physical Damage (physical) 125/225/325 + 100% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

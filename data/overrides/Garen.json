@@ -1,0 +1,45 @@
+{
+ "Q": {
+  "name": "Decisive Strike",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 30 / 60 / 90 / 120 / 150 (+ 50% AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 30/60/90/120/150 + 50% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Judgment",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Spin = 4 / 7 / 10 / 13 / 16 (+ 40 / 43 / 46 / 49 / 52% AD)",
+   "[Active] Critical Strike Damage Per Spin = 5.2 / 9.1 / 13 / 16.9 / 20.8 (+ 52 / 55.9 / 59.8 / 63.7 / 67.6% AD)",
+   "[Active] IE Damage Per Spin = 5.56 / 9.73 / 13.9 / 18.07 / 22.24 (+ 55.6 / 59.77 / 63.94 / 68.11 / 72.28% AD)",
+   "[Active] Increased Damage Per Spin = 5 / 8.75 / 12.5 / 16.25 / 20 (+ 50 / 53.75 / 57.5 / 61.25 / 65% AD)",
+   "[Active] Increased Critical Strike Damage Per Spin = 6.5 / 11.375 / 16.25 / 21.125 / 26 (+ 65 / 69.875 / 74.75 / 79.625 / 84.5% AD)",
+   "[Active] Increased IE Damage Per Spin = 6.95 / 12.1625 / 17.375 / 22.5875 / 27.8 (+ 69.5 / 74.7125 / 79.925 / 85.1375 / 90.35% AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Physical Damage Per Spin (physical) 4/7/10/13/16 + 40/43/46/49/52% AD",
+   "Active: Critical Strike Damage Per Spin (physical) 5.2/9.1/13/16.9/20.8 + 52/55.9/59.8/63.7/67.6% AD",
+   "Active: IE Damage Per Spin (physical) 5.56/9.73/13.9/18.07/22.24 + 55.6/59.77/63.94/68.11/72.28% AD",
+   "Active: Increased Damage Per Spin (physical) 5/8.75/12.5/16.25/20 + 50/53.75/57.5/61.25/65% AD",
+   "Active: Increased Critical Strike Damage Per Spin (physical) 6.5/11.375/16.25/21.125/26 + 65/69.875/74.75/79.625/84.5% AD",
+   "Active: Increased IE Damage Per Spin (physical) 6.95/12.1625/17.375/22.5875/27.8 + 69.5/74.713/79.925/85.138/90.35% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "Q": {
+  "name": "Siphon Power",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 75 / 90 / 105 / 120 (+ 40% AP)",
+   "[Discharge] Modified Magic Damage = 20 / 45 / 70 / 95 / 120 (+ 100% AD) (+ 50% AP)",
+   "[Discharge] Total Magic Damage = 80 / 120 / 160 / 200 / 240 (+ 100% AD) (+ 90% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/75/90/105/120 + 40% AP",
+   "Discharge: Modified Magic Damage (magic) 20/45/70/95/120 + 100% AD + 50% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Hextech Ray",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 70 / 110 / 150 / 190 / 230 (+ 50% AP)",
+   "[Augment] Magic Damage = 20 / 50 / 80 / 110 / 140 (+ 80% AP)",
+   "[Augment] Total Magic Damage = 90 / 160 / 230 / 300 / 370 (+ 130% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 70/110/150/190/230 + 50% AP",
+   "Augment: Magic Damage (magic) 20/50/80/110/140 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Arcane Storm",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 100 / 175 / 250 (+ 60% AP)",
+   "[Active] Magic Damage Per Tick = 65 / 105 / 145 (+ 35% AP)",
+   "[Active] Total Magic Damage = 490 / 805 / 1120 (+ 270% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 100/175/250 + 60% AP",
+   "Active: Magic Damage Per Tick (magic) 65/105/145 + 35% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

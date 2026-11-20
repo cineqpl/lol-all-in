@@ -1,0 +1,45 @@
+{
+ "Q": {
+  "name": "Steel Tempest",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 20 / 45 / 70 / 95 / 120 (+ 100% AD)",
+   "[Active] Critical Strike Damage = 20 / 45 / 70 / 95 / 120 (+ (190% + 28.5%) AD)"
+  ],
+  "skipped": [
+   "Critical Strike Damage: unknown scaling \"(+   AD)\""
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 20/45/70/95/120 + 100% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Sweeping Blade",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 70 / 85 / 100 / 115 / 130 (+ 20% bonus AD) (+ 60% AP)",
+   "[Ride the Wind] Bonus Damage per Stack = 17.5 / 21.25 / 25 / 28.75 / 32.5 (+ 5% bonus AD) (+ 15% AP)",
+   "[Ride the Wind] Maximum Bonus Damage = 70 / 85 / 100 / 115 / 130 (+ 20% bonus AD) (+ 60% AP)",
+   "[Ride the Wind] Total Combined Damage = 140 / 170 / 200 / 230 / 260 (+ 40% bonus AD) (+ 120% AP)"
+  ],
+  "skipped": [
+   "Maximum Bonus Damage: sum of other lines",
+   "Total Combined Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 70/85/100/115/130 + 20% bonus AD + 60% AP",
+   "Ride the Wind: Bonus Damage per Stack (magic) 17.5/21.25/25/28.75/32.5 + 5% bonus AD + 15% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

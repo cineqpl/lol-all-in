@@ -1,0 +1,60 @@
+{
+ "Q": {
+  "name": "Flash Frost",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 50 / 70 / 90 / 110 / 130 (+ 25% AP)",
+   "[Recast] Magic Damage = 60 / 95 / 130 / 165 / 200 (+ 45% AP)",
+   "[Recast] Total Magic Damage = 110 / 165 / 220 / 275 / 330 (+ 70% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 50/70/90/110/130 + 25% AP",
+   "Recast: Magic Damage (magic) 60/95/130/165/200 + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Frostbite",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 55 / 80 / 105 / 130 / 155 (+ 55% AP)",
+   "[Active] Enhanced Damage = 110 / 160 / 210 / 260 / 310 (+ 110% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 55/80/105/130/155 + 55% AP",
+   "Active: Enhanced Damage (magic) 110/160/210/260/310 + 110% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Glacial Storm",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Toggle] Magic Damage per Tick = 15 / 22.5 / 30 (+ 6.25% AP)",
+   "[Active] Empowered Damage per Tick = 45 / 67.5 / 90 (+ 18.75% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Toggle: Magic Damage per Tick (magic) 15/22.5/30 + 6.25% AP",
+   "Active: Empowered Damage per Tick (magic) 45/67.5/90 + 18.75% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

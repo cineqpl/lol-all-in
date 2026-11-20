@@ -1,0 +1,59 @@
+{
+ "Q": {
+  "name": "Noxious Blast",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Magic Damage = 65 / 100 / 135 / 170 / 205 (+ 75% AP)",
+   "[Active] Magic Damage Per Tick = 9.29 / 14.29 / 19.29 / 24.29 / 29.29 (+ 10.71% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 9.29/14.29/19.29/24.29/29.29 + 10.71% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Miasma",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Second = 20 / 25 / 30 / 35 / 40 (+ 10% AP)",
+   "[Active] Total Magic Damage = 100 / 125 / 150 / 175 / 200 (+ 50% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Second (magic) 20/25/30/35/40 + 10% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Twin Fang",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Magic Damage = 20 / 45 / 70 / 95 / 120 (+ 45% AP)",
+   "[Active] Total Enhanced Damage = 50 – 120 (based on level) (+ 20 / 45 / 70 / 95 / 120) (+ 65% AP)"
+  ],
+  "skipped": [
+   "Total Enhanced Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Magic Damage (magic) 20/45/70/95/120 + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

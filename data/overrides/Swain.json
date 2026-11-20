@@ -1,0 +1,43 @@
+{
+ "Q": {
+  "name": "Death's Hand",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 90 / 120 / 150 / 180 (+ 45% AP)",
+   "[Active] Bonus Damage Per Bolt = 15 / 22.5 / 30 / 37.5 / 45 (+ 11.25% AP)",
+   "[Active] Total Damage = 120 / 180 / 240 / 300 / 360 (+ 90% AP)"
+  ],
+  "skipped": [
+   "Total Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/90/120/150/180 + 45% AP",
+   "Active: Bonus Damage Per Bolt (magic) 15/22.5/30/37.5/45 + 11.25% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Demonic Ascension",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Demonic Ascension] Magic Damage per Tick = 7.5 / 12.5 / 17.5 (+ 2% AP)",
+   "[Active] Magic Damage = 150 / 250 / 350 (+ 40% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Demonic Ascension: Magic Damage per Tick (magic) 7.5/12.5/17.5 + 2% AP",
+   "Active: Magic Damage (magic) 150/250/350 + 40% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

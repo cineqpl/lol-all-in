@@ -1,0 +1,42 @@
+{
+ "Q": {
+  "name": "Chomp",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 10 / 30 / 50 / 70 / 90 (+ 15 / 25 / 35 / 45 / 55% AD)",
+   "[Active] Bonus Attack Damage = 20 / 25 / 30 / 35 / 40",
+   "[Active] Attack Damage Reduction = 10 / 12.5 / 15 / 17.5 / 20"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 10/30/50/70/90 + 15/25/35/45/55% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Subjugate",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Magic Damage = 20 / 25 / 30% (+ 2% per 100 AP) of the target's maximum health",
+   "[Active] Initial Magic Damage = 10 / 12.5 / 15% (+ 1% per 100 AP) of the target's maximum health",
+   "[Active] Magic Damage Per Second = 2.5 / 3.125 / 3.75% (+ 0.25% per 100 AP) of the target's maximum health"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Initial Magic Damage (magic) 0 + 10/12.5/15% target's max HP + 0.01% AP",
+   "Active: Magic Damage Per Second (magic) 0 + 2.5/3.125/3.75% target's max HP + 0.003% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

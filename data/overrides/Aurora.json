@@ -1,0 +1,28 @@
+{
+ "Q": {
+  "name": "Twofold Hex",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 45 / 70 / 95 / 120 / 145 (+ 40% AP)",
+   "[Recast] Minimum Magic Damage = 45 / 70 / 95 / 120 / 145 (+ 40% AP)",
+   "[Recast] Maximum Magic Damage = 67.5 / 105 / 142.5 / 180 / 217.5 (+ 60% AP)",
+   "[Recast] Subsequent Bolt Minimum Magic Damage = 9 / 14 / 19 / 24 / 29 (+ 8% AP)",
+   "[Recast] Subsequent Bolt Maximum Magic Damage = 13.5 / 21 / 28.5 / 36 / 43.5 (+ 12% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 45/70/95/120/145 + 40% AP",
+   "Recast: Minimum Magic Damage (magic) 45/70/95/120/145 + 40% AP",
+   "Recast: Subsequent Bolt Minimum Magic Damage (magic) 9/14/19/24/29 + 8% AP",
+   "Recast: Subsequent Bolt Maximum Magic Damage (magic) 13.5/21/28.5/36/43.5 + 12% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "E": {
+  "name": "Starfire Spellblade",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Passive Damage = 15 / 20 / 25 / 30 / 35 (+ 10% bonus AD) (+ 20% AP)",
+   "[Active] Bonus Magic Damage = 8 / 8.5 / 9 / 9.5 / 10% (+ 1.5% per 100 AP) of target's missing health"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Passive: Passive Damage (magic) 15/20/25/30/35 + 10% bonus AD + 20% AP",
+   "Active: Bonus Magic Damage (magic) 0 + 8/8.5/9/9.5/10% target's missing HP + 0.015% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

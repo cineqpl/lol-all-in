@@ -1,0 +1,29 @@
+{
+ "W": {
+  "name": "Bellows Breath",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Total Magic Damage = 12 / 13 / 14 / 15 / 16% of target's maximum health",
+   "[Active] Magic Damage Per Tick = 2.4 / 2.6 / 2.8 / 3 / 3.2% of target's maximum health",
+   "[Active] Total Minimum/Minion Damage = 80 / 130 / 180 / 230 / 280",
+   "[Active] Minimum/Minion Damage Per Tick = 16 / 26 / 36 / 46 / 56",
+   "[Active] Total Monster Damage Cap = 260 / 320 / 380 / 440 / 500",
+   "[Active] Monster Damage Cap Per Tick = 52 / 64 / 76 / 88 / 100"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Total Minimum/Minion Damage: sum of other lines",
+   "Minimum/Minion Damage Per Tick: sum of other lines",
+   "Total Monster Damage Cap: sum of other lines",
+   "Monster Damage Cap Per Tick: not against champions"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Tick (magic) 0 + 2.4/2.6/2.8/3/3.2% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

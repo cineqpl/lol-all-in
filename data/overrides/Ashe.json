@@ -1,0 +1,21 @@
+{
+ "Q": {
+  "name": "Ranger's Focus",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage Per Arrow = 22 / 23 / 24 / 25 / 26% AD",
+   "[Active] Total Damage Per Flurry = 110 / 115 / 120 / 125 / 130% AD"
+  ],
+  "skipped": [
+   "Total Damage Per Flurry: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage Per Arrow (physical) 0 + 22/23/24/25/26% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

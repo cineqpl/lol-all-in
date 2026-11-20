@@ -1,0 +1,48 @@
+{
+ "Q": {
+  "name": "Dancing Grenade",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Physical Damage = 44 / 69 / 94 / 119 / 144 (+ 44 / 51.5 / 59 / 66.5 / 74% AD) (+ 60% AP)",
+   "[Active] Bonus Damage per Target Death = 15.4 / 24.15 / 32.9 / 41.65 / 50.4 (+ 15.4 / 18.025 / 20.65 / 23.275 / 25.9% AD) (+ 21% AP)",
+   "[Active] Maximum Final Bounce Physical Damage = 90.2 / 141.45 / 192.7 / 243.95 / 295.2 (+ 90.2 / 105.575 / 120.95 / 136.325 / 151.7% AD) (+ 123% AP)"
+  ],
+  "skipped": [
+   "Maximum Final Bounce Physical Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Physical Damage (physical) 44/69/94/119/144 + 44/51.5/59/66.5/74% AD + 60% AP",
+   "Active: Bonus Damage per Target Death (physical) 15.4/24.15/32.9/41.65/50.4 + 15.4/18.025/20.65/23.275/25.9% AD + 21% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Curtain Call",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Recast] Minimum Physical Damage per Bullet = 64 / 128 / 192 (+ 25% AD)",
+   "[Recast] Maximum Physical Damage per Bullet = 256 / 512 / 768 (+ 100% AD)",
+   "[Active] Minimum Fourth Shot Damage = 128 / 256 / 384 (+ 50% AD)",
+   "[Active] Maximum Fourth Shot Damage = 512 / 1024 / 1536 (+ 200% AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage per Bullet: maximum of a range (minimum is used)",
+   "Maximum Fourth Shot Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Recast: Minimum Physical Damage per Bullet (physical) 64/128/192 + 25% AD",
+   "Active: Minimum Fourth Shot Damage (physical) 128/256/384 + 50% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

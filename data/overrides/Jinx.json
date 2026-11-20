@@ -1,0 +1,26 @@
+{
+ "R": {
+  "name": "Super Mega Death Rocket!",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Maximum Physical Damage = 200 / 350 / 500 (+ 120% bonus AD) (+ 25 / 30 / 35% of target's missing health)",
+   "[Active] Minimum Physical Damage = 20 / 35 / 50 (+ 12% bonus AD) (+ 25 / 30 / 35% of target's missing health)",
+   "[Active] Maximum Secondary Damage = 160 / 280 / 400 (+ 96% bonus AD) (+ 20 / 24 / 28% of target's missing health)",
+   "[Active] Minimum Secondary Damage = 16 / 28 / 40 (+ 9.6% bonus AD) (+ 20 / 24 / 28% of target's missing health)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Secondary Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Physical Damage (physical) 20/35/50 + 12% bonus AD + 25/30/35% target's missing HP",
+   "Active: Minimum Secondary Damage (physical) 16/28/40 + 9.6% bonus AD + 20/24/28% target's missing HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

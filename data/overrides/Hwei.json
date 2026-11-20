@@ -1,0 +1,73 @@
+{
+ "Q": {
+  "name": "Subject: Disaster",
+  "status": "unchecked",
+  "reasons": [
+   "4 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active - QQ] Magic Damage = 50 / 80 / 110 / 140 / 170 (+ 80% AP) (+ 3 / 4 / 5 / 6 / 7% of target's maximum health)",
+   "[Active - QW] Magic Damage = 60 / 85 / 110 / 135 / 160 (+ 30% AP)",
+   "[Active] Maximum Damage Increase = 200 / 237.5 / 275 / 312.5 / 350%",
+   "[Active] Maximum Damage = 120 / 201.875 / 302.5 / 421.875 / 560 (+ 60 / 71.25 / 82.5 / 93.75 / 105% AP)",
+   "[Active - QE] Magic Damage = 20 / 35 / 50 / 65 / 80 (+ 30% AP)",
+   "[Active] Magic Damage per Tick = 5 / 8.75 / 12.5 / 16.25 / 20 (+ 6% AP)",
+   "[Active] Total Fissure Magic Damage = 50 / 87.5 / 125 / 162.5 / 200 (+ 60% AP)"
+  ],
+  "skipped": [
+   "Maximum Damage: sum of other lines",
+   "Total Fissure Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active - QQ: Magic Damage (magic) 50/80/110/140/170 + 80% AP + 3/4/5/6/7% target's max HP",
+   "Active - QW: Magic Damage (magic) 60/85/110/135/160 + 30% AP",
+   "Active - QE: Magic Damage (magic) 20/35/50/65/80 + 30% AP",
+   "Active: Magic Damage per Tick (magic) 5/8.75/12.5/16.25/20 + 6% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Subject: Serenity",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active - WE] Bonus Magic Damage = 20 / 30 / 40 / 50 / 60 (+ 15% AP)",
+   "[Active - WE] Maximum Magic Damage = 60 / 90 / 120 / 150 / 180 (+ 45% AP)",
+   "[Active] Reduced Bonus Damage = 10 / 15 / 20 / 25 / 30 (+ 7.5% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active - WE: Bonus Magic Damage (magic) 20/30/40/50/60 + 15% AP",
+   "Active: Reduced Bonus Damage (magic) 10/15/20/25/30 + 7.5% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Subject: Torment",
+  "status": "unchecked",
+  "reasons": [
+   "3 casts"
+  ],
+  "wikiLines": [
+   "[Active - EQ] Magic Damage = 70 / 110 / 150 / 190 / 230 (+ 65% AP)",
+   "[Active - EW] Magic Damage = 70 / 110 / 150 / 190 / 230 (+ 65% AP)",
+   "[Active - EE] Magic Damage = 70 / 110 / 150 / 190 / 230 (+ 65% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active - EQ: Magic Damage (magic) 70/110/150/190/230 + 65% AP",
+   "Active - EW: Magic Damage (magic) 70/110/150/190/230 + 65% AP",
+   "Active - EE: Magic Damage (magic) 70/110/150/190/230 + 65% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

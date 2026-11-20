@@ -1,0 +1,49 @@
+{
+ "W": {
+  "name": "Biggest Snowball Ever!",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Minimum Magic Damage = 36 / 45 / 54 / 63 / 72 (+ 30% AP)",
+   "[Active] Maximum Magic Damage = 180 / 225 / 270 / 315 / 360 (+ 150% AP)",
+   "[Active] Minimum Minion/Monster Roll Damage = 11.988 / 14.985 / 17.982 / 20.979 / 23.976 (+ 9.99% AP)",
+   "[Active] Maximum Minion/Monster Roll Damage = 59.94 / 74.925 / 89.91 / 104.895 / 119.88 (+ 49.95% AP)"
+  ],
+  "skipped": [
+   "Maximum Magic Damage: maximum of a range (minimum is used)",
+   "Maximum Minion/Monster Roll Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Active: Minimum Magic Damage (magic) 36/45/54/63/72 + 30% AP",
+   "Active: Minimum Minion/Monster Roll Damage (magic) 11.988/14.985/17.982/20.979/23.976 + 9.99% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Snowball Barrage",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage Per Hit = 15 / 22.5 / 30 / 37.5 / 45 (+ 12% AP)",
+   "[Active] Total Magic Damage = 45 / 67.5 / 90 / 112.5 / 135 (+ 36% AP)",
+   "[Recast] Maximum Total Magic Damage = 135 / 202.5 / 270 / 337.5 / 405 (+ 135% AP)",
+   "[Active] Magic Damage = 20 / 30 / 40 / 50 / 60 (+ 80% AP)"
+  ],
+  "skipped": [
+   "Total Magic Damage: sum of other lines",
+   "Maximum Total Magic Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Magic Damage Per Hit (magic) 15/22.5/30/37.5/45 + 12% AP",
+   "Active: Magic Damage (magic) 20/30/40/50/60 + 80% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

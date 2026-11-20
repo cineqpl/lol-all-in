@@ -1,0 +1,40 @@
+{
+ "W": {
+  "name": "Crippling Strike",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 40 / 45 / 50 / 55 / 60% AD"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 0 + 40/45/50/55/60% AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Noxian Guillotine",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] True Damage = 125 / 250 / 375 (+ 75% bonus AD)",
+   "[Active] Bonus Damage Per Stack = 25 / 50 / 75 (+ 15% bonus AD)",
+   "[Active] Maximum True Damage = 250 / 500 / 750 (+ 150% bonus AD)"
+  ],
+  "skipped": [
+   "Maximum True Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: True Damage (true) 125/250/375 + 75% bonus AD",
+   "Active: Bonus Damage Per Stack (true) 25/50/75 + 15% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

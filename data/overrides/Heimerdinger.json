@@ -1,0 +1,62 @@
+{
+ "W": {
+  "name": "Hextech Micro-Rockets",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts",
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Initial Rocket Magic Damage = 50 / 75 / 100 / 125 / 150 (+ 55% AP)",
+   "[Active] Subsequent Rocket Magic Damage = 10 / 15 / 20 / 25 / 30 (+ 12% AP)",
+   "[Active] Total Subsequent Non-Minion Damage = 40 / 60 / 80 / 100 / 120 (+ 48% AP)",
+   "[Active] Combined Total Non-Minion Damage = 90 / 135 / 180 / 225 / 270 (+ 103% AP)",
+   "[Active] Subsequent Rocket Minion Damage = 30 / 45 / 60 / 75 / 90 (+ 36% AP)",
+   "[Active] Total Subsequent Minion Damage = 120 / 180 / 240 / 300 / 360 (+ 144% AP)",
+   "[Active] Combined Total Minion Damage = 170 / 255 / 340 / 425 / 510 (+ 199% AP)",
+   "[UPGRADE!!! - Active] Initial Rocket Damage = 135 / 180 / 225 (+ 45% AP)",
+   "[Active] Rockets 2–5 Magic Damage = 32 / 45 / 58 (+ 12% AP)",
+   "[Active] Rockets 6–20 Magic Damage = 16 / 22.5 / 29 (+ 6% AP)",
+   "[Active] Combined Total Non-Minion Damage = 503 / 697.5 / 892 (+ 183% AP)",
+   "[Active] Minion Damage per Rocket = 135 / 180 / 225 (+ 45% AP)",
+   "[Active] Combined Total Minion Damage = 2700 / 3600 / 4500 (+ 900% AP)"
+  ],
+  "skipped": [
+   "Total Subsequent Non-Minion Damage: sum of other lines",
+   "Combined Total Non-Minion Damage: sum of other lines",
+   "Subsequent Rocket Minion Damage: not against champions",
+   "Total Subsequent Minion Damage: sum of other lines",
+   "Combined Total Minion Damage: sum of other lines",
+   "Combined Total Non-Minion Damage: sum of other lines",
+   "Minion Damage per Rocket: not against champions",
+   "Combined Total Minion Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Initial Rocket Magic Damage (magic) 50/75/100/125/150 + 55% AP",
+   "Active: Subsequent Rocket Magic Damage (magic) 10/15/20/25/30 + 12% AP",
+   "Active: Rockets 2–5 Magic Damage (magic) 32/45/58 + 12% AP",
+   "Active: Rockets 6–20 Magic Damage (magic) 16/22.5/29 + 6% AP",
+   "UPGRADE!!! - Active: Initial Rocket Damage (magic) 135/180/225 + 45% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "CH-2 Electron Storm Grenade",
+  "status": "unchecked",
+  "reasons": [
+   "2 casts"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 60 / 100 / 140 / 180 / 220 (+ 60% AP)",
+   "[UPGRADE!!! - Active] Magic Damage = 100 / 200 / 300 (+ 60% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 60/100/140/180/220 + 60% AP",
+   "UPGRADE!!! - Active: Magic Damage (magic) 100/200/300 + 60% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

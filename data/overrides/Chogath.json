@@ -1,0 +1,24 @@
+{
+ "E": {
+  "name": "Vorpal Spikes",
+  "status": "unchecked",
+  "reasons": [
+   "1 unread damage line(s)"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 30 / 50 / 70 / 90 / 110 (+ 30% AP) (+ 2.5 / 2.85 / 3.2 / 3.55 / 3.9% (+ 0.5% per Feast stack) of target's maximum health)",
+   "[Active] Total Magic Damage = 90 / 150 / 210 / 270 / 330 (+ 90% AP) (+ 7.5 / 8.55 / 9.6 / 10.65 / 11.7% (+ 1.5% per Feast stack) of target's maximum health)",
+   "[Active] Monster Damage = 110 / 160 / 210 / 260 / 310 (+ 30% AP)",
+   "[Active] Total Monster Damage = 330 / 480 / 630 / 780 / 930 (+ 90% AP)"
+  ],
+  "skipped": [
+   "Magic Damage: unknown scaling \"(+ 2.5 / 2.85 / 3.2 / 3.55 / 3.9%   of target's maximum health)\"",
+   "Total Magic Damage: sum of other lines",
+   "Monster Damage: not against champions",
+   "Total Monster Damage: sum of other lines"
+  ],
+  "parsed": [],
+  "override": null,
+  "note": ""
+ }
+}

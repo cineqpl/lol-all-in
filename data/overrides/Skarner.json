@@ -1,0 +1,28 @@
+{
+ "Q": {
+  "name": "Shattered Earth",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage per Hit = 10 / 20 / 30 / 40 / 50 (+ 90% bonus AD) (+ 3% of his bonus health)",
+   "[Active] Total Bonus Physical Damage = 30 / 60 / 90 / 120 / 150 (+270% bonus AD) (+ 9% of his bonus health)",
+   "[Active] Monster Percent Health Damage Cap = 150 / 200 / 250 / 300 / 350",
+   "[Active] Physical Damage = 10 / 20 / 30 / 40 / 50 (+ 90% bonus AD) (+ 3% of his bonus health) (+ 11% of target's maximum health)",
+   "[Active] Maximum Monster Damage = 160 / 220 / 280 / 340 / 400 (+ 90% bonus AD) (+ 3% of his bonus health)"
+  ],
+  "skipped": [
+   "Total Bonus Physical Damage: sum of other lines",
+   "Monster Percent Health Damage Cap: not against champions",
+   "Maximum Monster Damage: sum of other lines"
+  ],
+  "parsed": [
+   "Active: Bonus Physical Damage per Hit (physical) 10/20/30/40/50 + 90% bonus AD + 3% bonus HP",
+   "Active: Physical Damage (physical) 10/20/30/40/50 + 90% bonus AD + 3% bonus HP + 11% target's max HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "Q": {
+  "name": "Deceive",
+  "status": "unchecked",
+  "reasons": [
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Active] Bonus Physical Damage = 25 / 35 / 45 / 55 / 65 (+ 60% bonus AD)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Bonus Physical Damage (physical) 25/35/45/55/65 + 60% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Jack in the Box",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 10 / 15 / 20 / 25 / 30 (+ 12% AP)",
+   "[Active] Increased Damage = 25 / 40 / 55 / 70 / 85 (+ 18% AP)",
+   "[Active] Bonus Monster Damage = 20 / 35 / 50 / 65 / 80",
+   "[Active] Total Monster Damage = 30 / 50 / 70 / 90 / 110 (+ 12% AP)",
+   "[Active] Increased Monster Damage = 45 / 75 / 105 / 135 / 165 (+ 18% AP)"
+  ],
+  "skipped": [
+   "Bonus Monster Damage: not against champions",
+   "Total Monster Damage: sum of other lines",
+   "Increased Monster Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Magic Damage (magic) 10/15/20/25/30 + 12% AP",
+   "Active: Increased Damage (magic) 25/40/55/70/85 + 18% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "E": {
+  "name": "Two-Shiv Poison",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 70 / 95 / 120 / 145 / 170 (+ 80% bonus AD) (+ 60% AP)",
+   "[Active] Increased Damage = 105 / 142.5 / 180 / 217.5 / 255 (+ 120% bonus AD) (+ 90% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 70/95/120/145/170 + 80% bonus AD + 60% AP",
+   "Active: Increased Damage (magic) 105/142.5/180/217.5/255 + 120% bonus AD + 90% AP"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "R": {
+  "name": "Hallucinate",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Magic Damage = 150 / 225 / 300 (+ 70% AP)",
+   "[Active] Modified Magic Damage = 10 / 20 / 30 (+ 10% AP)",
+   "[Active] Increased Modified Damage = 25 / 50 / 75 (+ 15% AP)"
+  ],
+  "skipped": [],
+  "parsed": [
+   "Active: Magic Damage (magic) 150/225/300 + 70% AP",
+   "Active: Modified Magic Damage (magic) 10/20/30 + 10% AP",
+   "Active: Increased Modified Damage (magic) 25/50/75 + 15% AP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

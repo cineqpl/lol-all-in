@@ -1,0 +1,56 @@
+{
+ "Q": {
+  "name": "Piercing Arrow",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Recast] Minimum Physical Damage = 50 / 100 / 150 / 200 / 250 (+ 80% bonus AD)",
+   "[Recast] Maximum Physical Damage = 85 / 170 / 255 / 340 / 425 (+ 136% bonus AD)",
+   "[Recast] Minimum Reduced Damage = 16.5 / 33 / 49.5 / 66 / 82.5 (+ 26.4% bonus AD)",
+   "[Recast] Maximum Reduced Damage = 28.05 / 56.1 / 84.15 / 112.2 / 140.25 (+ 44.88% bonus AD)"
+  ],
+  "skipped": [
+   "Maximum Physical Damage: maximum of a range (minimum is used)",
+   "Maximum Reduced Damage: maximum of a range (minimum is used)"
+  ],
+  "parsed": [
+   "Recast: Minimum Physical Damage (physical) 50/100/150/200/250 + 80% bonus AD",
+   "Recast: Minimum Reduced Damage (physical) 16.5/33/49.5/66/82.5 + 26.4% bonus AD"
+  ],
+  "override": null,
+  "note": ""
+ },
+ "W": {
+  "name": "Blighted Quiver",
+  "status": "unchecked",
+  "reasons": [
+   "3 casts",
+   "several damage lines in one cast",
+   "per-hit wording (stacks, ticks, empowered, bonus, execute)"
+  ],
+  "wikiLines": [
+   "[Passive] Bonus Magic Damage = 4 / 10 / 16 / 22 / 28 (+ 20% bonus AD) (+ 30% AP)",
+   "[Blight] Bonus Magic Damage per Stack = 2.5 / 3 / 3.5 / 4 / 4.5% (+ 1.4% per 100 AP) of the target's maximum health",
+   "[Blight] Bonus Magic Damage at Max Stacks = 7.5 / 9 / 10.5 / 12 / 13.5% (+ 4.2% per 100 AP) of the target's maximum health",
+   "[Blight] Maximum Bonus Magic Damage per Stack = 4.25 / 5.1 / 5.95 / 6.8 / 7.65% (+ 2.38% per 100 AP) of the target's maximum health",
+   "[Blight] Maximum Bonus Magic Damage at Max Stacks = 12.75 / 15.3 / 17.85 / 20.4 / 22.95% (+ 7.14% per 100 AP) of the target's maximum health",
+   "[Active] Active Minimum Magic Damage = 6 / 7 / 8 / 9 / 10% of target's missing health",
+   "[Active] Active Maximum Magic Damage = 10.2 / 11.9 / 13.6 / 15.3 / 17% of target's missing health"
+  ],
+  "skipped": [
+   "Maximum Bonus Magic Damage per Stack: sum of other lines",
+   "Maximum Bonus Magic Damage at Max Stacks: sum of other lines"
+  ],
+  "parsed": [
+   "Passive: Bonus Magic Damage (magic) 4/10/16/22/28 + 20% bonus AD + 30% AP",
+   "Blight: Bonus Magic Damage per Stack (magic) 0 + 2.5/3/3.5/4/4.5% target's max HP + 0.014% AP",
+   "Blight: Bonus Magic Damage at Max Stacks (magic) 0 + 7.5/9/10.5/12/13.5% target's max HP + 0.042% AP",
+   "Active: Active Minimum Magic Damage (magic) 0 + 6/7/8/9/10% target's missing HP",
+   "Active: Active Maximum Magic Damage (magic) 0 + 10.2/11.9/13.6/15.3/17% target's missing HP"
+  ],
+  "override": null,
+  "note": ""
+ }
+}

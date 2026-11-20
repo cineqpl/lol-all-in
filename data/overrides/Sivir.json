@@ -1,0 +1,25 @@
+{
+ "W": {
+  "name": "Ricochet",
+  "status": "unchecked",
+  "reasons": [
+   "several damage lines in one cast"
+  ],
+  "wikiLines": [
+   "[Active] Bounce Damage = 40 / 42.5 / 45 / 47.5 / 50% AD",
+   "[Active] Bounce Critical Damage = 80 / 85 / 90 / 95 / 100% AD",
+   "[Active] Minion Bounce Damage = 26 / 27.625 / 29.25 / 30.875 / 32.5% AD",
+   "[Active] Minion Bounce Critical Damage = 52 / 55.25 / 58.5 / 61.75 / 65% AD"
+  ],
+  "skipped": [
+   "Minion Bounce Damage: not against champions",
+   "Minion Bounce Critical Damage: not against champions"
+  ],
+  "parsed": [
+   "Active: Bounce Damage (physical) 0 + 40/42.5/45/47.5/50% AD",
+   "Active: Bounce Critical Damage (physical) 0 + 80/85/90/95/100% AD"
+  ],
+  "override": null,
+  "note": ""
+ }
+}
