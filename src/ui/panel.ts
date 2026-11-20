@@ -1,0 +1,89 @@
+import { lookupChampion, sumItemStats, type GameData } from '../data/load';
+import type { Side } from '../model/matchup';
+import type { AbilityKey } from '../model/types';
+import { h } from './dom';
+
+export type Panel = { el: HTMLElement; getSide(): Side };
+
+const KEYS: AbilityKey[] = ['Q', 'W', 'E', 'R'];
+const MAX_RANK: Record<AbilityKey, number> = { Q: 5, W: 5, E: 5, R: 3 };
+const ITEM_SLOTS = 6;
+
+function select(field: string, options: [string, string][], blank?: string): HTMLSelectElement {
+  const sel = h('select', { 'data-field': field }) as HTMLSelectElement;
+  if (blank !== undefined) sel.append(h('option', { value: '' }, blank));
+  for (const [value, label] of options) sel.append(h('option', { value }, label));
+  return sel;
+}
+
+function numberInput(field: string, min: number, max: number, value: number): HTMLInputElement {
+  return h('input', {
+    type: 'number',
+    'data-field': field,
+    min: String(min),
+    max: String(max),
+    value: String(value),
+  }) as HTMLInputElement;
+}
+
+export function createPanel(
+  data: GameData,
+  side: 'you' | 'enemy',
+  title: string,
+  onChange: () => void,
+): Panel {
+  const champions = Object.values(data.champions).sort((a, b) => a.name.localeCompare(b.name));
+  const champion = select('champion', champions.map((c): [string, string] => [c.id, c.name]));
+  const level = numberInput('level', 1, 18, 1);
+  const ranks = Object.fromEntries(
+    KEYS.map((k) => [k, numberInput(`rank-${k}`, 0, MAX_RANK[k], k === 'Q' ? 1 : 0)]),
+  ) as Record<AbilityKey, HTMLInputElement>;
+
+  const itemOptions = Object.entries(data.items)
+    .filter(([, item]) => Object.keys(item.stats).length > 0)
+    .sort((a, b) => a[1].name.localeCompare(b[1].name))
+    .map(([id, item]): [string, string] => [id, item.name]);
+  const items = Array.from({ length: ITEM_SLOTS }, (_, i) =>
+    select(`item-${i}`, itemOptions, '(no item)'),
+  );
+
+  const runeOptions = Object.entries(data.runes).map(
+    ([id, r]): [string, string] => [id, `${r.name} (${r.tree})`],
+  );
+  const runes = select('runes', runeOptions, '(no rune)');
+
+  const el = h(
+    'section',
+    { class: 'panel', 'data-side': side },
+    h('h2', {}, title),
+    h('label', {}, 'Champion ', champion),
+    h('label', {}, 'Level ', level),
+    h('div', { class: 'ranks' }, ...KEYS.map((k) => h('label', {}, `${k} `, ranks[k]))),
+    h('div', { class: 'items' }, ...items),
+    h('label', {}, 'Rune ', runes),
+    h('p', { class: 'note' }, 'Rune and item effects beyond flat stats are not modelled yet.'),
+  );
+  el.addEventListener('change', onChange);
+
+  return {
+    el,
+    getSide(): Side {
+      const champ = lookupChampion(data, champion.value);
+      const itemIds = items.map((s) => s.value).filter(Boolean);
+      return {
+        champion: champ,
+        abilities: data.abilities[champ.id] ?? [],
+        build: {
+          championId: champ.id,
+          level: Number(level.value) || 1,
+          ranks: Object.fromEntries(
+            KEYS.map((k) => [k, Number(ranks[k].value) || 0]),
+          ) as Record<AbilityKey, number>,
+          itemIds,
+          runeIds: runes.value ? [runes.value] : [],
+        },
+        itemStats: sumItemStats(data, itemIds),
+      };
+    },
+  };
+}

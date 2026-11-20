@@ -1,0 +1,75 @@
+// @vitest-environment jsdom
+import { beforeEach, describe, expect, test } from 'vitest';
+import type { GameData } from '../src/data/load';
+import { bootstrap, mount } from '../src/ui/main';
+
+const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
+const champ = (id: string, hp: number) => ({
+  id, name: id, base: { ...zero, hp }, growth: zero,
+});
+const trueQ = (dmg: number) => ({
+  key: 'Q' as const, name: 'Zap', damageType: 'true' as const, baseByRank: [dmg, dmg, dmg, dmg, dmg],
+  scalings: [], status: 'modelled' as const,
+});
+const oddW = {
+  key: 'W' as const, name: 'Weird', damageType: 'magic' as const, baseByRank: [], scalings: [],
+  status: 'not-modelled' as const, reason: 'recast',
+};
+
+const data: GameData = {
+  meta: { patch: '16.1.1', abilitiesPatch: '15.1' },
+  champions: { Alpha: champ('Alpha', 1000), Beta: champ('Beta', 500) },
+  abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)] },
+  items: { '1': { name: 'Sword', stats: { ad: 10 }, hasEffects: false } },
+  runes: {},
+};
+
+let root: HTMLElement;
+const q = (sel: string) => root.querySelector(sel) as HTMLElement;
+const field = (side: string, f: string) => q(`.panel[data-side=${side}] [data-field=${f}]`) as HTMLInputElement;
+function set(el: HTMLInputElement, value: string) {
+  el.value = value;
+  el.dispatchEvent(new Event('change', { bubbles: true }));
+}
+
+beforeEach(() => {
+  document.body.innerHTML = '<div id="app"></div>';
+  root = document.getElementById('app')!;
+  mount(root, data);
+});
+
+describe('matchup UI', () => {
+  test('choosing two champions renders both damage numbers', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Beta');
+    expect(q('[data-testid=your-damage]').textContent).toContain('100');
+    expect(q('[data-testid=enemy-damage]').textContent).toContain('400');
+  });
+
+  test('shows not-modelled abilities with their reason', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(q('[data-testid=not-modelled-you]').textContent).toMatch(/Weird.*recast/);
+  });
+
+  test('status reflects the matchup and the ability-data patch is shown', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Beta');
+    expect(q('[data-testid=status]').dataset.status).toBe('even');
+    expect(root.textContent).toContain('15.1');
+  });
+
+  test('same champion in both panels does not link the panels', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Alpha');
+    set(field('you', 'level'), '12');
+    expect(field('enemy', 'level').value).toBe('1');
+  });
+});
+
+describe('bootstrap errors', () => {
+  test('a load failure shows the message with the missing id instead of a blank page', async () => {
+    const el = document.createElement('div');
+    await bootstrap(el, () => Promise.reject(new Error('Unknown champion id: Zzz')));
+    expect(el.querySelector('[data-testid=error]')!.textContent).toContain('Zzz');
+  });
+});
