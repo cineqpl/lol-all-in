@@ -18,6 +18,7 @@ const specialW: Ability = {
 describe('mitigate', () => {
   test('100 resist halves damage', () => expect(mitigate(100, 100)).toBe(50));
   test('0 resist takes full damage', () => expect(mitigate(100, 0)).toBe(100));
+  test('200 resist is a 66% reduction', () => expect(mitigate(100, 200)).toBeCloseTo(100 / 3, 6));
   test('negative resist amplifies but stays finite', () => {
     const v = mitigate(100, -50);
     expect(Number.isFinite(v)).toBe(true);
@@ -26,6 +27,16 @@ describe('mitigate', () => {
 });
 
 describe('abilityDamage', () => {
+  test('physical damage uses armor, magic uses MR, true ignores both', () => {
+    const tgt = { ...target, armor: 100, mr: 300 };
+    const base = { baseByRank: [100], scalings: [], status: 'modelled' as const, key: 'Q' as const, name: 'x' };
+    expect(abilityDamage({ ...base, damageType: 'physical' }, 1, attacker, tgt)).toBe(50);
+    expect(abilityDamage({ ...base, damageType: 'magic' }, 1, attacker, tgt)).toBe(25);
+    expect(abilityDamage({ ...base, damageType: 'true' }, 1, attacker, tgt)).toBe(100);
+  });
+  test('a not-modelled ability deals nothing', () => {
+    expect(abilityDamage(specialW, 1, attacker, target)).toBe(0);
+  });
   test('rank 0 deals nothing', () => {
     expect(abilityDamage(magicQ, 0, attacker, target)).toBe(0);
   });

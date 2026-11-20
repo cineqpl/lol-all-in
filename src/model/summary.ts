@@ -5,6 +5,8 @@ export type StatSummary = {
   hp: number;
   ad: number;
   ap: number;
+  armor: number;
+  mr: number;
   /** Only for champions that use Mana or Energy. */
   resource?: { label: 'Mana' | 'Energy'; value: number };
 };
@@ -12,7 +14,9 @@ export type StatSummary = {
 /** HP, AD, AP and mana/energy for one side, from champion level and items. */
 export function summarizeStats(side: Side): StatSummary {
   const total = totalStats(side);
-  const summary: StatSummary = { hp: total.hp, ad: total.ad, ap: total.ap };
+  const summary: StatSummary = {
+    hp: total.hp, ad: total.ad, ap: total.ap, armor: total.armor, mr: total.mr,
+  };
   if (side.champion.resource === 'Mana') {
     summary.resource = { label: 'Mana', value: total.mana };
   } else if (side.champion.resource === 'Energy') {

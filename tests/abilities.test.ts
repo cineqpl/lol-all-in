@@ -74,6 +74,20 @@ describe('normaliseAbilities', () => {
   });
 });
 
+describe('damage type of not-modelled abilities', () => {
+  const odd = [entry('Magic Damage', [[1, 2], '']), entry('Bonus Magic Damage', [[1, 2], ''])];
+  test('keeps the damage type Meraki reports for the ability', () => {
+    expect(qOf(champWithQ('PHYSICAL_DAMAGE', odd))).toMatchObject({ status: 'not-modelled', damageType: 'physical' });
+    expect(qOf(champWithQ('MAGIC_DAMAGE', odd)).damageType).toBe('magic');
+    expect(qOf(champWithQ('TRUE_DAMAGE', odd)).damageType).toBe('true');
+  });
+  test('is unknown when Meraki has no usable type, never a guessed one', () => {
+    expect(qOf(champWithQ(null, odd)).damageType).toBe('unknown');
+    expect(qOf(champWithQ('MIXED_DAMAGE', odd)).damageType).toBe('unknown');
+    expect(missingAbilities().every((a) => a.damageType === 'unknown')).toBe(true);
+  });
+});
+
 describe('missingAbilities', () => {
   test('returns four not-modelled placeholders with a reason', () => {
     const a = missingAbilities();

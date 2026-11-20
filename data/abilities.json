@@ -3,7 +3,7 @@
   {
    "key": "Q",
    "name": "The Darkin Blade",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -12,7 +12,7 @@
   {
    "key": "W",
    "name": "Infernal Chains",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -21,7 +21,7 @@
   {
    "key": "E",
    "name": "Umbral Dash",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -30,7 +30,7 @@
   {
    "key": "R",
    "name": "World Ender",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -41,7 +41,7 @@
   {
    "key": "Q",
    "name": "Orb of Deception",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -120,7 +120,7 @@
   {
    "key": "W",
    "name": "Twilight Shroud",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -149,7 +149,7 @@
   {
    "key": "Q",
    "name": "Avengerang",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -158,7 +158,7 @@
   {
    "key": "W",
    "name": "Going Rogue",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -167,7 +167,7 @@
   {
    "key": "E",
    "name": "Heroic Swing",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -176,7 +176,7 @@
   {
    "key": "R",
    "name": "Comeuppance",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -234,7 +234,7 @@
   {
    "key": "R",
    "name": "Unbreakable Will",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -245,7 +245,7 @@
   {
    "key": "Q",
    "name": "Cunning Sweep",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -254,7 +254,7 @@
   {
    "key": "W",
    "name": "Repudiation",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -263,7 +263,7 @@
   {
    "key": "E",
    "name": "Lacerate",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -356,7 +356,7 @@
   {
    "key": "W",
    "name": "Crystallize",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -453,7 +453,7 @@
   {
    "key": "Q",
    "name": "Weapons of the Faithful",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -462,7 +462,7 @@
   {
    "key": "W",
    "name": "Phase",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -471,7 +471,7 @@
   {
    "key": "E",
    "name": "Weapon Queue System",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -480,7 +480,7 @@
   {
    "key": "R",
    "name": "Moonlight Vigil",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -491,7 +491,7 @@
   {
    "key": "Q",
    "name": "Ranger's Focus",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -519,7 +519,7 @@
   {
    "key": "E",
    "name": "Hawkshot",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -556,7 +556,7 @@
   {
    "key": "W",
    "name": "Astral Flight",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -602,7 +602,7 @@
   {
    "key": "W",
    "name": "Across the Veil",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -734,7 +734,7 @@
   {
    "key": "W",
    "name": "Caretaker's Shrine",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -743,7 +743,7 @@
   {
    "key": "E",
    "name": "Magical Journey",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -752,7 +752,7 @@
   {
    "key": "R",
    "name": "Tempered Fate",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -763,7 +763,7 @@
   {
    "key": "Q",
    "name": "Void Surge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -795,7 +795,7 @@
   {
    "key": "E",
    "name": "Royal Maelstrom",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -804,7 +804,7 @@
   {
    "key": "R",
    "name": "Endless Banquet",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -843,7 +843,7 @@
   {
    "key": "E",
    "name": "Power Fist",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -930,7 +930,7 @@
   {
    "key": "W",
    "name": "Stand Behind Me",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -939,7 +939,7 @@
   {
    "key": "E",
    "name": "Unbreakable",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -990,7 +990,7 @@
   {
    "key": "W",
    "name": "Blood Frenzy",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1031,7 +1031,7 @@
   {
    "key": "Q",
    "name": "Piltover Peacemaker",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1040,7 +1040,7 @@
   {
    "key": "W",
    "name": "Yordle Snap Trap",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1068,7 +1068,7 @@
   {
    "key": "R",
    "name": "Ace in the Hole",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1079,7 +1079,7 @@
   {
    "key": "Q",
    "name": "Precision Protocol",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1088,7 +1088,7 @@
   {
    "key": "W",
    "name": "Tactical Sweep",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1097,7 +1097,7 @@
   {
    "key": "E",
    "name": "Hookshot",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1190,7 +1190,7 @@
   {
    "key": "R",
    "name": "Feast",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1233,7 +1233,7 @@
   {
    "key": "E",
    "name": "Gatling Gun",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1242,7 +1242,7 @@
   {
    "key": "R",
    "name": "Missile Barrage",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1253,7 +1253,7 @@
   {
    "key": "Q",
    "name": "Decimate",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1262,7 +1262,7 @@
   {
    "key": "W",
    "name": "Crippling Strike",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1271,7 +1271,7 @@
   {
    "key": "E",
    "name": "Apprehend",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1280,7 +1280,7 @@
   {
    "key": "R",
    "name": "Noxian Guillotine",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1349,7 +1349,7 @@
   {
    "key": "Q",
    "name": "Spinning Axe",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1358,7 +1358,7 @@
   {
    "key": "W",
    "name": "Blood Rush",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1386,7 +1386,7 @@
   {
    "key": "R",
    "name": "Whirling Death",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1415,7 +1415,7 @@
   {
    "key": "E",
    "name": "Blunt Force Trauma",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1424,7 +1424,7 @@
   {
    "key": "R",
    "name": "Maximum Dosage",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1444,7 +1444,7 @@
   {
    "key": "W",
    "name": "Parallel Convergence",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1509,7 +1509,7 @@
   {
    "key": "E",
    "name": "Cocoon",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1518,7 +1518,7 @@
   {
    "key": "R",
    "name": "Spider Form / Human Form",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1681,7 +1681,7 @@
   {
    "key": "Q",
    "name": "Lunge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1709,7 +1709,7 @@
   {
    "key": "E",
    "name": "Bladework",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1718,7 +1718,7 @@
   {
    "key": "R",
    "name": "Grand Challenge",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1862,7 +1862,7 @@
   {
    "key": "W",
    "name": "Remove Scurvy",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1871,7 +1871,7 @@
   {
    "key": "E",
    "name": "Powder Keg",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1891,7 +1891,7 @@
   {
    "key": "Q",
    "name": "Decisive Strike",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1900,7 +1900,7 @@
   {
    "key": "W",
    "name": "Courage",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1909,7 +1909,7 @@
   {
    "key": "E",
    "name": "Judgment",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1918,7 +1918,7 @@
   {
    "key": "R",
    "name": "Demacian Justice",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1929,7 +1929,7 @@
   {
    "key": "Q",
    "name": "Boomerang Throw",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1947,7 +1947,7 @@
   {
    "key": "E",
    "name": "Hop",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -1956,7 +1956,7 @@
   {
    "key": "R",
    "name": "GNAR!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2023,7 +2023,7 @@
   {
    "key": "Q",
    "name": "End of the Line",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2051,7 +2051,7 @@
   {
    "key": "E",
    "name": "Quickdraw",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2060,7 +2060,7 @@
   {
    "key": "R",
    "name": "Collateral Damage",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2071,7 +2071,7 @@
   {
    "key": "Q",
    "name": "Snip Snip!",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2080,7 +2080,7 @@
   {
    "key": "W",
    "name": "Hallowed Mist",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2109,7 +2109,7 @@
   {
    "key": "Q",
    "name": "Rampage",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2127,7 +2127,7 @@
   {
    "key": "E",
    "name": "Devastating Charge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2184,7 +2184,7 @@
   {
    "key": "R",
    "name": "UPGRADE!!!",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2195,7 +2195,7 @@
   {
    "key": "Q",
    "name": "Subject: Disaster",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2204,7 +2204,7 @@
   {
    "key": "W",
    "name": "Subject: Serenity",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2213,7 +2213,7 @@
   {
    "key": "E",
    "name": "Subject: Torment",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2233,7 +2233,7 @@
   {
    "key": "Q",
    "name": "Tentacle Smash",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2242,7 +2242,7 @@
   {
    "key": "W",
    "name": "Harsh Lesson",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2251,7 +2251,7 @@
   {
    "key": "E",
    "name": "Test of Spirit",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2298,7 +2298,7 @@
   {
    "key": "W",
    "name": "Defiant Dance",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2392,7 +2392,7 @@
   {
    "key": "R",
    "name": "Daisy!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2421,7 +2421,7 @@
   {
    "key": "E",
    "name": "Eye of the Storm",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2430,7 +2430,7 @@
   {
    "key": "R",
    "name": "Monsoon",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2460,7 +2460,7 @@
   {
    "key": "W",
    "name": "Golden Aegis",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2593,7 +2593,7 @@
   {
    "key": "R",
    "name": "Transform Mercury Cannon",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2604,7 +2604,7 @@
   {
    "key": "Q",
    "name": "Dancing Grenade",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2613,7 +2613,7 @@
   {
    "key": "W",
    "name": "Deadly Flourish",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2631,7 +2631,7 @@
   {
    "key": "R",
    "name": "Curtain Call",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2642,7 +2642,7 @@
   {
    "key": "Q",
    "name": "Switcheroo!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2689,7 +2689,7 @@
   {
    "key": "R",
    "name": "Super Mega Death Rocket!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2700,7 +2700,7 @@
   {
    "key": "Q",
    "name": "Icathian Rain",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2732,7 +2732,7 @@
   {
    "key": "E",
    "name": "Supercharge",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2741,7 +2741,7 @@
   {
    "key": "R",
    "name": "Killer Instinct",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2780,7 +2780,7 @@
   {
    "key": "E",
    "name": "Rend",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2789,7 +2789,7 @@
   {
    "key": "R",
    "name": "Fate's Call",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2828,7 +2828,7 @@
   {
    "key": "E",
    "name": "Inspire",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2837,7 +2837,7 @@
   {
    "key": "R",
    "name": "Mantra",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2857,7 +2857,7 @@
   {
    "key": "W",
    "name": "Wall of Pain",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -2971,7 +2971,7 @@
   {
    "key": "W",
    "name": "Preparation",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3037,7 +3037,7 @@
   {
    "key": "W",
    "name": "Celestial Blessing",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3078,7 +3078,7 @@
   {
    "key": "Q",
    "name": "Reaping Slash",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3106,7 +3106,7 @@
   {
    "key": "E",
    "name": "Shadow Step",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3182,7 +3182,7 @@
   {
    "key": "Q",
    "name": "Taste Their Fear",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3229,7 +3229,7 @@
   {
    "key": "R",
    "name": "Void Assault",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3268,7 +3268,7 @@
   {
    "key": "E",
    "name": "Mounting Dread",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3277,7 +3277,7 @@
   {
    "key": "R",
    "name": "Lamb's Respite",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3288,7 +3288,7 @@
   {
    "key": "Q",
    "name": "Bear Trap on a Rope",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3297,7 +3297,7 @@
   {
    "key": "W",
    "name": "Violent Tendencies",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3306,7 +3306,7 @@
   {
    "key": "E",
    "name": "Jousting",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3384,7 +3384,7 @@
   {
    "key": "Q",
    "name": "Ntofo Strikes",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3393,7 +3393,7 @@
   {
    "key": "W",
    "name": "Path Maker",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3402,7 +3402,7 @@
   {
    "key": "E",
    "name": "Footwork",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3411,7 +3411,7 @@
   {
    "key": "R",
    "name": "All Out",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3489,7 +3489,7 @@
   {
    "key": "W",
    "name": "Safeguard",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3517,7 +3517,7 @@
   {
    "key": "R",
    "name": "Dragon's Rage",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3584,7 +3584,7 @@
   {
    "key": "Q",
    "name": "Blooming Blows",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3716,7 +3716,7 @@
   {
    "key": "Q",
    "name": "Q",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3725,7 +3725,7 @@
   {
    "key": "W",
    "name": "W",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3734,7 +3734,7 @@
   {
    "key": "E",
    "name": "E",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3743,7 +3743,7 @@
   {
    "key": "R",
    "name": "R",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3754,7 +3754,7 @@
   {
    "key": "Q",
    "name": "Piercing Light",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3782,7 +3782,7 @@
   {
    "key": "E",
    "name": "Relentless Pursuit",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3791,7 +3791,7 @@
   {
    "key": "R",
    "name": "The Culling",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3811,7 +3811,7 @@
   {
    "key": "W",
    "name": "Whimsy",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3839,7 +3839,7 @@
   {
    "key": "R",
    "name": "Wild Growth",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3869,7 +3869,7 @@
   {
    "key": "W",
    "name": "Prismatic Barrier",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -3935,7 +3935,7 @@
   {
    "key": "W",
    "name": "Thunderclap",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4076,7 +4076,7 @@
   {
    "key": "Q",
    "name": "Alpha Strike",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4085,7 +4085,7 @@
   {
    "key": "W",
    "name": "Meditate",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4094,7 +4094,7 @@
   {
    "key": "E",
    "name": "Wuju Style",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4103,7 +4103,7 @@
   {
    "key": "R",
    "name": "Highlander",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4171,7 +4171,7 @@
   {
    "key": "W",
    "name": "Cozy Campfire",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4180,7 +4180,7 @@
   {
    "key": "E",
    "name": "Warm Hugs",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4189,7 +4189,7 @@
   {
    "key": "R",
    "name": "Breath of Life",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4223,7 +4223,7 @@
   {
    "key": "W",
    "name": "Strut",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4241,7 +4241,7 @@
   {
    "key": "R",
    "name": "Bullet Time",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4252,7 +4252,7 @@
   {
    "key": "Q",
    "name": "Crushing Blow",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4261,7 +4261,7 @@
   {
    "key": "W",
    "name": "Warrior Trickster",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4289,7 +4289,7 @@
   {
    "key": "R",
    "name": "Cyclone",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4309,7 +4309,7 @@
   {
    "key": "W",
    "name": "Indestructible",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4337,7 +4337,7 @@
   {
    "key": "R",
    "name": "Realm of Death",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4376,7 +4376,7 @@
   {
    "key": "E",
    "name": "Black Shield",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4396,7 +4396,7 @@
   {
    "key": "Q",
    "name": "Darkin Daggers",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4405,7 +4405,7 @@
   {
    "key": "W",
    "name": "The Call of the Pack",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4414,7 +4414,7 @@
   {
    "key": "E",
    "name": "Eviscerate",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4423,7 +4423,7 @@
   {
    "key": "R",
    "name": "Hounds' Pursuit",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4490,7 +4490,7 @@
   {
    "key": "Q",
    "name": "Siphoning Strike",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4499,7 +4499,7 @@
   {
    "key": "W",
    "name": "Wither",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4660,7 +4660,7 @@
   {
    "key": "E",
    "name": "Primal Surge",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4669,7 +4669,7 @@
   {
    "key": "R",
    "name": "Aspect of the Cougar",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4680,7 +4680,7 @@
   {
    "key": "Q",
    "name": "Formless Blade",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4689,7 +4689,7 @@
   {
    "key": "W",
    "name": "Jubilant Veil",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4717,7 +4717,7 @@
   {
    "key": "R",
    "name": "Apotheosis",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4728,7 +4728,7 @@
   {
    "key": "Q",
    "name": "Duskbringer",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4737,7 +4737,7 @@
   {
    "key": "W",
    "name": "Shroud of Darkness",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4774,7 +4774,7 @@
   {
    "key": "Q",
    "name": "Consume",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4820,7 +4820,7 @@
   {
    "key": "Q",
    "name": "Undertow",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4829,7 +4829,7 @@
   {
    "key": "W",
    "name": "Tough It Out",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4857,7 +4857,7 @@
   {
    "key": "R",
    "name": "Ragnarok",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4962,7 +4962,7 @@
   {
    "key": "E",
    "name": "Searing Charge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4982,7 +4982,7 @@
   {
    "key": "Q",
    "name": "Comet Spear",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -4991,7 +4991,7 @@
   {
    "key": "W",
    "name": "Shield Vault",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5019,7 +5019,7 @@
   {
    "key": "R",
    "name": "Grand Starfall",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5030,7 +5030,7 @@
   {
    "key": "Q",
    "name": "Hammer Shock",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5058,7 +5058,7 @@
   {
    "key": "E",
    "name": "Heroic Charge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5067,7 +5067,7 @@
   {
    "key": "R",
    "name": "Keeper's Verdict",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5097,7 +5097,7 @@
   {
    "key": "W",
    "name": "Ghostwater Dive",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5125,7 +5125,7 @@
   {
    "key": "R",
    "name": "Death from Below",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5136,7 +5136,7 @@
   {
    "key": "Q",
    "name": "Edge of Ixtal",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5173,7 +5173,7 @@
   {
    "key": "R",
    "name": "Supreme Display of Talent",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5184,7 +5184,7 @@
   {
    "key": "Q",
    "name": "Blinding Assault",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5193,7 +5193,7 @@
   {
    "key": "W",
    "name": "Heightened Senses",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5202,7 +5202,7 @@
   {
    "key": "E",
    "name": "Vault",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5211,7 +5211,7 @@
   {
    "key": "R",
    "name": "Behind Enemy Lines",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5260,7 +5260,7 @@
   {
    "key": "E",
    "name": "Battle Dance",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5316,7 +5316,7 @@
   {
    "key": "E",
    "name": "Frenzying Taunt",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5344,7 +5344,7 @@
   {
    "key": "Q",
    "name": "Queen's Wrath",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5353,7 +5353,7 @@
   {
    "key": "W",
    "name": "Burrow",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5362,7 +5362,7 @@
   {
    "key": "E",
    "name": "Furious Bite",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5371,7 +5371,7 @@
   {
    "key": "R",
    "name": "Void Rush",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5459,7 +5459,7 @@
   {
    "key": "W",
    "name": "Bailout",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5487,7 +5487,7 @@
   {
    "key": "R",
    "name": "Hostile Takeover",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5498,7 +5498,7 @@
   {
    "key": "Q",
    "name": "Cull the Meek",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5507,7 +5507,7 @@
   {
    "key": "W",
    "name": "Ruthless Predator",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5546,7 +5546,7 @@
   {
    "key": "Q",
    "name": "Savagery",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5593,7 +5593,7 @@
   {
    "key": "R",
    "name": "Thrill of the Hunt",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5604,7 +5604,7 @@
   {
    "key": "Q",
    "name": "Broken Wings",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5632,7 +5632,7 @@
   {
    "key": "E",
    "name": "Valor",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5641,7 +5641,7 @@
   {
    "key": "R",
    "name": "Blade of the Exile",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5661,7 +5661,7 @@
   {
    "key": "W",
    "name": "Scrap Shield",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5717,7 +5717,7 @@
   {
    "key": "R",
    "name": "Realm Warp",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5728,7 +5728,7 @@
   {
    "key": "Q",
    "name": "Flair",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5737,7 +5737,7 @@
   {
    "key": "W",
    "name": "Blade Whirl",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5765,7 +5765,7 @@
   {
    "key": "R",
    "name": "Inferno Trigger",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5795,7 +5795,7 @@
   {
    "key": "W",
    "name": "Winter's Wrath",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5872,7 +5872,7 @@
   {
    "key": "E",
    "name": "Curse of the Black Mist",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5913,7 +5913,7 @@
   {
    "key": "W",
    "name": "Surround Sound",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5950,7 +5950,7 @@
   {
    "key": "Q",
    "name": "Knuckle Down",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5959,7 +5959,7 @@
   {
    "key": "W",
    "name": "Haymaker",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5968,7 +5968,7 @@
   {
    "key": "E",
    "name": "Facebreaker",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5977,7 +5977,7 @@
   {
    "key": "R",
    "name": "The Show Stopper",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -5988,7 +5988,7 @@
   {
    "key": "Q",
    "name": "Deceive",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6035,7 +6035,7 @@
   {
    "key": "W",
    "name": "Spirit's Refuge",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6044,7 +6044,7 @@
   {
    "key": "E",
    "name": "Shadow Dash",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6053,7 +6053,7 @@
   {
    "key": "R",
    "name": "Stand United",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6064,7 +6064,7 @@
   {
    "key": "Q",
    "name": "Twin Bite",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6119,7 +6119,7 @@
   {
    "key": "W",
    "name": "Mega Adhesive",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6137,7 +6137,7 @@
   {
    "key": "R",
    "name": "Insanity Potion",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6148,7 +6148,7 @@
   {
    "key": "Q",
    "name": "Decimating Smash",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6185,7 +6185,7 @@
   {
    "key": "R",
    "name": "Unstoppable Onslaught",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6196,7 +6196,7 @@
   {
    "key": "Q",
    "name": "Boomerang Blade",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6205,7 +6205,7 @@
   {
    "key": "W",
    "name": "Ricochet",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6214,7 +6214,7 @@
   {
    "key": "E",
    "name": "Spell Shield",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6223,7 +6223,7 @@
   {
    "key": "R",
    "name": "On the Hunt",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6234,7 +6234,7 @@
   {
    "key": "Q",
    "name": "Shattered Earth",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6262,7 +6262,7 @@
   {
    "key": "E",
    "name": "Ixtal's Impact",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6290,7 +6290,7 @@
   {
    "key": "Q",
    "name": "Super Scorcher Breath",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6299,7 +6299,7 @@
   {
    "key": "W",
    "name": "Achooo!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6308,7 +6308,7 @@
   {
    "key": "E",
    "name": "Flap, Flap, Flap",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6317,7 +6317,7 @@
   {
    "key": "R",
    "name": "MMOOOMMMM!",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6337,7 +6337,7 @@
   {
    "key": "W",
    "name": "Aria of Perseverance",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6346,7 +6346,7 @@
   {
    "key": "E",
    "name": "Song of Celerity",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6393,7 +6393,7 @@
   {
    "key": "W",
    "name": "Astral Infusion",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6411,7 +6411,7 @@
   {
    "key": "R",
    "name": "Wish",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6498,7 +6498,7 @@
   {
    "key": "E",
    "name": "Abscond",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6507,7 +6507,7 @@
   {
    "key": "R",
    "name": "Hijack",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6604,7 +6604,7 @@
   {
    "key": "E",
    "name": "Thick Skin",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6613,7 +6613,7 @@
   {
    "key": "R",
    "name": "Devour",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6651,7 +6651,7 @@
   {
    "key": "R",
    "name": "Weaver's Wall",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6662,7 +6662,7 @@
   {
    "key": "Q",
    "name": "Noxian Diplomacy",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6671,7 +6671,7 @@
   {
    "key": "W",
    "name": "Rake",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6680,7 +6680,7 @@
   {
    "key": "E",
    "name": "Assassin's Path",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6689,7 +6689,7 @@
   {
    "key": "R",
    "name": "Shadow Assault",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6700,7 +6700,7 @@
   {
    "key": "Q",
    "name": "Starlight's Touch",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6709,7 +6709,7 @@
   {
    "key": "W",
    "name": "Bastion",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6727,7 +6727,7 @@
   {
    "key": "R",
    "name": "Cosmic Radiance",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6757,7 +6757,7 @@
   {
    "key": "W",
    "name": "Move Quick",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6805,7 +6805,7 @@
   {
    "key": "W",
    "name": "Dark Passage",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6842,7 +6842,7 @@
   {
    "key": "Q",
    "name": "Rapid Fire",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6874,7 +6874,7 @@
   {
    "key": "E",
    "name": "Explosive Charge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6906,7 +6906,7 @@
   {
    "key": "Q",
    "name": "Chomp",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6915,7 +6915,7 @@
   {
    "key": "W",
    "name": "Frozen Domain",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6924,7 +6924,7 @@
   {
    "key": "E",
    "name": "Pillar of Ice",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6944,7 +6944,7 @@
   {
    "key": "Q",
    "name": "Bloodlust",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6953,7 +6953,7 @@
   {
    "key": "W",
    "name": "Mocking Shout",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -6985,7 +6985,7 @@
   {
    "key": "R",
    "name": "Undying Rage",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7037,7 +7037,7 @@
   {
    "key": "R",
    "name": "Destiny",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7048,7 +7048,7 @@
   {
    "key": "Q",
    "name": "Ambush",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7057,7 +7057,7 @@
   {
    "key": "W",
    "name": "Venom Cask",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7066,7 +7066,7 @@
   {
    "key": "E",
    "name": "Contaminate",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7075,7 +7075,7 @@
   {
    "key": "R",
    "name": "Spray and Pray",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7086,7 +7086,7 @@
   {
    "key": "Q",
    "name": "Wilding Claw",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7095,7 +7095,7 @@
   {
    "key": "W",
    "name": "Iron Mantle",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7104,7 +7104,7 @@
   {
    "key": "E",
    "name": "Blazing Stampede",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7143,7 +7143,7 @@
   {
    "key": "W",
    "name": "Purge",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7190,7 +7190,7 @@
   {
    "key": "Q",
    "name": "Piercing Arrow",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7246,7 +7246,7 @@
   {
    "key": "Q",
    "name": "Tumble",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7255,7 +7255,7 @@
   {
    "key": "W",
    "name": "Silver Bolts",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7264,7 +7264,7 @@
   {
    "key": "E",
    "name": "Condemn",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7273,7 +7273,7 @@
   {
    "key": "R",
    "name": "Final Hour",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7302,7 +7302,7 @@
   {
    "key": "E",
    "name": "Event Horizon",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7369,7 +7369,7 @@
   {
    "key": "R",
    "name": "Life Form Disintegration Ray",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7438,7 +7438,7 @@
   {
    "key": "Q",
    "name": "Vault Breaker",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7447,7 +7447,7 @@
   {
    "key": "W",
    "name": "Denting Blows",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7498,7 +7498,7 @@
   {
    "key": "Q",
    "name": "Blade of the Ruined King",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7526,7 +7526,7 @@
   {
    "key": "E",
    "name": "Harrowed Path",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7535,7 +7535,7 @@
   {
    "key": "R",
    "name": "Heartbreaker",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7555,7 +7555,7 @@
   {
    "key": "W",
    "name": "Gravity Field",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7622,7 +7622,7 @@
   {
    "key": "Q",
    "name": "Thundering Smash",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7631,7 +7631,7 @@
   {
    "key": "W",
    "name": "Frenzied Maul",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7681,7 +7681,7 @@
   {
    "key": "W",
    "name": "Blood Hunt",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7690,7 +7690,7 @@
   {
    "key": "E",
    "name": "Primal Howl",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7710,7 +7710,7 @@
   {
    "key": "Q",
    "name": "Double Daggers",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7719,7 +7719,7 @@
   {
    "key": "W",
    "name": "Deadly Plumage",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7728,7 +7728,7 @@
   {
    "key": "E",
    "name": "Bladecaller",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7814,7 +7814,7 @@
   {
    "key": "Q",
    "name": "Three Talon Strike",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7823,7 +7823,7 @@
   {
    "key": "W",
    "name": "Wind Becomes Lightning",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7851,7 +7851,7 @@
   {
    "key": "R",
    "name": "Crescent Guard",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7881,7 +7881,7 @@
   {
    "key": "W",
    "name": "Wind Wall",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7937,7 +7937,7 @@
   {
    "key": "W",
    "name": "Spirit Cleave",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7946,7 +7946,7 @@
   {
    "key": "E",
    "name": "Soul Unbound",
-   "damageType": "magic",
+   "damageType": "true",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7955,7 +7955,7 @@
   {
    "key": "R",
    "name": "Fate Sealed",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7966,7 +7966,7 @@
   {
    "key": "Q",
    "name": "Last Rites",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7975,7 +7975,7 @@
   {
    "key": "W",
    "name": "Dark Procession",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -7993,7 +7993,7 @@
   {
    "key": "R",
    "name": "Eulogy of the Isles",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8004,7 +8004,7 @@
   {
    "key": "Q",
    "name": "Cultivation of Spirit",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8022,7 +8022,7 @@
   {
    "key": "E",
    "name": "Kanmei's Steps",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8031,7 +8031,7 @@
   {
    "key": "R",
    "name": "Transcend One's Self",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8051,7 +8051,7 @@
   {
    "key": "W",
    "name": "You and Me!",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8060,7 +8060,7 @@
   {
    "key": "E",
    "name": "Zoomies",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8080,7 +8080,7 @@
   {
    "key": "Q",
    "name": "Q",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8089,7 +8089,7 @@
   {
    "key": "W",
    "name": "W",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8098,7 +8098,7 @@
   {
    "key": "E",
    "name": "E",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8107,7 +8107,7 @@
   {
    "key": "R",
    "name": "R",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8166,7 +8166,7 @@
   {
    "key": "Q",
    "name": "Razor Shuriken",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8175,7 +8175,7 @@
   {
    "key": "W",
    "name": "Living Shadow",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8203,7 +8203,7 @@
   {
    "key": "R",
    "name": "Death Mark",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8214,7 +8214,7 @@
   {
    "key": "Q",
    "name": "Burst Fire",
-   "damageType": "magic",
+   "damageType": "physical",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8246,7 +8246,7 @@
   {
    "key": "E",
    "name": "Spark Surge",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8345,7 +8345,7 @@
   {
    "key": "W",
    "name": "Rewind",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8354,7 +8354,7 @@
   {
    "key": "E",
    "name": "Time Warp",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8363,7 +8363,7 @@
   {
    "key": "R",
    "name": "Chronoshift",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8401,7 +8401,7 @@
   {
    "key": "R",
    "name": "Portal Jump",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",
@@ -8431,7 +8431,7 @@
   {
    "key": "W",
    "name": "Rampant Growth",
-   "damageType": "magic",
+   "damageType": "unknown",
    "baseByRank": [],
    "scalings": [],
    "status": "not-modelled",

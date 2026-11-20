@@ -25,6 +25,7 @@ export function abilityRaw(ability: Ability, rank: number, attacker: Attacker, _
 }
 
 export function abilityDamage(ability: Ability, rank: number, attacker: Attacker, target: StatBlock): number {
+  if (ability.status === 'not-modelled' || ability.damageType === 'unknown') return 0;
   const raw = abilityRaw(ability, rank, attacker, target);
   if (ability.damageType === 'true') return raw;
   return mitigate(raw, ability.damageType === 'physical' ? target.armor : target.mr);

@@ -9,8 +9,8 @@ function side(resource: string | undefined, level: number, itemStats: Partial<St
   return {
     champion: {
       id: 'X', name: 'X', resource,
-      base: { ...zero, hp: 600, mana: 300, ad: 60 },
-      growth: { ...zero, hp: 100, mana: 40, ad: 3 },
+      base: { ...zero, hp: 600, mana: 300, ad: 60, armor: 20, mr: 30 },
+      growth: { ...zero, hp: 100, mana: 40, ad: 3, armor: 4, mr: 1.5 },
     },
     abilities: [],
     build: { championId: 'X', level, ranks: { Q: 0, W: 0, E: 0, R: 0 }, itemIds: [], runeIds: [] },
@@ -21,7 +21,7 @@ function side(resource: string | undefined, level: number, itemStats: Partial<St
 describe('summarizeStats', () => {
   test('level 1 with no items is the base stats', () => {
     expect(summarizeStats(side('Mana', 1))).toEqual({
-      hp: 600, ad: 60, ap: 0, resource: { label: 'Mana', value: 300 },
+      hp: 600, ad: 60, ap: 0, armor: 20, mr: 30, resource: { label: 'Mana', value: 300 },
     });
   });
 
@@ -31,6 +31,12 @@ describe('summarizeStats', () => {
     expect(s.ad).toBeCloseTo(60 + 3 * 17 + 40, 6);
     expect(s.ap).toBe(120);
     expect(s.resource).toEqual({ label: 'Mana', value: expect.closeTo(300 + 40 * 17 + 500, 6) });
+  });
+
+  test('armor and magic resist include level growth and item resists', () => {
+    const s = summarizeStats(side('Mana', 18, { armor: 40, mr: 25 }));
+    expect(s.armor).toBeCloseTo(20 + 4 * 17 + 40, 6);
+    expect(s.mr).toBeCloseTo(30 + 1.5 * 17 + 25, 6);
   });
 
   test('energy champions ignore item mana', () => {

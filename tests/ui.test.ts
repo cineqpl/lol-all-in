@@ -28,6 +28,7 @@ const data: GameData = {
   items: {
     '1': { name: 'Sword', stats: { ad: 10, mana: 250 }, hasEffects: false },
     '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
+    '3': { name: 'Cloak', stats: { armor: 25, mr: 15 }, hasEffects: false },
     '99': { name: 'Sword', stats: { ad: 12 }, hasEffects: false },
   },
   runes: {},
@@ -55,9 +56,9 @@ describe('matchup UI', () => {
     expect(q('[data-testid=enemy-damage]').textContent).toContain('400');
   });
 
-  test('shows not-modelled abilities with their reason', () => {
+  test('shows not-modelled abilities with their damage type and reason', () => {
     set(field('you', 'champion'), 'Alpha');
-    expect(q('[data-testid=not-modelled-you]').textContent).toMatch(/Weird.*recast/);
+    expect(q('[data-testid=not-modelled-you]').textContent).toMatch(/Weird \(magic\).*recast/);
   });
 
   test('status reflects the matchup and the ability-data patch is shown', () => {
@@ -212,6 +213,13 @@ describe('stat summary', () => {
     expect(stat('you', 'resource').textContent).toMatch(/Mana.*550/);
     set(field('you', 'champion'), 'Beta');
     expect(stat('you', 'resource').textContent).toMatch(/Energy.*200/);
+  });
+  test('shows armor and magic resist including items', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(stat('you', 'armor').textContent).toContain('0');
+    set(field('you', 'item-0'), '3');
+    expect(stat('you', 'armor').textContent).toContain('25');
+    expect(stat('you', 'mr').textContent).toContain('15');
   });
   test('hides the resource row when the champion has none', () => {
     set(field('you', 'champion'), 'Gamma');

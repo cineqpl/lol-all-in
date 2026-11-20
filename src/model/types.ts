@@ -26,10 +26,13 @@ export type Scaling = {
 
 export type AbilityKey = 'Q' | 'W' | 'E' | 'R';
 
+/** unknown = the ability data gives no usable single damage type (only on not-modelled abilities). */
+export type DamageType = 'physical' | 'magic' | 'true' | 'unknown';
+
 export type Ability = {
   key: AbilityKey;
   name: string;
-  damageType: 'physical' | 'magic' | 'true';
+  damageType: DamageType;
   baseByRank: number[];
   scalings: Scaling[];
   status: 'modelled' | 'not-modelled';

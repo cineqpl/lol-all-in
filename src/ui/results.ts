@@ -19,7 +19,7 @@ function notModelledList(
   effects: string[],
 ): HTMLElement {
   const items = [
-    ...abilities.map((a) => h('li', {}, `${a.key} ${a.name}: ${a.reason ?? 'not modelled'}`)),
+    ...abilities.map((a) => h('li', {}, `${a.key} ${a.name} (${a.damageType}): ${a.reason ?? 'not modelled'}`)),
     ...effects.map((e) => h('li', {}, `${e}: effect not modelled`)),
   ];
   return h('div', { 'data-testid': testId }, h('h3', {}, title), h('ul', {}, ...items));
