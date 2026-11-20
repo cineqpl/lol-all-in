@@ -91,10 +91,9 @@ export function createPanel(
   const statCell = (name: StatIconKey | 'resource') => {
     const text = h('span');
     const lead: HTMLElement[] = [];
-    // The resource icon is set per refresh: only Mana has one.
-    const img = icon(`stat-icon-${name}`, 'stat-icon');
+      const img = icon(`stat-icon-${name}`, 'stat-icon');
     if (name !== 'resource') setIcon(img, statIconPath(name));
-    else resourceIcon = img;
+    else resourceIcon = img; // set on each refresh, together with the text
     lead.push(img);
     cells[name] = h('span', { 'data-stat': name }, ...lead, text);
     return text;
@@ -308,10 +307,10 @@ export function createPanel(
     const bonusPct = as.base > 0 ? (as.bonus / as.base) * 100 : 0;
     stats.attackSpeed.textContent = `Attack speed ${num(as.total, 3)} (${num(as.base, 3)} base + ${num(bonusPct)}% bonus)`;
     adNote.hidden = !data.champions[champion.value]?.adGrowthUnknown;
-    cells.resource.hidden = !s.resource;
-    cells.resource.setAttribute('data-resource', s.resource?.label ?? '');
-    setIcon(resourceIcon, s.resource?.label === 'Mana' ? statIconPath('mana') : '');
-    stats.resource.textContent = s.resource ? describe(s.resource.label, s.resource) : '';
+    // The line is always there: Mana, Energy, or a note that the champion has no secondary resource.
+    cells.resource.setAttribute('data-resource', s.resource?.label ?? 'None');
+    setIcon(resourceIcon, statIconPath('mana'));
+    stats.resource.textContent = s.resource ? describe(s.resource.label, s.resource) : 'No secondary resource';
   };
   const rebuildRows = () => {
     const abilities = data.abilities[champion.value] ?? [];

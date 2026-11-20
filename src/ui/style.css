@@ -53,6 +53,8 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .stat-summary [data-stat=ad] { color: #ff9f1c; }
 .stat-summary [data-stat=ap] { color: #4f8cff; }
 .stat-summary [data-stat=resource][data-resource=Mana] { color: #6fb4ff; }
+.stat-summary [data-stat=resource][data-resource=Energy] { color: #ffe680; }
+.stat-summary [data-stat=resource][data-resource=None] { color: #fff; }
 .stat-summary [data-stat=attackSpeed] { color: #8fdcff; }
 .stat-summary [data-stat=armor] { color: #ffd84d; }
 .stat-summary [data-stat=mr] { color: #b583ff; }

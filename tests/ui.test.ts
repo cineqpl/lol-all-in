@@ -434,14 +434,15 @@ describe('stat summary', () => {
     set(field('you', 'champion'), 'Beta');
     expect(stat('you', 'resource').textContent).toMatch(/Energy.*200/);
   });
-  test('mana has its icon and colour tag, energy has neither', () => {
+  test('mana and energy share the mana icon and differ by colour tag', () => {
     set(field('you', 'champion'), 'Alpha');
     const cell = q('.side[data-side=you] [data-stat=resource]') as HTMLElement;
     expect(cell.querySelector('img')?.getAttribute('src')).toBe('/img/stat/mana.svg');
     expect(cell.querySelector('img')?.hidden).toBe(false);
     expect(cell.getAttribute('data-resource')).toBe('Mana');
     set(field('you', 'champion'), 'Beta');
-    expect(cell.querySelector('img')?.hidden).toBe(true);
+    expect(cell.querySelector('img')?.getAttribute('src')).toBe('/img/stat/mana.svg');
+    expect(cell.querySelector('img')?.hidden).toBe(false);
     expect(cell.getAttribute('data-resource')).toBe('Energy');
   });
   test('shows armor and magic resist including items', () => {
@@ -459,9 +460,14 @@ describe('stat summary', () => {
     set(field('you', 'champion'), 'Alpha');
     expect(note().hidden).toBe(true);
   });
-  test('hides the resource row when the champion has none', () => {
+  test('says so, with the mana icon, when the champion has no secondary resource', () => {
     set(field('you', 'champion'), 'Gamma');
-    expect(stat('you', 'resource').hidden).toBe(true);
+    const cell = q('.side[data-side=you] [data-stat=resource]') as HTMLElement;
+    expect(cell.hidden).toBe(false);
+    expect(cell.textContent).toBe('No secondary resource');
+    expect(cell.getAttribute('data-resource')).toBe('None');
+    expect(cell.querySelector('img')?.getAttribute('src')).toBe('/img/stat/mana.svg');
+    expect(cell.querySelector('img')?.hidden).toBe(false);
   });
   test('each panel has its own summary', () => {
     set(field('you', 'champion'), 'Alpha');
