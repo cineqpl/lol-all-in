@@ -4,9 +4,8 @@
  *
  * Sources:
  *  - Data Dragon (current patch): champion stats, items, runes, summoner spells.
- *  - Meraki Analytics (ability damage/ratios): the only structured source found. Its snapshot
- *    lags the live patch (see abilitiesPatch in data/meta.json). Data Dragon and Community
- *    Dragon expose only formula placeholders such as {{ totaldamage }} for ability damage.
+ *  - Meraki Analytics: only the per-level AD growth missing from Data Dragon for some champions.
+ *  - Ability damage comes from the wiki instead: see scripts/fetch-wiki.ts and scripts/build-abilities.ts.
  */
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
@@ -19,7 +18,6 @@ import {
   normaliseRunes,
   normaliseSummoners,
 } from '../src/data/normalise';
-import { missingAbilities, normaliseAbilities } from '../src/data/abilities';
 
 const MERAKI = 'https://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/champions.json';
 const DD = 'https://ddragon.leagueoflegends.com';
@@ -82,36 +80,27 @@ async function main() {
     ...c,
     abilityIcons: iconFiles[i],
   }));
-  const abilities = Object.fromEntries(
-    champList.map((c) => [c.id, meraki.champions[c.id] ? normaliseAbilities(meraki.champions[c.id]) : missingAbilities()]),
-  );
-  const abilitiesPatch = Object.values(meraki.champions)
-    .map((c) => String(c.patchLastChanged ?? ''))
-    .sort()
-    .at(-1);
-
   await mkdir('data', { recursive: true });
   const write = (name: string, value: unknown) =>
     writeFile(`data/${name}`, JSON.stringify(value, null, 1) + '\n');
 
   await write('champions.json', champList);
-  await write('abilities.json', abilities);
   await write('items.json', normaliseItems(items));
   await write('runes.json', normaliseRunes(runes));
   await write('summoners.json', normaliseSummoners(summoners));
   await write('meta.json', {
     patch,
     fetchedAt: new Date().toISOString(),
-    abilitiesSource: 'meraki',
-    abilitiesPatch,
-    abilitiesLastModified: meraki.lastModified,
+    adGrowthSource: 'meraki',
+    adGrowthLastModified: meraki.lastModified,
   });
   // Only icons the UI can show: every champion, and items that have flat stats (the picker list).
   const itemData = normaliseItems(items);
   const selectableItemIds = Object.entries(itemData)
     .filter(([, item]) => Object.keys(item.stats).length > 0)
     .map(([id]) => id);
-  const jobs = imageJobs(patch, champList.map((c) => c.id), selectableItemIds, iconFiles.flat());
+  // SummonerDot is Ignite, shown in the combo box.
+  const jobs = imageJobs(patch, champList.map((c) => c.id), selectableItemIds, [...iconFiles.flat(), 'SummonerDot.png']);
   await downloadImages(jobs);
   console.log(`Wrote data and ${jobs.length} images for patch ${patch}`);
 }

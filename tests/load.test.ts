@@ -1,9 +1,9 @@
 import { describe, expect, test } from 'vitest';
 import { loadData, lookupChampion, sumItemStats, type GameData } from '../src/data/load';
 
-const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
+const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0, attackSpeed: 0 };
 const data: GameData = {
-  meta: { patch: '1.0', abilitiesPatch: '0.9' },
+  meta: { patch: '1.0', abilitiesFetchedAt: '2026-01-01T00:00:00Z' },
   champions: { Annie: { id: 'Annie', name: 'Annie', base: zero, growth: zero } },
   abilities: {},
   items: {
@@ -43,8 +43,7 @@ import { validateData } from '../src/data/load';
 
 describe('validateData', () => {
   const ability = (key: 'Q' | 'W' | 'E' | 'R') => ({
-    key, name: key, damageType: 'magic' as const, baseByRank: [], scalings: [],
-    status: 'not-modelled' as const, reason: 'x',
+    key, name: key, casts: [], unread: [],
   });
   const full: GameData = {
     ...data,

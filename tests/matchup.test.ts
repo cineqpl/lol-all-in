@@ -2,12 +2,12 @@ import { describe, expect, test } from 'vitest';
 import { computeMatchup, type Side } from '../src/model/matchup';
 import type { Ability, StatBlock } from '../src/model/types';
 
-const zero: StatBlock = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
+const zero: StatBlock = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0, attackSpeed: 0 };
 
 function side(damage: number, id = 'X'): Side {
   const q: Ability = {
-    key: 'Q', name: 'Q', damageType: 'true', baseByRank: [damage],
-    scalings: [], status: 'modelled',
+    key: 'Q', name: 'Q', unread: [],
+    casts: [{ name: 'Active', components: [{ label: 'True Damage', cast: 'Active', type: 'true', base: [damage], scalings: [] }] }],
   };
   return {
     champion: { id, name: id, base: { ...zero, hp: 1000 }, growth: zero },
@@ -44,7 +44,7 @@ describe('computeMatchup', () => {
   });
   test('reports not-modelled abilities per side', () => {
     const you = side(0);
-    you.abilities = [{ key: 'W', name: 'W', damageType: 'magic', baseByRank: [], scalings: [], status: 'not-modelled', reason: 'recast' }];
+    you.abilities = [{ key: 'W', name: 'W', casts: [], unread: ['"Damage": unknown scaling'] }];
     expect(computeMatchup(you, side(0)).yourNotModelled).toHaveLength(1);
   });
 });
@@ -69,14 +69,40 @@ describe('user-defined combo', () => {
     expect(computeMatchup(strong(), side(0)).yourDamage).toBe(100 + 2 * 50);
   });
   test('hit counts and auto count come from the combo', () => {
-    const you = withCombo(strong(), { hits: { Q: 3, W: 0, E: 0, R: 0 }, autos: 5 });
+    const you = withCombo(strong(), { hits: { Q: [3], W: [], E: [], R: [] }, autos: 5 });
     expect(computeMatchup(you, side(0)).yourDamage).toBe(3 * 100 + 5 * 50);
   });
   test('each side uses its own combo', () => {
-    const you = withCombo(side(100), { hits: { Q: 2, W: 0, E: 0, R: 0 }, autos: 0 });
-    const enemy = withCombo(side(100), { hits: { Q: 1, W: 0, E: 0, R: 0 }, autos: 0 });
+    const you = withCombo(side(100), { hits: { Q: [2], W: [], E: [], R: [] }, autos: 0 });
+    const enemy = withCombo(side(100), { hits: { Q: [1], W: [], E: [], R: [] }, autos: 0 });
     const r = computeMatchup(you, enemy);
     expect(r.yourDamage).toBe(200);
     expect(r.enemyDamage).toBe(100);
+  });
+});
+
+describe('ignite', () => {
+  const noHits = { Q: [0], W: [], E: [], R: [] };
+  const withCombo = (s: Side, level: number, ignite?: boolean): Side => ({
+    ...s,
+    build: { ...s.build, level },
+    combo: { hits: noHits, autos: 0, ignite },
+  });
+  const armored = (): Side => {
+    const s = side(0, 'E');
+    return { ...s, champion: { ...s.champion, base: { ...zero, hp: 1000, armor: 100, mr: 100 } } };
+  };
+
+  test('adds level-based damage that armor and magic resist do not reduce', () => {
+    const r = computeMatchup(withCombo(side(0), 6, true), armored());
+    expect(r.yourDamage).toBe(175);
+  });
+  test('adds nothing unless chosen', () => {
+    expect(computeMatchup(withCombo(side(0), 6), armored()).yourDamage).toBe(0);
+    expect(computeMatchup(withCombo(side(0), 6, false), armored()).yourDamage).toBe(0);
+  });
+  test('applies to the enemy side too, using their level', () => {
+    const r = computeMatchup(side(0), withCombo(side(0, 'E'), 18, true));
+    expect(r.enemyDamage).toBe(475);
   });
 });

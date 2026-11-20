@@ -14,7 +14,7 @@ export function normaliseChampions(raw: unknown): ChampionBase[] {
       id: c.id,
       name: c.name,
       resource: c.partype,
-      base: { hp: s.hp, mana: s.mp, armor: s.armor, mr: s.spellblock, ad: s.attackdamage, ap: 0 },
+      base: { hp: s.hp, mana: s.mp, armor: s.armor, mr: s.spellblock, ad: s.attackdamage, ap: 0, attackSpeed: s.attackspeed },
       growth: {
         hp: s.hpperlevel,
         mana: s.mpperlevel,
@@ -22,6 +22,8 @@ export function normaliseChampions(raw: unknown): ChampionBase[] {
         mr: s.spellblockperlevel,
         ad: s.attackdamageperlevel,
         ap: 0,
+        // Data Dragon gives a percent (2.5); stored as a fraction of base attack speed.
+        attackSpeed: s.attackspeedperlevel / 100,
       },
     };
   });
@@ -34,6 +36,7 @@ const ITEM_STAT_KEYS: Record<string, keyof StatBlock> = {
   FlatSpellBlockMod: 'mr',
   FlatPhysicalDamageMod: 'ad',
   FlatMagicDamageMod: 'ap',
+  PercentAttackSpeedMod: 'attackSpeed',
 };
 
 export function normaliseItems(raw: unknown): Record<string, ItemData> {

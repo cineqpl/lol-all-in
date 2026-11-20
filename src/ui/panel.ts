@@ -1,13 +1,23 @@
 import { lookupChampion, sumItemStats, type GameData } from '../data/load';
-import type { Side } from '../model/matchup';
+import { breakdownOf, type Side } from '../model/matchup';
+import { evaluateComponent } from '../model/damage';
 import type { AbilityKey } from '../model/types';
 import { count } from '../model/combo';
+import type { StatPart } from '../model/stats';
 import { summarizeStats } from '../model/summary';
 import { validateRanks } from '../model/validation';
-import { championIconPath, itemIconPath, spellIconPath } from '../data/images';
+import { championIconPath, itemIconPath, spellIconPath, statIconPath, type StatIconKey } from '../data/images';
 import { h } from './dom';
+import { renderDamageLine } from './damage-view';
 
-export type Panel = { el: HTMLElement; getSide(): Side };
+export type Panel = {
+  el: HTMLElement;
+  getSide(): Side;
+  /** Where the damage numbers get their target (for target-health scalings); defaults to a mirror match. */
+  setOpponent(getOpponent: () => Side): void;
+  /** Recomputes the damage shown next to each hit counter. */
+  refreshCombo(): void;
+};
 
 const KEYS: AbilityKey[] = ['Q', 'W', 'E', 'R'];
 const MAX_RANK: Record<AbilityKey, number> = { Q: 5, W: 5, E: 5, R: 3 };
@@ -50,6 +60,11 @@ function numberInput(field: string, min: number, max: number, value: number): HT
   }) as HTMLInputElement;
 }
 
+/** Rounds to the given decimals and drops trailing zeros. */
+const num = (n: number, decimals = 0) => String(Number((Number.isFinite(n) ? n : 0).toFixed(decimals)));
+const describe = (label: string, p: StatPart) =>
+  `${label} ${num(p.total)} (${num(p.base)} base + ${num(p.bonus)} bonus)`;
+
 export function createPanel(
   data: GameData,
   side: 'you' | 'enemy',
@@ -60,43 +75,70 @@ export function createPanel(
   const champion = select('champion', champions.map((c): [string, string] => [c.id, c.name]));
   const level = numberInput('level', 1, BASE_MAX_LEVEL, 1);
   const quest = h('input', { type: 'checkbox', 'data-field': 'role-quest' }) as HTMLInputElement;
-  const statCell = (name: string) => h('span', { 'data-stat': name });
+  // stats.* are the text spans; cells.* are the outer [data-stat] elements (icon + text).
+  const cells = {} as Record<string, HTMLElement>;
+  let resourceIcon: HTMLImageElement;
+  const statCell = (name: StatIconKey | 'resource') => {
+    const text = h('span');
+    const lead: HTMLElement[] = [];
+    // The resource icon is set per refresh: only Mana has one.
+    const img = icon(`stat-icon-${name}`, 'stat-icon');
+    if (name !== 'resource') setIcon(img, statIconPath(name));
+    else resourceIcon = img;
+    lead.push(img);
+    cells[name] = h('span', { 'data-stat': name }, ...lead, text);
+    return text;
+  };
   const stats = {
     hp: statCell('hp'),
     resource: statCell('resource'),
     ad: statCell('ad'),
+    attackSpeed: statCell('attackSpeed'),
     ap: statCell('ap'),
     armor: statCell('armor'),
     mr: statCell('mr'),
   };
-  const hitInputs = Object.fromEntries(
-    KEYS.map((k) => [k, numberInput(`hits-${k}`, 0, 99, 1)]),
-  ) as Record<AbilityKey, HTMLInputElement>;
   const autosInput = numberInput('autos', 0, 99, 2);
-  const comboIcons = Object.fromEntries(
-    KEYS.map((k) => [k, icon(`combo-icon-${k}`, 'ability-icon')]),
-  ) as Record<AbilityKey, HTMLImageElement>;
-  const comboNames = Object.fromEntries(KEYS.map((k) => [k, h('span', { class: 'combo-name' })])) as Record<AbilityKey, HTMLElement>;
-  const comboNotes = Object.fromEntries(KEYS.map((k) => [k, h('span', { class: 'note' })])) as Record<AbilityKey, HTMLElement>;
+  const igniteBox = h('input', { type: 'checkbox', 'data-field': 'ignite' }) as HTMLInputElement;
+  const autosIcon = icon('autos-icon', 'ability-icon');
+  setIcon(autosIcon, itemIconPath('1036')); // Long Sword
+  const igniteIcon = icon('ignite-icon', 'ability-icon');
+  setIcon(igniteIcon, spellIconPath('SummonerDot.png'));
+  // One row per cast of each ability, rebuilt when the champion changes.
+  type CastRow = { input?: HTMLInputElement; damage: HTMLElement };
+  const comboRows = h('div', { class: 'combo-rows' });
+  const castRows: Record<AbilityKey, CastRow[]> = { Q: [], W: [], E: [], R: [] };
+  let rowsFor: string | undefined;
+  let getOpponent: () => Side = () => buildSide();
   const comboBox = h(
     'div',
     { class: 'combo', 'data-role': 'combo' },
     h('h3', {}, side === 'you' ? 'Your combo' : 'Enemy combo'),
     h('p', { class: 'note' }, 'How many times each ability hits, and how many auto-attacks land.'),
-    ...KEYS.map((k) =>
-      h(
-        'div',
-        { class: 'combo-row', 'data-role': `combo-row-${k}` },
-        comboIcons[k], comboNames[k], ' hits ', hitInputs[k], comboNotes[k],
-      ),
+    comboRows,
+    // Same column layout as the ability rows: icon, name, spacer, control.
+    h(
+      'label',
+      { class: 'combo-row autos' },
+      autosIcon,
+      h('span', { class: 'combo-name' }, 'Auto-attacks'),
+      h('span', { class: 'combo-unit' }),
+      autosInput,
     ),
-    h('label', {}, 'Auto-attacks ', autosInput),
+    h(
+      'label',
+      { class: 'combo-row ignite' },
+      igniteIcon,
+      h('span', { class: 'combo-name' }, 'Ignite'),
+      h('span', { class: 'combo-unit' }),
+      igniteBox,
+    ),
   );
   const adNote = h('p', { class: 'warning', 'data-role': 'ad-growth-note', hidden: '' }, 'AD growth data is unavailable for this champion, so its AD is understated at higher levels.');
   const summary = h(
     'div',
     { class: 'stat-summary', 'data-role': 'stat-summary' },
-    stats.hp, stats.resource, stats.ad, stats.ap, stats.armor, stats.mr,
+    cells.hp, cells.resource, cells.ad, cells.ap, cells.armor, cells.mr, cells.attackSpeed,
     adNote,
   );
   const warning = h('p', { class: 'warning', 'data-role': 'rank-warning', hidden: '' });
@@ -178,9 +220,10 @@ export function createPanel(
       itemStats: sumItemStats(data, itemIds),
       combo: {
         hits: Object.fromEntries(
-          KEYS.map((k) => [k, count(Number(hitInputs[k].value))]),
-        ) as Record<AbilityKey, number>,
+          KEYS.map((k) => [k, castRows[k].flatMap((r) => (r.input ? [count(Number(r.input.value))] : []))]),
+        ) as Record<AbilityKey, number[]>,
         autos: count(Number(autosInput.value)),
+        ignite: igniteBox.checked,
       },
       unmodelledEffects: [
         ...itemIds.filter((id) => data.items[id].hasEffects).map((id) => `${data.items[id].name} (item)`),
@@ -190,25 +233,73 @@ export function createPanel(
   };
   const refreshStats = () => {
     const s = summarizeStats(buildSide());
-    stats.hp.textContent = `HP ${Math.round(s.hp)}`;
-    stats.ad.textContent = `AD ${Math.round(s.ad)}`;
-    stats.ap.textContent = `AP ${Math.round(s.ap)}`;
-    stats.armor.textContent = `Armor ${Math.round(s.armor)}`;
-    stats.mr.textContent = `MR ${Math.round(s.mr)}`;
+    stats.hp.textContent = describe('HP', s.hp);
+    stats.ad.textContent = describe('AD', s.ad);
+    stats.ap.textContent = describe('AP', s.ap);
+    stats.armor.textContent = describe('Armor', s.armor);
+    stats.mr.textContent = describe('MR', s.mr);
+    // Attack speed bonus is shown as a percentage of base attack speed.
+    const as = s.attackSpeed;
+    const bonusPct = as.base > 0 ? (as.bonus / as.base) * 100 : 0;
+    stats.attackSpeed.textContent = `Attack speed ${num(as.total, 3)} (${num(as.base, 3)} base + ${num(bonusPct)}% bonus)`;
     adNote.hidden = !data.champions[champion.value]?.adGrowthUnknown;
-    stats.resource.hidden = !s.resource;
-    stats.resource.textContent = s.resource ? `${s.resource.label} ${Math.round(s.resource.value)}` : '';
+    cells.resource.hidden = !s.resource;
+    cells.resource.setAttribute('data-resource', s.resource?.label ?? '');
+    setIcon(resourceIcon, s.resource?.label === 'Mana' ? statIconPath('mana') : '');
+    stats.resource.textContent = s.resource ? describe(s.resource.label, s.resource) : '';
   };
-  const refreshCombo = () => {
+  const rebuildRows = () => {
     const abilities = data.abilities[champion.value] ?? [];
     const files = data.champions[champion.value]?.abilityIcons;
-    KEYS.forEach((k, i) => {
+    comboRows.replaceChildren();
+    KEYS.forEach((k, ki) => {
+      castRows[k] = [];
       const ability = abilities.find((a) => a.key === k);
-      comboNames[k].textContent = ability ? `${k} ${ability.name} (${ability.damageType})` : k;
-      comboNotes[k].textContent = ability?.status === 'not-modelled' ? ' not modelled' : '';
-      hitInputs[k].disabled = (Number(ranks[k].value) || 0) < 1;
-      setIcon(comboIcons[k], files?.[i] ? spellIconPath(files[i]) : '');
+      if (!ability) return;
+      const casts = ability.casts.length > 0 ? ability.casts : [undefined];
+      casts.forEach((cast, i) => {
+        const img = icon(`combo-icon-${k}-${i}`, 'ability-icon');
+        if (i === 0) setIcon(img, files?.[ki] ? spellIconPath(files[ki]) : '');
+        else img.style.visibility = 'hidden';
+        const title = casts.length > 1 ? `${k} ${ability.name}: ${cast?.name}` : `${k} ${ability.name}`;
+        const note =
+          i > 0 ? '' : ability.unread.length > 0 ? ' not counted' : !cast ? ' no damage' : '';
+        const damage = h('span', { class: 'combo-damage' });
+        const input = cast ? numberInput(`hits-${k}-${i}`, 0, 99, 1) : undefined;
+        comboRows.append(
+          h(
+            'div',
+            { class: 'combo-row', 'data-role': `combo-row-${k}-${i}` },
+            img,
+            h('span', { class: 'combo-name' }, title),
+            h('span', { class: 'combo-unit' }, input ? 'hits' : ''),
+            ...(input ? [input] : []),
+            damage,
+            ...(note ? [h('span', { class: 'note', title: ability.unread.join('; ') }, note)] : []),
+          ),
+        );
+        if (cast) castRows[k].push({ input, damage });
+      });
     });
+    rowsFor = champion.value;
+  };
+  const refreshCombo = () => {
+    if (rowsFor !== champion.value) rebuildRows();
+    const abilities = data.abilities[champion.value] ?? [];
+    const mine = breakdownOf(buildSide());
+    const theirs = breakdownOf(getOpponent());
+    for (const k of KEYS) {
+      const ability = abilities.find((a) => a.key === k);
+      const rank = Number(ranks[k].value) || 0;
+      castRows[k].forEach((row, i) => {
+        if (row.input) row.input.disabled = rank < 1;
+        row.damage.replaceChildren(
+          ...(rank < 1
+            ? []
+            : (ability?.casts[i]?.components ?? []).map((c) => renderDamageLine(evaluateComponent(c, rank, mine, theirs)))),
+        );
+      });
+    }
   };
   const refreshIcons = () => {
     setIcon(portrait, champion.value ? championIconPath(champion.value) : '');
@@ -237,5 +328,7 @@ export function createPanel(
   return {
     el,
     getSide: buildSide,
+    setOpponent: (fn) => { getOpponent = fn; },
+    refreshCombo,
   };
 }

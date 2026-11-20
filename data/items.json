@@ -91,12 +91,16 @@
  },
  "1042": {
   "name": "Dagger",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.1
+  },
   "hasEffects": false
  },
  "1043": {
   "name": "Recurve Bow",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.15
+  },
   "hasEffects": true
  },
  "1052": {
@@ -168,7 +172,8 @@
  "1086": {
   "name": "Doran's Bow",
   "stats": {
-   "ad": 7
+   "ad": 7,
+   "attackSpeed": 0.15
   },
   "hasEffects": false
  },
@@ -347,13 +352,16 @@
   "name": "Dusk and Dawn",
   "stats": {
    "hp": 300,
-   "ap": 60
+   "ap": 60,
+   "attackSpeed": 0.2
   },
   "hasEffects": true
  },
  "2512": {
   "name": "Fiendhunter Bolts",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.45
+  },
   "hasEffects": true
  },
  "2517": {
@@ -427,7 +435,9 @@
  },
  "3006": {
   "name": "Berserker's Greaves",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.3
+  },
   "hasEffects": false
  },
  "3008": {
@@ -471,7 +481,8 @@
  "3032": {
   "name": "Yun Tal Wildarrows",
   "stats": {
-   "ad": 50
+   "ad": 50,
+   "attackSpeed": 0.45
   },
   "hasEffects": true
  },
@@ -514,7 +525,9 @@
  },
  "3046": {
   "name": "Phantom Dancer",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.65
+  },
   "hasEffects": true
  },
  "3047": {
@@ -536,7 +549,8 @@
  "3051": {
   "name": "Hearthbound Axe",
   "stats": {
-   "ad": 20
+   "ad": 20,
+   "attackSpeed": 0.2
   },
   "hasEffects": false
  },
@@ -608,7 +622,8 @@
   "name": "Experimental Hexplate",
   "stats": {
    "hp": 450,
-   "ad": 40
+   "ad": 40,
+   "attackSpeed": 0.2
   },
   "hasEffects": true
  },
@@ -645,7 +660,8 @@
   "name": "Trinity Force",
   "stats": {
    "hp": 333,
-   "ad": 36
+   "ad": 36,
+   "attackSpeed": 0.3
   },
   "hasEffects": true
  },
@@ -672,19 +688,24 @@
  },
  "3085": {
   "name": "Runaan's Hurricane",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.4
+  },
   "hasEffects": true
  },
  "3086": {
   "name": "Zeal",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.15
+  },
   "hasEffects": false
  },
  "3087": {
   "name": "Statikk Shiv",
   "stats": {
    "ap": 45,
-   "ad": 45
+   "ad": 45,
+   "attackSpeed": 0.3
   },
   "hasEffects": true
  },
@@ -698,19 +719,23 @@
  "3091": {
   "name": "Wit's End",
   "stats": {
-   "mr": 45
+   "mr": 45,
+   "attackSpeed": 0.5
   },
   "hasEffects": true
  },
  "3094": {
   "name": "Rapid Firecannon",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.35
+  },
   "hasEffects": true
  },
  "3095": {
   "name": "Stormrazor",
   "stats": {
-   "ad": 50
+   "ad": 50,
+   "attackSpeed": 0.25
   },
   "hasEffects": true
  },
@@ -789,7 +814,8 @@
  "3115": {
   "name": "Nashor's Tooth",
   "stats": {
-   "ap": 80
+   "ap": 80,
+   "attackSpeed": 0.5
   },
   "hasEffects": true
  },
@@ -828,7 +854,8 @@
   "name": "Guinsoo's Rageblade",
   "stats": {
    "ap": 30,
-   "ad": 30
+   "ad": 30,
+   "attackSpeed": 0.25
   },
   "hasEffects": true
  },
@@ -892,7 +919,9 @@
  },
  "3144": {
   "name": "Scout's Slingshot",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.2
+  },
   "hasEffects": true
  },
  "3145": {
@@ -929,7 +958,8 @@
  "3153": {
   "name": "Blade of The Ruined King",
   "stats": {
-   "ad": 40
+   "ad": 40,
+   "attackSpeed": 0.25
   },
   "hasEffects": true
  },
@@ -995,7 +1025,9 @@
  },
  "3172": {
   "name": "Gunmetal Greaves",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.45
+  },
   "hasEffects": false
  },
  "3173": {
@@ -1075,7 +1107,8 @@
  "3302": {
   "name": "Terminus",
   "stats": {
-   "ad": 30
+   "ad": 30,
+   "attackSpeed": 0.35
   },
   "hasEffects": true
  },
@@ -1349,7 +1382,8 @@
   "name": "Stridebreaker",
   "stats": {
    "hp": 450,
-   "ad": 40
+   "ad": 40,
+   "attackSpeed": 0.25
   },
   "hasEffects": true
  },
@@ -1420,7 +1454,8 @@
  "6672": {
   "name": "Kraken Slayer",
   "stats": {
-   "ad": 45
+   "ad": 45,
+   "attackSpeed": 0.4
   },
   "hasEffects": true
  },
@@ -1433,7 +1468,9 @@
  },
  "6675": {
   "name": "Navori Flickerblade",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.4
+  },
   "hasEffects": true
  },
  "6676": {
@@ -1727,7 +1764,9 @@
  },
  "663172": {
   "name": "Zephyr",
-  "stats": {},
+  "stats": {
+   "attackSpeed": 0.4
+  },
   "hasEffects": true
  },
  "663193": {

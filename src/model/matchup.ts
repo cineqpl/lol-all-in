@@ -1,6 +1,7 @@
 import { DEFAULT_COMBO, type Combo } from './combo';
 import { comboDamage } from './damage';
-import { statsAtLevel } from './stats';
+import { statBreakdown, type StatBreakdown } from './stats';
+import { igniteDamage } from './summoners';
 import type { Ability, Build, ChampionBase, StatBlock } from './types';
 
 export type Side = {
@@ -26,31 +27,25 @@ export type MatchupResult = {
   enemyUnmodelledEffects: string[];
 };
 
-export function totalStats(side: Side): StatBlock {
-  const base = statsAtLevel(side.champion, side.build.level);
-  const out = { ...base };
-  for (const k of Object.keys(out) as (keyof StatBlock)[]) out[k] += side.itemStats[k];
-  return out;
+export function breakdownOf(side: Side): StatBreakdown {
+  return statBreakdown(side.champion, side.build.level, side.itemStats);
 }
 
-function attack(from: Side, fromStats: StatBlock, targetStats: StatBlock) {
-  return comboDamage(
-    from.abilities,
-    from.build.ranks,
-    { total: fromStats, bonusAd: from.itemStats.ad },
-    targetStats,
-    (from.combo ?? DEFAULT_COMBO).autos,
-    (from.combo ?? DEFAULT_COMBO).hits,
-  );
+function attack(from: Side, fromStats: StatBreakdown, targetStats: StatBreakdown) {
+  const combo = from.combo ?? DEFAULT_COMBO;
+  const result = comboDamage(from.abilities, from.build.ranks, fromStats, targetStats, combo.autos, combo.hits);
+  // Ignite is true damage, so the target's armor and magic resist do not apply.
+  if (combo.ignite) result.total += igniteDamage(from.build.level);
+  return result;
 }
 
 export function computeMatchup(you: Side, enemy: Side): MatchupResult {
-  const yours = totalStats(you);
-  const theirs = totalStats(enemy);
+  const yours = breakdownOf(you);
+  const theirs = breakdownOf(enemy);
   const mine = attack(you, yours, theirs);
   const their = attack(enemy, theirs, yours);
-  const yourPctOfEnemyHp = mine.total / theirs.hp;
-  const enemyPctOfYourHp = their.total / yours.hp;
+  const yourPctOfEnemyHp = mine.total / theirs.hp.total;
+  const enemyPctOfYourHp = their.total / yours.hp.total;
   const status =
     enemyPctOfYourHp >= 1 ? 'danger' : yourPctOfEnemyHp >= 1 ? 'safe' : 'even';
   return {

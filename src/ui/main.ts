@@ -15,6 +15,9 @@ export function mount(root: HTMLElement, data: GameData): void {
   const results = h('section', { class: 'results' });
   const update = () => {
     try {
+      // Both panels: each one's damage numbers depend on the other side (target health).
+      you.refreshCombo();
+      enemy.refreshCombo();
       renderResults(results, computeMatchup(you.getSide(), enemy.getSide()), data);
     } catch (err) {
       showError(results, err);
@@ -22,6 +25,8 @@ export function mount(root: HTMLElement, data: GameData): void {
   };
   const you = createPanel(data, 'you', 'You', update);
   const enemy = createPanel(data, 'enemy', 'Enemy', update);
+  you.setOpponent(() => enemy.getSide());
+  enemy.setOpponent(() => you.getSide());
   root.replaceChildren(h('div', { class: 'panels' }, you.el, enemy.el), results);
   update();
 }

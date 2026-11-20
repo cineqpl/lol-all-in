@@ -1,27 +1,30 @@
-import { totalStats, type Side } from './matchup';
-import { statsAtLevel } from './stats';
+import type { Side } from './matchup';
+import { statBreakdown, statsAtLevel, type StatPart } from './stats';
 
 export type StatSummary = {
-  hp: number;
-  ad: number;
-  ap: number;
-  armor: number;
-  mr: number;
+  hp: StatPart;
+  ad: StatPart;
+  ap: StatPart;
+  armor: StatPart;
+  mr: StatPart;
+  /** Fractions of base: bonus / base is the bonus percentage. */
+  attackSpeed: StatPart;
   /** Only for champions that use Mana or Energy. */
-  resource?: { label: 'Mana' | 'Energy'; value: number };
+  resource?: StatPart & { label: 'Mana' | 'Energy' };
 };
 
-/** HP, AD, AP and mana/energy for one side, from champion level and items. */
+/** Base and bonus stats for one side, from champion level and items. */
 export function summarizeStats(side: Side): StatSummary {
-  const total = totalStats(side);
+  const b = statBreakdown(side.champion, side.build.level, side.itemStats);
   const summary: StatSummary = {
-    hp: total.hp, ad: total.ad, ap: total.ap, armor: total.armor, mr: total.mr,
+    hp: b.hp, ad: b.ad, ap: b.ap, armor: b.armor, mr: b.mr, attackSpeed: b.attackSpeed,
   };
   if (side.champion.resource === 'Mana') {
-    summary.resource = { label: 'Mana', value: total.mana };
+    summary.resource = { label: 'Mana', ...b.mana };
   } else if (side.champion.resource === 'Energy') {
     // Items add mana, not energy, so energy comes from the champion alone.
-    summary.resource = { label: 'Energy', value: statsAtLevel(side.champion, side.build.level).mana };
+    const energy = statsAtLevel(side.champion, side.build.level).mana;
+    summary.resource = { label: 'Energy', base: energy, bonus: 0, total: energy };
   }
   return summary;
 }

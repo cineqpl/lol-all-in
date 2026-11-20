@@ -19,7 +19,7 @@ function notModelledList(
   effects: string[],
 ): HTMLElement {
   const items = [
-    ...abilities.map((a) => h('li', {}, `${a.key} ${a.name} (${a.damageType}): ${a.reason ?? 'not modelled'}`)),
+    ...abilities.map((a) => h('li', {}, `${a.key} ${a.name}: ${a.unread.join('; ')} (not counted)`)),
     ...effects.map((e) => h('li', {}, `${e}: effect not modelled`)),
   ];
   return h('div', { 'data-testid': testId }, h('h3', {}, title), h('ul', {}, ...items));
@@ -47,7 +47,7 @@ export function renderResults(el: HTMLElement, r: MatchupResult, data: GameData)
     h(
       'p',
       { class: 'note', 'data-testid': 'patch' },
-      `Stats, items and runes: patch ${data.meta.patch}. Ability damage data: patch ${data.meta.abilitiesPatch ?? 'unknown'} (may be older).`,
+      `Stats, items and runes: patch ${data.meta.patch}. Ability damage: League of Legends Wiki (CC BY-SA 3.0), fetched ${data.meta.abilitiesFetchedAt?.slice(0, 10) ?? 'unknown'}.`,
     ),
   );
 }

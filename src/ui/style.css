@@ -21,7 +21,7 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .level-row label { margin: 0.4rem 0; }
 .warning { color: #ff5252; font-weight: 600; margin: 0.3rem 0; }
 .ability-icon { width: 28px; height: 28px; border-radius: 4px; vertical-align: middle; margin: 0 0.2rem; }
-.stat-summary { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #333842; font-weight: 600; }
+.stat-summary { display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #333842; font-weight: 600; }
 .stat-summary [hidden] { display: none; }
 .stat-summary .warning { flex-basis: 100%; margin: 0; }
 .combo { margin-top: 0.75rem; padding: 0.75rem; border: 1px solid #333842; border-radius: 6px; }
@@ -30,3 +30,25 @@ body { font-family: system-ui, sans-serif; margin: 1.5rem; background: #14161a; 
 .combo-name { min-width: 14rem; }
 .combo-row input, .combo label input { width: 3.5rem; }
 .combo-row input:disabled { opacity: 0.4; }
+.stat-icon { width: 16px; height: 16px; vertical-align: middle; margin-right: 0.3rem; }
+.stat-summary [data-stat=hp] { color: #5bd16a; }
+.stat-summary [data-stat=ad] { color: #ff9f1c; }
+.stat-summary [data-stat=ap] { color: #4f8cff; }
+.stat-summary [data-stat=resource][data-resource=Mana] { color: #6fb4ff; }
+.stat-summary [data-stat=attackSpeed] { color: #8fdcff; }
+.stat-summary [data-stat=armor] { color: #ffd84d; }
+.stat-summary [data-stat=mr] { color: #b583ff; }
+.combo label.combo-row { display: flex; }
+.combo-unit { width: 2rem; }
+.combo label.ignite input { width: auto; }
+.combo-damage { display: flex; flex-direction: column; gap: 0.1rem; font-weight: 600; }
+.dmg-base { color: #fff; }
+.dmg[data-type=physical] { color: #ff9f1c; }
+.dmg[data-type=magic] { color: #4f8cff; }
+.dmg[data-type=true] { color: #fff; }
+.scale[data-color=ad] { color: #ff9f1c; }
+.scale[data-color=ap] { color: #4f8cff; }
+.scale[data-color=hp] { color: #5bd16a; }
+.scale[data-color=armor] { color: #ffd84d; }
+.scale[data-color=mr] { color: #b583ff; }
+.scale[data-color=mana] { color: #6fb4ff; }

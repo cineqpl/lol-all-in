@@ -24,3 +24,16 @@ export function imageJobs(
     ...spellFiles.map((file) => job('spell', file)),
   ];
 }
+
+/** Stat icons copied from the League of Legends Wiki into public/img/stat (see SOURCE.txt there). */
+const STAT_ICON_FILES = {
+  hp: 'hp.svg',
+  ad: 'ad.svg',
+  ap: 'ap.svg',
+  attackSpeed: 'attackSpeed.png',
+  armor: 'armor.svg',
+  mr: 'mr.svg',
+  mana: 'mana.svg',
+} as const;
+export type StatIconKey = keyof typeof STAT_ICON_FILES;
+export const statIconPath = (key: StatIconKey) => `/img/stat/${STAT_ICON_FILES[key]}`;

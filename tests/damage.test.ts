@@ -1,19 +1,32 @@
 import { describe, expect, test } from 'vitest';
-import { abilityDamage, comboDamage, mitigate } from '../src/model/damage';
-import type { Ability, StatBlock } from '../src/model/types';
+import { comboDamage, evaluateComponent, mitigate } from '../src/model/damage';
+import type { StatBreakdown } from '../src/model/stats';
+import type { Ability, DamageComponent } from '../src/model/types';
 
-const zero: StatBlock = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
-const attacker = { total: { ...zero, ap: 100, ad: 80, hp: 2000 }, bonusAd: 20 };
-const target: StatBlock = { ...zero, hp: 2000 };
+type Parts = Partial<Record<keyof StatBreakdown, { base: number; bonus: number }>>;
+function fighter(parts: Parts = {}): StatBreakdown {
+  const out = {} as StatBreakdown;
+  for (const k of ['hp', 'mana', 'armor', 'mr', 'ad', 'ap', 'attackSpeed'] as const) {
+    const { base, bonus } = parts[k] ?? { base: 0, bonus: 0 };
+    out[k] = { base, bonus, total: base + bonus };
+  }
+  return out;
+}
 
-const magicQ: Ability = {
-  key: 'Q', name: 'Bolt', damageType: 'magic', baseByRank: [100, 150],
-  scalings: [{ stat: 'ap', ratio: 0.5 }], status: 'modelled',
-};
-const specialW: Ability = {
-  key: 'W', name: 'Odd', damageType: 'magic', baseByRank: [50],
-  scalings: [], status: 'not-modelled', reason: 'recast',
-};
+const attacker = fighter({
+  ap: { base: 0, bonus: 100 }, ad: { base: 60, bonus: 20 }, hp: { base: 1500, bonus: 500 },
+  armor: { base: 30, bonus: 20 }, mr: { base: 40, bonus: 10 }, mana: { base: 400, bonus: 200 },
+});
+const target = fighter({ hp: { base: 2000, bonus: 0 } });
+
+const comp = (over: Partial<DamageComponent> = {}): DamageComponent => ({
+  label: 'Magic Damage', cast: 'Active', type: 'magic', base: [100, 150], scalings: [], ...over,
+});
+const ability = (casts: DamageComponent[][], key: 'Q' | 'W' | 'E' | 'R' = 'Q'): Ability => ({
+  key, name: 'Test', unread: [],
+  casts: casts.map((components, i) => ({ name: `Cast ${i + 1}`, components })),
+});
+const noRanks = { Q: 0, W: 0, E: 0, R: 0 };
 
 describe('mitigate', () => {
   test('100 resist halves damage', () => expect(mitigate(100, 100)).toBe(50));
@@ -26,59 +39,90 @@ describe('mitigate', () => {
   });
 });
 
-describe('abilityDamage', () => {
-  test('physical damage uses armor, magic uses MR, true ignores both', () => {
-    const tgt = { ...target, armor: 100, mr: 300 };
-    const base = { baseByRank: [100], scalings: [], status: 'modelled' as const, key: 'Q' as const, name: 'x' };
-    expect(abilityDamage({ ...base, damageType: 'physical' }, 1, attacker, tgt)).toBe(50);
-    expect(abilityDamage({ ...base, damageType: 'magic' }, 1, attacker, tgt)).toBe(25);
-    expect(abilityDamage({ ...base, damageType: 'true' }, 1, attacker, tgt)).toBe(100);
+describe('evaluateComponent', () => {
+  test('takes base and a constant ratio by rank', () => {
+    const c = comp({ scalings: [{ stat: 'ap', ratio: [0.5] }] });
+    const r = evaluateComponent(c, 2, attacker, target);
+    expect(r.base).toBe(150);
+    expect(r.scalings).toEqual([{ stat: 'ap', value: 50 }]);
+    expect(r.raw).toBe(200);
+    expect(r.type).toBe('magic');
   });
-  test('a not-modelled ability deals nothing', () => {
-    expect(abilityDamage(specialW, 1, attacker, target)).toBe(0);
+  test('a ratio with one value per rank follows the rank', () => {
+    const c = comp({ type: 'physical', base: [0], scalings: [{ stat: 'ad', ratio: [0.5, 1] }] });
+    expect(evaluateComponent(c, 1, attacker, target).raw).toBe(40);
+    expect(evaluateComponent(c, 2, attacker, target).raw).toBe(80);
   });
-  test('rank 0 deals nothing', () => {
-    expect(abilityDamage(magicQ, 0, attacker, target)).toBe(0);
+  test('a rank beyond the table uses the last entry, rank 0 deals nothing', () => {
+    expect(evaluateComponent(comp(), 9, attacker, target).raw).toBe(150);
+    expect(evaluateComponent(comp(), 0, attacker, target).raw).toBe(0);
   });
-  test('base 100 + 0.5 AP at 100 AP vs 0 MR is 150', () => {
-    expect(abilityDamage(magicQ, 1, attacker, target)).toBe(150);
+  test('separates total from bonus and base stats', () => {
+    const stat = (s: Parameters<typeof evaluateComponent>[0]['scalings'][0]['stat']) =>
+      evaluateComponent(comp({ base: [0], scalings: [{ stat: s, ratio: [1] }] }), 1, attacker, target).raw;
+    expect(stat('ad')).toBe(80);
+    expect(stat('bonusAd')).toBe(20);
+    expect(stat('ap')).toBe(100);
+    expect(stat('maxHp')).toBe(2000);
+    expect(stat('bonusHp')).toBe(500);
+    expect(stat('armor')).toBe(50);
+    expect(stat('bonusArmor')).toBe(20);
+    expect(stat('mr')).toBe(50);
+    expect(stat('bonusMr')).toBe(10);
+    expect(stat('maxMana')).toBe(600);
   });
-  test('magic damage is reduced by target MR', () => {
-    expect(abilityDamage(magicQ, 1, attacker, { ...target, mr: 100 })).toBe(75);
+  test('target health scalings assume a target at full health', () => {
+    const stat = (s: Parameters<typeof evaluateComponent>[0]['scalings'][0]['stat']) =>
+      evaluateComponent(comp({ base: [0], scalings: [{ stat: s, ratio: [0.1] }] }), 1, attacker, target).raw;
+    expect(stat('targetMaxHp')).toBe(200);
+    expect(stat('targetCurrentHp')).toBe(200);
+    expect(stat('targetMissingHp')).toBe(0);
   });
-});
-
-describe('comboDamage hit counts', () => {
-  const ranks = { Q: 1, W: 0, E: 0, R: 0 };
-  const run = (hits: Record<'Q' | 'W' | 'E' | 'R', number> | undefined, autos = 0) =>
-    comboDamage([magicQ], ranks, attacker, target, autos, hits).total;
-  const hitsQ = (Q: number) => ({ Q, W: 0, E: 0, R: 0 });
-
-  test('an ability that hits three times deals three times the damage', () => {
-    expect(run(hitsQ(3))).toBe(450);
-  });
-  test('zero hits deals nothing', () => expect(run(hitsQ(0))).toBe(0));
-  test('omitting hits means one hit per ability', () => expect(run(undefined)).toBe(150));
-  test('negative, fractional and non-numeric hit counts are sanitised', () => {
-    expect(run(hitsQ(-2))).toBe(0);
-    expect(run(hitsQ(2.9))).toBe(300);
-    expect(run(hitsQ(NaN))).toBe(0);
-  });
-  test('autos scale with the count and are cut by armor', () => {
-    expect(run(hitsQ(0), 3)).toBe(240);
-    expect(comboDamage([], { Q: 0, W: 0, E: 0, R: 0 }, attacker, { ...target, armor: 100 }, 4).total).toBe(160);
-  });
-  test('negative auto counts deal nothing', () => expect(run(hitsQ(0), -1)).toBe(0));
 });
 
 describe('comboDamage', () => {
-  test('not-modelled abilities are listed, not summed', () => {
-    const r = comboDamage([magicQ, specialW], { Q: 1, W: 1, E: 0, R: 0 }, attacker, target, 0);
-    expect(r.total).toBe(150);
-    expect(r.notModelled).toEqual([specialW]);
+  const bolt = ability([[comp({ scalings: [{ stat: 'ap', ratio: [0.5] }] })]]);
+  const physical = ability([[comp({ type: 'physical', base: [100] })]]);
+  const run = (a: Ability[], hits?: Record<'Q' | 'W' | 'E' | 'R', number[]>, autos = 0, tgt = target, rank = 1) =>
+    comboDamage(a, { ...noRanks, Q: rank, W: rank, E: rank, R: rank }, attacker, tgt, autos, hits).total;
+
+  test('physical damage uses armor, magic uses MR, true ignores both', () => {
+    const tgt = fighter({ hp: { base: 2000, bonus: 0 }, armor: { base: 100, bonus: 0 }, mr: { base: 300, bonus: 0 } });
+    expect(run([physical], undefined, 0, tgt)).toBe(50);
+    expect(run([ability([[comp({ base: [100] })]])], undefined, 0, tgt)).toBe(25);
+    expect(run([ability([[comp({ type: 'true', base: [100] })]])], undefined, 0, tgt)).toBe(100);
   });
-  test('autos add physical damage at attacker AD', () => {
-    const r = comboDamage([], { Q: 0, W: 0, E: 0, R: 0 }, attacker, target, 2);
-    expect(r.total).toBe(160);
+  test('base 100 + 0.5 AP at 100 AP vs 0 MR is 150, and MR reduces it', () => {
+    expect(run([bolt])).toBe(150);
+    expect(run([bolt], undefined, 0, fighter({ mr: { base: 100, bonus: 0 } }))).toBe(75);
+  });
+  test('rank 0 deals nothing', () => expect(run([bolt], undefined, 0, target, 0)).toBe(0));
+
+  test('each cast has its own hit count and damage', () => {
+    const two = ability([[comp({ base: [100] })], [comp({ base: [10] })]]);
+    expect(run([two])).toBe(110);
+    expect(run([two], { Q: [3, 1], W: [], E: [], R: [] })).toBe(310);
+    expect(run([two], { Q: [0, 2], W: [], E: [], R: [] })).toBe(20);
+  });
+  test('a cast with several damage lines sums them', () => {
+    const both = ability([[comp({ base: [100] }), comp({ type: 'true', base: [5] })]]);
+    expect(run([both])).toBe(105);
+  });
+  test('negative, fractional and non-numeric hit counts are sanitised', () => {
+    const hits = (n: number) => ({ Q: [n], W: [], E: [], R: [] });
+    expect(run([bolt], hits(-2))).toBe(0);
+    expect(run([bolt], hits(2.9))).toBe(300);
+    expect(run([bolt], hits(NaN))).toBe(0);
+  });
+  test('autos scale with the count and are cut by armor', () => {
+    expect(run([], undefined, 3)).toBe(240);
+    expect(run([], undefined, 4, fighter({ armor: { base: 100, bonus: 0 } }))).toBe(160);
+    expect(run([], undefined, -1)).toBe(0);
+  });
+  test('abilities with unread damage lines are listed, the readable lines still count', () => {
+    const odd: Ability = { ...bolt, key: 'W', unread: ['"Damage": unknown scaling "x"'] };
+    const r = comboDamage([bolt, odd], { ...noRanks, Q: 1, W: 1 }, attacker, target, 0);
+    expect(r.total).toBe(300);
+    expect(r.notModelled).toEqual([odd]);
   });
 });

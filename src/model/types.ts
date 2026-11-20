@@ -5,9 +5,14 @@ export type StatBlock = {
   mr: number;
   ad: number;
   ap: number;
+  /**
+   * Champion base: base attack speed; growth: per-level fraction of base (0.02 = +2%);
+   * items: bonus fraction of base (0.35 = +35%).
+   */
+  attackSpeed: number;
 };
 
-/** growth is the per-level value; ap is 0 in both base and growth */
+/** growth is the per-level value; ap is 0 in both base and growth; see StatBlock.attackSpeed */
 export type ChampionBase = {
   id: string;
   name: string;
@@ -21,24 +26,41 @@ export type ChampionBase = {
   adGrowthUnknown?: boolean;
 };
 
-export type Scaling = {
-  stat: 'ad' | 'bonusAd' | 'ap' | 'maxHp';
-  ratio: number;
-};
-
 export type AbilityKey = 'Q' | 'W' | 'E' | 'R';
 
-/** unknown = the ability data gives no usable single damage type (only on not-modelled abilities). */
-export type DamageType = 'physical' | 'magic' | 'true' | 'unknown';
+/** What an ability can scale with: the caster's own stats (bonus = from items), or the target's health. */
+export type ComponentStat =
+  | 'ad' | 'bonusAd' | 'ap'
+  | 'maxHp' | 'bonusHp'
+  | 'armor' | 'bonusArmor' | 'mr' | 'bonusMr'
+  | 'maxMana'
+  | 'targetMaxHp' | 'targetCurrentHp' | 'targetMissingHp';
+
+/** ratio is a fraction (0.6 = 60%): one value for every rank, or one per rank. */
+export type ComponentScaling = { stat: ComponentStat; ratio: number[] };
+
+export type DamageType = 'physical' | 'magic' | 'true';
+
+/** One damage line of an ability: flat base plus scalings, per rank. */
+export type DamageComponent = {
+  label: string;
+  /** The wiki stage this belongs to ("Active", "First Cast", "Recast"). */
+  cast: string;
+  type: DamageType;
+  /** One value per rank, or a single value for every rank. */
+  base: number[];
+  scalings: ComponentScaling[];
+};
+
+/** One cast of an ability. Each cast gets its own hit count in the combo. */
+export type Cast = { name: string; components: DamageComponent[] };
 
 export type Ability = {
   key: AbilityKey;
   name: string;
-  damageType: DamageType;
-  baseByRank: number[];
-  scalings: Scaling[];
-  status: 'modelled' | 'not-modelled';
-  reason?: string;
+  casts: Cast[];
+  /** Damage lines the data has but the model could not read, as readable messages. Empty when fully read. */
+  unread: string[];
 };
 
 export type Build = {

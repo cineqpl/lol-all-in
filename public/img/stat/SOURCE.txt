@@ -1,0 +1,4 @@
+Stat icons copied from the League of Legends Wiki (https://wiki.leagueoflegends.com/), where they appear
+in the champion infobox (Health_icon.svg, Armor_icon.svg, Magic_resistance_icon.svg, Attack_damage_icon.svg,
+Attack_speed_icon.png, Mana_icon.svg) and in ability text (Ability_power_icon.svg, which the infobox lacks).
+The wiki's content is CC BY-SA 3.0; the icons are Riot Games artwork and may carry additional terms.

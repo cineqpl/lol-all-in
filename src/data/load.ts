@@ -1,7 +1,7 @@
 import type { Ability, ChampionBase, StatBlock } from '../model/types';
 import type { ItemData, RuneData } from './normalise';
 
-export type DataMeta = { patch: string; abilitiesPatch?: string };
+export type DataMeta = { patch: string; abilitiesFetchedAt?: string };
 
 export type GameData = {
   meta: DataMeta;
@@ -11,7 +11,7 @@ export type GameData = {
   runes: Record<string, RuneData>;
 };
 
-const STAT_KEYS = ['hp', 'mana', 'armor', 'mr', 'ad', 'ap'] as const;
+const STAT_KEYS = ['hp', 'mana', 'armor', 'mr', 'ad', 'ap', 'attackSpeed'] as const;
 
 /** Fails loudly, naming the champion, if the data files disagree or contain unusable numbers. */
 export function validateData(data: GameData): void {
@@ -39,9 +39,9 @@ export async function loadData(): Promise<GameData> {
   ]);
   const list = champions.default as unknown as ChampionBase[];
   const loaded: GameData = {
-    meta: { patch: meta.default.patch, abilitiesPatch: meta.default.abilitiesPatch },
+    meta: { patch: meta.default.patch, abilitiesFetchedAt: abilities.default.fetchedAt },
     champions: Object.fromEntries(list.map((c) => [c.id, c])),
-    abilities: abilities.default as unknown as Record<string, Ability[]>,
+    abilities: abilities.default.champions as unknown as Record<string, Ability[]>,
     items: items.default as unknown as Record<string, ItemData>,
     runes: runes.default as unknown as Record<string, RuneData>,
   };
@@ -56,7 +56,7 @@ export function lookupChampion(data: GameData, id: string): ChampionBase {
 }
 
 export function sumItemStats(data: GameData, ids: string[]): StatBlock {
-  const total: StatBlock = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
+  const total: StatBlock = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0, attackSpeed: 0 };
   for (const id of ids) {
     const item = data.items[id];
     if (!item) throw new Error(`Unknown item id: ${id}`);

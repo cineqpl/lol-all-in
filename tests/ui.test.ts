@@ -1,34 +1,45 @@
 // @vitest-environment jsdom
 import { beforeEach, describe, expect, test } from 'vitest';
 import type { GameData } from '../src/data/load';
+import type { ComponentStat } from '../src/model/types';
 import { bootstrap, mount } from '../src/ui/main';
 
-const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0 };
+const zero = { hp: 0, mana: 0, armor: 0, mr: 0, ad: 0, ap: 0, attackSpeed: 0 };
 const champ = (id: string, hp: number, resource = 'Mana', mana = 0) => ({
   id, name: id, resource, base: { ...zero, hp, mana }, growth: zero,
   abilityIcons: [`${id}Q.png`, `${id}W.png`, `${id}E.png`, `${id}R.png`],
 });
-const trueQ = (dmg: number) => ({
-  key: 'Q' as const, name: 'Zap', damageType: 'true' as const, baseByRank: [dmg, dmg, dmg, dmg, dmg],
-  scalings: [], status: 'modelled' as const,
+const comp = (type: 'physical' | 'magic' | 'true', base: number, scalings: { stat: ComponentStat; ratio: number[] }[] = [], label = 'Damage') => ({
+  label, cast: 'Active', type, base: [base], scalings,
 });
-const oddW = {
-  key: 'W' as const, name: 'Weird', damageType: 'magic' as const, baseByRank: [], scalings: [],
-  status: 'not-modelled' as const, reason: 'recast',
+const cast = (name: string, ...components: ReturnType<typeof comp>[]) => ({ name, components });
+const trueQ = (dmg: number) => ({
+  key: 'Q' as const, name: 'Zap', unread: [], casts: [cast('Active', comp('true', dmg))],
+});
+const oddW = { key: 'W' as const, name: 'Weird', casts: [], unread: ['Magic Damage: unknown scaling "x"'] };
+// Two casts with different damage types and scalings, for the damage display.
+const comboE = {
+  key: 'E' as const, name: 'Combo', unread: [],
+  casts: [
+    cast('First Cast', comp('physical', 50, [{ stat: 'bonusAd', ratio: [1] }, { stat: 'targetMaxHp', ratio: [0.1] }])),
+    cast('Second Cast', comp('magic', 20, [{ stat: 'ap', ratio: [0.5] }])),
+  ],
 };
 
 const data: GameData = {
-  meta: { patch: '16.1.1', abilitiesPatch: '15.1' },
+  meta: { patch: '16.1.1', abilitiesFetchedAt: '2026-01-15T10:00:00Z' },
   champions: {
     Alpha: champ('Alpha', 1000, 'Mana', 300),
     Beta: champ('Beta', 500, 'Energy', 200),
+    Delta: { id: 'Delta', name: 'Delta', resource: 'None', base: { ...zero, hp: 600, attackSpeed: 0.625 }, growth: { ...zero, attackSpeed: 0.02 } },
     Gamma: { id: 'Gamma', name: 'Gamma', resource: 'None', adGrowthUnknown: true, base: { ...zero, hp: 1000 }, growth: { ...zero, hp: 100 } },
   },
-  abilities: { Alpha: [trueQ(100), oddW], Beta: [trueQ(400)], Gamma: [trueQ(1)] },
+  abilities: { Alpha: [trueQ(100), oddW, comboE], Beta: [trueQ(400)], Gamma: [trueQ(1)], Delta: [trueQ(1)] },
   items: {
     '1': { name: 'Sword', stats: { ad: 10, mana: 250 }, hasEffects: false },
     '2': { name: 'Deathcap', stats: { ap: 100 }, hasEffects: true },
     '3': { name: 'Cloak', stats: { armor: 25, mr: 15 }, hasEffects: false },
+    '4': { name: 'Dagger', stats: { attackSpeed: 0.3 }, hasEffects: false },
     '99': { name: 'Sword', stats: { ad: 12 }, hasEffects: false },
   },
   runes: {},
@@ -56,16 +67,41 @@ describe('matchup UI', () => {
     expect(q('[data-testid=enemy-damage]').textContent).toContain('400');
   });
 
-  test('shows not-modelled abilities with their damage type and reason', () => {
-    set(field('you', 'champion'), 'Alpha');
-    expect(q('[data-testid=not-modelled-you]').textContent).toMatch(/Weird \(magic\).*recast/);
+  test('ignite is labelled Ignite and shows its icon', () => {
+    const label = q('.panel[data-side=you] label.ignite');
+    expect(label.textContent?.trim()).toBe('Ignite');
+    expect(label.querySelector('img')?.getAttribute('src')).toBe('/img/spell/SummonerDot.png');
+    // icon, name, then the checkbox on the right
+    expect((label.lastElementChild as HTMLInputElement).type).toBe('checkbox');
   });
 
-  test('status reflects the matchup and the ability-data patch is shown', () => {
+  test('auto-attacks show the Long Sword icon', () => {
+    const label = q('.panel[data-side=you] label.autos');
+    expect(label.querySelector('img')?.getAttribute('src')).toBe('/img/item/1036.png');
+    expect(label.textContent).toContain('Auto-attacks');
+    expect((label.lastElementChild as HTMLInputElement).getAttribute('data-field')).toBe('autos');
+  });
+
+  test('ignite adds level-based true damage to the combo', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Beta');
+    const box = field('you', 'ignite');
+    box.checked = true;
+    box.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(q('[data-testid=your-damage]').textContent).toContain('170');
+  });
+
+  test('lists abilities with unread damage lines and why', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(q('[data-testid=not-modelled-you]').textContent).toMatch(/Weird.*unknown scaling/);
+  });
+
+  test('status reflects the matchup and the ability data source and date are shown', () => {
     set(field('you', 'champion'), 'Alpha');
     set(field('enemy', 'champion'), 'Beta');
     expect(q('[data-testid=status]').dataset.status).toBe('even');
-    expect(root.textContent).toContain('15.1');
+    expect(root.textContent).toContain('League of Legends Wiki');
+    expect(root.textContent).toContain('2026-01-15');
   });
 
   test('same champion in both panels does not link the panels', () => {
@@ -198,6 +234,36 @@ describe('stat summary', () => {
     set(field('you', 'item-0'), '1');
     expect(stat('you', 'ad').textContent).toContain('10');
   });
+  test('stats render in order with attack speed last', () => {
+    set(field('you', 'champion'), 'Alpha');
+    const order = [...root.querySelectorAll('.side[data-side=you] [data-role=stat-summary] [data-stat]')]
+      .map((el) => el.getAttribute('data-stat'));
+    expect(order).toEqual(['hp', 'resource', 'ad', 'ap', 'armor', 'mr', 'attackSpeed']);
+  });
+  test('each stat has its icon', () => {
+    const src = (name: string) => q(`.side[data-side=you] [data-stat=${name}] img`)?.getAttribute('src');
+    expect(src('hp')).toBe('/img/stat/hp.svg');
+    expect(src('ad')).toBe('/img/stat/ad.svg');
+    expect(src('ap')).toBe('/img/stat/ap.svg');
+    expect(src('attackSpeed')).toBe('/img/stat/attackSpeed.png');
+    expect(src('armor')).toBe('/img/stat/armor.svg');
+    expect(src('mr')).toBe('/img/stat/mr.svg');
+  });
+  test('splits stats into base and bonus', () => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('you', 'item-0'), '1');
+    expect(stat('you', 'hp').textContent).toBe('HP 1000 (1000 base + 0 bonus)');
+    expect(stat('you', 'ad').textContent).toBe('AD 10 (0 base + 10 bonus)');
+    expect(stat('you', 'resource').textContent).toBe('Mana 550 (300 base + 250 bonus)');
+  });
+  test('attack speed shows base plus a bonus percentage from growth and items', () => {
+    set(field('you', 'champion'), 'Delta');
+    expect(stat('you', 'attackSpeed').textContent).toBe('Attack speed 0.625 (0.625 base + 0% bonus)');
+    set(field('you', 'level'), '10');
+    set(field('you', 'item-0'), '4');
+    // growth 0.02 * 7.74 = 15.48% plus items 30%
+    expect(stat('you', 'attackSpeed').textContent).toBe('Attack speed 0.909 (0.625 base + 45% bonus)');
+  });
   test('updates with the level (quest level 20)', () => {
     set(field('enemy', 'champion'), 'Gamma');
     expect(stat('enemy', 'hp').textContent).toContain('1000');
@@ -213,6 +279,16 @@ describe('stat summary', () => {
     expect(stat('you', 'resource').textContent).toMatch(/Mana.*550/);
     set(field('you', 'champion'), 'Beta');
     expect(stat('you', 'resource').textContent).toMatch(/Energy.*200/);
+  });
+  test('mana has its icon and colour tag, energy has neither', () => {
+    set(field('you', 'champion'), 'Alpha');
+    const cell = q('.side[data-side=you] [data-stat=resource]') as HTMLElement;
+    expect(cell.querySelector('img')?.getAttribute('src')).toBe('/img/stat/mana.svg');
+    expect(cell.querySelector('img')?.hidden).toBe(false);
+    expect(cell.getAttribute('data-resource')).toBe('Mana');
+    set(field('you', 'champion'), 'Beta');
+    expect(cell.querySelector('img')?.hidden).toBe(true);
+    expect(cell.getAttribute('data-resource')).toBe('Energy');
   });
   test('shows armor and magic resist including items', () => {
     set(field('you', 'champion'), 'Alpha');
@@ -244,44 +320,97 @@ describe('stat summary', () => {
 });
 
 describe('combo editor', () => {
-  const row = (side: string, key: string) => q(`.side[data-side=${side}] [data-role=combo-row-${key}]`);
-  test('has hit inputs per ability and an auto-attack input with sensible defaults', () => {
-    expect(field('you', 'hits-Q').value).toBe('1');
+  const row = (side: string, key: string, i = 0) => q(`.side[data-side=${side}] [data-role=combo-row-${key}-${i}]`);
+  test('has hit inputs per cast and an auto-attack input with sensible defaults', () => {
+    expect(field('you', 'hits-Q-0').value).toBe('1');
     expect(field('you', 'autos').value).toBe('2');
-    expect(field('enemy', 'hits-R')).toBeTruthy();
+    expect(field('enemy', 'hits-Q-0')).toBeTruthy();
   });
   test('more hits means more damage in the results', () => {
     set(field('you', 'champion'), 'Alpha');
     set(field('enemy', 'champion'), 'Gamma');
-    set(field('you', 'hits-Q'), '3');
+    set(field('you', 'hits-Q-0'), '3');
     expect(q('[data-testid=your-damage]').textContent).toContain('300 damage');
   });
   test('auto-attacks add damage at the champion AD', () => {
     set(field('you', 'champion'), 'Alpha');
     set(field('enemy', 'champion'), 'Gamma');
     set(field('you', 'item-0'), '1'); // Sword: +10 AD
-    set(field('you', 'hits-Q'), '0');
+    set(field('you', 'hits-Q-0'), '0');
     set(field('you', 'autos'), '4');
     expect(q('[data-testid=your-damage]').textContent).toContain('40 damage');
   });
   test('the two sides keep separate combos', () => {
-    set(field('you', 'hits-Q'), '5');
-    expect(field('enemy', 'hits-Q').value).toBe('1');
+    set(field('you', 'hits-Q-0'), '5');
+    expect(field('enemy', 'hits-Q-0').value).toBe('1');
   });
-  test('rows name the ability and its damage type', () => {
+  test('an ability with several casts gets a row and a hit count for each', () => {
     set(field('you', 'champion'), 'Alpha');
-    expect(row('you', 'Q').textContent).toMatch(/Zap \(true\)/);
-    expect(row('you', 'W').textContent).toMatch(/Weird \(magic\)/);
+    set(field('you', 'rank-E'), '1');
+    expect(row('you', 'E', 0).textContent).toContain('First Cast');
+    expect(row('you', 'E', 1).textContent).toContain('Second Cast');
+    set(field('enemy', 'champion'), 'Gamma');
+    set(field('you', 'hits-E-1'), '2');
+    // E needs rank 1 and level 1 allows it: 50 physical + 0 bonus AD + 10% of 1000 HP, then 2 x 20 magic
+    expect(q('[data-testid=your-damage]').textContent).toContain('290 damage');
   });
-  test('not-modelled abilities are marked', () => {
+  test('hit counts survive a change elsewhere but reset with the champion', () => {
     set(field('you', 'champion'), 'Alpha');
-    expect(row('you', 'W').textContent).toMatch(/not modelled/);
-    expect(row('you', 'Q').textContent).not.toMatch(/not modelled/);
+    set(field('you', 'hits-Q-0'), '4');
+    set(field('you', 'level'), '3');
+    expect(field('you', 'hits-Q-0').value).toBe('4');
+    set(field('you', 'champion'), 'Beta');
+    expect(field('you', 'hits-Q-0').value).toBe('1');
+  });
+  test('rows name the ability, utility and unread abilities are marked', () => {
+    set(field('you', 'champion'), 'Alpha');
+    expect(row('you', 'Q').textContent).toContain('Zap');
+    expect(row('you', 'W').textContent).toMatch(/Weird/);
+    expect(row('you', 'W').textContent).toMatch(/not counted/);
+    expect(row('you', 'Q').textContent).not.toMatch(/not counted/);
   });
   test('hits are disabled for an ability that is not learned', () => {
-    expect(field('you', 'hits-W').disabled).toBe(true);
-    set(field('you', 'rank-W'), '1');
-    expect(field('you', 'hits-W').disabled).toBe(false);
+    set(field('you', 'champion'), 'Alpha');
+    expect(field('you', 'hits-E-0').disabled).toBe(true);
+    set(field('you', 'rank-E'), '1');
+    expect(field('you', 'hits-E-0').disabled).toBe(false);
+  });
+});
+
+describe('damage display next to the hit counter', () => {
+  const line = (side: string, key: string, i: number) =>
+    q(`.side[data-side=${side}] [data-role=combo-row-${key}-${i}] .dmg-line`);
+  const text = (el: Element) => el.textContent?.replace(/\s+/g, ' ').trim();
+  beforeEach(() => {
+    set(field('you', 'champion'), 'Alpha');
+    set(field('enemy', 'champion'), 'Gamma'); // 1000 HP
+    set(field('you', 'item-0'), '1'); // +10 AD (bonus)
+    set(field('you', 'item-1'), '2'); // +100 AP
+    set(field('you', 'rank-E'), '1');
+  });
+  test('shows total damage, then base and each scaling by name, as DAMAGE (BASE + SCALING)', () => {
+    expect(text(line('you', 'E', 0))).toBe("160 (50 + 10 bonus AD + 100 target's max HP)");
+    expect(text(line('you', 'E', 1))).toBe('70 (20 + 50 AP)');
+  });
+  test('the total is coloured by damage type, base is plain, scalings take the stat colour', () => {
+    expect(line('you', 'E', 0).querySelector('.dmg')?.getAttribute('data-type')).toBe('physical');
+    expect(line('you', 'E', 1).querySelector('.dmg')?.getAttribute('data-type')).toBe('magic');
+    expect(line('you', 'Q', 0).querySelector('.dmg')?.getAttribute('data-type')).toBe('true');
+    expect(line('you', 'E', 0).querySelector('.dmg-base')?.textContent).toBe('50');
+    const colours = [...line('you', 'E', 0).querySelectorAll('.scale')].map((s) => s.getAttribute('data-color'));
+    expect(colours).toEqual(['ad', 'hp']);
+    expect(line('you', 'E', 1).querySelector('.scale')?.getAttribute('data-color')).toBe('ap');
+  });
+  test('an ability with no scaling shows only its damage', () => {
+    expect(text(line('you', 'Q', 0))).toBe('100');
+  });
+  test('shows nothing for an ability that is not learned', () => {
+    set(field('you', 'rank-E'), '0');
+    expect(q('.side[data-side=you] [data-role=combo-row-E-0] .dmg-line')).toBeNull();
+  });
+  test('follows the enemy: target-health scaling uses the enemy HP', () => {
+    set(field('enemy', 'champion'), 'Beta'); // 500 HP
+    expect(text(line('you', 'E', 0))).toBe("110 (50 + 10 bonus AD + 50 target's max HP)");
   });
 });
 

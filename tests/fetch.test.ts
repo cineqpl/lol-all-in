@@ -16,11 +16,15 @@ describe('normaliseChampions', () => {
 
   test('base and growth stats match Data Dragon values', () => {
     expect(annie.name).toBe('Annie');
-    expect(annie.base).toEqual({ hp: 560, mana: 418, armor: 23, mr: 30, ad: 50, ap: 0 });
+    expect(annie.base).toEqual({ hp: 560, mana: 418, armor: 23, mr: 30, ad: 50, ap: 0, attackSpeed: 0.61 });
     expect(annie.growth.hp).toBe(96);
     expect(annie.growth.mana).toBe(25);
     expect(annie.growth.mr).toBe(1.3);
     expect(annie.growth.ap).toBe(0);
+  });
+
+  test('attack speed growth is stored as a fraction of base (Data Dragon gives percent)', () => {
+    expect(annie.growth.attackSpeed).toBeCloseTo(0.0136, 10);
   });
 
   test('keeps the resource type (partype)', () => {
@@ -37,6 +41,17 @@ describe('normaliseItems', () => {
 
   test('flat-stat item has no effects', () => {
     expect(items['1036']).toMatchObject({ name: 'Long Sword', stats: { ad: 10 }, hasEffects: false });
+  });
+  test('percent attack speed becomes a bonus fraction', () => {
+    const raw = {
+      data: {
+        '9': {
+          name: 'Dagger', description: '', maps: { '11': true }, gold: { purchasable: true },
+          stats: { PercentAttackSpeedMod: 0.12, FlatPhysicalDamageMod: 5 },
+        },
+      },
+    };
+    expect(normaliseItems(raw)['9'].stats).toEqual({ attackSpeed: 0.12, ad: 5 });
   });
   test('item with a passive is flagged hasEffects', () => {
     expect(items['3089']).toMatchObject({ stats: { ap: 130 }, hasEffects: true });
